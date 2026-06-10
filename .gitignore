@@ -1,0 +1,42 @@
+### Gradle ###
+.gradle/
+build/
+repo/
+!gradle/wrapper/gradle-wrapper.jar
+
+### Local dependency jars ###
+libs/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+### Minecraft run directories ###
+run/
+.run/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse ###
+.apt_generated/
+.classpath
+.eclipse/
+.factorypath
+.project
+.settings/
+springBeans
+sts4-cache/
+bin/
+
+### VS Code ###
+.vscode/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Generated resources cache ###
+**/src/generated/**/.cache/
