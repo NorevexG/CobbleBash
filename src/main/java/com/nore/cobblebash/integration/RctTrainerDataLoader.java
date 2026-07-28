@@ -156,6 +156,7 @@ public class RctTrainerDataLoader {
         private List<String> moves;
         private String ability;
         private String held_item;
+        private Integer level;
 
         public PokemonData() {
         }
@@ -188,6 +189,10 @@ public class RctTrainerDataLoader {
 
         public String heldItem() {
             return normalizeResourceId(held_item);
+        }
+
+        public int levelOr(int fallbackLevel) {
+            return level == null ? fallbackLevel : Math.max(1, Math.min(100, level));
         }
 
         private boolean isValid() {

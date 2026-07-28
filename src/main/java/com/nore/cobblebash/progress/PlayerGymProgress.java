@@ -33,6 +33,10 @@ public class PlayerGymProgress {
         return completedGyms.contains(gymType);
     }
 
+    public boolean hasCompletedAll(Collection<String> gymTypes) {
+        return completedGyms.containsAll(gymTypes);
+    }
+
     public boolean isActiveGym(String gymType) {
         return activeGymType.equals(gymType);
     }

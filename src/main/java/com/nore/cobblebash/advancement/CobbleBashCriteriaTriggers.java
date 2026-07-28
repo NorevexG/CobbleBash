@@ -15,8 +15,26 @@ public class CobbleBashCriteriaTriggers {
 
     public static final DeferredHolder<CriterionTrigger<?>, GymBossDefeatedTrigger> GYM_BOSS_DEFEATED =
             TRIGGERS.register("gym_boss_defeated", GymBossDefeatedTrigger::new);
+    public static final DeferredHolder<CriterionTrigger<?>, SimpleEventTrigger> LEAGUE_REPRESENTATIVE_MET =
+            TRIGGERS.register("league_representative_met", SimpleEventTrigger::new);
+    public static final DeferredHolder<CriterionTrigger<?>, SimpleEventTrigger> LEAGUE_REPRESENTATIVE_TRADED =
+            TRIGGERS.register("league_representative_traded", SimpleEventTrigger::new);
+    public static final DeferredHolder<CriterionTrigger<?>, SimpleEventTrigger> GYM_ENTERED =
+            TRIGGERS.register("gym_entered", SimpleEventTrigger::new);
 
     public static void triggerGymBossDefeated(ServerPlayer player, String gymType) {
         GYM_BOSS_DEFEATED.get().trigger(player, gymType);
+    }
+
+    public static void triggerLeagueRepresentativeMet(ServerPlayer player) {
+        LEAGUE_REPRESENTATIVE_MET.get().trigger(player);
+    }
+
+    public static void triggerLeagueRepresentativeTraded(ServerPlayer player) {
+        LEAGUE_REPRESENTATIVE_TRADED.get().trigger(player);
+    }
+
+    public static void triggerGymEntered(ServerPlayer player) {
+        GYM_ENTERED.get().trigger(player);
     }
 }

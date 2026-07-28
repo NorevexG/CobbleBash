@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class RctApiProbe {
     private static final Logger LOGGER = LogUtils.getLogger();
-    private static final Pattern GYM_TRAINER_ID_PATTERN = Pattern.compile("^cobblebash_([a-z]+)_slot_([0-9]+)_(trainer_1|trainer_2|boss)$");
+    private static final Pattern GYM_TRAINER_ID_PATTERN = Pattern.compile("^cobblebash_([a-z0-9_]+)_slot_([0-9]+)_(trainer_1|trainer_2|boss)$");
 
     public static void logLoaded() {
         RCTApi.initInstance("cobblebash");
@@ -24,6 +24,10 @@ public class RctApiProbe {
     }
 
     public static boolean registerGymTrainer(net.minecraft.server.MinecraftServer server, String gymType, int slotId, String trainerIdPart, int level) {
+        return registerGymTrainer(server, gymType, slotId, trainerIdPart, level, null);
+    }
+
+    public static boolean registerGymTrainer(net.minecraft.server.MinecraftServer server, String gymType, int slotId, String trainerIdPart, int level, String displayNameOverride) {
         var api = RCTApi.getInstance("cobblebash");
 
         if (api == null) {
@@ -31,7 +35,7 @@ public class RctApiProbe {
             return false;
         }
 
-        var trainer = RctGymTrainerFactory.createTrainer(server, gymType, trainerIdPart, level);
+        var trainer = RctGymTrainerFactory.createTrainer(server, gymType, trainerIdPart, level, displayNameOverride);
         if (trainer.isEmpty()) {
             LOGGER.error("No JSON RCT trainer data exists for {} {}.", gymType, trainerIdPart);
             return false;

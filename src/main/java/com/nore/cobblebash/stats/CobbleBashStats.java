@@ -40,7 +40,7 @@ public class CobbleBashStats {
 
         for (GymType type : GymType.values()) {
             AdvancementHolder advancement = player.server.getAdvancements().get(
-                    ResourceLocation.fromNamespaceAndPath(CobbleBash.MODID, "gym/" + type.getId())
+                    ResourceLocation.fromNamespaceAndPath(CobbleBash.MODID, "gym/complete_gym/" + type.getId())
             );
 
             if (advancement != null && player.getAdvancements().getOrStartProgress(advancement).isDone()) {

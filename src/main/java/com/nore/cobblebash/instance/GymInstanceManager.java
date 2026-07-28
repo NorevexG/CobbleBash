@@ -13,7 +13,7 @@ import java.util.UUID;
 public class GymInstanceManager {
     private static final Map<UUID, GymInstance> ACTIVE_BY_PLAYER = new HashMap<>();
     private static final Map<Integer, GymInstance> ACTIVE_BY_SLOT = new HashMap<>();
-    private static final Queue<Integer> FREE_SLOTS = new ArrayDeque<>();
+    private static final Map<String, Queue<Integer>> FREE_SLOTS_BY_GYM = new HashMap<>();
 
     private static int nextSlotId = 0;
 
@@ -35,7 +35,7 @@ public class GymInstanceManager {
             return existing;
         }
 
-        int slotId = FREE_SLOTS.isEmpty() ? nextSlotId++ : FREE_SLOTS.poll();
+        int slotId = getReusableSlot(gymType);
 
         GymInstance instance = new GymInstance(
                 slotId,
@@ -67,7 +67,9 @@ public class GymInstanceManager {
 
         if (instance != null) {
             ACTIVE_BY_SLOT.remove(instance.getSlotId());
-            FREE_SLOTS.add(instance.getSlotId());
+            FREE_SLOTS_BY_GYM
+                    .computeIfAbsent(instance.getGymType(), ignored -> new ArrayDeque<>())
+                    .add(instance.getSlotId());
         }
 
         return instance;
@@ -78,10 +80,24 @@ public class GymInstanceManager {
     }
 
     public static int getFreeSlotCount() {
-        return FREE_SLOTS.size();
+        int count = 0;
+        for (Queue<Integer> slots : FREE_SLOTS_BY_GYM.values()) {
+            count += slots.size();
+        }
+
+        return count;
     }
 
     public static int getNextSlotId() {
         return nextSlotId;
+    }
+
+    private static int getReusableSlot(String gymType) {
+        Queue<Integer> freeSlots = FREE_SLOTS_BY_GYM.get(gymType);
+        if (freeSlots != null && !freeSlots.isEmpty()) {
+            return freeSlots.poll();
+        }
+
+        return nextSlotId++;
     }
 }

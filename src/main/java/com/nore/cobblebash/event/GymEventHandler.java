@@ -2,6 +2,9 @@ package com.nore.cobblebash.event;
 
 import com.cobblemon.mod.common.api.battles.model.PokemonBattle;
 import com.cobblemon.mod.common.api.battles.model.actor.BattleActor;
+import com.cobblemon.mod.common.api.events.entity.SpawnEvent;
+import com.cobblemon.mod.common.api.events.pokemon.ExperienceGainedEvent;
+import com.cobblemon.mod.common.api.pokemon.experience.BattleExperienceSource;
 import com.cobblemon.mod.common.battles.pokemon.BattlePokemon;
 import com.cobblemon.mod.common.entity.pokemon.PokemonEntity;
 import com.gitlab.srcmc.rctapi.api.RCTApi;
@@ -13,6 +16,7 @@ import com.gitlab.srcmc.rctapi.api.trainer.TrainerPlayer;
 import com.nore.cobblebash.Config;
 import com.nore.cobblebash.command.GymCommand;
 import com.nore.cobblebash.CobbleBash;
+import com.nore.cobblebash.beacon.ChampionBeaconAuras;
 import com.nore.cobblebash.dialogue.GymTrainerDialogue;
 import com.nore.cobblebash.dimension.CobbleBashDimensions;
 import com.nore.cobblebash.gym.GymTrainerUnit;
@@ -21,7 +25,9 @@ import com.nore.cobblebash.instance.GymInstance;
 import com.nore.cobblebash.instance.GymInstanceManager;
 import com.nore.cobblebash.instance.GymSlotPosition;
 import com.nore.cobblebash.integration.RctApiProbe;
+import com.nore.cobblebash.item.RibbonAttributeManager;
 import com.nore.cobblebash.stats.CobbleBashStats;
+import com.nore.cobblebash.structure.EliteFourStructure;
 import fr.harmex.cobblebadges.common.api.point.Point;
 import fr.harmex.cobblebadges.common.api.point.Points;
 import fr.harmex.cobblebadges.common.utils.extensions.PlayerExtensionKt;
@@ -32,6 +38,7 @@ import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.DamageTypeTags;
@@ -40,10 +47,12 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
@@ -53,6 +62,7 @@ import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.event.entity.player.AdvancementEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 import java.util.Map;
@@ -63,6 +73,12 @@ import java.util.function.Consumer;
 public class GymEventHandler {
     private static final double GYM_VOID_FAIL_Y = 0.0D;
     private static final String TRAINER_ENTITY_TAG = "cobblebash_rct_trainer";
+    private static final SoundEvent TRAINER_WIN_SOUND = SoundEvent.createVariableRangeEvent(
+            ResourceLocation.fromNamespaceAndPath("cobblemon", "status.up.actor")
+    );
+    private static final SoundEvent TRAINER_LOSS_SOUND = SoundEvent.createVariableRangeEvent(
+            ResourceLocation.fromNamespaceAndPath("cobblemon", "status.down.actor")
+    );
     private static final String FLYING_GYM_TYPE = "flying";
     private static final BlockPos FLYING_PLAYER_SPAWN_OFFSET = new BlockPos(40, 9, 28);
     private static final BlockPos FLYING_TRAINER_ONE_LAUNCH_PAD_OFFSET = new BlockPos(-5, 8, -14);
@@ -95,7 +111,6 @@ public class GymEventHandler {
     private static final Map<UUID, Integer> LAUNCH_PAD_COOLDOWNS = new ConcurrentHashMap<>();
     private static final Map<UUID, Integer> LAUNCH_PAD_FALL_PROTECTION = new ConcurrentHashMap<>();
     private static final Map<UUID, MobEffectInstance> SUPPRESSED_JUMP_BOOST = new ConcurrentHashMap<>();
-
     public static void registerRctListeners() {
         if (rctListenersRegistered) {
             return;
@@ -107,6 +122,7 @@ public class GymEventHandler {
         }
 
         registerCobblemonBattleFaintedListener();
+        registerCobblemonExperienceListener();
         registerCobblemonSpawnBlocker();
         api.getEventContext().register(Events.BATTLE_STARTED, event -> handleBattleStarted(event.getValue()));
         api.getEventContext().register(Events.BATTLE_ENDED, event -> handleBattleEnded(event.getValue()));
@@ -130,6 +146,23 @@ public class GymEventHandler {
         }
     }
 
+    private static void registerCobblemonExperienceListener() {
+        try {
+            Object observable = Class.forName("com.cobblemon.mod.common.api.events.CobblemonEvents")
+                    .getField("EXPERIENCE_GAINED_EVENT_PRE")
+                    .get(null);
+            observable.getClass()
+                    .getMethod("subscribe", Consumer.class)
+                    .invoke(observable, (Consumer<Object>) event -> {
+                        if (event instanceof ExperienceGainedEvent.Pre experienceEvent) {
+                            handleExperienceGained(experienceEvent);
+                        }
+                    });
+        } catch (ReflectiveOperationException exception) {
+            CobbleBash.LOGGER.warn("Failed to register Cobblemon experience listener.", exception);
+        }
+    }
+
     private static void registerCobblemonSpawnBlocker() {
         try {
             Object observable = Class.forName("com.cobblemon.mod.common.api.events.CobblemonEvents")
@@ -144,6 +177,11 @@ public class GymEventHandler {
     }
 
     private static void handleCobblemonPokemonSpawn(Object event) {
+        if (event instanceof SpawnEvent<?> spawnEvent && spawnEvent.getEntity() instanceof PokemonEntity pokemon) {
+            handleCobblemonPokemonSpawn(spawnEvent, pokemon);
+            return;
+        }
+
         try {
             Object spawnablePosition = event.getClass().getMethod("getSpawnablePosition").invoke(event);
             Object world = spawnablePosition.getClass().getMethod("getWorld").invoke(spawnablePosition);
@@ -156,9 +194,27 @@ public class GymEventHandler {
         }
     }
 
+    private static void handleCobblemonPokemonSpawn(SpawnEvent<?> event, PokemonEntity pokemon) {
+        ServerLevel spawnLevel = event.getSpawnablePosition().getWorld();
+        BlockPos spawnPos = event.getSpawnablePosition().getPosition();
+
+        if (spawnLevel.dimension().equals(CobbleBashDimensions.GYM_VOID)) {
+            event.cancel();
+            return;
+        }
+
+        if (ChampionBeaconAuras.shouldRepel(spawnLevel, spawnPos)) {
+            event.cancel();
+            return;
+        }
+
+        ChampionBeaconAuras.tryApplyShinyAura(pokemon, spawnLevel, spawnPos);
+    }
+
     @SubscribeEvent
     public void onPlayerLoggedOut(PlayerEvent.PlayerLoggedOutEvent event) {
         if (event.getEntity() instanceof ServerPlayer player) {
+            RibbonAttributeManager.handlePlayerLogout(player);
             restoreSuppressedJumpBoost(player);
             GymCommand.clearActiveGym(player, false, false);
         }
@@ -237,6 +293,8 @@ public class GymEventHandler {
             return;
         }
 
+        ChampionBeaconAuras.tickPlayer(player);
+
         if (!isInGymVoid(player)) {
             clearLaunchPadState(player);
             restoreSuppressedJumpBoost(player);
@@ -259,6 +317,7 @@ public class GymEventHandler {
         clampGymJumpBoost(player);
 
         spawnAmbientLaunchPadParticles(player);
+        tickEliteFourChampionTransition(player);
 
         if (player.getY() < GYM_VOID_FAIL_Y) {
             failGymSafely(player, "You fell out of the gym.");
@@ -268,15 +327,73 @@ public class GymEventHandler {
         tryLaunchFromPad(player);
     }
 
+    private static void tickEliteFourChampionTransition(ServerPlayer player) {
+        GymInstance instance = GymInstanceManager.getActive(player.getUUID());
+        if (instance == null
+                || !EliteFourStructure.GYM_TYPE.equals(instance.getGymType())
+                || !instance.isEliteFourChampionUnlocked()) {
+            return;
+        }
+
+        BlockPos origin = GymSlotPosition.getOriginForSlot(instance.getSlotId());
+        if (!instance.hasEliteFourSlowFallingApplied()
+                && EliteFourStructure.isInsideSlowFallField(origin, player.blockPosition())) {
+            player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 60, 0, false, false, true));
+            player.resetFallDistance();
+            instance.markEliteFourSlowFallingApplied();
+            instance.setEliteFourChampionBeamTicks(200);
+        }
+
+        if (instance.isEliteFourChampionBeamActive()) {
+            EliteFourStructure.startChampionBeam(player.serverLevel(), origin);
+            instance.tickEliteFourChampionBeam();
+            if (!instance.isEliteFourChampionBeamActive()) {
+                EliteFourStructure.stopChampionBeam(player.serverLevel(), origin);
+            }
+        }
+    }
+
     @SubscribeEvent
     public void onEntityJoinLevel(EntityJoinLevelEvent event) {
         if (!(event.getLevel() instanceof ServerLevel level) || !level.dimension().equals(CobbleBashDimensions.GYM_VOID)) {
             return;
         }
 
-        if (event.getEntity() instanceof PokemonEntity pokemon && !isGymBattlePokemon(pokemon)) {
+        if (event.getEntity() instanceof PokemonEntity) {
+            return;
+        }
+
+        if (isBlockedGymVoidCategory(event.getEntity().getType().getCategory())) {
             event.setCanceled(true);
         }
+    }
+
+    @SubscribeEvent
+    public void onBlockPlaced(BlockEvent.EntityPlaceEvent event) {
+        if (event.isCanceled() || !(event.getLevel() instanceof ServerLevel level)) {
+            return;
+        }
+
+        ChampionBeaconAuras.handleBlockChange(
+                level,
+                event.getPos(),
+                event.getBlockSnapshot().getState(),
+                event.getPlacedBlock()
+        );
+    }
+
+    @SubscribeEvent
+    public void onBlockBroken(BlockEvent.BreakEvent event) {
+        if (event.isCanceled() || !(event.getLevel() instanceof ServerLevel level)) {
+            return;
+        }
+
+        ChampionBeaconAuras.handleBlockChange(
+                level,
+                event.getPos(),
+                event.getState(),
+                Blocks.AIR.defaultBlockState()
+        );
     }
 
     @SubscribeEvent
@@ -316,6 +433,10 @@ public class GymEventHandler {
         }
 
         String gymType = path.substring("gym/".length());
+        if (gymType.startsWith("complete_gym/")) {
+            gymType = gymType.substring("complete_gym/".length());
+        }
+
         if (!isElementalGymType(gymType)) {
             return;
         }
@@ -341,7 +462,7 @@ public class GymEventHandler {
 
             RctApiProbe.GymTrainerRef trainerRef = RctApiProbe.getGymTrainerRef(trainerNpc.getEntity());
             GymTrainerUnit unit = trainerRef == null ? null : GymTrainerUnit.fromTrainerIdPart(trainerRef.trainerIdPart());
-            if (unit == null || unit == GymTrainerUnit.TRAINER_ONE || trainerNpc.getTeam().length == 0) {
+            if (unit == null || trainerNpc.getTeam().length == 0) {
                 continue;
             }
 
@@ -374,6 +495,41 @@ public class GymEventHandler {
 
         levelState.incrementFaintedCount();
         applyNpcBattleLevels(event.getBattle(), levelState);
+    }
+
+    private static void handleExperienceGained(ExperienceGainedEvent.Pre event) {
+        if (!(event.getSource() instanceof BattleExperienceSource battleSource) || event.getExperience() <= 0) {
+            return;
+        }
+
+        NpcBattleLevelState levelState = NPC_BATTLE_LEVELS.get(battleSource.getBattle().getBattleId());
+        if (levelState == null) {
+            return;
+        }
+
+        ServerPlayer owner = event.getPokemon().getOwnerPlayer();
+        if (owner == null || !owner.level().dimension().equals(CobbleBashDimensions.GYM_VOID)) {
+            return;
+        }
+
+        GymInstance instance = GymInstanceManager.getActive(owner.getUUID());
+        if (instance == null || (!instance.isRepeatClear() && !EliteFourStructure.GYM_TYPE.equals(instance.getGymType()))) {
+            return;
+        }
+
+        double multiplier = levelState.unit() == GymTrainerUnit.BOSS
+                ? Config.REPEAT_CLEAR_BOSS_XP_MULTIPLIER.get()
+                : Config.REPEAT_CLEAR_TRAINER_XP_MULTIPLIER.get();
+        event.setExperience(scaleExperience(event.getExperience(), multiplier));
+    }
+
+    private static int scaleExperience(int experience, double multiplier) {
+        long scaled = Math.round(experience * multiplier);
+        if (scaled <= experience && multiplier > 1.0D) {
+            scaled = (long) experience + 1L;
+        }
+
+        return (int) Math.min(Integer.MAX_VALUE, scaled);
     }
 
     private static void handleBattleEnded(BattleState battleState) {
@@ -423,6 +579,9 @@ public class GymEventHandler {
 
             GymTrainerUnit unit = GymTrainerUnit.fromTrainerIdPart(trainerRef.trainerIdPart());
             if (unit != null) {
+                if (unit != GymTrainerUnit.BOSS) {
+                    playTrainerResultSound(player, TRAINER_WIN_SOUND);
+                }
                 GymCommand.handleTrainerVictory(player, trainerRef.gymType(), trainerRef.slotId(), unit);
             }
         }
@@ -436,10 +595,15 @@ public class GymEventHandler {
 
             RctApiProbe.GymTrainerRef trainerRef = RctApiProbe.getGymTrainerRef(trainerNpc.getEntity());
             if (trainerRef != null) {
+                playTrainerResultSound(player, TRAINER_LOSS_SOUND);
                 GymCommand.clearActiveGym(player, true);
                 return;
             }
         }
+    }
+
+    private static void playTrainerResultSound(ServerPlayer player, SoundEvent sound) {
+        player.level().playSound(null, player.blockPosition(), sound, SoundSource.PLAYERS, 1.0F, 1.0F);
     }
 
     private static boolean isElementalGymType(String gymType) {
@@ -452,8 +616,14 @@ public class GymEventHandler {
         return false;
     }
 
-    private static boolean isGymBattlePokemon(PokemonEntity pokemon) {
-        return pokemon.isBattling() || pokemon.isBattleClone() || pokemon.getBattleId() != null;
+    private static boolean isBlockedGymVoidCategory(MobCategory category) {
+        return category == MobCategory.CREATURE
+                || category == MobCategory.MONSTER
+                || category == MobCategory.AMBIENT
+                || category == MobCategory.AXOLOTLS
+                || category == MobCategory.UNDERGROUND_WATER_CREATURE
+                || category == MobCategory.WATER_CREATURE
+                || category == MobCategory.WATER_AMBIENT;
     }
 
     private static boolean cancelBlacklistedGymItem(Player player, ItemStack stack) {
@@ -790,6 +960,10 @@ public class GymEventHandler {
             }
 
             return baseLevel;
+        }
+
+        private GymTrainerUnit unit() {
+            return unit;
         }
     }
 

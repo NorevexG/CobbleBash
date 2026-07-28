@@ -4,6 +4,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
 import java.util.UUID;
 
 public class GymInstance {
@@ -20,6 +22,11 @@ public class GymInstance {
     private final float returnXRot;
     private final GameType returnGameMode;
     private int trainerStage = 0;
+    private final Set<String> defeatedEliteFourMembers = new LinkedHashSet<>();
+    private String activeEliteFourMember = "";
+    private boolean eliteFourChampionUnlocked = false;
+    private boolean eliteFourSlowFallingApplied = false;
+    private int eliteFourChampionBeamTicks = 0;
 
     public GymInstance(
             int slotId,
@@ -60,6 +67,79 @@ public class GymInstance {
 
         trainerStage++;
         return true;
+    }
+
+    public boolean hasActiveEliteFourMember() {
+        return !activeEliteFourMember.isBlank();
+    }
+
+    public String getActiveEliteFourMember() {
+        return activeEliteFourMember;
+    }
+
+    public boolean selectEliteFourMember(String memberId) {
+        if (memberId == null || memberId.isBlank() || hasActiveEliteFourMember() || defeatedEliteFourMembers.contains(memberId)) {
+            return false;
+        }
+
+        activeEliteFourMember = memberId;
+        return true;
+    }
+
+    public boolean completeActiveEliteFourMember() {
+        if (!hasActiveEliteFourMember()) {
+            return false;
+        }
+
+        defeatedEliteFourMembers.add(activeEliteFourMember);
+        activeEliteFourMember = "";
+        return true;
+    }
+
+    public boolean hasDefeatedEliteFourMember(String memberId) {
+        return defeatedEliteFourMembers.contains(memberId);
+    }
+
+    public int getDefeatedEliteFourMemberCount() {
+        return defeatedEliteFourMembers.size();
+    }
+
+    public Set<String> getDefeatedEliteFourMembers() {
+        return Set.copyOf(defeatedEliteFourMembers);
+    }
+
+    public boolean isEliteFourChampionUnlocked() {
+        return eliteFourChampionUnlocked;
+    }
+
+    public void unlockEliteFourChampion() {
+        eliteFourChampionUnlocked = true;
+    }
+
+    public boolean hasEliteFourSlowFallingApplied() {
+        return eliteFourSlowFallingApplied;
+    }
+
+    public void markEliteFourSlowFallingApplied() {
+        eliteFourSlowFallingApplied = true;
+    }
+
+    public int getEliteFourChampionBeamTicks() {
+        return eliteFourChampionBeamTicks;
+    }
+
+    public void setEliteFourChampionBeamTicks(int eliteFourChampionBeamTicks) {
+        this.eliteFourChampionBeamTicks = eliteFourChampionBeamTicks;
+    }
+
+    public void tickEliteFourChampionBeam() {
+        if (eliteFourChampionBeamTicks > 0) {
+            eliteFourChampionBeamTicks--;
+        }
+    }
+
+    public boolean isEliteFourChampionBeamActive() {
+        return eliteFourChampionBeamTicks != 0;
     }
 
     public int getSlotId() {

@@ -1,17 +1,8 @@
 ### Gradle ###
-.gradle/
+.gradle
 build/
-repo/
 !gradle/wrapper/gradle-wrapper.jar
-
-### Local dependency jars ###
-libs/
-*.jar
-!gradle/wrapper/gradle-wrapper.jar
-
-### Minecraft run directories ###
-run/
-.run/
+!**/src/**/build/
 
 ### IntelliJ IDEA ###
 .idea/
@@ -19,24 +10,36 @@ run/
 *.iml
 *.ipr
 out/
+!**/src/**/out/
+
+.run/
 
 ### Eclipse ###
-.apt_generated/
+.apt_generated
 .classpath
 .eclipse/
 .factorypath
 .project
-.settings/
-springBeans
-sts4-cache/
+.settings
+.springBeans
+.sts4-cache
 bin/
+!**/src/**/bin/
 
 ### VS Code ###
 .vscode/
 
-### OS ###
+### Mac OS ###
 .DS_Store
-Thumbs.db
 
-### Generated resources cache ###
+### Minecraft Modding ###
+run/
+!**/src/**/run/
 **/src/generated/**/.cache/
+repo/
+!**/src/**/repo/
+
+### Local dependency jars ###
+libs/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar

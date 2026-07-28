@@ -19,19 +19,26 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class RctGymTrainerFactory {
     public static Optional<TrainerModel> createTrainer(MinecraftServer server, String gymType, String trainerIdPart, int level) {
+        return createTrainer(server, gymType, trainerIdPart, level, null);
+    }
+
+    public static Optional<TrainerModel> createTrainer(MinecraftServer server, String gymType, String trainerIdPart, int level, String displayNameOverride) {
         return RctTrainerDataLoader.load(server, gymType, trainerIdPart)
                 .map(data -> {
                     RctTrainerDataLoader.BuildData build = selectBuild(data.builds());
                     List<RctTrainerDataLoader.PokemonData> shuffledTeam = new ArrayList<>(build.pokemon());
                     Collections.shuffle(shuffledTeam);
+                    String displayName = displayNameOverride == null || displayNameOverride.isBlank()
+                            ? data.displayName()
+                            : displayNameOverride;
 
                     return new TrainerModel(
-                            Text.literal(data.displayName()),
+                            Text.literal(displayName),
                             JTO.<BattleAI>of(RCTBattleAI::new),
                             List.of(),
                             shuffledTeam.stream()
-                                    .map(pokemon -> createPokemon(pokemon, level))
-                                    .toList()
+                            .map(pokemon -> createPokemon(pokemon, level))
+                            .toList()
                     );
                 });
     }
@@ -48,7 +55,7 @@ public class RctGymTrainerFactory {
         return new PokemonModel(
                 data.species(),
                 "MALE",
-                level,
+                data.levelOr(level),
                 "hardy",
                 data.ability(),
                 new LinkedHashSet<>(data.moves()),

@@ -19,6 +19,22 @@ public class Config {
                     Config::validateItemName
             );
 
+    public static final ModConfigSpec.IntValue COBBLE_DOLLARS_REPEAT_TRAINER_REWARD = BUILDER
+            .comment("Bonus Cobble Dollars awarded only for defeating a non-boss CobbleBash gym trainer in an already-completed gym when Cobble Dollars is installed.")
+            .defineInRange("cobbleDollarsRepeatTrainerReward", 500, 0, Integer.MAX_VALUE);
+
+    public static final ModConfigSpec.IntValue COBBLE_DOLLARS_REPEAT_BOSS_REWARD = BUILDER
+            .comment("Bonus Cobble Dollars awarded only for defeating a CobbleBash gym leader in an already-completed gym when Cobble Dollars is installed.")
+            .defineInRange("cobbleDollarsRepeatBossReward", 1500, 0, Integer.MAX_VALUE);
+
+    public static final ModConfigSpec.DoubleValue REPEAT_CLEAR_TRAINER_XP_MULTIPLIER = BUILDER
+            .comment("Multiplier applied to Cobblemon battle XP earned from non-boss CobbleBash trainers on repeat clears.")
+            .defineInRange("repeatClearTrainerXpMultiplier", 1.2D, 1.0D, 100.0D);
+
+    public static final ModConfigSpec.DoubleValue REPEAT_CLEAR_BOSS_XP_MULTIPLIER = BUILDER
+            .comment("Multiplier applied to Cobblemon battle XP earned from CobbleBash gym leaders, Elite Four members, and the Champion on repeat clears.")
+            .defineInRange("repeatClearBossXpMultiplier", 1.5D, 1.0D, 100.0D);
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     public static boolean isGymBlacklisted(ItemStack stack) {
