@@ -231,7 +231,7 @@ public class CobbleBash {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> COBBLEBASH_TAB = CREATIVE_MODE_TABS.register("cobblebash", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.cobblebash"))
-            .withTabsBefore(CreativeModeTabs.COMBAT)
+            .withTabsAfter(CreativeModeTabs.SPAWN_EGGS)
             .icon(() -> TRAINING_SIMULATOR_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(TRAINING_SIMULATOR_ITEM.get());

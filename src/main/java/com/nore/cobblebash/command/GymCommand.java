@@ -59,18 +59,9 @@ public class GymCommand {
     private static final Map<String, UUID> DEBUG_SLOT_RESERVATIONS = new HashMap<>();
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
+        var cobbleBashRoot = Commands.literal("cobblebash")
+                .requires(source -> source.hasPermission(2));
         var gymRoot = Commands.literal("gym");
-
-        // Keeper/admin commands
-        gymRoot.then(Commands.literal("test")
-                .executes(context -> {
-                    context.getSource().sendSuccess(
-                            () -> Component.literal("CobbleBash gym command works."),
-                            false
-                    );
-                    return 1;
-                })
-        );
 
         var enterNode = Commands.literal("enter");
         for (GymType type : GymType.values()) {
@@ -102,90 +93,11 @@ public class GymCommand {
         }
         gymRoot.then(completeNode);
 
-        gymRoot.then(Commands.literal("exit")
-                .executes(context -> exitGym(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("leave")
-                .executes(context -> leaveGym(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("elite4")
-                .requires(source -> source.hasPermission(2))
-                .executes(context -> enterEliteFour(context.getSource(), true))
-        );
-
-        // Temporary/debug commands
-        gymRoot.then(Commands.literal("debug")
-                .executes(context -> debugProgress(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("beacon_debug")
-                .executes(context -> debugBeaconAuras(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("beacon_pulse_debug")
-                .executes(context -> toggleBeaconPulseDebug(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("beacon_visualize")
-                .executes(context -> visualizeBeaconAuras(context.getSource()))
-        );
-
         gymRoot.then(Commands.literal("advance")
                 .executes(context -> advanceGym(context.getSource()))
         );
 
-        gymRoot.then(Commands.literal("rct_debug")
-                .executes(context -> debugRct(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("rct_register")
-                .executes(context -> registerRct(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("rct_get")
-                .executes(context -> getRct(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("rct_battle")
-                .executes(context -> startRctBattle(context.getSource()))
-        );
-
-        gymRoot.then(Commands.literal("slot_debug")
-                .then(Commands.literal("status")
-                        .executes(context -> debugSlotStatus(context.getSource())))
-                .then(Commands.literal("reserve")
-                        .then(Commands.argument("label", StringArgumentType.word())
-                                .executes(context -> reserveDebugSlot(
-                                        context.getSource(),
-                                        StringArgumentType.getString(context, "label")
-                                ))))
-                .then(Commands.literal("release")
-                        .then(Commands.argument("label", StringArgumentType.word())
-                                .executes(context -> releaseDebugSlot(
-                                        context.getSource(),
-                                        StringArgumentType.getString(context, "label")
-                                ))))
-        );
-
-        gymRoot.then(Commands.literal("trainer_debug")
-                .requires(source -> source.hasPermission(2))
-                .then(Commands.literal("count")
-                        .executes(context -> debugTrainerEntities(context.getSource())))
-                .then(Commands.literal("cleanup")
-                        .executes(context -> cleanupTrainerEntities(context.getSource())))
-                .then(Commands.literal("kill_one")
-                        .then(trainerDebugTarget(GymCommand::discardOneTrainerDisplay))
-                        .then(Commands.literal("boss")
-                                .executes(context -> discardOneTrainerDisplay(context.getSource(), GymTrainerUnit.BOSS))))
-                .then(Commands.literal("kill_all")
-                        .then(trainerDebugTarget(GymCommand::discardTrainerDisplays))
-                        .then(Commands.literal("boss")
-                                .executes(context -> discardTrainerDisplays(context.getSource(), GymTrainerUnit.BOSS))))
-        );
-
-        dispatcher.register(gymRoot);
+        dispatcher.register(cobbleBashRoot.then(gymRoot));
     }
 
     private static int enterGym(CommandSourceStack source, String gymType) {
