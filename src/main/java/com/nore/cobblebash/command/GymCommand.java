@@ -18,6 +18,7 @@ import com.nore.cobblebash.instance.GymInstanceManager;
 import com.nore.cobblebash.instance.GymSlotPosition;
 import com.nore.cobblebash.integration.CobbleDollarsCompat;
 import com.nore.cobblebash.progress.GymProgressManager;
+import com.nore.cobblebash.progress.GymCacheMigrationData;
 import com.nore.cobblebash.progress.GymRewardData;
 import com.nore.cobblebash.progress.GymReturnData;
 import com.nore.cobblebash.progress.PlayerGymProgress;
@@ -154,11 +155,16 @@ public class GymCommand {
 
         progress.setActiveGymType(instance.getGymType());
 
-        String mode = instance.isRepeatClear() ? "REPEAT" : "FIRST CLEAR";
         int[] instanceLevels = instance.getTrainerLevels();
         BlockPos origin = GymSlotPosition.getOriginForSlot(instance.getSlotId());
         BlockPos playerSpawn = GymPlatformBuilder.getPlayerSpawn(origin, instance.getGymType());
 
+        GymCacheMigrationData.get(player.server).migrateGymSlotIfNeeded(
+                gymLevel,
+                instance.getGymType(),
+                instance.getSlotId(),
+                origin
+        );
         GymPlatformBuilder.buildGym(gymLevel, origin, instance.getGymType(), instance.getSlotId(), instanceLevels);
 
         player.teleportTo(
@@ -170,20 +176,6 @@ public class GymCommand {
                 GymPlatformBuilder.getPlayerSpawnPitch(instance.getGymType(), player.getXRot())
         );
         player.setGameMode(GameType.ADVENTURE);
-
-        sendSuccess(
-                player,
-                source,
-                "Entering " + instance.getGymType()
-                        + " gym [" + mode + "]. Slot = "
-                        + instance.getSlotId()
-                        + ". Origin = "
-                        + formatPos(origin)
-                        + ". Trainer levels: {"
-                        + instanceLevels[0] + ", "
-                        + instanceLevels[1] + ", "
-                        + instanceLevels[2] + "}"
-        );
 
         CobbleBashCriteriaTriggers.triggerGymEntered(player);
         return 1;
@@ -236,6 +228,12 @@ public class GymCommand {
         progress.setActiveGymType(EliteFourStructure.GYM_TYPE);
 
         BlockPos origin = GymSlotPosition.getOriginForSlot(instance.getSlotId());
+        GymCacheMigrationData.get(player.server).migrateGymSlotIfNeeded(
+                gymLevel,
+                EliteFourStructure.GYM_TYPE,
+                instance.getSlotId(),
+                origin
+        );
         EliteFourStructure.build(gymLevel, origin, instance.getSlotId());
         BlockPos playerSpawn = EliteFourStructure.getPlayerSpawn(gymLevel, origin);
 
@@ -248,16 +246,6 @@ public class GymCommand {
                 0.0F
         );
         player.setGameMode(GameType.ADVENTURE);
-
-        sendSuccess(
-                player,
-                source,
-                "Entering Elite Four. Slot = "
-                        + instance.getSlotId()
-                        + ". Origin = "
-                        + formatPos(origin)
-                        + "."
-        );
 
         return 1;
     }
@@ -885,7 +873,6 @@ public class GymCommand {
                 && instance.isEliteFourChampionUnlocked()) {
             giveOrDrop(player, new ItemStack(CobbleBash.CHAMPION_UPGRADE_SMITHING_TEMPLATE.get()));
             player.sendSystemMessage(Component.literal("Received a Champion Upgrade Smithing Template."));
-            player.sendSystemMessage(Component.literal("Elite Four Champion defeated. Exit flow is ready for the next implementation pass."));
             return;
         }
 

@@ -13,7 +13,7 @@
             "name": "Balanced Ice Leader",
             "pokemon": [
                 {
-                    "species": "Alolan Ninetales",
+                    "species": "Ninetales",
                     "ability": "Snow Warning",
                     "held_item": "Light Clay",
                     "moves": [
@@ -21,6 +21,9 @@
                         "Freeze-Dry",
                         "Moonblast",
                         "Encore"
+                    ],
+                    "aspects": [
+                        "alolan"
                     ]
                 },
                 {
@@ -68,7 +71,7 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Wash",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "None",
                     "moves": [
@@ -76,6 +79,9 @@
                         "Volt Switch",
                         "Will-O-Wisp",
                         "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
                     ]
                 }
             ]

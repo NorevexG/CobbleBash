@@ -13,7 +13,7 @@
             "name": "Hail Core",
             "pokemon": [
                 {
-                    "species": "Alolan Ninetales",
+                    "species": "Ninetales",
                     "ability": "Snow Warning",
                     "held_item": "Light Clay",
                     "moves": [
@@ -21,6 +21,9 @@
                         "Freeze-Dry",
                         "Moonblast",
                         "Encore"
+                    ],
+                    "aspects": [
+                        "alolan"
                     ]
                 },
                 {

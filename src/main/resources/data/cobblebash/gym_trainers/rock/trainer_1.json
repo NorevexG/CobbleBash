@@ -35,14 +35,14 @@
                     ]
                 },
                 {
-                    "species": "Lycanroc",
-                    "ability": "Sand Rush",
+                    "species": "Golem",
+                    "ability": "Sturdy",
                     "held_item": "None",
                     "moves": [
                         "Stone Edge",
-                        "Accelerock",
-                        "Drill Run",
-                        "Swords Dance"
+                        "Earthquake",
+                        "Rock Polish",
+                        "Explosion"
                     ]
                 },
                 {

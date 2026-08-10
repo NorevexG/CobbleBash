@@ -13,7 +13,7 @@
             "name": "Balanced Electric Leader",
             "pokemon": [
                 {
-                    "species": "Rotom-Wash",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "Leftovers",
                     "moves": [
@@ -21,6 +21,9 @@
                         "Volt Switch",
                         "Will-O-Wisp",
                         "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
                     ]
                 },
                 {
@@ -92,11 +95,11 @@
                         "Thunderbolt",
                         "Shadow Ball",
                         "Volt Switch",
-                        "Signal Beam"
+                        "Thunder Wave"
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "Leftovers",
                     "moves": [
@@ -104,6 +107,9 @@
                         "Volt Switch",
                         "Thunderbolt",
                         "Will-O-Wisp"
+                    ],
+                    "aspects": [
+                        "heat-appliance"
                     ]
                 },
                 {

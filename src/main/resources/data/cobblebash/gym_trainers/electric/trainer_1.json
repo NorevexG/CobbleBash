@@ -46,14 +46,14 @@
                     ]
                 },
                 {
-                    "species": "Heliolisk",
-                    "ability": "Dry Skin",
+                    "species": "Jolteon",
+                    "ability": "Volt Absorb",
                     "held_item": "Life Orb",
                     "moves": [
                         "Thunderbolt",
-                        "Surf",
                         "Volt Switch",
-                        "Hyper Voice"
+                        "Shadow Ball",
+                        "Quick Attack"
                     ]
                 }
             ]

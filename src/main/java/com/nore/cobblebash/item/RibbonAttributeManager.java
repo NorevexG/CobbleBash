@@ -104,7 +104,7 @@ public final class RibbonAttributeManager {
                     addPokemonTooltip(bonuses, party.get(slot), multiplier);
                 }
             }
-        } catch (RuntimeException exception) {
+        } catch (Exception exception) {
             CobbleBash.LOGGER.warn("Failed to calculate Champion/Trainer Ribbon tooltip bonuses.", exception);
         }
 
@@ -168,7 +168,7 @@ public final class RibbonAttributeManager {
                     }
                 }
             }
-        } catch (RuntimeException exception) {
+        } catch (Exception exception) {
             CobbleBash.LOGGER.warn("Failed to calculate Champion/Trainer Ribbon modifiers.", exception);
         }
 

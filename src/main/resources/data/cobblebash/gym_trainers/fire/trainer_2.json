@@ -107,7 +107,10 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
+                    "aspects": [
+                        "heat-appliance"
+                    ],
                     "ability": "Levitate",
                     "held_item": "None",
                     "moves": [
@@ -146,7 +149,10 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
+                    "aspects": [
+                        "heat-appliance"
+                    ],
                     "ability": "Levitate",
                     "held_item": "Leftovers",
                     "moves": [

@@ -6,16 +6,21 @@ import net.minecraft.world.level.Level;
 
 import java.util.ArrayDeque;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Queue;
 import java.util.UUID;
+
+import com.nore.cobblebash.gym.GymType;
+import com.nore.cobblebash.structure.EliteFourStructure;
 
 public class GymInstanceManager {
     private static final Map<UUID, GymInstance> ACTIVE_BY_PLAYER = new HashMap<>();
     private static final Map<Integer, GymInstance> ACTIVE_BY_SLOT = new HashMap<>();
     private static final Map<String, Queue<Integer>> FREE_SLOTS_BY_GYM = new HashMap<>();
+    private static final Map<String, Integer> PRIMARY_SLOTS_BY_GYM = createPrimarySlots();
 
-    private static int nextSlotId = 0;
+    private static int nextOverflowSlotId = PRIMARY_SLOTS_BY_GYM.size();
 
     public static GymInstance createOrGet(
             UUID playerId,
@@ -89,15 +94,32 @@ public class GymInstanceManager {
     }
 
     public static int getNextSlotId() {
-        return nextSlotId;
+        return nextOverflowSlotId;
     }
 
     private static int getReusableSlot(String gymType) {
         Queue<Integer> freeSlots = FREE_SLOTS_BY_GYM.get(gymType);
-        if (freeSlots != null && !freeSlots.isEmpty()) {
-            return freeSlots.poll();
+        while (freeSlots != null && !freeSlots.isEmpty()) {
+            int slotId = freeSlots.poll();
+            if (!ACTIVE_BY_SLOT.containsKey(slotId)) {
+                return slotId;
+            }
         }
 
-        return nextSlotId++;
+        Integer primarySlot = PRIMARY_SLOTS_BY_GYM.get(gymType);
+        if (primarySlot != null && !ACTIVE_BY_SLOT.containsKey(primarySlot)) {
+            return primarySlot;
+        }
+
+        return nextOverflowSlotId++;
+    }
+
+    private static Map<String, Integer> createPrimarySlots() {
+        Map<String, Integer> slots = new LinkedHashMap<>();
+        for (GymType type : GymType.values()) {
+            slots.put(type.getId(), slots.size());
+        }
+        slots.put(EliteFourStructure.GYM_TYPE, slots.size());
+        return Map.copyOf(slots);
     }
 }

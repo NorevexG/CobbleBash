@@ -61,7 +61,7 @@
                     ]
                 },
                 {
-                    "species": "Rotom Wash",
+                    "species": "Rotom",
                     "level": 96,
                     "ability": "Levitate",
                     "held_item": "Leftovers",
@@ -70,6 +70,9 @@
                         "Volt Switch",
                         "Will-O-Wisp",
                         "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
                     ]
                 },
                 {

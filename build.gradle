@@ -113,6 +113,8 @@ dependencies {
 
     runtimeOnly files("libs/kotlinforforge-5.11.0-all.jar")
     runtimeOnly files("libs/architectury-13.0.8-neoforge.jar")
+    // Uncomment locally when testing add-on Cobblemon species in the dev client.
+    // localRuntime files("libs/Cobblemon AFP 1.9.2-1.21.1-NeoForge-NoGEB.jar")
     // Uncomment locally when testing Cobble Dollars repeat-clear payouts in-dev.
     // localRuntime files("libs/CobbleDollars-neoforge-2.0.0+Beta-5.1+1.21.1.jar")
 

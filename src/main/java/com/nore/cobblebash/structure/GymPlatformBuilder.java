@@ -54,6 +54,7 @@ import java.util.Objects;
 
 public class GymPlatformBuilder {
     private static final String TRAINER_ENTITY_TAG = "cobblebash_rct_trainer";
+    private static final int CLEAR_FLAGS = Block.UPDATE_ALL | Block.UPDATE_SUPPRESS_DROPS;
     private static final int PLACE_STRUCTURE_FLAGS = Block.UPDATE_ALL;
     private static final int PRESERVE_CONNECTION_FLAGS = Block.UPDATE_CLIENTS | Block.UPDATE_KNOWN_SHAPE | Block.UPDATE_SUPPRESS_DROPS;
     private static final int STRUCTURE_CLEANUP_PADDING = 8;
@@ -132,6 +133,21 @@ public class GymPlatformBuilder {
         }
 
         clearTestPlatform(level, origin);
+    }
+
+    public static void clearCachedGymBlocks(ServerLevel level, BlockPos origin, String gymType) {
+        GymStructureDefinition definition = GymStructureDefinition.get(gymType);
+        if (definition == null) {
+            clearTestPlatform(level, origin);
+            return;
+        }
+
+        AABB cleanupBox = getCachedSlotCleanupBox(level, origin);
+        clearSlotEntities(level, cleanupBox);
+        clearDroppedItems(level, cleanupBox);
+        clearBlocks(level, cleanupBox);
+        clearSlotEntities(level, cleanupBox);
+        clearDroppedItems(level, cleanupBox);
     }
 
     public static void clearTestPlatform(ServerLevel level, BlockPos origin) {
@@ -233,6 +249,23 @@ public class GymPlatformBuilder {
         clearDroppedItems(level, cleanupBox);
         clearSlotEntities(level, cleanupBox);
         clearDroppedItems(level, cleanupBox);
+    }
+
+    private static void clearBlocks(ServerLevel level, AABB box) {
+        BlockPos min = BlockPos.containing(box.minX, box.minY, box.minZ);
+        BlockPos max = BlockPos.containing(box.maxX, box.maxY, box.maxZ);
+        BlockPos.MutableBlockPos cursor = new BlockPos.MutableBlockPos();
+
+        for (int x = min.getX(); x <= max.getX(); x++) {
+            for (int y = min.getY(); y <= max.getY(); y++) {
+                for (int z = min.getZ(); z <= max.getZ(); z++) {
+                    cursor.set(x, y, z);
+                    if (!level.getBlockState(cursor).isAir()) {
+                        level.setBlock(cursor, Blocks.AIR.defaultBlockState(), CLEAR_FLAGS);
+                    }
+                }
+            }
+        }
     }
 
     private static StructureTemplate getStructureTemplate(ServerLevel level, GymStructureDefinition definition) {
@@ -417,7 +450,7 @@ public class GymPlatformBuilder {
         String trainerId = RctApiProbe.getTrainerId(gymType, slotId, trainerIdPart);
         discardTrainerEntities(level, origin, trainerId);
         discardNearbyTrainerDisplays(level, pos);
-        CobbleBash.LOGGER.info(
+        CobbleBash.LOGGER.debug(
                 "Spawning gym trainer {} at {} in {} gym slot {} with level {} and yaw {}.",
                 trainerId,
                 pos.toShortString(),
@@ -464,7 +497,7 @@ public class GymPlatformBuilder {
         }
 
         scheduleTrainerCleanup(level, origin, gymType, slotId, trainerIdPart, pos);
-        CobbleBash.LOGGER.info("Spawned and attached trainer entity {} with entity UUID {}.", trainerId, entity.getUUID());
+        CobbleBash.LOGGER.debug("Spawned and attached trainer entity {} with entity UUID {}.", trainerId, entity.getUUID());
         return true;
     }
 
@@ -539,7 +572,7 @@ public class GymPlatformBuilder {
                         createRolledDisplayName(level, "Gym Leader", bossModel, usedNames)
                 )
         );
-        CobbleBash.LOGGER.info(
+        CobbleBash.LOGGER.debug(
                 "Gym visual roll for {} slot {}: trainer_1={} model {}, texture {}; trainer_2={} model {}, texture {}; boss={} model {}, texture {}.",
                 gymType,
                 slotId,
@@ -686,7 +719,7 @@ public class GymPlatformBuilder {
             return;
         }
 
-        CobbleBash.LOGGER.info(
+        CobbleBash.LOGGER.debug(
                 "Gym trainer verification passed for {} at {}.",
                 trainerId,
                 entity.blockPosition().toShortString()
@@ -1160,6 +1193,26 @@ public class GymPlatformBuilder {
                 max.getX() + STRUCTURE_CLEANUP_PADDING,
                 max.getY() + STRUCTURE_CLEANUP_PADDING,
                 max.getZ() + STRUCTURE_CLEANUP_PADDING
+        );
+    }
+
+    private static AABB getCachedSlotCleanupBox(ServerLevel level, BlockPos origin) {
+        BlockPos min = origin.offset(-STRUCTURE_CLEANUP_PADDING, -STRUCTURE_CLEANUP_PADDING, -STRUCTURE_CLEANUP_PADDING);
+        BlockPos max = origin.offset(STRUCTURE_CLEANUP_PADDING, STRUCTURE_CLEANUP_PADDING, STRUCTURE_CLEANUP_PADDING);
+
+        for (GymStructureDefinition definition : GymStructureDefinition.values()) {
+            AABB box = getStructureCleanupBox(level, origin, definition);
+            min = min(min, BlockPos.containing(box.minX, box.minY, box.minZ));
+            max = max(max, BlockPos.containing(box.maxX, box.maxY, box.maxZ));
+        }
+
+        return new AABB(
+                min.getX(),
+                min.getY(),
+                min.getZ(),
+                max.getX(),
+                max.getY(),
+                max.getZ()
         );
     }
 

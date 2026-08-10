@@ -115,6 +115,18 @@ public class EliteFourStructure {
         clearEntities(level, cleanupBox);
     }
 
+    public static void clearCachedBlocks(ServerLevel level, BlockPos origin) {
+        StructureTemplate template = getTemplate(level);
+        if (template == null) {
+            return;
+        }
+
+        AABB cleanupBox = getCleanupBox(origin, template);
+        clearEntities(level, cleanupBox);
+        clearBlocks(level, cleanupBox);
+        clearEntities(level, cleanupBox);
+    }
+
     public static BlockPos getPlayerSpawn(ServerLevel level, BlockPos origin) {
         StructureTemplate template = getTemplate(level);
         if (template == null) {
@@ -353,6 +365,23 @@ public class EliteFourStructure {
                 origin.getY() + size.getY() + CLEANUP_PADDING,
                 origin.getZ() + size.getZ() + CLEANUP_PADDING
         );
+    }
+
+    private static void clearBlocks(ServerLevel level, AABB box) {
+        BlockPos min = BlockPos.containing(box.minX, box.minY, box.minZ);
+        BlockPos max = BlockPos.containing(box.maxX, box.maxY, box.maxZ);
+        BlockPos.MutableBlockPos cursor = new BlockPos.MutableBlockPos();
+
+        for (int x = min.getX(); x <= max.getX(); x++) {
+            for (int y = min.getY(); y <= max.getY(); y++) {
+                for (int z = min.getZ(); z <= max.getZ(); z++) {
+                    cursor.set(x, y, z);
+                    if (!level.getBlockState(cursor).isAir()) {
+                        level.setBlock(cursor, Blocks.AIR.defaultBlockState(), CLEAR_FLAGS);
+                    }
+                }
+            }
+        }
     }
 
     private static void clearGateBox(ServerLevel level, BlockPos origin, GateBox box) {

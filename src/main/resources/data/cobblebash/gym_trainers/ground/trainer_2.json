@@ -107,7 +107,7 @@
                     ]
                 },
                 {
-                    "species": "Landorus-Therian",
+                    "species": "Landorus",
                     "ability": "Intimidate",
                     "held_item": "None",
                     "moves": [
@@ -115,6 +115,9 @@
                         "U-turn",
                         "Stone Edge",
                         "Defog"
+                    ],
+                    "aspects": [
+                        "therian-forme"
                     ]
                 },
                 {

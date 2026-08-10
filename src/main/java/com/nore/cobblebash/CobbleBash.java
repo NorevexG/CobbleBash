@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
+import com.cobblemon.mod.common.item.group.CobblemonItemGroups;
 import com.nore.cobblebash.beacon.ChampionBeaconBlock;
 import com.nore.cobblebash.beacon.ChampionBeaconBlockEntity;
 import com.nore.cobblebash.beacon.ChampionBeaconMenu;
@@ -28,7 +29,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SmithingTemplateItem;
 import net.minecraft.world.entity.EntityType;
@@ -48,7 +48,6 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -231,7 +230,7 @@ public class CobbleBash {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> COBBLEBASH_TAB = CREATIVE_MODE_TABS.register("cobblebash", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.cobblebash"))
-            .withTabsAfter(CreativeModeTabs.SPAWN_EGGS)
+            .withTabsBefore(CobblemonItemGroups.getAGRICULTURE_KEY())
             .icon(() -> TRAINING_SIMULATOR_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(TRAINING_SIMULATOR_ITEM.get());
@@ -273,16 +272,11 @@ public class CobbleBash {
         NeoForge.EVENT_BUS.register(new GymEventHandler());
         NeoForge.EVENT_BUS.register(new LeagueRepresentativeEvents());
 
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
-
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-        // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
         RctApiProbe.logLoaded();
         GymEventHandler.registerRctListeners();
         event.enqueueWork(CobbleBashStats::bootstrap);
@@ -291,13 +285,6 @@ public class CobbleBash {
     private static void registerEntityAttributes(EntityAttributeCreationEvent event) {
         event.put(GYM_TRAINER.get(), GymTrainerEntity.createAttributes().build());
         event.put(GYM_LEADER.get(), GymLeaderEntity.createAttributes().build());
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(TRAINING_SIMULATOR_ITEM);
-            event.accept(CHAMPION_BEACON_ITEM);
-        }
     }
 
     @SubscribeEvent

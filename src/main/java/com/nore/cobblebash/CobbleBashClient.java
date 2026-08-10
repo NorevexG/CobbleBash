@@ -65,9 +65,6 @@ public class CobbleBashClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
-        // Some client setup code
-        CobbleBash.LOGGER.info("HELLO FROM CLIENT SETUP");
-        CobbleBash.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         event.enqueueWork(() -> BlockEntityRenderers.register(
                 CobbleBash.CHAMPION_BEACON_BLOCK_ENTITY.get(),
                 ChampionBeaconRenderer::new

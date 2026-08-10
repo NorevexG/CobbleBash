@@ -150,12 +150,14 @@ public class RctTrainerDataLoader {
 
     public static class PokemonData {
         private static final Pattern NON_BATTLE_ID_CHARACTER = Pattern.compile("[^a-z0-9]");
+        private static final Pattern NON_ASPECT_CHARACTER = Pattern.compile("[^a-z0-9_./-]");
         private static final Pattern NON_RESOURCE_ID_CHARACTER = Pattern.compile("[^a-z0-9_./-]");
         private static final Pattern REPEATED_UNDERSCORES = Pattern.compile("_+");
         private String species;
         private List<String> moves;
         private String ability;
         private String held_item;
+        private List<String> aspects;
         private Integer level;
 
         public PokemonData() {
@@ -169,7 +171,7 @@ public class RctTrainerDataLoader {
         }
 
         public String species() {
-            return normalizeBattleId(species);
+            return normalizeSpeciesId(species);
         }
 
         public List<String> moves() {
@@ -191,6 +193,18 @@ public class RctTrainerDataLoader {
             return normalizeResourceId(held_item);
         }
 
+        public List<String> aspects() {
+            if (aspects == null) {
+                return List.of();
+            }
+
+            return aspects.stream()
+                    .map(PokemonData::normalizeAspect)
+                    .filter(aspect -> !aspect.isBlank())
+                    .distinct()
+                    .toList();
+        }
+
         public int levelOr(int fallbackLevel) {
             return level == null ? fallbackLevel : Math.max(1, Math.min(100, level));
         }
@@ -199,7 +213,8 @@ public class RctTrainerDataLoader {
             return !species().isBlank()
                     && !moves().isEmpty()
                     && moves().size() <= 4
-                    && isValidOptionalResourceId(held_item);
+                    && isValidOptionalResourceId(held_item)
+                    && isValidSpeciesId(species);
         }
 
         private static boolean isValidOptionalResourceId(String value) {
@@ -213,6 +228,38 @@ public class RctTrainerDataLoader {
             }
 
             return NON_BATTLE_ID_CHARACTER.matcher(value.trim().toLowerCase(Locale.ROOT)).replaceAll("");
+        }
+
+        private static boolean isValidSpeciesId(String value) {
+            String normalized = normalizeSpeciesId(value);
+            return !normalized.isEmpty()
+                    && (normalized.indexOf(':') < 0 || ResourceLocation.tryParse(normalized) != null);
+        }
+
+        private static String normalizeSpeciesId(String value) {
+            if (isEmptyOptionalValue(value)) {
+                return "";
+            }
+
+            String trimmed = value.trim().toLowerCase(Locale.ROOT);
+            int namespaceSeparator = trimmed.indexOf(':');
+            if (namespaceSeparator >= 0) {
+                return normalizeResourceId(trimmed);
+            }
+
+            return normalizeBattleId(trimmed);
+        }
+
+        private static String normalizeAspect(String value) {
+            if (isEmptyOptionalValue(value)) {
+                return "";
+            }
+
+            String normalized = value.trim().toLowerCase(Locale.ROOT)
+                    .replace(' ', '_')
+                    .replace('-', '_');
+            normalized = NON_ASPECT_CHARACTER.matcher(normalized).replaceAll("_");
+            return REPEATED_UNDERSCORES.matcher(normalized).replaceAll("_");
         }
 
         private static String normalizeResourceId(String value) {

@@ -13,7 +13,7 @@
             "name": "Volt Core",
             "pokemon": [
                 {
-                    "species": "Rotom-Wash",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "Leftovers",
                     "moves": [
@@ -21,6 +21,9 @@
                         "Volt Switch",
                         "Will-O-Wisp",
                         "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
                     ]
                 },
                 {
@@ -96,7 +99,7 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "None",
                     "moves": [
@@ -104,6 +107,9 @@
                         "Volt Switch",
                         "Thunderbolt",
                         "Will-O-Wisp"
+                    ],
+                    "aspects": [
+                        "heat-appliance"
                     ]
                 },
                 {
@@ -146,7 +152,7 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Wash",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "Leftovers",
                     "moves": [
@@ -154,6 +160,9 @@
                         "Volt Switch",
                         "Will-O-Wisp",
                         "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
                     ]
                 },
                 {

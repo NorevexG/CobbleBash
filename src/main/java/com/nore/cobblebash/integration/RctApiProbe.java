@@ -3,6 +3,8 @@ package com.nore.cobblebash.integration;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import com.gitlab.srcmc.rctapi.api.RCTApi;
+import com.gitlab.srcmc.rctapi.api.models.PokemonModel;
+import com.gitlab.srcmc.rctapi.api.models.TrainerModel;
 import com.gitlab.srcmc.rctapi.api.trainer.TrainerNPC;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.server.level.ServerPlayer;
@@ -47,11 +49,12 @@ public class RctApiProbe {
         String trainerId = getTrainerId(gymType, slotId, trainerIdPart);
         registry.unregisterById(trainerId);
 
+        TrainerModel trainerModel = trainer.get();
         try {
-            registry.registerNPC(trainerId, trainer.get());
+            registry.registerNPC(trainerId, trainerModel);
         } catch (RuntimeException exception) {
             registry.unregisterById(trainerId);
-            LOGGER.error("Failed to register RCT trainer {} from JSON.", trainerId, exception);
+            LOGGER.error("Failed to register RCT trainer {} from JSON. Team: {}", trainerId, describeTeam(trainerModel), exception);
             return false;
         }
 
@@ -125,6 +128,28 @@ public class RctApiProbe {
 
     public static String getTrainerDisplayName(net.minecraft.server.MinecraftServer server, String gymType, String trainerIdPart) {
         return RctGymTrainerFactory.getTrainerDisplayName(server, gymType, trainerIdPart).orElse("Gym Trainer");
+    }
+
+    private static String describeTeam(TrainerModel trainer) {
+        if (trainer == null || trainer.getTeam() == null) {
+            return "empty";
+        }
+
+        StringBuilder description = new StringBuilder();
+        for (PokemonModel pokemon : trainer.getTeam()) {
+            if (!description.isEmpty()) {
+                description.append("; ");
+            }
+            description
+                    .append(pokemon.getSpecies())
+                    .append(" lv").append(pokemon.getLevel())
+                    .append(" ability=").append(pokemon.getAbility())
+                    .append(" heldItems=").append(java.util.Arrays.toString(pokemon.getHeldItems()))
+                    .append(" aspects=").append(pokemon.getAspects())
+                    .append(" moves=").append(pokemon.getMoveset());
+        }
+
+        return description.toString();
     }
 
     public static GymTrainerRef getGymTrainerRef(LivingEntity entity) {
