@@ -29,8 +29,8 @@ public class TrainingSimulatorScreen extends AbstractContainerScreen<TrainingSim
     private static final int SCROLL_THUMB_HEIGHT = 58;
     private static final double WHEEL_SCROLL_PIXELS = 24.0D;
     private static final double SCROLL_RESPONSE = 18.0D;
-    private static final SoundEvent PC_CLICK = SoundEvent.createVariableRangeEvent(
-            ResourceLocation.fromNamespaceAndPath("cobblemon", "pc.click")
+    private static final SoundEvent GUI_CLICK = SoundEvent.createVariableRangeEvent(
+            ResourceLocation.fromNamespaceAndPath("cobblemon", "gui.click")
     );
     private static final SoundEvent PC_UNLOCK = SoundEvent.createVariableRangeEvent(
             ResourceLocation.fromNamespaceAndPath("cobblemon", "pc.wallpaper.unlock")
@@ -59,7 +59,7 @@ public class TrainingSimulatorScreen extends AbstractContainerScreen<TrainingSim
         observedUnlockRevision = menu.getUnlockRevision();
         if (!openingSoundPlayed) {
             openingSoundPlayed = true;
-            playComputerClick();
+            playGuiClick();
         }
     }
 
@@ -111,12 +111,12 @@ public class TrainingSimulatorScreen extends AbstractContainerScreen<TrainingSim
         int y = (int) mouseY - topPos;
         if (pendingChallenge >= 0) {
             if (inside(x, y, 93, 155, 64, 20)) {
-                playComputerClick();
+                playGuiClick();
                 pendingChallenge = -1;
                 return true;
             }
             if (inside(x, y, 163, 155, 64, 20) && canChallenge(pendingChallenge)) {
-                playComputerClick();
+                playGuiClick();
                 minecraft.gameMode.handleInventoryButtonClick(menu.containerId, pendingChallenge);
                 pendingChallenge = -1;
                 return true;
@@ -125,12 +125,12 @@ public class TrainingSimulatorScreen extends AbstractContainerScreen<TrainingSim
         }
 
         if (inside(x, y, 68, 39, 82, 15)) {
-            playComputerClick();
+            playGuiClick();
             tab = Tab.GYMS;
             return true;
         }
         if (inside(x, y, 158, 39, 94, 15)) {
-            playComputerClick();
+            playGuiClick();
             tab = Tab.ELITE_FOUR;
             return true;
         }
@@ -139,7 +139,7 @@ public class TrainingSimulatorScreen extends AbstractContainerScreen<TrainingSim
             if (inside(x, y, SCROLL_TRACK_X - 2, GRID_TOP, 8, SCROLL_TRACK_HEIGHT)) {
                 draggingScroll = true;
                 updateScrollFromMouse(y);
-                playComputerClick();
+                playGuiClick();
                 return true;
             }
             for (int index = 0; index < GymType.values().length; index++) {
@@ -147,7 +147,7 @@ public class TrainingSimulatorScreen extends AbstractContainerScreen<TrainingSim
                 int cardY = GRID_TOP + (index / COLUMNS) * ROW_HEIGHT - (int) Math.round(scrollOffset);
                 if (inside(x, y, 16, GRID_TOP, 277, SCROLL_TRACK_HEIGHT)
                         && inside(x, y, cardX, cardY, CARD_WIDTH, CARD_HEIGHT)) {
-                    playComputerClick();
+                    playGuiClick();
                     if (menu.isUnlocked(index)) {
                         pendingChallenge = index;
                     } else if (menu.getDiskCount(index) > 0) {
@@ -157,7 +157,7 @@ public class TrainingSimulatorScreen extends AbstractContainerScreen<TrainingSim
                 }
             }
         } else if (inside(x, y, 43, 67, 234, 83)) {
-            playComputerClick();
+            playGuiClick();
             int challenge = TrainingSimulatorMenu.ELITE_FOUR_BUTTON_ID;
             if (menu.isUnlocked(challenge)) {
                 pendingChallenge = challenge;
@@ -425,8 +425,8 @@ public class TrainingSimulatorScreen extends AbstractContainerScreen<TrainingSim
         }
     }
 
-    private void playComputerClick() {
-        minecraft.getSoundManager().play(SimpleSoundInstance.forUI(PC_CLICK, 1.0F));
+    private void playGuiClick() {
+        minecraft.getSoundManager().play(SimpleSoundInstance.forUI(GUI_CLICK, 1.0F));
     }
 
     private void requestUnlock(int challenge) {
