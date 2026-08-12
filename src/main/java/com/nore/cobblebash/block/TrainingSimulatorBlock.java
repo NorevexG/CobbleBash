@@ -1,8 +1,7 @@
 package com.nore.cobblebash.block;
 
-import com.nore.cobblebash.command.GymCommand;
-import com.nore.cobblebash.item.EliteFourTrainingDiskItem;
-import com.nore.cobblebash.item.TrainingDiskItem;
+import com.nore.cobblebash.CobbleBash;
+import com.nore.cobblebash.simulator.TrainingSimulatorMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
@@ -10,6 +9,8 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -120,47 +121,39 @@ public class TrainingSimulatorBlock extends Block {
             InteractionHand hand,
             BlockHitResult hitResult
     ) {
-        if (state.getValue(HALF) == DoubleBlockHalf.UPPER) {
-            pos = pos.below();
-            state = level.getBlockState(pos);
-            if (!state.is(this) || state.getValue(HALF) != DoubleBlockHalf.LOWER) {
-                return ItemInteractionResult.FAIL;
-            }
+        openSimulator(level, pos, state, player);
+        return ItemInteractionResult.sidedSuccess(level.isClientSide);
+    }
+
+    @Override
+    protected InteractionResult useWithoutItem(
+            BlockState state,
+            Level level,
+            BlockPos pos,
+            Player player,
+            BlockHitResult hitResult
+    ) {
+        openSimulator(level, pos, state, player);
+        return InteractionResult.sidedSuccess(level.isClientSide);
+    }
+
+    private void openSimulator(Level level, BlockPos pos, BlockState state, Player player) {
+        if (level.isClientSide || !(player instanceof ServerPlayer serverPlayer)) {
+            return;
         }
-
-        if (stack.getItem() instanceof EliteFourTrainingDiskItem) {
-            if (level.isClientSide) {
-                return ItemInteractionResult.SUCCESS;
-            }
-
-            if (player instanceof ServerPlayer serverPlayer
-                    && GymCommand.enterEliteFour(serverPlayer, false)) {
-                if (!serverPlayer.getAbilities().instabuild) {
-                    stack.shrink(1);
-                }
-                return ItemInteractionResult.SUCCESS;
-            }
-
-            return ItemInteractionResult.FAIL;
+        BlockPos lowerPos = state.getValue(HALF) == DoubleBlockHalf.UPPER ? pos.below() : pos;
+        BlockState lowerState = level.getBlockState(lowerPos);
+        if (!lowerState.is(this) || lowerState.getValue(HALF) != DoubleBlockHalf.LOWER) {
+            return;
         }
-
-        if (!(stack.getItem() instanceof TrainingDiskItem trainingDisk)) {
-            return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
-        }
-
-        if (level.isClientSide) {
-            return ItemInteractionResult.SUCCESS;
-        }
-
-        if (player instanceof ServerPlayer serverPlayer
-                && GymCommand.enterGym(serverPlayer, trainingDisk.getGymType().getId())) {
-            if (!serverPlayer.getAbilities().instabuild) {
-                stack.shrink(1);
-            }
-            return ItemInteractionResult.SUCCESS;
-        }
-
-        return ItemInteractionResult.FAIL;
+        serverPlayer.openMenu(new SimpleMenuProvider(
+                (containerId, inventory, ignored) -> new TrainingSimulatorMenu(
+                        containerId,
+                        inventory,
+                        net.minecraft.world.inventory.ContainerLevelAccess.create(level, lowerPos)
+                ),
+                CobbleBash.TRAINING_SIMULATOR.get().getName()
+        ));
     }
 
     private static VoxelShape getShapeForState(BlockState state) {

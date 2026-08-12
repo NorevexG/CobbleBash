@@ -22,6 +22,7 @@ import com.nore.cobblebash.progress.GymCacheMigrationData;
 import com.nore.cobblebash.progress.GymRewardData;
 import com.nore.cobblebash.progress.GymReturnData;
 import com.nore.cobblebash.progress.PlayerGymProgress;
+import com.nore.cobblebash.progress.TrainingSimulatorUnlockData;
 import com.nore.cobblebash.stats.CobbleBashStats;
 import com.nore.cobblebash.structure.GymPlatformBuilder;
 import com.nore.cobblebash.util.DelayedTaskScheduler;
@@ -36,6 +37,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.stats.Stats;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.storage.loot.LootParams;
@@ -178,6 +180,7 @@ public class GymCommand {
         player.setGameMode(GameType.ADVENTURE);
 
         CobbleBashCriteriaTriggers.triggerGymEntered(player);
+        player.awardStat(Stats.CUSTOM.get(CobbleBashStats.CHALLENGES_STARTED.get()));
         return 1;
     }
 
@@ -246,6 +249,7 @@ public class GymCommand {
                 0.0F
         );
         player.setGameMode(GameType.ADVENTURE);
+        player.awardStat(Stats.CUSTOM.get(CobbleBashStats.CHALLENGES_STARTED.get()));
 
         return 1;
     }
@@ -265,6 +269,7 @@ public class GymCommand {
 
         boolean alreadyCompleted = progress.hasCompleted(gymType);
         progress.completeGym(gymType);
+        TrainingSimulatorUnlockData.get(player.server).incrementClearCount(player.getUUID(), gymType);
         CobbleBashStats.syncGymsCompleted(player);
         awardTrainerRibbonIfEligible(player, gymType);
         awardEliteFourDiskIfEligible(player, progress);

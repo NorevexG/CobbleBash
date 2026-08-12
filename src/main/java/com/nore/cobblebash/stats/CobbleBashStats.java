@@ -24,9 +24,14 @@ public class CobbleBashStats {
             "gyms_completed",
             () -> GYMS_COMPLETED_ID
     );
+    public static final DeferredHolder<ResourceLocation, ResourceLocation> CHALLENGES_STARTED = CUSTOM_STATS.register(
+            "challenges_started",
+            () -> ResourceLocation.fromNamespaceAndPath(CobbleBash.MODID, "challenges_started")
+    );
 
     public static void bootstrap() {
         Stats.CUSTOM.get(GYMS_COMPLETED.get(), StatFormatter.DEFAULT);
+        Stats.CUSTOM.get(CHALLENGES_STARTED.get(), StatFormatter.DEFAULT);
     }
 
     public static void syncGymsCompleted(ServerPlayer player) {

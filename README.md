@@ -40,6 +40,8 @@ This repository contains the public source code for CobbleBash. The local develo
 
 To build locally, supply the required dependency jars or adjust `build.gradle` to resolve those dependencies from your preferred repositories.
 
+Required local filenames are listed in the `dependencies` block in `build.gradle`. The project uses Java 21; after providing those jars, run `./gradlew build`. On Unix-like systems the wrapper is checked in as executable.
+
 ## License
 
 CobbleBash is licensed under the GNU Lesser General Public License v3.0 only (`LGPL-3.0-only`).

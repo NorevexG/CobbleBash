@@ -61,6 +61,7 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import com.nore.cobblebash.util.DelayedTaskScheduler;
 import com.nore.cobblebash.integration.RctApiProbe;
 import com.nore.cobblebash.stats.CobbleBashStats;
+import com.nore.cobblebash.simulator.TrainingSimulatorMenu;
 
 import java.util.Collections;
 import java.util.EnumMap;
@@ -178,6 +179,10 @@ public class CobbleBash {
     public static final DeferredHolder<MenuType<?>, MenuType<ChampionBeaconMenu>> CHAMPION_BEACON_MENU = MENUS.register(
             "champion_beacon",
             () -> new MenuType<>(ChampionBeaconMenu::new, FeatureFlags.DEFAULT_FLAGS)
+    );
+    public static final DeferredHolder<MenuType<?>, MenuType<TrainingSimulatorMenu>> TRAINING_SIMULATOR_MENU = MENUS.register(
+            "training_simulator",
+            () -> new MenuType<>(TrainingSimulatorMenu::new, FeatureFlags.DEFAULT_FLAGS)
     );
     public static final DeferredItem<ChampionRibbonItem> CHAMPION_RIBBON = ITEMS.register(
             "champion_ribbon",

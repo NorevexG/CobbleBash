@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.1.25'
+    id 'net.neoforged.gradle.userdev' version '7.1.36'
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -109,7 +109,7 @@ dependencies {
     implementation  files("libs/CobbleBadges-neoforge-4.0.0+Beta-1+1.21.1.jar")
     implementation files("libs/curios-neoforge-9.5.1+1.21.1.jar")
     compileOnly files("libs/CobbleDollars-neoforge-2.0.0+Beta-5.1+1.21.1.jar")
-    compileOnly files("libs/kotlin-stdlib-2.3.0.jar")
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib:2.1.20"
 
     runtimeOnly files("libs/kotlinforforge-5.11.0-all.jar")
     runtimeOnly files("libs/architectury-13.0.8-neoforge.jar")

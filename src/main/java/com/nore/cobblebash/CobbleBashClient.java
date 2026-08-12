@@ -25,6 +25,7 @@ import com.nore.cobblebash.client.render.RibbonCurioRenderer;
 import com.nore.cobblebash.client.tooltip.ClientRibbonTooltipComponent;
 import com.nore.cobblebash.client.tooltip.RibbonTooltipComponent;
 import com.nore.cobblebash.elitefour.EliteFourChampionBeamRenderer;
+import com.nore.cobblebash.simulator.TrainingSimulatorScreen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.resources.ResourceLocation;
@@ -124,6 +125,7 @@ public class CobbleBashClient {
     @SubscribeEvent
     static void registerMenuScreens(RegisterMenuScreensEvent event) {
         event.register(CobbleBash.CHAMPION_BEACON_MENU.get(), ChampionBeaconScreen::new);
+        event.register(CobbleBash.TRAINING_SIMULATOR_MENU.get(), TrainingSimulatorScreen::new);
     }
 
     @SubscribeEvent
