@@ -1,49 +1,62 @@
-# CobbleBash
+# CobbleBash Screen
 
-CobbleBash is a Minecraft 1.21.1 NeoForge addon for Cobblemon that adds a private instanced gym progression system, Elite Four challenge, trainer battles, and Cobble Badges progression.
-
-Players enter private gym instances through the Training Simulator, battle two trainers and a gym boss, and earn first-tier Cobble Badges through Cobble Badges integration. Each gym is generated in a custom void dimension, reused where possible, and reset between runs.
+CobbleBash Screen is a Minecraft 1.21.1 NeoForge add-on for CobbleBash 0.1.3. It replaces the Training Simulator interaction with a compact, technology-themed screen without replacing CobbleBash classes, registrations, or resources.
 
 ## Features
 
-- 18 type-themed gyms
-- Elite Four and Champion challenge
-- Private per-player gym instances
-- Trainer 1, Trainer 2, and boss progression
-- Dynamic trainer level scaling based on player gym progress
-- Cobble Badges integration for first-tier badge unlocks
-- Data pack driven trainer teams, moves, held items, abilities, rewards, and dialogue
-- Random trainer and gym leader visual variants
-- Training Simulator block and type Training Disks
-- Trainer Ribbon, Champion Ribbon, Champion Beacon, and Champion Upgrade Smithing Template
-- Advancement and stat support for modpack and quest integration
-- Optional Cobble Dollars repeat-clear compatibility
+- Separate tabs for all 18 gyms and the Elite Four
+- Nine gym cards visible at once with smooth continuous scrolling
+- Permanent per-player challenge unlocks using the original CobbleBash Training Discs
+- Separate unlock and challenge confirmation interactions
+- Elite Four access remains locked behind completion of all 18 gyms
+- Per-gym successful clear counts and total challenges started
+- Cobblemon GUI click and PC unlock sounds
+- English and Simplified Chinese interface translations
 
 ## Requirements
 
 - Minecraft 1.21.1
-- NeoForge 21.1.228 or newer
-- Cobblemon 1.7.3 or newer
-- RadicalCobblemonTrainerAPI 0.15.2-beta or newer
-- Cobblemon Badges 4.0.0 or newer
-- Curios 9.5.1+1.21.1 or newer
+- NeoForge 21.1.234 or newer
+- CobbleBash 0.1.3
+- CobbleBash's own required dependencies
 
-## Optional Compatibility
+The development build expects `libs/cobblebash-0.1.3.jar` and the other local dependency jars declared in `build.gradle`.
 
-- Cobble Dollars 2.0.0 or newer
+## Integration API
 
-Cobble Dollars is optional. CobbleBash should load normally without it installed.
+Other server-side mods can unlock challenges without consuming a disc through `TrainingSimulatorApi`:
 
-## Development Notes
+```java
+TrainingSimulatorApi.unlockGym(player, GymType.FIRE);
+TrainingSimulatorApi.unlockAllGyms(player);
 
-This repository contains the public source code for CobbleBash. The local development build expects dependency jars in a `libs/` folder, but those third-party jars are not included in this repository.
+if (TrainingSimulatorApi.isEliteFourAvailable(player)) {
+    TrainingSimulatorApi.unlockEliteFour(player);
+}
+```
 
-To build locally, supply the required dependency jars or adjust `build.gradle` to resolve those dependencies from your preferred repositories.
+`unlockEliteFour` always preserves CobbleBash's progression order and returns `false` until the player has completed all 18 gyms.
 
-Required local filenames are listed in the `dependencies` block in `build.gradle`. The project uses Java 21; after providing those jars, run `./gradlew build`. On Unix-like systems the wrapper is checked in as executable.
+## Compatibility Design
+
+The add-on opens its menu through NeoForge's block interaction event and calls CobbleBash's public `GymCommand` entry methods. One narrowly scoped Mixin observes successful returns from CobbleBash's private gym completion method so the UI can record repeat clear counts; it does not cancel or alter CobbleBash behavior.
+
+Player UI progress is stored in the overworld data file `cobblebash_screen_training_simulator.dat`. The add-on owns only the `cobblebash_screen` registry and resource namespace.
+
+## Build
+
+Use Java 21 and run:
+
+```shell
+./gradlew build
+```
+
+The output is `build/libs/cobblebash_screen-0.1.0.jar`.
+
+## Author
+
+P1nero
 
 ## License
 
-CobbleBash is licensed under the GNU Lesser General Public License v3.0 only (`LGPL-3.0-only`).
-
-Official license text: https://www.gnu.org/licenses/lgpl-3.0.html
+LGPL-3.0-only

@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.p1nero.cobblebashscreen.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "cobblebash_screen.refmap.json",
+  "mixins": [
+    "GymCommandMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
