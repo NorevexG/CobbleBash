@@ -40,6 +40,28 @@ public final class TrainingSimulatorApi {
                 && data(player).unlock(player.getUUID(), GymType.values().length);
     }
 
+    public static int getGymClearCount(ServerPlayer player, GymType gym) {
+        return data(player).getClearCount(player.getUUID(), gym.getId());
+    }
+
+    public static boolean hasClearedGym(ServerPlayer player, GymType gym) {
+        return getGymClearCount(player, gym) > 0;
+    }
+
+    public static int getClearedGymCount(ServerPlayer player) {
+        int cleared = 0;
+        for (GymType gym : GymType.values()) {
+            if (hasClearedGym(player, gym)) {
+                cleared++;
+            }
+        }
+        return cleared;
+    }
+
+    public static int getChallengesStarted(ServerPlayer player) {
+        return data(player).getChallengesStarted(player.getUUID());
+    }
+
     private static TrainingSimulatorData data(ServerPlayer player) {
         return TrainingSimulatorData.get(player.server);
     }
