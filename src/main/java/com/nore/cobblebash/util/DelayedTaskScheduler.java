@@ -1,5 +1,6 @@
 package com.nore.cobblebash.util;
 
+import com.nore.cobblebash.CobbleBash;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
@@ -11,11 +12,12 @@ public class DelayedTaskScheduler {
     private static final List<ScheduledTask> TASKS = new ArrayList<>();
 
     public static void schedule(int delayTicks, Runnable action) {
-        TASKS.add(new ScheduledTask(delayTicks, action));
+        TASKS.add(new ScheduledTask(Math.max(0, delayTicks), action));
     }
 
     @SubscribeEvent
     public void onServerTick(ServerTickEvent.Post event) {
+        List<ScheduledTask> dueTasks = new ArrayList<>();
         Iterator<ScheduledTask> iterator = TASKS.iterator();
 
         while (iterator.hasNext()) {
@@ -23,8 +25,16 @@ public class DelayedTaskScheduler {
             task.ticksRemaining--;
 
             if (task.ticksRemaining <= 0) {
-                task.action.run();
                 iterator.remove();
+                dueTasks.add(task);
+            }
+        }
+
+        for (ScheduledTask task : dueTasks) {
+            try {
+                task.action.run();
+            } catch (Exception exception) {
+                CobbleBash.LOGGER.error("CobbleBash delayed task failed.", exception);
             }
         }
     }

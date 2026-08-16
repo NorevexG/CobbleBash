@@ -14,6 +14,7 @@ import com.nore.cobblebash.gym.GymTrainerUnit;
 import com.nore.cobblebash.integration.RctApiProbe;
 import com.nore.cobblebash.integration.RctTrainerDataLoader;
 import com.nore.cobblebash.command.GymCommand;
+import com.nore.cobblebash.util.CobbleBashText;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -97,6 +98,6 @@ public class GymTrainerDialogue {
     }
 
     private static DialogueText text(String value) {
-        return new WrappedDialogueText(Component.literal(value));
+        return new WrappedDialogueText(CobbleBashText.component(value));
     }
 }

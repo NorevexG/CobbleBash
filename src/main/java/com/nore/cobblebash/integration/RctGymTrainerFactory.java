@@ -8,8 +8,8 @@ import com.gitlab.srcmc.rctapi.api.models.PokemonModel;
 import com.gitlab.srcmc.rctapi.api.models.PokemonModel.StatsModel;
 import com.gitlab.srcmc.rctapi.api.models.TrainerModel;
 import com.gitlab.srcmc.rctapi.api.util.JTO;
-import com.gitlab.srcmc.rctapi.api.util.Text;
 import com.mojang.logging.LogUtils;
+import com.nore.cobblebash.util.CobbleBashText;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import org.slf4j.Logger;
@@ -40,7 +40,7 @@ public class RctGymTrainerFactory {
                             : displayNameOverride;
 
                     return new TrainerModel(
-                            Text.literal(displayName),
+                            CobbleBashText.rctText(displayName),
                             JTO.<BattleAI>of(RCTBattleAI::new),
                             List.of(),
                             shuffledTeam.stream()

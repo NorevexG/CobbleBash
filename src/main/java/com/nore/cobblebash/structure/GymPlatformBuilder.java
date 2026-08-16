@@ -7,6 +7,7 @@ import com.nore.cobblebash.elitefour.EliteFourMember;
 import com.nore.cobblebash.entity.GymLeaderEntity;
 import com.nore.cobblebash.entity.GymTrainerEntity;
 import com.nore.cobblebash.integration.RctApiProbe;
+import com.nore.cobblebash.util.CobbleBashText;
 import com.nore.cobblebash.util.DelayedTaskScheduler;
 import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
@@ -476,7 +477,7 @@ public class GymPlatformBuilder {
         entity.setYRot(yaw);
         entity.setYHeadRot(yaw);
         entity.setYBodyRot(yaw);
-        entity.setCustomName(Component.literal(displayName));
+        entity.setCustomName(CobbleBashText.component(displayName));
         entity.setCustomNameVisible(true);
         entity.setNoAi(true);
         entity.setNoGravity(true);
