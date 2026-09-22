@@ -18,6 +18,7 @@ import com.nore.cobblebash.util.CobbleBashText;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.LivingEntity;
 
 import java.util.List;
 import java.util.Map;
@@ -31,7 +32,7 @@ public class GymTrainerDialogue {
     };
     private static final DialoguePredicate ALWAYS_TRUE = activeDialogue -> true;
 
-    public static boolean open(ServerPlayer player, RctApiProbe.GymTrainerRef trainerRef) {
+    public static boolean open(ServerPlayer player, RctApiProbe.GymTrainerRef trainerRef, LivingEntity trainerEntity) {
         GymTrainerUnit unit = GymTrainerUnit.fromTrainerIdPart(trainerRef.trainerIdPart());
         if (unit == null) {
             return false;
@@ -47,7 +48,11 @@ public class GymTrainerDialogue {
         }
 
         RctTrainerDataLoader.DialogueData dialogueData = trainerData.dialogue();
-        DialogueManager.startDialogue(player, createDialogue(player, trainerRef, unit, trainerData, dialogueData));
+        Component speakerName = trainerEntity.getCustomName();
+        if (speakerName == null) {
+            speakerName = CobbleBashText.component(trainerData.displayName());
+        }
+        DialogueManager.startDialogue(player, createDialogue(player, trainerRef, unit, speakerName, dialogueData));
         return true;
     }
 
@@ -55,7 +60,7 @@ public class GymTrainerDialogue {
             ServerPlayer player,
             RctApiProbe.GymTrainerRef trainerRef,
             GymTrainerUnit unit,
-            RctTrainerDataLoader.TrainerData trainerData,
+            Component speakerName,
             RctTrainerDataLoader.DialogueData dialogueData
     ) {
         DialogueAction battleAction = (activeDialogue, value) -> {
@@ -92,7 +97,7 @@ public class GymTrainerDialogue {
                 List.of(page),
                 DEFAULT_BACKGROUND,
                 NO_OP_ACTION,
-                Map.of("trainer", new DialogueSpeaker(text(trainerData.displayName()), null, null)),
+                Map.of("trainer", new DialogueSpeaker(new WrappedDialogueText(speakerName.copy()), null, null)),
                 NO_OP_ACTION
         );
     }

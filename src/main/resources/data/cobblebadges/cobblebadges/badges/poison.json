@@ -15,7 +15,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "cobblebash:gym/poison": true
+                                    "cobblebash:gym/complete_gym/poison": true
                                 }
                             }
                         }

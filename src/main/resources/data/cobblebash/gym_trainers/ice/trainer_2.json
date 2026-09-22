@@ -1,11 +1,11 @@
 {
-    "display_name": "Ice Trainer 2",
+    "display_name": "cobblebash.dialogue.ice.trainer_2.name",
     "dialogue": {
         "lines": [
-            "Stay calm. Panic cracks faster than thin ice."
+            "cobblebash.dialogue.ice.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {
@@ -167,7 +167,7 @@
                         "Quiver Dance",
                         "Ice Beam",
                         "Bug Buzz",
-                        "Roost"
+                        "Giga Drain"
                     ]
                 },
                 {

@@ -1,11 +1,11 @@
 {
-    "display_name": "Normal Boss",
+    "display_name": "cobblebash.dialogue.normal.boss.name",
     "dialogue": {
         "lines": [
-            "Simple does not mean easy. Let us settle this properly."
+            "cobblebash.dialogue.normal.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

@@ -1,11 +1,11 @@
 {
-    "display_name": "Psychic Trainer 1",
+    "display_name": "cobblebash.dialogue.psychic.trainer_1.name",
     "dialogue": {
         "lines": [
-            "The Psychic gym begins here. Think carefully before you move."
+            "cobblebash.dialogue.psychic.trainer_1.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

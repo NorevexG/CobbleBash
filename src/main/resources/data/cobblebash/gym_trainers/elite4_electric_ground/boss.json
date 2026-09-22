@@ -1,11 +1,11 @@
 {
-    "display_name": "Elite Four Cassian",
+    "display_name": "cobblebash.dialogue.elite4_electric_ground.boss.name",
     "dialogue": {
         "lines": [
-            "The ground remembers every storm. Prove you can stand in both."
+            "cobblebash.dialogue.elite4_electric_ground.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

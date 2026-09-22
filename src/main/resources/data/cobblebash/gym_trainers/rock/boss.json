@@ -1,11 +1,11 @@
 {
-    "display_name": "Rock Boss",
+    "display_name": "cobblebash.dialogue.rock.boss.name",
     "dialogue": {
         "lines": [
-            "If your team can weather this, the badge is yours."
+            "cobblebash.dialogue.rock.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

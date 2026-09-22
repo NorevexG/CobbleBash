@@ -1,11 +1,11 @@
 {
-    "display_name": "Electric Trainer 2",
+    "display_name": "cobblebash.dialogue.electric.trainer_2.name",
     "dialogue": {
         "lines": [
-            "One wrong step and this match is over in a flash."
+            "cobblebash.dialogue.electric.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

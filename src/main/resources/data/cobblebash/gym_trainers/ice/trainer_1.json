@@ -1,11 +1,11 @@
 {
-    "display_name": "Ice Trainer 1",
+    "display_name": "cobblebash.dialogue.ice.trainer_1.name",
     "dialogue": {
         "lines": [
-            "The Ice gym begins here. Stay calm, or crack."
+            "cobblebash.dialogue.ice.trainer_1.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {
@@ -95,7 +95,7 @@
                         "Quiver Dance",
                         "Ice Beam",
                         "Bug Buzz",
-                        "Roost"
+                        "Giga Drain"
                     ]
                 },
                 {

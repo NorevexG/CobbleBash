@@ -1,11 +1,11 @@
 {
-    "display_name": "Flying Trainer 1",
+    "display_name": "cobblebash.dialogue.flying.trainer_1.name",
     "dialogue": {
         "lines": [
-            "The Flying gym begins here. Keep your footing when the wind rises."
+            "cobblebash.dialogue.flying.trainer_1.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

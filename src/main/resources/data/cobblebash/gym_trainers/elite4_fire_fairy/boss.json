@@ -1,11 +1,11 @@
 {
-    "display_name": "Elite Four Solara",
+    "display_name": "cobblebash.dialogue.elite4_fire_fairy.boss.name",
     "dialogue": {
         "lines": [
-            "Flame reveals the shape of courage. Light reveals what is left."
+            "cobblebash.dialogue.elite4_fire_fairy.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {
@@ -54,7 +54,7 @@
                     "ability": "Magic Bounce",
                     "held_item": "Leftovers",
                     "moves": [
-                        "Moonblast",
+                        "Dazzling Gleam",
                         "Psychic",
                         "Mystical Fire",
                         "Calm Mind"
@@ -79,7 +79,7 @@
                     "held_item": "Leftovers",
                     "moves": [
                         "Air Slash",
-                        "Moonblast",
+                        "Dazzling Gleam",
                         "Thunder Wave",
                         "Roost"
                     ]

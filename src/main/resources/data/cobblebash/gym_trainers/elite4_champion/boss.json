@@ -1,11 +1,11 @@
 {
-    "display_name": "Champion Darius",
+    "display_name": "cobblebash.dialogue.elite4_champion.boss.name",
     "dialogue": {
         "lines": [
-            "You have reached your final challenge, Trainer. Prove you are worthy of the Champion's crown."
+            "cobblebash.dialogue.elite4_champion.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {
@@ -70,7 +70,7 @@
                     "held_item": "Leftovers",
                     "moves": [
                         "Air Slash",
-                        "Moonblast",
+                        "Dazzling Gleam",
                         "Thunder Wave",
                         "Roost"
                     ]

@@ -51,6 +51,7 @@ import net.minecraft.world.phys.Vec3;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 
 public class GymPlatformBuilder {
@@ -606,7 +607,7 @@ public class GymPlatformBuilder {
         String[] pool = isFemaleTrainerModel(modelVariant) ? FEMALE_TRAINER_NAMES : MALE_TRAINER_NAMES;
         List<String> availableNames = new ArrayList<>();
         for (String name : pool) {
-            String displayName = title + " " + name;
+            String displayName = localizedTrainerNameKey(title, name);
             if (!usedNames.contains(displayName)) {
                 availableNames.add(name);
             }
@@ -615,9 +616,14 @@ public class GymPlatformBuilder {
         String name = availableNames.isEmpty()
                 ? pool[level.getRandom().nextInt(pool.length)]
                 : availableNames.get(level.getRandom().nextInt(availableNames.size()));
-        String displayName = title + " " + name;
+        String displayName = localizedTrainerNameKey(title, name);
         usedNames.add(displayName);
         return displayName;
+    }
+
+    private static String localizedTrainerNameKey(String title, String name) {
+        String role = "Gym Leader".equals(title) ? "gym_leader" : "trainer";
+        return "cobblebash.dialogue.generated." + role + "." + name.toLowerCase(Locale.ROOT);
     }
 
     private static boolean isFemaleTrainerModel(int modelVariant) {

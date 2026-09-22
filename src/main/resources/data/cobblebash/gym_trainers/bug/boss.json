@@ -1,11 +1,11 @@
 {
-    "display_name": "The Hive Queen",
+    "display_name": "cobblebash.dialogue.bug.boss.name",
     "dialogue": {
         "lines": [
-            "Every tiny opening becomes a swarm. Show me you can survive one."
+            "cobblebash.dialogue.bug.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

@@ -19,6 +19,10 @@ public class Config {
                     Config::validateItemName
             );
 
+    public static final ModConfigSpec.BooleanValue CONSUME_TRAINING_DISKS = BUILDER
+            .comment("Whether entering a gym consumes the regular or Elite Four Training Disk used to enter. Creative-mode players never consume disks.")
+            .define("consumeTrainingDisks", true);
+
     public static final ModConfigSpec.IntValue COBBLE_DOLLARS_REPEAT_TRAINER_REWARD = BUILDER
             .comment("Bonus Cobble Dollars awarded only for defeating a non-boss CobbleBash gym trainer in an already-completed gym when Cobble Dollars is installed.")
             .defineInRange("cobbleDollarsRepeatTrainerReward", 500, 0, Integer.MAX_VALUE);

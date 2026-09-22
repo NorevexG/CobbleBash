@@ -1,11 +1,11 @@
 {
-    "display_name": "Flying Trainer 2",
+    "display_name": "cobblebash.dialogue.flying.trainer_2.name",
     "dialogue": {
         "lines": [
-            "Up here, hesitation drops faster than any Pokemon."
+            "cobblebash.dialogue.flying.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

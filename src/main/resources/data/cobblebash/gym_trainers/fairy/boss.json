@@ -1,11 +1,11 @@
 {
-    "display_name": "Fairy Boss",
+    "display_name": "cobblebash.dialogue.fairy.boss.name",
     "dialogue": {
         "lines": [
-            "Charm, mischief, and power. You will need answers for all three."
+            "cobblebash.dialogue.fairy.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

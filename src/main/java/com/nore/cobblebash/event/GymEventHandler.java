@@ -28,9 +28,6 @@ import com.nore.cobblebash.integration.RctApiProbe;
 import com.nore.cobblebash.item.RibbonAttributeManager;
 import com.nore.cobblebash.stats.CobbleBashStats;
 import com.nore.cobblebash.structure.EliteFourStructure;
-import fr.harmex.cobblebadges.common.api.point.Point;
-import fr.harmex.cobblebadges.common.api.point.Points;
-import fr.harmex.cobblebadges.common.utils.extensions.PlayerExtensionKt;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
@@ -57,6 +54,7 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.event.entity.player.AdvancementEvent;
@@ -249,7 +247,7 @@ public class GymEventHandler {
             return;
         }
 
-        if (GymTrainerDialogue.open(player, trainerRef)) {
+        if (GymTrainerDialogue.open(player, trainerRef, target)) {
             event.setCanceled(true);
             event.setCancellationResult(InteractionResult.SUCCESS);
         }
@@ -412,13 +410,17 @@ public class GymEventHandler {
         if (isLaunchPadFallProtected(player) && event.getSource().is(DamageTypeTags.IS_FALL)) {
             event.setNewDamage(0.0F);
             player.resetFallDistance();
+        }
+    }
+
+    @SubscribeEvent
+    public void onLivingDeath(LivingDeathEvent event) {
+        if (!(event.getEntity() instanceof ServerPlayer player) || !isInGymVoid(player)) {
             return;
         }
 
-        if (event.getNewDamage() >= player.getHealth()) {
-            event.setNewDamage(0.0F);
-            failGymSafely(player, "You were defeated in the gym.");
-        }
+        event.setCanceled(true);
+        failGymSafely(player, "You were defeated in the gym.");
     }
 
     @SubscribeEvent
@@ -439,11 +441,6 @@ public class GymEventHandler {
 
         if (!isElementalGymType(gymType)) {
             return;
-        }
-
-        Point point = Points.getById(ResourceLocation.fromNamespaceAndPath("cobblebadges", gymType));
-        if (point != null) {
-            PlayerExtensionKt.getCobbleBadgesData(player).setPoints(player, point, 0);
         }
 
         CobbleBashStats.syncGymsCompleted(player);

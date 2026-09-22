@@ -1,11 +1,11 @@
 {
-    "display_name": "Ground Boss",
+    "display_name": "cobblebash.dialogue.ground.boss.name",
     "dialogue": {
         "lines": [
-            "The earth does not move for anyone. Make it move for you."
+            "cobblebash.dialogue.ground.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

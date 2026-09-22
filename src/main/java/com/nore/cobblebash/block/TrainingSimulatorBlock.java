@@ -1,5 +1,6 @@
 package com.nore.cobblebash.block;
 
+import com.nore.cobblebash.Config;
 import com.nore.cobblebash.command.GymCommand;
 import com.nore.cobblebash.item.EliteFourTrainingDiskItem;
 import com.nore.cobblebash.item.TrainingDiskItem;
@@ -133,9 +134,14 @@ public class TrainingSimulatorBlock extends Block {
                 return ItemInteractionResult.SUCCESS;
             }
 
-            if (player instanceof ServerPlayer serverPlayer
-                    && GymCommand.enterEliteFour(serverPlayer, false)) {
-                if (!serverPlayer.getAbilities().instabuild) {
+            if (player instanceof ServerPlayer serverPlayer) {
+                boolean consumeDisk = Config.CONSUME_TRAINING_DISKS.get()
+                        && !serverPlayer.getAbilities().instabuild;
+                if (!GymCommand.enterEliteFour(serverPlayer, false)) {
+                    return ItemInteractionResult.FAIL;
+                }
+
+                if (consumeDisk) {
                     stack.shrink(1);
                 }
                 return ItemInteractionResult.SUCCESS;
@@ -152,9 +158,14 @@ public class TrainingSimulatorBlock extends Block {
             return ItemInteractionResult.SUCCESS;
         }
 
-        if (player instanceof ServerPlayer serverPlayer
-                && GymCommand.enterGym(serverPlayer, trainingDisk.getGymType().getId())) {
-            if (!serverPlayer.getAbilities().instabuild) {
+        if (player instanceof ServerPlayer serverPlayer) {
+            boolean consumeDisk = Config.CONSUME_TRAINING_DISKS.get()
+                    && !serverPlayer.getAbilities().instabuild;
+            if (!GymCommand.enterGym(serverPlayer, trainingDisk.getGymType().getId())) {
+                return ItemInteractionResult.FAIL;
+            }
+
+            if (consumeDisk) {
                 stack.shrink(1);
             }
             return ItemInteractionResult.SUCCESS;

@@ -15,7 +15,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "cobblebash:gym/water": true
+                                    "cobblebash:gym/complete_gym/water": true
                                 }
                             }
                         }

@@ -1,11 +1,11 @@
 {
-    "display_name": "Ghost Boss",
+    "display_name": "cobblebash.dialogue.ghost.boss.name",
     "dialogue": {
         "lines": [
-            "The brave do not fear shadows. They learn what waits inside them."
+            "cobblebash.dialogue.ghost.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

@@ -27,11 +27,16 @@ import com.nore.cobblebash.structure.GymPlatformBuilder;
 import com.nore.cobblebash.util.DelayedTaskScheduler;
 import com.nore.cobblebash.structure.EliteFourStructure;
 import com.nore.cobblebash.structure.GymDoorController;
+import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.HoverEvent;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
@@ -41,6 +46,7 @@ import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.phys.Vec3;
 import com.gitlab.srcmc.rctapi.api.RCTApi;
 import com.nore.cobblebash.integration.RctApiProbe;
 
@@ -60,11 +66,15 @@ public class GymCommand {
     private static final Map<String, UUID> DEBUG_SLOT_RESERVATIONS = new HashMap<>();
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
-        var cobbleBashRoot = Commands.literal("cobblebash")
-                .requires(source -> source.hasPermission(2));
+        var cobbleBashRoot = Commands.literal("cobblebash");
         var gymRoot = Commands.literal("gym");
 
-        var enterNode = Commands.literal("enter");
+        gymRoot.then(Commands.literal("leave")
+                .executes(context -> leaveGym(context.getSource()))
+        );
+
+        var enterNode = Commands.literal("enter")
+                .requires(source -> source.hasPermission(2));
         for (GymType type : GymType.values()) {
             enterNode.then(
                     Commands.literal(type.getId())
@@ -76,8 +86,10 @@ public class GymCommand {
         );
         gymRoot.then(enterNode);
 
-        var battleNode = Commands.literal("battle");
-        var defeatNode = Commands.literal("defeat");
+        var battleNode = Commands.literal("battle")
+                .requires(source -> source.hasPermission(2));
+        var defeatNode = Commands.literal("defeat")
+                .requires(source -> source.hasPermission(2));
         for (GymType type : GymType.values()) {
             battleNode.then(trainerTarget(type, GymCommand::startTrainerBattle));
             defeatNode.then(trainerTarget(type, GymCommand::defeatTrainer));
@@ -85,7 +97,8 @@ public class GymCommand {
         gymRoot.then(battleNode);
         gymRoot.then(defeatNode);
 
-        var completeNode = Commands.literal("complete");
+        var completeNode = Commands.literal("complete")
+                .requires(source -> source.hasPermission(2));
         for (GymType type : GymType.values()) {
             completeNode.then(
                     Commands.literal(type.getId())
@@ -95,6 +108,7 @@ public class GymCommand {
         gymRoot.then(completeNode);
 
         gymRoot.then(Commands.literal("advance")
+                .requires(source -> source.hasPermission(2))
                 .executes(context -> advanceGym(context.getSource()))
         );
 
@@ -177,6 +191,7 @@ public class GymCommand {
         );
         player.setGameMode(GameType.ADVENTURE);
 
+        sendGymEntryMessage(player, Component.translatable("cobblemon.type." + gymType));
         CobbleBashCriteriaTriggers.triggerGymEntered(player);
         return 1;
     }
@@ -247,7 +262,27 @@ public class GymCommand {
         );
         player.setGameMode(GameType.ADVENTURE);
 
+        sendEntryMessage(player, Component.translatable("message.cobblebash.elite_four_entered"));
         return 1;
+    }
+
+    private static void sendGymEntryMessage(ServerPlayer player, Component gymType) {
+        sendEntryMessage(player, Component.translatable("message.cobblebash.gym_entered", gymType));
+    }
+
+    private static void sendEntryMessage(ServerPlayer player, MutableComponent message) {
+        MutableComponent leaveButton = Component.translatable("message.cobblebash.leave_gym")
+                .withStyle(style -> style
+                        .withColor(ChatFormatting.RED)
+                        .withUnderlined(true)
+                        .withClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/cobblebash gym leave"))
+                        .withHoverEvent(new HoverEvent(
+                                HoverEvent.Action.SHOW_TEXT,
+                                Component.translatable("message.cobblebash.leave_gym.hover")
+                        ))
+                );
+
+        player.sendSystemMessage(message.append(" ").append(leaveButton));
     }
 
     private static int completeGym(CommandSourceStack source, String gymType) {
@@ -372,6 +407,11 @@ public class GymCommand {
 
     private static int leaveGym(CommandSourceStack source) {
         ServerPlayer player = source.getPlayer();
+
+        if (!player.level().dimension().equals(CobbleBashDimensions.GYM_VOID)) {
+            source.sendFailure(Component.literal("You are not inside a CobbleBash gym."));
+            return 0;
+        }
 
         GymInstance clearedInstance = GymInstanceManager.clear(player.getUUID());
 
@@ -1057,7 +1097,8 @@ public class GymCommand {
         ServerLevel overworld = player.server.overworld();
         BlockPos spawn = overworld.getSharedSpawnPos();
 
-        player.teleportTo(
+        teleportSafely(
+                player,
                 overworld,
                 spawn.getX() + 0.5,
                 spawn.getY(),
@@ -1103,7 +1144,8 @@ public class GymCommand {
             return;
         }
 
-        player.teleportTo(
+        teleportSafely(
+                player,
                 returnLevel,
                 location.x(),
                 location.y(),
@@ -1111,6 +1153,30 @@ public class GymCommand {
                 location.yRot(),
                 location.xRot()
         );
+    }
+
+    private static void teleportSafely(
+            ServerPlayer player,
+            ServerLevel destination,
+            double x,
+            double y,
+            double z,
+            float yRot,
+            float xRot
+    ) {
+        if (player.isPassenger()) {
+            player.stopRiding();
+        }
+        if (player.isFallFlying()) {
+            player.stopFallFlying();
+        }
+
+        player.setDeltaMovement(Vec3.ZERO);
+        player.resetFallDistance();
+        player.teleportTo(destination, x, y, z, yRot, xRot);
+        player.setDeltaMovement(Vec3.ZERO);
+        player.resetFallDistance();
+        player.connection.send(new ClientboundSetEntityMotionPacket(player));
     }
 
     private static String formatPos(BlockPos pos) {

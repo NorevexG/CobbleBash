@@ -15,7 +15,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "cobblebash:gym/grass": true
+                                    "cobblebash:gym/complete_gym/grass": true
                                 }
                             }
                         }

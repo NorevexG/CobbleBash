@@ -1,11 +1,11 @@
 {
-    "display_name": "Normal Trainer 1",
+    "display_name": "cobblebash.dialogue.normal.trainer_1.name",
     "dialogue": {
         "lines": [
-            "The Normal gym begins here. No tricks, just battle sense."
+            "cobblebash.dialogue.normal.trainer_1.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

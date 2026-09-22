@@ -1,11 +1,11 @@
 {
-    "display_name": "Dragon Boss",
+    "display_name": "cobblebash.dialogue.dragon.boss.name",
     "dialogue": {
         "lines": [
-            "Stand tall. Dragons only respect challengers who refuse to bow."
+            "cobblebash.dialogue.dragon.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

@@ -1,11 +1,11 @@
 {
-    "display_name": "Elite Four Calder",
+    "display_name": "cobblebash.dialogue.elite4_water_steel.boss.name",
     "dialogue": {
         "lines": [
-            "Steel bends in the deep. The tide does not."
+            "cobblebash.dialogue.elite4_water_steel.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

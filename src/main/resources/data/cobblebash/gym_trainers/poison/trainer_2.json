@@ -1,11 +1,11 @@
 {
-    "display_name": "Poison Trainer 2",
+    "display_name": "cobblebash.dialogue.poison.trainer_2.name",
     "dialogue": {
         "lines": [
-            "The first mistake stings. The second one decides it."
+            "cobblebash.dialogue.poison.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

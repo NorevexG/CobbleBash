@@ -16,7 +16,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "cobblebash:gym/fairy": true
+                                    "cobblebash:gym/complete_gym/fairy": true
                                 }
                             }
                         }
@@ -36,7 +36,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "cobblebash:gym/fairy": true
+                                    "cobblebash:gym/complete_gym/fairy": true
                                 }
                             }
                         }

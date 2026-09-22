@@ -1,11 +1,11 @@
 {
-    "display_name": "Grass Boss",
+    "display_name": "cobblebash.dialogue.grass.boss.name",
     "dialogue": {
         "lines": [
-            "Growth takes patience. Victory takes roots strong enough to hold."
+            "cobblebash.dialogue.grass.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

@@ -16,7 +16,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "cobblebash:gym/dark": true
+                                    "cobblebash:gym/complete_gym/dark": true
                                 }
                             }
                         }
@@ -36,7 +36,7 @@
                             "type_specific": {
                                 "type": "minecraft:player",
                                 "advancements": {
-                                    "cobblebash:gym/dark": true
+                                    "cobblebash:gym/complete_gym/dark": true
                                 }
                             }
                         }

@@ -1,11 +1,11 @@
 {
-    "display_name": "Psychic Boss",
+    "display_name": "cobblebash.dialogue.psychic.boss.name",
     "dialogue": {
         "lines": [
-            "Mind against mind, then. Try to surprise me."
+            "cobblebash.dialogue.psychic.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

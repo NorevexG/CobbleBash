@@ -1,11 +1,11 @@
 {
-    "display_name": "Ice Boss",
+    "display_name": "cobblebash.dialogue.ice.boss.name",
     "dialogue": {
         "lines": [
-            "One calm breath. One clean strike. That is all the cold allows."
+            "cobblebash.dialogue.ice.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

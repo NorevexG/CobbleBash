@@ -1,11 +1,11 @@
 {
-    "display_name": "Dark Trainer 2",
+    "display_name": "cobblebash.dialogue.dark.trainer_2.name",
     "dialogue": {
         "lines": [
-            "Keep your eyes open. The nastiest tricks happen in plain sight."
+            "cobblebash.dialogue.dark.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

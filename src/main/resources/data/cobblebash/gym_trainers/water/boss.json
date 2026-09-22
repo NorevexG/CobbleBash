@@ -1,11 +1,11 @@
 {
-    "display_name": "Water Boss",
+    "display_name": "cobblebash.dialogue.water.boss.name",
     "dialogue": {
         "lines": [
-            "Flow with the battle or be swept out of it."
+            "cobblebash.dialogue.water.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

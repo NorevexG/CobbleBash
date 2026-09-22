@@ -1,11 +1,11 @@
 {
-    "display_name": "Poison Boss",
+    "display_name": "cobblebash.dialogue.poison.boss.name",
     "dialogue": {
         "lines": [
-            "Endure the venom, read the pattern, and maybe you earn the badge."
+            "cobblebash.dialogue.poison.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

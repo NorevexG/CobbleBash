@@ -1,11 +1,11 @@
 {
-    "display_name": "Electric Boss",
+    "display_name": "cobblebash.dialogue.electric.boss.name",
     "dialogue": {
         "lines": [
-            "I want to see if your spark can survive a storm."
+            "cobblebash.dialogue.electric.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

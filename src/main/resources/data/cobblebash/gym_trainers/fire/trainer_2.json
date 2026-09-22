@@ -1,11 +1,11 @@
 {
-    "display_name": "The Furnace",
+    "display_name": "cobblebash.dialogue.fire.trainer_2.name",
     "dialogue": {
         "lines": [
-            "Heat alone is nothing. Control is what wins battles."
+            "cobblebash.dialogue.fire.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

@@ -1,11 +1,11 @@
 {
-    "display_name": "Dark Boss",
+    "display_name": "cobblebash.dialogue.dark.boss.name",
     "dialogue": {
         "lines": [
-            "No more warnings. Step forward, and bring your nerve with you."
+            "cobblebash.dialogue.dark.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

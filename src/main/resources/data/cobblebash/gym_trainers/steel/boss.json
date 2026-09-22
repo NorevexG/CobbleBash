@@ -1,11 +1,11 @@
 {
-    "display_name": "Steel Boss",
+    "display_name": "cobblebash.dialogue.steel.boss.name",
     "dialogue": {
         "lines": [
-            "I have tempered this team for challengers like you."
+            "cobblebash.dialogue.steel.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

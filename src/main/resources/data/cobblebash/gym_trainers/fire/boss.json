@@ -1,11 +1,11 @@
 {
-    "display_name": "The Ash King",
+    "display_name": "cobblebash.dialogue.fire.boss.name",
     "dialogue": {
         "lines": [
-            "If your resolve burns clean, you may leave here with my badge."
+            "cobblebash.dialogue.fire.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

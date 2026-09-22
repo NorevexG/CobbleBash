@@ -1,11 +1,11 @@
 {
-    "display_name": "Elite Four Morrigan",
+    "display_name": "cobblebash.dialogue.elite4_grass_ghost.boss.name",
     "dialogue": {
         "lines": [
-            "Every victory decays. Every defeat takes root."
+            "cobblebash.dialogue.elite4_grass_ghost.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

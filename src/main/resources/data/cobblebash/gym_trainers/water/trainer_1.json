@@ -1,11 +1,11 @@
 {
-    "display_name": "Water Trainer 1",
+    "display_name": "cobblebash.dialogue.water.trainer_1.name",
     "dialogue": {
         "lines": [
-            "The Water gym begins here. Flow with the battle or be swept away."
+            "cobblebash.dialogue.water.trainer_1.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

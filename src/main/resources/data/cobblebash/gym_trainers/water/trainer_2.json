@@ -1,11 +1,11 @@
 {
-    "display_name": "Water Trainer 2",
+    "display_name": "cobblebash.dialogue.water.trainer_2.name",
     "dialogue": {
         "lines": [
-            "The tide turns slowly, then all at once."
+            "cobblebash.dialogue.water.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

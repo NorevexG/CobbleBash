@@ -1,11 +1,11 @@
 {
-    "display_name": "Ghost Trainer 2",
+    "display_name": "cobblebash.dialogue.ghost.trainer_2.name",
     "dialogue": {
         "lines": [
-            "Do not trust the silence. That is when ghosts move first."
+            "cobblebash.dialogue.ghost.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

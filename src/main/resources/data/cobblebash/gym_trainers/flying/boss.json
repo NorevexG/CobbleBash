@@ -1,11 +1,11 @@
 {
-    "display_name": "Flying Boss",
+    "display_name": "cobblebash.dialogue.flying.boss.name",
     "dialogue": {
         "lines": [
-            "Meet me at the edge of the sky and prove you will not fall."
+            "cobblebash.dialogue.flying.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

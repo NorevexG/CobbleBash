@@ -1,11 +1,11 @@
 {
-    "display_name": "Fighting Boss",
+    "display_name": "cobblebash.dialogue.fighting.boss.name",
     "dialogue": {
         "lines": [
-            "Words are done. Show me the strength behind your training."
+            "cobblebash.dialogue.fighting.boss.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {

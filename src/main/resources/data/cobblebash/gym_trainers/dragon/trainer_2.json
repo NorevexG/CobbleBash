@@ -1,11 +1,11 @@
 {
-    "display_name": "Dragon Trainer 2",
+    "display_name": "cobblebash.dialogue.dragon.trainer_2.name",
     "dialogue": {
         "lines": [
-            "A dragon battle is decided before the first roar fades."
+            "cobblebash.dialogue.dragon.trainer_2.line_1"
         ],
-        "battle_text": "Battle",
-        "cancel_text": "Cancel"
+        "battle_text": "cobblebash.dialogue.action.battle",
+        "cancel_text": "cobblebash.dialogue.action.cancel"
     },
     "builds": [
         {
