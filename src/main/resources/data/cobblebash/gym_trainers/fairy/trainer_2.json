@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.fairy.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.fairy.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.fairy.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.fairy.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Enchanted Control — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Setup & Pressure",
-            "pokemon": [
-                {
-                    "species": "Azumarill",
-                    "ability": "Huge Power",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Liquidation",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                },
-                {
-                    "species": "Grimmsnarl",
-                    "ability": "Prankster",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Reflect",
-                        "Light Screen",
-                        "Spirit Break",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Hatterene",
-                    "ability": "Magic Bounce",
-                    "held_item": "None",
-                    "moves": [
-                        "Psychic",
-                        "Dazzling Gleam",
-                        "Mystical Fire",
-                        "Calm Mind"
-                    ]
-                },
-                {
-                    "species": "Sylveon",
-                    "ability": "Pixilate",
-                    "held_item": "None",
-                    "moves": [
-                        "Hyper Voice",
-                        "Wish",
-                        "Protect",
-                        "Mystical Fire"
-                    ]
-                }
-            ]
+          "species": "Azurill",
+          "ability": "Huge Power",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Headbutt",
+            "Draining Kiss",
+            "Alluring Voice",
+            "Protect"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Offensive Fairy",
-            "pokemon": [
-                {
-                    "species": "Gardevoir",
-                    "ability": "Trace",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Moonblast",
-                        "Psychic",
-                        "Mystical Fire",
-                        "Thunderbolt"
-                    ]
-                },
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Claw",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "None",
-                    "moves": [
-                        "Air Slash",
-                        "Dazzling Gleam",
-                        "Aura Sphere",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Azumarill",
-                    "ability": "Huge Power",
-                    "held_item": "Sitrus Berry",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Belly Drum",
-                        "Liquidation"
-                    ]
-                },
-                {
-                    "species": "Grimmsnarl",
-                    "ability": "Prankster",
-                    "held_item": "None",
-                    "moves": [
-                        "Spirit Break",
-                        "Taunt",
-                        "Thunder Wave",
-                        "Reflect"
-                    ]
-                }
-            ]
+          "species": "Ralts",
+          "ability": "Synchronize",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Confusion",
+            "Disarming Voice",
+            "Draining Kiss",
+            "Will-O-Wisp"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Utility & Sustain",
-            "pokemon": [
-                {
-                    "species": "Clefable",
-                    "ability": "Magic Guard",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Moonblast",
-                        "Soft-Boiled",
-                        "Calm Mind",
-                        "Flamethrower"
-                    ]
-                },
-                {
-                    "species": "Florges",
-                    "ability": "Flower Veil",
-                    "held_item": "None",
-                    "moves": [
-                        "Moonblast",
-                        "Wish",
-                        "Protect",
-                        "Aromatherapy"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                },
-                {
-                    "species": "Mawile",
-                    "ability": "Intimidate",
-                    "held_item": "Black Glasses",
-                    "moves": [
-                        "Play Rough",
-                        "Sucker Punch",
-                        "Iron Head",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Sylveon",
-                    "ability": "Pixilate",
-                    "held_item": "None",
-                    "moves": [
-                        "Hyper Voice",
-                        "Wish",
-                        "Protect",
-                        "Mystical Fire"
-                    ]
-                }
-            ]
+          "species": "Igglybuff",
+          "ability": "Cute Charm",
+          "held_item": "None",
+          "moves": [
+            "Swift",
+            "Disarming Voice",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Cleffa",
+          "ability": "Magic Guard",
+          "held_item": "None",
+          "moves": [
+            "Disarming Voice",
+            "Draining Kiss",
+            "Thunder Wave",
+            "Psybeam"
+          ]
+        },
+        {
+          "species": "Togepi",
+          "ability": "Serene Grace",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Draining Kiss",
+            "Dazzling Gleam",
+            "Thunder Wave",
+            "Aerial Ace"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Enchanted Control — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Igglybuff",
+          "ability": "Cute Charm",
+          "held_item": "None",
+          "moves": [
+            "Swift",
+            "Disarming Voice",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Cleffa",
+          "ability": "Magic Guard",
+          "held_item": "None",
+          "moves": [
+            "Disarming Voice",
+            "Draining Kiss",
+            "Thunder Wave",
+            "Psybeam"
+          ]
+        },
+        {
+          "species": "Togepi",
+          "ability": "Serene Grace",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Draining Kiss",
+            "Dazzling Gleam",
+            "Thunder Wave",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Marill",
+          "ability": "Huge Power",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Water Gun",
+            "Disarming Voice",
+            "Draining Kiss",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Impidimp",
+          "ability": "Prankster",
+          "held_item": "None",
+          "moves": [
+            "Bite",
+            "Draining Kiss",
+            "Dazzling Gleam",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Enchanted Control — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Marill",
+          "ability": "Huge Power",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Liquidation",
+            "Play Rough",
+            "Misty Explosion",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Impidimp",
+          "ability": "Prankster",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Dark Pulse",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Jigglypuff",
+          "ability": "Cute Charm",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Double-Edge",
+            "Play Rough",
+            "Misty Explosion",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Milcery",
+          "ability": "Sweet Veil",
+          "held_item": "Leftovers",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Protect",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Kirlia",
+          "ability": "Synchronize",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Enchanted Control — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Jigglypuff",
+          "ability": "Cute Charm",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Double-Edge",
+            "Play Rough",
+            "Misty Explosion",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Milcery",
+          "ability": "Sweet Veil",
+          "held_item": "Leftovers",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Protect",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Kirlia",
+          "ability": "Synchronize",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Cottonee",
+          "ability": "Prankster",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Energy Ball",
+            "Dazzling Gleam",
+            "Leech Seed",
+            "Giga Drain"
+          ]
+        },
+        {
+          "species": "Morelull",
+          "ability": "Effect Spore",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Energy Ball",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Enchanted Control — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Azumarill",
+          "ability": "Huge Power",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Draining Kiss",
+            "Alluring Voice",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Togetic",
+          "ability": "Serene Grace",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dazzling Gleam",
+            "Air Cutter",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Spritzee",
+          "ability": "Healer",
+          "held_item": "Leftovers",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Swirlix",
+          "ability": "Sweet Veil",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Sticky Web",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Clefairy",
+          "ability": "Magic Guard",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Stealth Rock",
+            "Ice Beam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Enchanted Control — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Spritzee",
+          "ability": "Healer",
+          "held_item": "Leftovers",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Swirlix",
+          "ability": "Sweet Veil",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Sticky Web",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Clefairy",
+          "ability": "Magic Guard",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Stealth Rock",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Fidough",
+          "ability": "Own Tempo",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Play Rough",
+            "Dazzling Gleam",
+            "Protect",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Flabebe",
+          "ability": "Flower Veil",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect",
+            "Psychic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Enchanted Control — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Snubbull",
+          "ability": "Intimidate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Play Rough",
+            "Dazzling Gleam",
+            "Thunder Wave",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Tinkatink",
+          "ability": "Mold Breaker",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Play Rough",
+            "Flash Cannon",
+            "Draining Kiss",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Morelull",
+          "ability": "Effect Spore",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Energy Ball",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Cottonee",
+          "ability": "Prankster",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Energy Ball",
+            "Dazzling Gleam",
+            "Leech Seed",
+            "Giga Drain"
+          ]
+        },
+        {
+          "species": "Kirlia",
+          "ability": "Synchronize",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    }
+  ]
 }

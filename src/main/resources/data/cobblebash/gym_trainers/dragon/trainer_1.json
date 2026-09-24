@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.dragon.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.dragon.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.dragon.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.dragon.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Draconic Rush — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Classic Offense",
-            "pokemon": [
-                {
-                    "species": "Dragonite",
-                    "ability": "Multiscale",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Dragon Dance",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Extreme Speed"
-                    ]
-                },
-                {
-                    "species": "Noivern",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Draco Meteor",
-                        "Hurricane",
-                        "Flamethrower",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Haxorus",
-                    "ability": "Mold Breaker",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Dragon Dance",
-                        "Outrage",
-                        "Earthquake",
-                        "Poison Jab"
-                    ]
-                },
-                {
-                    "species": "Altaria",
-                    "ability": "Natural Cure",
-                    "held_item": "None",
-                    "moves": [
-                        "Dragon Pulse",
-                        "Roost",
-                        "Defog",
-                        "Cotton Guard"
-                    ]
-                }
-            ]
+          "species": "Drakloak",
+          "ability": "Clear Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Breaking Swipe",
+            "Hex",
+            "Dragon Tail",
+            "U-turn"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Mixed Pressure",
-            "pokemon": [
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Dragapult",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Dragon Darts",
-                        "Shadow Ball",
-                        "U-turn",
-                        "Flamethrower"
-                    ]
-                },
-                {
-                    "species": "Flygon",
-                    "ability": "Levitate",
-                    "held_item": "Expert Belt",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "U-turn",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Tyrantrum",
-                    "ability": "Rock Head",
-                    "held_item": "None",
-                    "moves": [
-                        "Head Smash",
-                        "Outrage",
-                        "Earthquake",
-                        "Dragon Dance"
-                    ]
-                }
-            ]
+          "species": "Fraxure",
+          "ability": "Rivalry",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Breaking Swipe",
+            "Dragon Tail",
+            "Taunt",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Gabite",
+          "ability": "Rough Skin",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Breath",
+            "Mud Shot",
+            "Twister",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Dragonair",
+          "ability": "Marvel Scale",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Dragon Breath",
+            "Twister",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Draconic Rush — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Gabite",
+          "ability": "Rough Skin",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Breath",
+            "Mud Shot",
+            "Twister",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Dragonair",
+          "ability": "Marvel Scale",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Dragon Breath",
+            "Twister",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Shelgon",
+          "ability": "Overcoat",
+          "held_item": "None",
+          "moves": [
+            "Dragon Breath",
+            "Twister",
+            "Dragon Dance",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Tatsugiri",
+          "ability": "Storm Drain",
+          "held_item": "None",
+          "moves": [
+            "Draco Meteor",
+            "Water Gun",
+            "Dragon Pulse",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Draconic Rush — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Shelgon",
+          "ability": "Overcoat",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Dragon Dance",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Tatsugiri",
+          "ability": "Storm Drain",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Draco Meteor",
+            "Hydro Pump",
+            "Dragon Pulse",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Drampa",
+          "ability": "Sap Sipper",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hyper Voice",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Tailwind"
+          ]
+        },
+        {
+          "species": "Druddigon",
+          "ability": "Sheer Force",
+          "held_item": "Life Orb",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Draconic Rush — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Drampa",
+          "ability": "Sap Sipper",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hyper Voice",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Tailwind"
+          ]
+        },
+        {
+          "species": "Druddigon",
+          "ability": "Sheer Force",
+          "held_item": "Life Orb",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Altaria",
+          "ability": "Natural Cure",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Brave Bird",
+            "Outrage",
+            "Tailwind"
+          ]
+        },
+        {
+          "species": "Cyclizar",
+          "ability": "Regenerator",
+          "held_item": "Life Orb",
+          "moves": [
+            "Dragon Claw",
+            "Double-Edge",
+            "Outrage",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Draconic Rush — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Kingdra",
+          "ability": "Swift Swim",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Liquidation",
+            "Outrage",
+            "Scale Shot",
+            "Flip Turn"
+          ]
+        },
+        {
+          "species": "Noivern",
+          "ability": "Frisk",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hurricane",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Tyrantrum",
+          "ability": "Strong Jaw",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Stone Edge",
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Flygon",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Outrage",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Draconic Rush — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Tyrantrum",
+          "ability": "Strong Jaw",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Stone Edge",
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Flygon",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Outrage",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Dracovish",
+          "ability": "Water Absorb",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Liquidation",
+            "Outrage",
+            "Dragon Rush",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Dracozolt",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Wild Charge",
+            "Dragon Claw",
+            "Outrage",
+            "Taunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Draconic Rush — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Cyclizar",
+          "ability": "Regenerator",
+          "held_item": "Life Orb",
+          "moves": [
+            "Dragon Claw",
+            "Double-Edge",
+            "Outrage",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Altaria",
+          "ability": "Natural Cure",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Brave Bird",
+            "Outrage",
+            "Tailwind"
+          ]
+        },
+        {
+          "species": "Drampa",
+          "ability": "Sap Sipper",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hyper Voice",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Tailwind"
+          ]
+        },
+        {
+          "species": "Druddigon",
+          "ability": "Sheer Force",
+          "held_item": "Life Orb",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        }
+      ]
+    }
+  ]
 }

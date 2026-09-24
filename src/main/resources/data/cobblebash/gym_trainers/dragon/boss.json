@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.dragon.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.dragon.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.dragon.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.dragon.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Apex Flight — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Dragon Leader",
-            "pokemon": [
-                {
-                    "species": "Dragonite",
-                    "ability": "Multiscale",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Dragon Dance",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Extreme Speed"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Stealth Rock",
-                        "Earthquake",
-                        "Dragon Tail",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Goodra",
-                    "ability": "Sap Sipper",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "Thunderbolt",
-                        "Sludge Bomb"
-                    ]
-                },
-                {
-                    "species": "Heatran",
-                    "ability": "Flash Fire",
-                    "held_item": "None",
-                    "moves": [
-                        "Lava Plume",
-                        "Earth Power",
-                        "Stealth Rock",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Gyarados",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dragon Dance",
-                        "Waterfall",
-                        "Ice Fang",
-                        "Crunch"
-                    ]
-                }
-            ]
+          "species": "Haxorus",
+          "ability": "Rivalry",
+          "held_item": "None",
+          "moves": [
+            "Breaking Swipe",
+            "Dragon Tail",
+            "Protect",
+            "Aerial Ace"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Dragon Leader",
-            "pokemon": [
-                {
-                    "species": "Dragapult",
-                    "ability": "Infiltrator",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Dragon Darts",
-                        "U-turn",
-                        "Phantom Force",
-                        "Steel Wing"
-                    ]
-                },
-                {
-                    "species": "Haxorus",
-                    "ability": "Mold Breaker",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Dragon Dance",
-                        "Outrage",
-                        "Earthquake",
-                        "Poison Jab"
-                    ]
-                },
-                {
-                    "species": "Salamence",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dragon Dance",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Metagross",
-                    "ability": "Clear Body",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Meteor Mash",
-                        "Zen Headbutt",
-                        "Earthquake",
-                        "Bullet Punch"
-                    ]
-                },
-                {
-                    "species": "Azumarill",
-                    "ability": "Huge Power",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Liquidation",
-                        "Knock Off"
-                    ]
-                }
-            ]
+          "species": "Dragapult",
+          "ability": "Clear Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Dragon Breath",
+            "Hex",
+            "Breaking Swipe",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Dragonite",
+          "ability": "Multiscale",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Breath",
+            "Wing Attack",
+            "Twister",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Garchomp",
+          "ability": "Rough Skin",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Dragon Breath",
+            "Mud Shot",
+            "Twister",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Goodra",
+          "ability": "Sap Sipper",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Dragon Breath",
+            "Breaking Swipe",
+            "Toxic",
+            "Bulldoze"
+          ]
+        },
+        {
+          "species": "Hydreigon",
+          "ability": "Levitate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bite",
+            "Dragon Breath",
+            "Breaking Swipe",
+            "Stealth Rock"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Apex Flight — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Dragonite",
+          "ability": "Multiscale",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Aerial Ace",
+            "Outrage",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Garchomp",
+          "ability": "Rough Skin",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Goodra",
+          "ability": "Sap Sipper",
+          "held_item": "Leftovers",
+          "moves": [
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Toxic",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Hydreigon",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Kommo-o",
+          "ability": "Overcoat",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Close Combat",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Salamence",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Dragon Claw",
+            "Dual Wingbeat",
+            "Outrage",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Apex Flight — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Dragapult",
+          "ability": "Clear Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Phantom Force",
+            "Outrage",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Dragonite",
+          "ability": "Multiscale",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Aerial Ace",
+            "Outrage",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Garchomp",
+          "ability": "Rough Skin",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Goodra",
+          "ability": "Sap Sipper",
+          "held_item": "Leftovers",
+          "moves": [
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Toxic",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Hydreigon",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Kommo-o",
+          "ability": "Overcoat",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Close Combat",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Apex Flight — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Goodra",
+          "ability": "Sap Sipper",
+          "held_item": "Leftovers",
+          "moves": [
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Toxic",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Hydreigon",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Kommo-o",
+          "ability": "Overcoat",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Close Combat",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Salamence",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Dragon Claw",
+            "Dual Wingbeat",
+            "Outrage",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Haxorus",
+          "ability": "Rivalry",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Dragapult",
+          "ability": "Clear Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Phantom Force",
+            "Outrage",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    }
+  ]
 }

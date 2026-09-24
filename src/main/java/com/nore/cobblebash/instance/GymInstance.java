@@ -27,6 +27,9 @@ public class GymInstance {
     private boolean eliteFourChampionUnlocked = false;
     private boolean eliteFourSlowFallingApplied = false;
     private int eliteFourChampionBeamTicks = 0;
+    private int eliteFourItemUses = 0;
+    private int eliteFourObservedBattleItemUses = 0;
+    private boolean eliteFourBattleItemSyncActive = false;
 
     public GymInstance(
             int slotId,
@@ -140,6 +143,38 @@ public class GymInstance {
 
     public boolean isEliteFourChampionBeamActive() {
         return eliteFourChampionBeamTicks != 0;
+    }
+
+    public int getEliteFourItemUses() {
+        return eliteFourItemUses;
+    }
+
+    public void addEliteFourItemUses(int amount) {
+        if (amount > 0) {
+            eliteFourItemUses += amount;
+        }
+    }
+
+    public int getEliteFourObservedBattleItemUses() {
+        return eliteFourObservedBattleItemUses;
+    }
+
+    public void setEliteFourObservedBattleItemUses(int uses) {
+        eliteFourObservedBattleItemUses = Math.max(0, uses);
+    }
+
+    public boolean isEliteFourBattleItemSyncActive() {
+        return eliteFourBattleItemSyncActive;
+    }
+
+    public void beginEliteFourBattleItemSync() {
+        eliteFourObservedBattleItemUses = 0;
+        eliteFourBattleItemSyncActive = true;
+    }
+
+    public void finishEliteFourBattleItemSync() {
+        eliteFourBattleItemSyncActive = false;
+        eliteFourObservedBattleItemUses = 0;
     }
 
     public int getSlotId() {

@@ -1,171 +1,162 @@
 {
-    "display_name": "cobblebash.dialogue.elite4_electric_ground.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.elite4_electric_ground.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.elite4_electric_ground.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.elite4_electric_ground.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "endgame_a",
+      "name": "Stormfront Circuit — Endgame A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Sand Circuit",
-            "pokemon": [
-                {
-                    "species": "Hippowdon",
-                    "level": 95,
-                    "ability": "Sand Stream",
-                    "held_item": "Smooth Rock",
-                    "moves": [
-                        "Earthquake",
-                        "Stealth Rock",
-                        "Slack Off",
-                        "Whirlwind"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "level": 95,
-                    "ability": "Sand Rush",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rock Slide",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "level": 95,
-                    "ability": "Magnet Pull",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Tri Attack"
-                    ]
-                },
-                {
-                    "species": "Gliscor",
-                    "level": 95,
-                    "ability": "Poison Heal",
-                    "held_item": "Toxic Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Facade",
-                        "Roost",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "level": 96,
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "level": 98,
-                    "ability": "Rough Skin",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stone Edge",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Garchomp",
+          "ability": "Rough Skin",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Stealth Rock",
+            "Shadow Claw"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Overcharged Faultline",
-            "pokemon": [
-                {
-                    "species": "Swampert",
-                    "level": 95,
-                    "ability": "Torrent",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Earthquake",
-                        "Waterfall",
-                        "Ice Punch",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Electivire",
-                    "level": 95,
-                    "ability": "Motor Drive",
-                    "held_item": "Expert Belt",
-                    "moves": [
-                        "Wild Charge",
-                        "Earthquake",
-                        "Ice Punch",
-                        "Fire Punch"
-                    ]
-                },
-                {
-                    "species": "Flygon",
-                    "level": 95,
-                    "ability": "Levitate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "U-turn",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Rhyperior",
-                    "level": 95,
-                    "ability": "Solid Rock",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Earthquake",
-                        "Stone Edge",
-                        "Megahorn",
-                        "Rock Polish"
-                    ]
-                },
-                {
-                    "species": "Jolteon",
-                    "level": 96,
-                    "ability": "Volt Absorb",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Thunderbolt",
-                        "Shadow Ball",
-                        "Volt Switch",
-                        "Hyper Voice"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "level": 98,
-                    "ability": "Rough Skin",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Fire Fang",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Ursaluna",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Earthquake",
+            "Double-Edge",
+            "Thunder Punch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Electivire",
+          "ability": "Motor Drive",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Magnezone",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Rhyperior",
+          "ability": "Lightning Rod",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Stone Edge",
+            "Thunder Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Swampert",
+          "ability": "Torrent",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Earthquake",
+            "Stealth Rock",
+            "Ice Punch"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "endgame_b",
+      "name": "Stormfront Circuit — Endgame B",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Mamoswine",
+          "ability": "Oblivious",
+          "held_item": "Leftovers",
+          "moves": [
+            "Icicle Crash",
+            "Earthquake",
+            "Stealth Rock",
+            "Rock Slide"
+          ]
+        },
+        {
+          "species": "Hippowdon",
+          "ability": "Sand Stream",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Earthquake",
+            "Stealth Rock",
+            "Crunch",
+            "High Horsepower"
+          ]
+        },
+        {
+          "species": "Jolteon",
+          "ability": "Volt Absorb",
+          "held_item": "Leftovers",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Torterra",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Wood Hammer",
+            "Earthquake",
+            "Stealth Rock",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Luxray",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Flygon",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Thunder Punch",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

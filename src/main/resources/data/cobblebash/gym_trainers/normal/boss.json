@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.normal.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.normal.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.normal.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.normal.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Perfect Fundamentals — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Normal Leader",
-            "pokemon": [
-                {
-                    "species": "Porygon2",
-                    "ability": "Trace",
-                    "held_item": "Eviolite",
-                    "moves": [
-                        "Tri Attack",
-                        "Ice Beam",
-                        "Recover",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Snorlax",
-                    "ability": "Thick Fat",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Body Slam",
-                        "Earthquake",
-                        "Curse",
-                        "Rest"
-                    ]
-                },
-                {
-                    "species": "Staraptor",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Double-Edge"
-                    ]
-                },
-                {
-                    "species": "Obstagoon",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Facade",
-                        "Knock Off",
-                        "Close Combat",
-                        "Obstruct"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "ability": "Stance Change",
-                    "held_item": "None",
-                    "moves": [
-                        "King's Shield",
-                        "Shadow Ball",
-                        "Sacred Sword",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "None",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                }
-            ]
+          "species": "Arboliva",
+          "ability": "Seed Sower",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Razor Leaf",
+            "Swift",
+            "Facade",
+            "Leech Seed"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Normal Leader",
-            "pokemon": [
-                {
-                    "species": "Porygon-Z",
-                    "ability": "Adaptability",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Tri Attack",
-                        "Thunderbolt",
-                        "Ice Beam",
-                        "Dark Pulse"
-                    ]
-                },
-                {
-                    "species": "Ursaring",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Facade",
-                        "Close Combat",
-                        "Crunch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Braviary",
-                    "ability": "Defiant",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Return"
-                    ]
-                },
-                {
-                    "species": "Kangaskhan",
-                    "ability": "Scrappy",
-                    "held_item": "None",
-                    "moves": [
-                        "Fake Out",
-                        "Double-Edge",
-                        "Earthquake",
-                        "Sucker Punch"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Destiny Bond",
-                        "Focus Blast"
-                    ]
-                },
-                {
-                    "species": "Tinkaton",
-                    "ability": "Mold Breaker",
-                    "held_item": "None",
-                    "moves": [
-                        "Gigaton Hammer",
-                        "Play Rough",
-                        "Knock Off",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Lickilicky",
+          "ability": "Own Tempo",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Headbutt",
+            "Facade",
+            "Protect",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Porygon2",
+          "ability": "Trace",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Swift",
+            "Facade",
+            "Thunder Wave",
+            "Psybeam"
+          ]
+        },
+        {
+          "species": "Dudunsparce",
+          "ability": "Serene Grace",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Headbutt",
+            "Facade",
+            "Stealth Rock",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Farigiraf",
+          "ability": "Sap Sipper",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Swift",
+            "Confusion",
+            "Facade",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Obstagoon",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Snarl",
+            "Swift",
+            "Headbutt",
+            "Thunder Wave"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Perfect Fundamentals — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Porygon2",
+          "ability": "Trace",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Facade",
+            "Thunder Wave",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Dudunsparce",
+          "ability": "Serene Grace",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Farigiraf",
+          "ability": "Sap Sipper",
+          "held_item": "Life Orb",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Double-Edge",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Obstagoon",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Knock Off",
+            "Double-Edge",
+            "Body Slam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Wyrdeer",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Zen Headbutt",
+            "Body Slam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Porygon-Z",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Facade",
+            "Thunder Wave",
+            "Ice Beam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Perfect Fundamentals — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Ursaluna",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Earthquake",
+            "Double-Edge",
+            "Body Slam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Blissey",
+          "ability": "Serene Grace",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hyper Voice",
+            "Double-Edge",
+            "Stealth Rock",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Snorlax",
+          "ability": "Immunity",
+          "held_item": "Life Orb",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Porygon-Z",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Facade",
+            "Thunder Wave",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Wyrdeer",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Zen Headbutt",
+            "Body Slam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Dudunsparce",
+          "ability": "Serene Grace",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Perfect Fundamentals — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Porygon-Z",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Facade",
+            "Thunder Wave",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Wyrdeer",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Zen Headbutt",
+            "Body Slam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Dudunsparce",
+          "ability": "Serene Grace",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Farigiraf",
+          "ability": "Sap Sipper",
+          "held_item": "Life Orb",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Double-Edge",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Obstagoon",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Knock Off",
+            "Double-Edge",
+            "Body Slam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Lickilicky",
+          "ability": "Own Tempo",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Body Slam",
+            "Facade",
+            "Protect",
+            "Earthquake"
+          ]
+        }
+      ]
+    }
+  ]
 }

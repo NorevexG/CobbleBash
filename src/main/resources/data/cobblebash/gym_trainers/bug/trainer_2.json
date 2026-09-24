@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.bug.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.bug.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.bug.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.bug.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Shell and Status — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Hazard Control",
-            "pokemon": [
-                {
-                    "species": "Forretress",
-                    "ability": "Sturdy",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Spikes",
-                        "Rapid Spin",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Araquanid",
-                    "ability": "Water Bubble",
-                    "held_item": "None",
-                    "moves": [
-                        "Liquidation",
-                        "Leech Life",
-                        "Mirror Coat",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Superpower",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Frosmoth",
-                    "ability": "Ice Scales",
-                    "held_item": "None",
-                    "moves": [
-                        "Quiver Dance",
-                        "Ice Beam",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                }
-            ]
+          "species": "Kricketot",
+          "ability": "Shed Skin",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Lunge",
+            "Bide"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Fast Offensive Pressure",
-            "pokemon": [
-                {
-                    "species": "Galvantula",
-                    "ability": "Compound Eyes",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Sticky Web",
-                        "Thunder",
-                        "Bug Buzz",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Heracross",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Megahorn",
-                        "Knock Off",
-                        "Facade"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "None",
-                    "moves": [
-                        "Bullet Punch",
-                        "Swords Dance",
-                        "U-turn",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                },
-                {
-                    "species": "Golisopod",
-                    "ability": "Emergency Exit",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "First Impression",
-                        "Liquidation",
-                        "Leech Life",
-                        "Aqua Jet"
-                    ]
-                }
-            ]
+          "species": "Caterpie",
+          "ability": "Shield Dust",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Electroweb",
+            "String Shot",
+            "Tackle"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Status and Sustain",
-            "pokemon": [
-                {
-                    "species": "Ribombee",
-                    "ability": "Shield Dust",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Sticky Web",
-                        "Moonblast",
-                        "Bug Buzz",
-                        "Stun Spore"
-                    ]
-                },
-                {
-                    "species": "Araquanid",
-                    "ability": "Water Bubble",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Liquidation",
-                        "Toxic",
-                        "Protect",
-                        "Leech Life"
-                    ]
-                },
-                {
-                    "species": "Forretress",
-                    "ability": "Sturdy",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Stealth Rock",
-                        "Rapid Spin",
-                        "Volt Switch",
-                        "Gyro Ball"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "None",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Roost",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Frosmoth",
-                    "ability": "Ice Scales",
-                    "held_item": "None",
-                    "moves": [
-                        "Quiver Dance",
-                        "Ice Beam",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                }
-            ]
+          "species": "Weedle",
+          "ability": "Shield Dust",
+          "held_item": "None",
+          "moves": [
+            "Bug Bite",
+            "Electroweb",
+            "Poison Sting",
+            "Skitter Smack"
+          ]
+        },
+        {
+          "species": "Scatterbug",
+          "ability": "Compound Eyes",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Pounce",
+            "Poison Powder"
+          ]
+        },
+        {
+          "species": "Kakuna",
+          "ability": "Shed Skin",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bug Bite",
+            "Electroweb",
+            "Harden",
+            "Iron Defense"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Shell and Status — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Weedle",
+          "ability": "Shield Dust",
+          "held_item": "None",
+          "moves": [
+            "Bug Bite",
+            "Electroweb",
+            "Poison Sting",
+            "Skitter Smack"
+          ]
+        },
+        {
+          "species": "Scatterbug",
+          "ability": "Compound Eyes",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Pounce",
+            "Poison Powder"
+          ]
+        },
+        {
+          "species": "Kakuna",
+          "ability": "Shed Skin",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bug Bite",
+            "Electroweb",
+            "Harden",
+            "Iron Defense"
+          ]
+        },
+        {
+          "species": "Metapod",
+          "ability": "Shed Skin",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Electroweb",
+            "Harden",
+            "Iron Defense"
+          ]
+        },
+        {
+          "species": "Tarountula",
+          "ability": "Insomnia",
+          "held_item": "None",
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Spikes",
+            "Thief"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Shell and Status — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Spewpa",
+          "ability": "Shed Skin",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Protect",
+            "Bug Bite",
+            "Harden",
+            "Iron Defense"
+          ]
+        },
+        {
+          "species": "Wimpod",
+          "ability": "Wimp Out",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Leech Life",
+            "Waterfall",
+            "Bug Buzz",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Combee",
+          "ability": "Hustle",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Lunge",
+            "Bug Buzz",
+            "Sleep Talk",
+            "Bug Bite"
+          ]
+        },
+        {
+          "species": "Spinarak",
+          "ability": "Swarm",
+          "held_item": "Leftovers",
+          "moves": [
+            "Megahorn",
+            "Poison Jab",
+            "X-Scissor",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Venipede",
+          "ability": "Speed Boost",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Pin Missile",
+            "Poison Jab",
+            "Spikes",
+            "Facade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Shell and Status — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Combee",
+          "ability": "Hustle",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Lunge",
+            "Bug Buzz",
+            "Sleep Talk",
+            "Bug Bite"
+          ]
+        },
+        {
+          "species": "Spinarak",
+          "ability": "Swarm",
+          "held_item": "Leftovers",
+          "moves": [
+            "Megahorn",
+            "Poison Jab",
+            "X-Scissor",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Venipede",
+          "ability": "Speed Boost",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Pin Missile",
+            "Poison Jab",
+            "Spikes",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Ledyba",
+          "ability": "Swarm",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Bug Buzz",
+            "Air Slash",
+            "U-turn",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Nincada",
+          "ability": "Compound Eyes",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "X-Scissor",
+            "Leech Life",
+            "Protect",
+            "Facade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Shell and Status — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Araquanid",
+          "ability": "Water Absorb",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Liquidation",
+            "X-Scissor",
+            "Leech Life",
+            "Sticky Web"
+          ]
+        },
+        {
+          "species": "Spidops",
+          "ability": "Insomnia",
+          "held_item": "Leftovers",
+          "moves": [
+            "First Impression",
+            "X-Scissor",
+            "Spikes",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Swadloon",
+          "ability": "Overcoat",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Lunge",
+            "Seed Bomb",
+            "Bug Buzz",
+            "Sticky Web"
+          ]
+        },
+        {
+          "species": "Whirlipede",
+          "ability": "Speed Boost",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Pin Missile",
+            "Poison Jab",
+            "Spikes",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Skorupi",
+          "ability": "Battle Armor",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poison Jab",
+            "X-Scissor",
+            "Pin Missile",
+            "Toxic Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Shell and Status — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Swadloon",
+          "ability": "Overcoat",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Lunge",
+            "Seed Bomb",
+            "Bug Buzz",
+            "Sticky Web"
+          ]
+        },
+        {
+          "species": "Whirlipede",
+          "ability": "Speed Boost",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Pin Missile",
+            "Poison Jab",
+            "Spikes",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Skorupi",
+          "ability": "Battle Armor",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poison Jab",
+            "X-Scissor",
+            "Pin Missile",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Dwebble",
+          "ability": "Sturdy",
+          "held_item": "Mental Herb",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Sewaddle",
+          "ability": "Overcoat",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Lunge",
+            "Seed Bomb",
+            "Bug Buzz",
+            "Sticky Web"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Shell and Status — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Sizzlipede",
+          "ability": "Flame Body",
+          "held_item": "Leftovers",
+          "moves": [
+            "Heat Wave",
+            "Leech Life",
+            "Lunge",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Venonat",
+          "ability": "Compound Eyes",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leech Life",
+            "Poison Fang",
+            "Lunge",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Pineco",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Lunge",
+            "Pin Missile",
+            "Stealth Rock",
+            "Rock Slide"
+          ]
+        },
+        {
+          "species": "Paras",
+          "ability": "Effect Spore",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "X-Scissor",
+            "Seed Bomb",
+            "Leech Life",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Rellor",
+          "ability": "Compound Eyes",
+          "held_item": "Mental Herb",
+          "moves": [
+            "X-Scissor",
+            "Leech Life",
+            "Protect",
+            "Facade"
+          ]
+        }
+      ]
+    }
+  ]
 }

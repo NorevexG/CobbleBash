@@ -1,204 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.electric.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.electric.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.electric.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.electric.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Paralysis Grid — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Volt Core",
-            "pokemon": [
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Tri Attack"
-                    ]
-                },
-                {
-                    "species": "Galvantula",
-                    "ability": "Compound Eyes",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Sticky Web",
-                        "Thunder",
-                        "Bug Buzz",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Electivire",
-                    "ability": "Motor Drive",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunder Punch",
-                        "Ice Punch",
-                        "Earthquake",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Zebstrika",
-                    "ability": "Lightning Rod",
-                    "held_item": "None",
-                    "moves": [
-                        "Wild Charge",
-                        "Flame Charge",
-                        "Volt Switch",
-                        "Overheat"
-                    ]
-                }
-            ]
+          "species": "Pichu",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Shock Wave",
+            "Thunder Wave",
+            "Swift"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Pressure",
-            "pokemon": [
-                {
-                    "species": "Jolteon",
-                    "ability": "Volt Absorb",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Thunderbolt",
-                        "Shadow Ball",
-                        "Volt Switch",
-                        "Signal Beam"
-                    ]
-                },
-                {
-                    "species": "Electivire",
-                    "ability": "Motor Drive",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Thunder Punch",
-                        "Ice Punch",
-                        "Earthquake",
-                        "Cross Chop"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Overheat",
-                        "Volt Switch",
-                        "Thunderbolt",
-                        "Will-O-Wisp"
-                    ],
-                    "aspects": [
-                        "heat-appliance"
-                    ]
-                },
-                {
-                    "species": "Galvantula",
-                    "ability": "Compound Eyes",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Sticky Web",
-                        "Thunder",
-                        "Bug Buzz",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Raichu",
-                    "ability": "Lightning Rod",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Grass Knot",
-                        "Volt Switch",
-                        "Encore"
-                    ]
-                }
-            ]
+          "species": "Toxel",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Protect",
+            "Facade",
+            "Encore",
+            "Substitute"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Utility & Control",
-            "pokemon": [
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Substitute"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                },
-                {
-                    "species": "Eelektross",
-                    "ability": "Levitate",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flamethrower",
-                        "Giga Drain",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Ampharos",
-                    "ability": "Static",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Dragon Pulse",
-                        "Light Screen",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Galvantula",
-                    "ability": "Compound Eyes",
-                    "held_item": "None",
-                    "moves": [
-                        "Sticky Web",
-                        "Thunder",
-                        "Bug Buzz",
-                        "Volt Switch"
-                    ]
-                }
-            ]
+          "species": "Shinx",
+          "ability": "Intimidate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunder Shock",
+            "Spark",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Yamper",
+          "ability": "Rattled",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Spark",
+            "Wild Charge",
+            "Thunder Wave",
+            "Flame Charge"
+          ]
+        },
+        {
+          "species": "Tadbulb",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Spark",
+            "Thunder Wave",
+            "Water Pulse"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Paralysis Grid — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Shinx",
+          "ability": "Intimidate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunder Shock",
+            "Spark",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Yamper",
+          "ability": "Rattled",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Spark",
+            "Wild Charge",
+            "Thunder Wave",
+            "Flame Charge"
+          ]
+        },
+        {
+          "species": "Tadbulb",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Spark",
+            "Thunder Wave",
+            "Water Pulse"
+          ]
+        },
+        {
+          "species": "Tynamo",
+          "ability": "Levitate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Spark",
+            "Charge Beam",
+            "Thunder Wave",
+            "Knock Off"
+          ]
+        },
+        {
+          "species": "Mareep",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Shock Wave",
+            "Thunder Wave",
+            "Thunderbolt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Paralysis Grid — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Tynamo",
+          "ability": "Levitate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunder Wave",
+            "Knock Off",
+            "Charge",
+            "Charge Beam"
+          ]
+        },
+        {
+          "species": "Mareep",
+          "ability": "Static",
+          "held_item": "Leftovers",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Power Gem"
+          ]
+        },
+        {
+          "species": "Wattrel",
+          "ability": "Wind Power",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunderbolt",
+            "Hurricane",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Blitzle",
+          "ability": "Lightning Rod",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Electrike",
+          "ability": "Static",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Flamethrower"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Paralysis Grid — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Wattrel",
+          "ability": "Wind Power",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunderbolt",
+            "Hurricane",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Blitzle",
+          "ability": "Lightning Rod",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Electrike",
+          "ability": "Static",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Flamethrower"
+          ]
+        },
+        {
+          "species": "Joltik",
+          "ability": "Compound Eyes",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Bug Buzz",
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Pikachu",
+          "ability": "Static",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Play Rough"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Paralysis Grid — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Stunfisk",
+          "ability": "Static",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Earth Power",
+            "Thunderbolt",
+            "Thunder",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Lanturn",
+          "ability": "Water Absorb",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Pincurchin",
+          "ability": "Lightning Rod",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Spikes",
+            "Poison Jab"
+          ]
+        },
+        {
+          "species": "Eelektrik",
+          "ability": "Levitate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Pachirisu",
+          "ability": "Volt Absorb",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Play Rough"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Paralysis Grid — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Pincurchin",
+          "ability": "Lightning Rod",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Spikes",
+            "Poison Jab"
+          ]
+        },
+        {
+          "species": "Eelektrik",
+          "ability": "Levitate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Pachirisu",
+          "ability": "Volt Absorb",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Flaaffy",
+          "ability": "Static",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Power Gem"
+          ]
+        },
+        {
+          "species": "Luxio",
+          "ability": "Intimidate",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Crunch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Paralysis Grid — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Chinchou",
+          "ability": "Water Absorb",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Magnemite",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Pikachu",
+          "ability": "Static",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Joltik",
+          "ability": "Compound Eyes",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Bug Buzz",
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Blitzle",
+          "ability": "Lightning Rod",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Facade"
+          ]
+        }
+      ]
+    }
+  ]
 }

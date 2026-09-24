@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.fairy.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.fairy.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.fairy.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.fairy.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Gleaming Tempo — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Support",
-            "pokemon": [
-                {
-                    "species": "Sylveon",
-                    "ability": "Pixilate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Hyper Voice",
-                        "Wish",
-                        "Protect",
-                        "Mystical Fire"
-                    ]
-                },
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "None",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Claw",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Klefki",
-                    "ability": "Prankster",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Thunder Wave",
-                        "Spikes",
-                        "Play Rough",
-                        "Reflect"
-                    ]
-                },
-                {
-                    "species": "Granbull",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Play Rough",
-                        "Crunch",
-                        "Close Combat",
-                        "Thunder Wave"
-                    ]
-                }
-            ]
+          "species": "Cutiefly",
+          "ability": "Shield Dust",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Draining Kiss",
+            "Fairy Wind",
+            "U-turn"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Status Pressure",
-            "pokemon": [
-                {
-                    "species": "Florges",
-                    "ability": "Flower Veil",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Moonblast",
-                        "Wish",
-                        "Protect",
-                        "Aromatherapy"
-                    ]
-                },
-                {
-                    "species": "Togetic",
-                    "ability": "Serene Grace",
-                    "held_item": "None",
-                    "moves": [
-                        "Air Cutter",
-                        "Thunder Wave",
-                        "Roost",
-                        "Dazzling Gleam"
-                    ]
-                },
-                {
-                    "species": "Mawile",
-                    "ability": "Intimidate",
-                    "held_item": "Black Glasses",
-                    "moves": [
-                        "Play Rough",
-                        "Iron Head",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "None",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Sneak",
-                        "Swords Dance",
-                        "Will-O-Wisp"
-                    ]
-                }
-            ]
+          "species": "Mime Jr.",
+          "ability": "Technician",
+          "held_item": "None",
+          "moves": [
+            "Confusion",
+            "Dazzling Gleam",
+            "Baton Pass",
+            "Brick Break"
+          ]
+        },
+        {
+          "species": "Morgrem",
+          "ability": "Prankster",
+          "held_item": "None",
+          "moves": [
+            "Bite",
+            "Draining Kiss",
+            "Dazzling Gleam",
+            "Parting Shot"
+          ]
+        },
+        {
+          "species": "Floette",
+          "ability": "Flower Veil",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Disarming Voice",
+            "Draining Kiss",
+            "Baton Pass",
+            "Magical Leaf"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Gleaming Tempo — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Morgrem",
+          "ability": "Prankster",
+          "held_item": "None",
+          "moves": [
+            "Bite",
+            "Draining Kiss",
+            "Dazzling Gleam",
+            "Parting Shot"
+          ]
+        },
+        {
+          "species": "Floette",
+          "ability": "Flower Veil",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Disarming Voice",
+            "Draining Kiss",
+            "Baton Pass",
+            "Magical Leaf"
+          ]
+        },
+        {
+          "species": "Mawile",
+          "ability": "Intimidate",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Flash Cannon",
+            "Draining Kiss",
+            "Fairy Wind",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Tinkatuff",
+          "ability": "Mold Breaker",
+          "held_item": "None",
+          "moves": [
+            "Draining Kiss",
+            "Metal Claw",
+            "Fairy Wind",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Gleaming Tempo — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Tinkatuff",
+          "ability": "Mold Breaker",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Play Rough",
+            "Flash Cannon",
+            "Draining Kiss",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Shiinotic",
+          "ability": "Effect Spore",
+          "held_item": "Life Orb",
+          "moves": [
+            "Energy Ball",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Dedenne",
+          "ability": "Cheek Pouch",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Wigglytuff",
+          "ability": "Cute Charm",
+          "held_item": "Life Orb",
+          "moves": [
+            "Hyper Voice",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Gleaming Tempo — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Dedenne",
+          "ability": "Cheek Pouch",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Wigglytuff",
+          "ability": "Cute Charm",
+          "held_item": "Life Orb",
+          "moves": [
+            "Hyper Voice",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Granbull",
+          "ability": "Intimidate",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Play Rough",
+            "Dazzling Gleam",
+            "Encore",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Mr. Mime",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Baton Pass",
+            "Thunderbolt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Gleaming Tempo — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Alcremie",
+          "ability": "Sweet Veil",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Encore",
+            "Psychic"
+          ]
+        },
+        {
+          "species": "Comfey",
+          "ability": "Natural Cure",
+          "held_item": "Life Orb",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "U-turn",
+            "Energy Ball"
+          ]
+        },
+        {
+          "species": "Clefable",
+          "ability": "Magic Guard",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Baton Pass",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Slurpuff",
+          "ability": "Sweet Veil",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Sticky Web",
+            "Thunderbolt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Gleaming Tempo — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Clefable",
+          "ability": "Magic Guard",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Baton Pass",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Slurpuff",
+          "ability": "Sweet Veil",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Sticky Web",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Whimsicott",
+          "ability": "Prankster",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Energy Ball",
+            "Moonblast",
+            "Dazzling Gleam",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Dachsbun",
+          "ability": "Well-Baked Body",
+          "held_item": "Life Orb",
+          "moves": [
+            "Play Rough",
+            "Dazzling Gleam",
+            "Baton Pass",
+            "Crunch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Gleaming Tempo — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Klefki",
+          "ability": "Prankster",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Flash Cannon",
+            "Play Rough",
+            "Dazzling Gleam",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Ribombee",
+          "ability": "Shield Dust",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Moonblast",
+            "Dazzling Gleam",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Aromatisse",
+          "ability": "Healer",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Encore",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Mr. Mime",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Baton Pass",
+            "Thunderbolt"
+          ]
+        }
+      ]
+    }
+  ]
 }

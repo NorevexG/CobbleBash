@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.fighting.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.fighting.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.fighting.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.fighting.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Counter Stance — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Fighters",
-            "pokemon": [
-                {
-                    "species": "Lucario",
-                    "ability": "Inner Focus",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Extreme Speed",
-                        "Swords Dance",
-                        "Crunch"
-                    ]
-                },
-                {
-                    "species": "Conkeldurr",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Drain Punch",
-                        "Mach Punch",
-                        "Knock Off",
-                        "Facade"
-                    ]
-                },
-                {
-                    "species": "Gallade",
-                    "ability": "Sharpness",
-                    "held_item": "None",
-                    "moves": [
-                        "Sacred Sword",
-                        "Psycho Cut",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Hawlucha",
-                    "ability": "Unburden",
-                    "held_item": "None",
-                    "moves": [
-                        "Acrobatics",
-                        "Close Combat",
-                        "Swords Dance",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Mienshao",
-                    "ability": "Regenerator",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Close Combat",
-                        "U-turn",
-                        "Knock Off",
-                        "Stone Edge"
-                    ]
-                }
-            ]
+          "species": "Tyrogue",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Low Kick",
+            "Rock Smash",
+            "Protect",
+            "Bulldoze"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Fast Offensive Core",
-            "pokemon": [
-                {
-                    "species": "Mienshao",
-                    "ability": "Regenerator",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Close Combat",
-                        "U-turn",
-                        "Knock Off",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Infernape",
-                    "ability": "Blaze",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Flare Blitz",
-                        "U-turn",
-                        "Grass Knot"
-                    ]
-                },
-                {
-                    "species": "Lucario",
-                    "ability": "Inner Focus",
-                    "held_item": "None",
-                    "moves": [
-                        "Close Combat",
-                        "Extreme Speed",
-                        "Swords Dance",
-                        "Crunch"
-                    ]
-                },
-                {
-                    "species": "Hawlucha",
-                    "ability": "Unburden",
-                    "held_item": "None",
-                    "moves": [
-                        "Acrobatics",
-                        "Close Combat",
-                        "Swords Dance",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Breloom",
-                    "ability": "Technician",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Spore",
-                        "Mach Punch",
-                        "Bullet Seed",
-                        "Rock Tomb"
-                    ]
-                }
-            ]
+          "species": "Makuhita",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Low Kick",
+            "Arm Thrust",
+            "Protect",
+            "Rock Tomb"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Disruption & Sustain",
-            "pokemon": [
-                {
-                    "species": "Conkeldurr",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Drain Punch",
-                        "Mach Punch",
-                        "Knock Off",
-                        "Facade"
-                    ]
-                },
-                {
-                    "species": "Scrafty",
-                    "ability": "Intimidate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Drain Punch",
-                        "Knock Off",
-                        "Dragon Dance",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Toxicroak",
-                    "ability": "Dry Skin",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Drain Punch",
-                        "Sucker Punch",
-                        "Gunk Shot",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Gallade",
-                    "ability": "Sharpness",
-                    "held_item": "None",
-                    "moves": [
-                        "Sacred Sword",
-                        "Psycho Cut",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Mienshao",
-                    "ability": "Regenerator",
-                    "held_item": "None",
-                    "moves": [
-                        "Close Combat",
-                        "U-turn",
-                        "Knock Off",
-                        "Fake Out"
-                    ]
-                }
-            ]
+          "species": "Meditite",
+          "ability": "Pure Power",
+          "held_item": "None",
+          "moves": [
+            "Low Kick",
+            "Confusion",
+            "Rock Smash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Riolu",
+          "ability": "Prankster",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Low Kick",
+            "Rock Smash",
+            "Protect",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Croagunk",
+          "ability": "Anticipation",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Acid Spray",
+            "Low Kick",
+            "Rock Smash",
+            "Toxic"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Counter Stance — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Meditite",
+          "ability": "Pure Power",
+          "held_item": "None",
+          "moves": [
+            "Low Kick",
+            "Confusion",
+            "Rock Smash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Riolu",
+          "ability": "Prankster",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Low Kick",
+            "Rock Smash",
+            "Protect",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Croagunk",
+          "ability": "Anticipation",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Acid Spray",
+            "Low Kick",
+            "Rock Smash",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Machop",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Low Kick",
+            "Rock Smash",
+            "Protect",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Mankey",
+          "ability": "Vital Spirit",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Low Kick",
+            "Rock Smash",
+            "Protect",
+            "Rock Tomb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Counter Stance — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Machop",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Close Combat",
+            "Brick Break",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Mankey",
+          "ability": "Vital Spirit",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Close Combat",
+            "Drain Punch",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Timburr",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Close Combat",
+            "Drain Punch",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Clobbopus",
+          "ability": "Technician",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Close Combat",
+            "Brick Break",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Crabrawler",
+          "ability": "Hyper Cutter",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Close Combat",
+            "Drain Punch",
+            "Protect",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Counter Stance — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Timburr",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Close Combat",
+            "Drain Punch",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Clobbopus",
+          "ability": "Technician",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Close Combat",
+            "Brick Break",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Crabrawler",
+          "ability": "Hyper Cutter",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Close Combat",
+            "Drain Punch",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Stufful",
+          "ability": "Fluffy",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Double-Edge",
+            "Brick Break",
+            "Superpower",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Scraggy",
+          "ability": "Intimidate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Knock Off",
+            "Close Combat",
+            "Drain Punch",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Counter Stance — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Scrafty",
+          "ability": "Intimidate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Knock Off",
+            "Close Combat",
+            "Drain Punch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Throh",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Brick Break",
+            "Superpower",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Hakamo-o",
+          "ability": "Overcoat",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dragon Claw",
+            "Close Combat",
+            "Drain Punch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Pignite",
+          "ability": "Blaze",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Drain Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Medicham",
+          "ability": "Pure Power",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Close Combat",
+            "Zen Headbutt",
+            "Drain Punch",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Counter Stance — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Hakamo-o",
+          "ability": "Overcoat",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dragon Claw",
+            "Close Combat",
+            "Drain Punch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Pignite",
+          "ability": "Blaze",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Drain Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Medicham",
+          "ability": "Pure Power",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Close Combat",
+            "Zen Headbutt",
+            "Drain Punch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Combusken",
+          "ability": "Speed Boost",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Brick Break",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Gurdurr",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Close Combat",
+            "Drain Punch",
+            "Protect",
+            "Ice Punch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Counter Stance — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Machoke",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Close Combat",
+            "Brick Break",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Monferno",
+          "ability": "Blaze",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Drain Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Mienfoo",
+          "ability": "Regenerator",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Close Combat",
+            "Drain Punch",
+            "Protect",
+            "Stone Edge"
+          ]
+        },
+        {
+          "species": "Scraggy",
+          "ability": "Intimidate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Knock Off",
+            "Close Combat",
+            "Drain Punch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Stufful",
+          "ability": "Fluffy",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Double-Edge",
+            "Brick Break",
+            "Superpower",
+            "Protect"
+          ]
+        }
+      ]
+    }
+  ]
 }

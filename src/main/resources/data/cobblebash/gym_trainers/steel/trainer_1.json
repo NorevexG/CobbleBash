@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.steel.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.steel.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.steel.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.steel.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Metal Momentum — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Iron Offense",
-            "pokemon": [
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Lucario",
-                    "ability": "Inner Focus",
-                    "held_item": "None",
-                    "moves": [
-                        "Close Combat",
-                        "Meteor Mash",
-                        "Extreme Speed",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Body Press"
-                    ]
-                },
-                {
-                    "species": "Skarmory",
-                    "ability": "Sturdy",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Spikes",
-                        "Roost",
-                        "Whirlwind"
-                    ]
-                }
-            ]
+          "species": "Magnemite",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunder Shock",
+            "Flash Cannon",
+            "Steel Beam",
+            "Volt Switch"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Defensive Steel",
-            "pokemon": [
-                {
-                    "species": "Ferrothorn",
-                    "ability": "Iron Barbs",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Leech Seed",
-                        "Gyro Ball",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Bronzong",
-                    "ability": "Levitate",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Gyro Ball",
-                        "Stealth Rock",
-                        "Toxic",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Empoleon",
-                    "ability": "Torrent",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Flash Cannon",
-                        "Ice Beam",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Bisharp",
-                    "ability": "Defiant",
-                    "held_item": "None",
-                    "moves": [
-                        "Iron Head",
-                        "Knock Off",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Mawile",
+          "ability": "Intimidate",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Flash Cannon",
+            "Draining Kiss",
+            "Iron Head",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Tinkatuff",
+          "ability": "Mold Breaker",
+          "held_item": "None",
+          "moves": [
+            "Draining Kiss",
+            "Metal Claw",
+            "Flash Cannon",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Togedemaru",
+          "ability": "Sturdy",
+          "held_item": "None",
+          "moves": [
+            "Thunder Shock",
+            "Iron Head",
+            "Steel Beam",
+            "U-turn"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Metal Momentum — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Tinkatuff",
+          "ability": "Mold Breaker",
+          "held_item": "None",
+          "moves": [
+            "Draining Kiss",
+            "Metal Claw",
+            "Flash Cannon",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Togedemaru",
+          "ability": "Sturdy",
+          "held_item": "None",
+          "moves": [
+            "Thunder Shock",
+            "Iron Head",
+            "Steel Beam",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Perrserker",
+          "ability": "Tough Claws",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Metal Claw",
+            "Flash Cannon",
+            "U-turn",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Doublade",
+          "ability": "No Guard",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Sneak",
+            "Iron Head",
+            "Swords Dance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Metal Momentum — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Perrserker",
+          "ability": "Tough Claws",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Iron Head",
+            "Heavy Slam",
+            "U-turn",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Doublade",
+          "ability": "No Guard",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Iron Head",
+            "Shadow Claw",
+            "Flash Cannon",
+            "Swords Dance"
+          ]
+        },
+        {
+          "species": "Magneton",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Steel Beam",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Skarmory",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Brave Bird",
+            "Flash Cannon",
+            "Tailwind"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Metal Momentum — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Magneton",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Steel Beam",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Skarmory",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Brave Bird",
+            "Flash Cannon",
+            "Tailwind"
+          ]
+        },
+        {
+          "species": "Klefki",
+          "ability": "Prankster",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Flash Cannon",
+            "Play Rough",
+            "Steel Beam",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Orthworm",
+          "ability": "Earth Eater",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Iron Head",
+            "Heavy Slam",
+            "Spikes",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Metal Momentum — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Excadrill",
+          "ability": "Sand Rush",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Iron Head",
+            "Smart Strike",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tinkaton",
+          "ability": "Mold Breaker",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Play Rough",
+            "Heavy Slam",
+            "Flash Cannon",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Copperajah",
+          "ability": "Sheer Force",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Revavroom",
+          "ability": "Overcoat",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Gunk Shot",
+            "Heavy Slam",
+            "Parting Shot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Metal Momentum — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Copperajah",
+          "ability": "Sheer Force",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Revavroom",
+          "ability": "Overcoat",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Gunk Shot",
+            "Heavy Slam",
+            "Parting Shot"
+          ]
+        },
+        {
+          "species": "Scizor",
+          "ability": "Technician",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "X-Scissor",
+            "Iron Head",
+            "Bullet Punch",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Corviknight",
+          "ability": "Pressure",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Brave Bird",
+            "Iron Head",
+            "Heavy Slam",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Metal Momentum — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Escavalier",
+          "ability": "Overcoat",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Megahorn",
+            "Iron Head",
+            "Smart Strike",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Durant",
+          "ability": "Hustle",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "First Impression",
+            "Iron Head",
+            "Flash Cannon",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Orthworm",
+          "ability": "Earth Eater",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Iron Head",
+            "Heavy Slam",
+            "Spikes",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Klefki",
+          "ability": "Prankster",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Flash Cannon",
+            "Play Rough",
+            "Steel Beam",
+            "Spikes"
+          ]
+        }
+      ]
+    }
+  ]
 }

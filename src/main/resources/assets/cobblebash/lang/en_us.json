@@ -14,6 +14,7 @@
     "cobblebash.configuration.title":  "CobbleBash Configs",
     "cobblebash.dialogue.action.battle":  "Battle",
     "cobblebash.dialogue.action.cancel":  "Cancel",
+    "cobblebash.dialogue.battle_format.doubles_warning":  "This will be a Double Battle. Two Pokémon may fight at once!",
     "cobblebash.dialogue.bug.boss.line_1":  "Every tiny opening becomes a swarm. Show me you can survive one.",
     "cobblebash.dialogue.bug.boss.name":  "The Hive Queen",
     "cobblebash.dialogue.bug.trainer_1.line_1":  "Welcome to the Bug gym. The web is already set, so step carefully.",
@@ -231,6 +232,7 @@
     "message.cobblebash.elite_four_entered":  "You entered the Elite Four challenge.",
     "message.cobblebash.leave_gym":  "[Leave Gym]",
     "message.cobblebash.leave_gym.hover":  "Return to where you entered.",
+    "message.cobblebash.trainer_build_range_fallback":  "Warning: no trainer loadout covers level %s (available: %s). The nearest loadout will be used.",
     "criterion.cobblebadges.bug_gym_advancement":  "Complete Bug Gym",
     "criterion.cobblebadges.dark_gym_advancement":  "Complete Dark Gym",
     "criterion.cobblebadges.dragon_gym_advancement":  "Complete Dragon Gym",
@@ -250,5 +252,7 @@
     "criterion.cobblebadges.steel_gym_advancement":  "Complete Steel Gym",
     "criterion.cobblebadges.water_gym_advancement":  "Complete Water Gym",
     "stat.cobblebash.gyms_completed":  "Gyms Completed",
-    "upgrade.cobblebash.champion_upgrade":  "Champion Upgrade"
+    "upgrade.cobblebash.champion_upgrade":  "Champion Upgrade",
+    "message.cobblebash.trainer_locked":  "Cannot battle %1$s. Beat %2$s first.",
+    "message.cobblebash.elite_four_items_used":  "Battle Items Used: %s"
 }

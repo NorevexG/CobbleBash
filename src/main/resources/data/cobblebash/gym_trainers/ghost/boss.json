@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.ghost.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.ghost.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.ghost.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.ghost.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Spectral Court — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Ghost Leader",
-            "pokemon": [
-                {
-                    "species": "Dragapult",
-                    "ability": "Infiltrator",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Draco Meteor",
-                        "Shadow Ball",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "ability": "Stance Change",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "King's Shield",
-                        "Shadow Ball",
-                        "Sacred Sword",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Focus Blast",
-                        "Destiny Bond"
-                    ]
-                },
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "None",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Sneak",
-                        "Swords Dance",
-                        "Shadow Claw"
-                    ]
-                },
-                {
-                    "species": "Tyranitar",
-                    "ability": "Sand Stream",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Crunch",
-                        "Stone Edge",
-                        "Superpower",
-                        "Earthquake"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                }
-            ]
+          "species": "Chandelure",
+          "ability": "Flame Body",
+          "held_item": "None",
+          "moves": [
+            "Hex",
+            "Ember",
+            "Night Shade",
+            "Will-O-Wisp"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Ghost Leader",
-            "pokemon": [
-                {
-                    "species": "Dragapult",
-                    "ability": "Infiltrator",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Dragon Darts",
-                        "Phantom Force",
-                        "U-turn",
-                        "Steel Wing"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Destiny Bond",
-                        "Focus Blast"
-                    ]
-                },
-                {
-                    "species": "Chandelure",
-                    "ability": "Flash Fire",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Shadow Ball",
-                        "Flamethrower",
-                        "Energy Ball",
-                        "Psychic"
-                    ]
-                },
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "None",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Sneak",
-                        "Swords Dance",
-                        "Shadow Claw"
-                    ]
-                },
-                {
-                    "species": "Bisharp",
-                    "ability": "Defiant",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Iron Head",
-                        "Knock Off",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Mandibuzz",
-                    "ability": "Overcoat",
-                    "held_item": "None",
-                    "moves": [
-                        "Foul Play",
-                        "Roost",
-                        "Defog",
-                        "U-turn"
-                    ]
-                }
-            ]
+          "species": "Ceruledge",
+          "ability": "Flash Fire",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Ember",
+            "Shadow Sneak",
+            "Hex",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Dusknoir",
+          "ability": "Pressure",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Shadow Sneak",
+            "Hex",
+            "Will-O-Wisp",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Basculegion",
+          "ability": "Adaptability",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Water Gun",
+            "Hex",
+            "Night Shade",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Decidueye",
+          "ability": "Overgrow",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Razor Leaf",
+            "Shadow Sneak",
+            "Hex",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Skeledirge",
+          "ability": "Unaware",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Hex",
+            "Night Shade",
+            "Will-O-Wisp"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Spectral Court — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Dusknoir",
+          "ability": "Pressure",
+          "held_item": "Life Orb",
+          "moves": [
+            "Poltergeist",
+            "Phantom Force",
+            "Will-O-Wisp",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Basculegion",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Phantom Force",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Decidueye",
+          "ability": "Overgrow",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Leaf Blade",
+            "Poltergeist",
+            "Shadow Claw",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Skeledirge",
+          "ability": "Unaware",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flamethrower",
+            "Shadow Ball",
+            "Hex",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Annihilape",
+          "ability": "Inner Focus",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Close Combat",
+            "Shadow Claw",
+            "Phantom Force",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Gholdengo",
+          "ability": "Good as Gold",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Ball",
+            "Hex",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Spectral Court — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Dragapult",
+          "ability": "Clear Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Phantom Force",
+            "Shadow Ball",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Gholdengo",
+          "ability": "Good as Gold",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Ball",
+            "Hex",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Annihilape",
+          "ability": "Inner Focus",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Close Combat",
+            "Shadow Claw",
+            "Phantom Force",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Basculegion",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Phantom Force",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Decidueye",
+          "ability": "Overgrow",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Leaf Blade",
+            "Poltergeist",
+            "Shadow Claw",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Skeledirge",
+          "ability": "Unaware",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flamethrower",
+            "Shadow Ball",
+            "Hex",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Spectral Court — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Basculegion",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Phantom Force",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Decidueye",
+          "ability": "Overgrow",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Leaf Blade",
+            "Poltergeist",
+            "Shadow Claw",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Skeledirge",
+          "ability": "Unaware",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flamethrower",
+            "Shadow Ball",
+            "Hex",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Ceruledge",
+          "ability": "Flash Fire",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Poltergeist",
+            "Shadow Claw",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Dusknoir",
+          "ability": "Pressure",
+          "held_item": "Life Orb",
+          "moves": [
+            "Poltergeist",
+            "Phantom Force",
+            "Will-O-Wisp",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Chandelure",
+          "ability": "Flame Body",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Shadow Ball",
+            "Flamethrower",
+            "Hex",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    }
+  ]
 }

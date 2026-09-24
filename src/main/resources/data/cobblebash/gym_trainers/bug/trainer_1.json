@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.bug.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.bug.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.bug.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.bug.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Web Tempo — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Web Pressure",
-            "pokemon": [
-                {
-                    "species": "Galvantula",
-                    "ability": "Compound Eyes",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Sticky Web",
-                        "Thunder",
-                        "Bug Buzz",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "None",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Ribombee",
-                    "ability": "Shield Dust",
-                    "held_item": "None",
-                    "moves": [
-                        "Moonblast",
-                        "Bug Buzz",
-                        "Stun Spore",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Heracross",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Megahorn",
-                        "Knock Off",
-                        "Facade"
-                    ]
-                }
-            ]
+          "species": "Cutiefly",
+          "ability": "Shield Dust",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Draining Kiss",
+            "Struggle Bug",
+            "U-turn"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Defensive Pivot",
-            "pokemon": [
-                {
-                    "species": "Forretress",
-                    "ability": "Sturdy",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Stealth Rock",
-                        "Rapid Spin",
-                        "Volt Switch",
-                        "Gyro Ball"
-                    ]
-                },
-                {
-                    "species": "Araquanid",
-                    "ability": "Water Bubble",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Liquidation",
-                        "Leech Life",
-                        "Mirror Coat",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "None",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Roost",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Ribombee",
-                    "ability": "Shield Dust",
-                    "held_item": "None",
-                    "moves": [
-                        "Moonblast",
-                        "Bug Buzz",
-                        "Quiver Dance",
-                        "Stun Spore"
-                    ]
-                }
-            ]
+          "species": "Karrablast",
+          "ability": "Swarm",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Encore",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Joltik",
+          "ability": "Compound Eyes",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Bug Bite",
+            "Shock Wave",
+            "Struggle Bug",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Anorith",
+          "ability": "Battle Armor",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Bug Bite",
+            "Struggle Bug",
+            "Stealth Rock"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Web Tempo — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Joltik",
+          "ability": "Compound Eyes",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Bug Bite",
+            "Shock Wave",
+            "Struggle Bug",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Anorith",
+          "ability": "Battle Armor",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Bug Bite",
+            "Struggle Bug",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Larvesta",
+          "ability": "Flame Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bug Bite",
+            "Ember",
+            "Struggle Bug",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Kricketune",
+          "ability": "Technician",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Baton Pass",
+            "Aerial Ace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Web Tempo — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Yanma",
+          "ability": "Speed Boost",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Bug Buzz",
+            "Air Slash",
+            "Leech Life",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Beedrill",
+          "ability": "Swarm",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "X-Scissor",
+            "Poison Jab",
+            "U-turn",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Butterfree",
+          "ability": "Compound Eyes",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Bug Buzz",
+            "Hurricane",
+            "Pollen Puff",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Ariados",
+          "ability": "Swarm",
+          "held_item": "Life Orb",
+          "moves": [
+            "Megahorn",
+            "Poison Jab",
+            "X-Scissor",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Web Tempo — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Butterfree",
+          "ability": "Compound Eyes",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Bug Buzz",
+            "Hurricane",
+            "Pollen Puff",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Ariados",
+          "ability": "Swarm",
+          "held_item": "Life Orb",
+          "moves": [
+            "Megahorn",
+            "Poison Jab",
+            "X-Scissor",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Parasect",
+          "ability": "Effect Spore",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Seed Bomb",
+            "Leech Life",
+            "Spore"
+          ]
+        },
+        {
+          "species": "Vivillon",
+          "ability": "Compound Eyes",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Bug Buzz",
+            "Hurricane",
+            "Pollen Puff",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Web Tempo — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Accelgor",
+          "ability": "Hydration",
+          "held_item": "Life Orb",
+          "moves": [
+            "Bug Buzz",
+            "Leech Life",
+            "U-turn",
+            "Energy Ball"
+          ]
+        },
+        {
+          "species": "Armaldo",
+          "ability": "Battle Armor",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "X-Scissor",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Escavalier",
+          "ability": "Overcoat",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Megahorn",
+            "Iron Head",
+            "X-Scissor",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Crustle",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Spikes",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Web Tempo — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Escavalier",
+          "ability": "Overcoat",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Megahorn",
+            "Iron Head",
+            "X-Scissor",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Crustle",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Spikes",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Scolipede",
+          "ability": "Speed Boost",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Megahorn",
+            "Poison Jab",
+            "X-Scissor",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Durant",
+          "ability": "Hustle",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "First Impression",
+            "Iron Head",
+            "X-Scissor",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Web Tempo — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Rabsca",
+          "ability": "Synchronize",
+          "held_item": "Life Orb",
+          "moves": [
+            "Bug Buzz",
+            "Psychic",
+            "X-Scissor",
+            "Trick"
+          ]
+        },
+        {
+          "species": "Forretress",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Lunge",
+            "Iron Head",
+            "Pin Missile",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Ribombee",
+          "ability": "Shield Dust",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Moonblast",
+            "Pollen Puff",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Ninjask",
+          "ability": "Speed Boost",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "X-Scissor",
+            "Dual Wingbeat",
+            "Leech Life",
+            "U-turn"
+          ]
+        }
+      ]
+    }
+  ]
 }

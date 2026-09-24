@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.normal.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.normal.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.normal.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.normal.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Fundamental Tempo — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Fundamentals",
-            "pokemon": [
-                {
-                    "species": "Staraptor",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Double-Edge"
-                    ]
-                },
-                {
-                    "species": "Snorlax",
-                    "ability": "Thick Fat",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Body Slam",
-                        "Earthquake",
-                        "Curse",
-                        "Rest"
-                    ]
-                },
-                {
-                    "species": "Porygon2",
-                    "ability": "Trace",
-                    "held_item": "None",
-                    "moves": [
-                        "Tri Attack",
-                        "Ice Beam",
-                        "Recover",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Kangaskhan",
-                    "ability": "Scrappy",
-                    "held_item": "None",
-                    "moves": [
-                        "Fake Out",
-                        "Double-Edge",
-                        "Earthquake",
-                        "Sucker Punch"
-                    ]
-                }
-            ]
+          "species": "Doduo",
+          "ability": "Early Bird",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Quick Attack",
+            "Wing Attack",
+            "Swift",
+            "Baton Pass"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Utility Pressure",
-            "pokemon": [
-                {
-                    "species": "Blissey",
-                    "ability": "Natural Cure",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Seismic Toss",
-                        "Soft-Boiled",
-                        "Toxic",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Obstagoon",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Facade",
-                        "Knock Off",
-                        "Close Combat",
-                        "Obstruct"
-                    ]
-                },
-                {
-                    "species": "Exploud",
-                    "ability": "Scrappy",
-                    "held_item": "None",
-                    "moves": [
-                        "Boomburst",
-                        "Fire Blast",
-                        "Surf",
-                        "Focus Blast"
-                    ]
-                },
-                {
-                    "species": "Stoutland",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Return",
-                        "Crunch",
-                        "Play Rough",
-                        "Superpower"
-                    ]
-                }
-            ]
+          "species": "Staravia",
+          "ability": "Intimidate",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Quick Attack",
+            "Wing Attack",
+            "Swift",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Buneary",
+          "ability": "Klutz",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Quick Attack",
+            "Swift",
+            "Baton Pass",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Rufflet",
+          "ability": "Sheer Force",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Swift",
+            "Wing Attack",
+            "Slash",
+            "U-turn"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Fundamental Tempo — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Buneary",
+          "ability": "Klutz",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Quick Attack",
+            "Swift",
+            "Baton Pass",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Rufflet",
+          "ability": "Sheer Force",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Swift",
+            "Wing Attack",
+            "Slash",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Trumbeak",
+          "ability": "Keen Eye",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Swift",
+            "Aerial Ace",
+            "Facade",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Aipom",
+          "ability": "Skill Link",
+          "held_item": "None",
+          "moves": [
+            "Swift",
+            "Headbutt",
+            "U-turn",
+            "Aerial Ace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Fundamental Tempo — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Squawkabilly",
+          "ability": "Intimidate",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Double-Edge",
+            "Brave Bird",
+            "Facade",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Gumshoos",
+          "ability": "Adaptability",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "U-turn",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Linoone",
+          "ability": "Gluttony",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Trick",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Watchog",
+          "ability": "Keen Eye",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Facade",
+            "Baton Pass",
+            "Ice Punch",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Fundamental Tempo — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Linoone",
+          "ability": "Gluttony",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Trick",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Watchog",
+          "ability": "Keen Eye",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Facade",
+            "Baton Pass",
+            "Ice Punch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Persian",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "U-turn",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Vigoroth",
+          "ability": "Vital Spirit",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Encore",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Fundamental Tempo — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Braviary",
+          "ability": "Sheer Force",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Brave Bird",
+            "Body Slam",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Pyroar",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flamethrower",
+            "Hyper Voice",
+            "Double-Edge",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Cyclizar",
+          "ability": "Regenerator",
+          "held_item": "Life Orb",
+          "moves": [
+            "Dragon Claw",
+            "Double-Edge",
+            "Body Slam",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Bewear",
+          "ability": "Fluffy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Close Combat",
+            "Body Slam",
+            "Taunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Fundamental Tempo — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Cyclizar",
+          "ability": "Regenerator",
+          "held_item": "Life Orb",
+          "moves": [
+            "Dragon Claw",
+            "Double-Edge",
+            "Body Slam",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Bewear",
+          "ability": "Fluffy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Close Combat",
+            "Body Slam",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Stoutland",
+          "ability": "Intimidate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Facade",
+            "Hyper Voice",
+            "Thunder Wave",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Ursaring",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Taunt",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Fundamental Tempo — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Tauros",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Work Up",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Oinkologne",
+          "ability": "Lingering Aroma",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Work Up",
+            "Iron Head"
+          ]
+        },
+        {
+          "species": "Unfezant",
+          "ability": "Big Pecks",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Quick Attack",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Drampa",
+          "ability": "Sap Sipper",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hyper Voice",
+            "Draco Meteor",
+            "Facade",
+            "Tailwind"
+          ]
+        }
+      ]
+    }
+  ]
 }

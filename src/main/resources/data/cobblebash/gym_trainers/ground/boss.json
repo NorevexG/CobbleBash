@@ -1,162 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.ground.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.ground.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.ground.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.ground.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Faultline Monarch — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Ground Leader",
-            "pokemon": [
-                {
-                    "species": "Hippowdon",
-                    "ability": "Sand Stream",
-                    "held_item": "Smooth Rock",
-                    "moves": [
-                        "Stealth Rock",
-                        "Earthquake",
-                        "Slack Off",
-                        "Whirlwind"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Sand Rush",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Swords Dance",
-                        "Rapid Spin"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stone Edge",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Gastrodon",
-                    "ability": "Storm Drain",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Scald",
-                        "Earth Power",
-                        "Recover",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                },
-                {
-                    "species": "Dragonite",
-                    "ability": "Multiscale",
-                    "held_item": "None",
-                    "moves": [
-                        "Dragon Dance",
-                        "Dragon Claw",
-                        "Fire Punch",
-                        "Roost"
-                    ]
-                }
-            ]
+          "species": "Sandaconda",
+          "ability": "Sand Spit",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock",
+            "Rock Tomb"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Ground Leader",
-            "pokemon": [
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Swords Dance",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Mold Breaker",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rapid Spin",
-                        "Rock Slide"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Landorus",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Earthquake",
-                        "U-turn",
-                        "Stone Edge",
-                        "Knock Off"
-                    ],
-                    "aspects": [
-                        "therian-forme"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "None",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                }
-            ]
+          "species": "Toedscruel",
+          "ability": "Mycelium Might",
+          "held_item": "None",
+          "moves": [
+            "Mud Shot",
+            "Magical Leaf",
+            "Mud-Slap",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Krookodile",
+          "ability": "Intimidate",
+          "held_item": "None",
+          "moves": [
+            "Mud Shot",
+            "Bite",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Flygon",
+          "ability": "Levitate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Mud Shot",
+            "Dragon Breath",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Hippowdon",
+          "ability": "Sand Stream",
+          "held_item": "None",
+          "moves": [
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Torterra",
+          "ability": "Overgrow",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Razor Leaf",
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Faultline Monarch — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Krookodile",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Knock Off",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Flygon",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Hippowdon",
+          "ability": "Sand Stream",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Torterra",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Wood Hammer",
+            "Earthquake",
+            "Headlong Rush",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Mamoswine",
+          "ability": "Oblivious",
+          "held_item": "Leftovers",
+          "moves": [
+            "Icicle Crash",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Rhyperior",
+          "ability": "Lightning Rod",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Stone Edge",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Faultline Monarch — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Garchomp",
+          "ability": "Rough Skin",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Stomping Tantrum",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Ursaluna",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Earthquake",
+            "Double-Edge",
+            "Headlong Rush",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Rhyperior",
+          "ability": "Lightning Rod",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Stone Edge",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Swampert",
+          "ability": "Torrent",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Mamoswine",
+          "ability": "Oblivious",
+          "held_item": "Leftovers",
+          "moves": [
+            "Icicle Crash",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Hippowdon",
+          "ability": "Sand Stream",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock",
+            "Crunch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Faultline Monarch — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Swampert",
+          "ability": "Torrent",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Mamoswine",
+          "ability": "Oblivious",
+          "held_item": "Leftovers",
+          "moves": [
+            "Icicle Crash",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Hippowdon",
+          "ability": "Sand Stream",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Torterra",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Wood Hammer",
+            "Earthquake",
+            "Headlong Rush",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Flygon",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Krookodile",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Knock Off",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

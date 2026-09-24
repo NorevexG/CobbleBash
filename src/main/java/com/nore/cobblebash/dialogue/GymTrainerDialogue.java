@@ -11,6 +11,7 @@ import com.cobblemon.mod.common.api.dialogue.DialogueSpeaker;
 import com.cobblemon.mod.common.api.dialogue.input.DialogueOption;
 import com.cobblemon.mod.common.api.dialogue.input.DialogueOptionSetInput;
 import com.nore.cobblebash.gym.GymTrainerUnit;
+import com.nore.cobblebash.integration.GymBattleFormat;
 import com.nore.cobblebash.integration.RctApiProbe;
 import com.nore.cobblebash.integration.RctTrainerDataLoader;
 import com.nore.cobblebash.command.GymCommand;
@@ -20,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -52,7 +54,19 @@ public class GymTrainerDialogue {
         if (speakerName == null) {
             speakerName = CobbleBashText.component(trainerData.displayName());
         }
-        DialogueManager.startDialogue(player, createDialogue(player, trainerRef, unit, speakerName, dialogueData));
+        GymBattleFormat battleFormat = RctApiProbe.resolveBattleFormat(
+                player,
+                trainerRef.gymType(),
+                trainerRef.trainerIdPart()
+        );
+        DialogueManager.startDialogue(player, createDialogue(
+                player,
+                trainerRef,
+                unit,
+                speakerName,
+                dialogueData,
+                battleFormat
+        ));
         return true;
     }
 
@@ -61,11 +75,12 @@ public class GymTrainerDialogue {
             RctApiProbe.GymTrainerRef trainerRef,
             GymTrainerUnit unit,
             Component speakerName,
-            RctTrainerDataLoader.DialogueData dialogueData
+            RctTrainerDataLoader.DialogueData dialogueData,
+            GymBattleFormat battleFormat
     ) {
         DialogueAction battleAction = (activeDialogue, value) -> {
             activeDialogue.close();
-            GymCommand.startTrainerBattle(player, trainerRef.gymType(), trainerRef.slotId(), unit);
+            GymCommand.startTrainerBattle(player, trainerRef.gymType(), trainerRef.slotId(), unit, battleFormat);
         };
 
         DialogueAction cancelAction = (activeDialogue, value) -> {
@@ -81,10 +96,17 @@ public class GymTrainerDialogue {
                 false
         );
 
+        List<DialogueText> lines = new ArrayList<>(dialogueData.lines().stream()
+                .map(GymTrainerDialogue::text)
+                .toList());
+        if (battleFormat == GymBattleFormat.DOUBLES) {
+            lines.add(text("cobblebash.dialogue.battle_format.doubles_warning"));
+        }
+
         DialoguePage page = new DialoguePage(
                 "intro",
                 "trainer",
-                dialogueData.lines().stream().map(GymTrainerDialogue::text).toList(),
+                lines,
                 null,
                 input,
                 null,

@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.dragon.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.dragon.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.dragon.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.dragon.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Scaled Bulwark — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Setup Core",
-            "pokemon": [
-                {
-                    "species": "Dragonite",
-                    "ability": "Multiscale",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Dragon Dance",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Stealth Rock",
-                        "Earthquake",
-                        "Dragon Tail",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Kingdra",
-                    "ability": "Swift Swim",
-                    "held_item": "None",
-                    "moves": [
-                        "Hydro Pump",
-                        "Draco Meteor",
-                        "Ice Beam",
-                        "Rain Dance"
-                    ]
-                },
-                {
-                    "species": "Altaria",
-                    "ability": "Natural Cure",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Dragon Pulse",
-                        "Roost",
-                        "Heal Bell",
-                        "Defog"
-                    ]
-                }
-            ]
+          "species": "Noibat",
+          "ability": "Frisk",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Wing Attack",
+            "Dragon Claw",
+            "Draco Meteor",
+            "Protect"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Pressure",
-            "pokemon": [
-                {
-                    "species": "Dragapult",
-                    "ability": "Infiltrator",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Dragon Darts",
-                        "U-turn",
-                        "Phantom Force",
-                        "Steel Wing"
-                    ]
-                },
-                {
-                    "species": "Haxorus",
-                    "ability": "Mold Breaker",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Dragon Dance",
-                        "Outrage",
-                        "Earthquake",
-                        "Poison Jab"
-                    ]
-                },
-                {
-                    "species": "Salamence",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dragon Dance",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Flygon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "U-turn",
-                        "Fire Punch"
-                    ]
-                },
-                {
-                    "species": "Noivern",
-                    "ability": "Infiltrator",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Draco Meteor",
-                        "Hurricane",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                }
-            ]
+          "species": "Dreepy",
+          "ability": "Clear Body",
+          "held_item": "None",
+          "moves": [
+            "Dragon Tail",
+            "Astonish",
+            "Draco Meteor",
+            "Thunder Wave"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Bulk and Utility",
-            "pokemon": [
-                {
-                    "species": "Goodra",
-                    "ability": "Sap Sipper",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "Thunderbolt",
-                        "Sludge Bomb"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Tail",
-                        "Stealth Rock",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Dragonite",
-                    "ability": "Multiscale",
-                    "held_item": "None",
-                    "moves": [
-                        "Roost",
-                        "Dragon Tail",
-                        "Thunder Wave",
-                        "Fire Punch"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Kingdra",
-                    "ability": "Sniper",
-                    "held_item": "Scope Lens",
-                    "moves": [
-                        "Draco Meteor",
-                        "Hydro Pump",
-                        "Ice Beam",
-                        "Focus Energy"
-                    ]
-                }
-            ]
+          "species": "Bagon",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Dragon Breath",
+            "Twister",
+            "Protect",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Deino",
+          "ability": "Hustle",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bite",
+            "Dragon Breath",
+            "Dragon Tail",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Dratini",
+          "ability": "Marvel Scale",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Breath",
+            "Twister",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Scaled Bulwark — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Bagon",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Dragon Breath",
+            "Twister",
+            "Protect",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Deino",
+          "ability": "Hustle",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bite",
+            "Dragon Breath",
+            "Dragon Tail",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Dratini",
+          "ability": "Marvel Scale",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Breath",
+            "Twister",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Gible",
+          "ability": "Rough Skin",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Dragon Breath",
+            "Mud Shot",
+            "Twister",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Goomy",
+          "ability": "Sap Sipper",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Dragon Breath",
+            "Draco Meteor",
+            "Protect",
+            "Shock Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Scaled Bulwark — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Dratini",
+          "ability": "Marvel Scale",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Outrage",
+            "Scale Shot",
+            "Thunder Wave",
+            "Iron Head"
+          ]
+        },
+        {
+          "species": "Gible",
+          "ability": "Rough Skin",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Goomy",
+          "ability": "Sap Sipper",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Protect",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Jangmo-o",
+          "ability": "Overcoat",
+          "held_item": "Leftovers",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Axew",
+          "ability": "Rivalry",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Protect",
+            "Shadow Claw"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Scaled Bulwark — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Goomy",
+          "ability": "Sap Sipper",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Protect",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Jangmo-o",
+          "ability": "Overcoat",
+          "held_item": "Leftovers",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Axew",
+          "ability": "Rivalry",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Protect",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Vibrava",
+          "ability": "Levitate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tyrunt",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Stone Edge",
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Scaled Bulwark — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Dragalge",
+          "ability": "Adaptability",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Sludge Bomb",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Turtonator",
+          "ability": "Shell Armor",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flamethrower",
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Sliggoo",
+          "ability": "Sap Sipper",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Toxic",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Hakamo-o",
+          "ability": "Overcoat",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dragon Claw",
+            "Close Combat",
+            "Outrage",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Zweilous",
+          "ability": "Hustle",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Dragon Tail",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Scaled Bulwark — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Sliggoo",
+          "ability": "Sap Sipper",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Draco Meteor",
+            "Dragon Pulse",
+            "Toxic",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Hakamo-o",
+          "ability": "Overcoat",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dragon Claw",
+            "Close Combat",
+            "Outrage",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Zweilous",
+          "ability": "Hustle",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Dragon Tail",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Tyrunt",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Stone Edge",
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Vibrava",
+          "ability": "Levitate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Scaled Bulwark — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Vibrava",
+          "ability": "Levitate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Outrage",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Axew",
+          "ability": "Rivalry",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Protect",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Bagon",
+          "ability": "Sheer Force",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dragon Claw",
+            "Outrage",
+            "Protect",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Deino",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Dragon Tail",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Dratini",
+          "ability": "Marvel Scale",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Outrage",
+            "Scale Shot",
+            "Thunder Wave",
+            "Iron Head"
+          ]
+        }
+      ]
+    }
+  ]
 }

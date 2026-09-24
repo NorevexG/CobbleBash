@@ -19,6 +19,7 @@ import com.nore.cobblebash.CobbleBash;
 import com.nore.cobblebash.beacon.ChampionBeaconAuras;
 import com.nore.cobblebash.dialogue.GymTrainerDialogue;
 import com.nore.cobblebash.dimension.CobbleBashDimensions;
+import com.nore.cobblebash.elitefour.EliteFourItemLimit;
 import com.nore.cobblebash.gym.GymTrainerUnit;
 import com.nore.cobblebash.gym.GymType;
 import com.nore.cobblebash.instance.GymInstance;
@@ -121,6 +122,7 @@ public class GymEventHandler {
 
         registerCobblemonBattleFaintedListener();
         registerCobblemonExperienceListener();
+        registerCobblemonPokemonHealedListener();
         registerCobblemonSpawnBlocker();
         api.getEventContext().register(Events.BATTLE_STARTED, event -> handleBattleStarted(event.getValue()));
         api.getEventContext().register(Events.BATTLE_ENDED, event -> handleBattleEnded(event.getValue()));
@@ -158,6 +160,23 @@ public class GymEventHandler {
                     });
         } catch (ReflectiveOperationException exception) {
             CobbleBash.LOGGER.warn("Failed to register Cobblemon experience listener.", exception);
+        }
+    }
+
+    private static void registerCobblemonPokemonHealedListener() {
+        try {
+            Object observable = Class.forName("com.cobblemon.mod.common.api.events.CobblemonEvents")
+                    .getField("POKEMON_HEALED")
+                    .get(null);
+            observable.getClass()
+                    .getMethod("subscribe", Consumer.class)
+                    .invoke(observable, (Consumer<Object>) event -> {
+                        if (event instanceof com.cobblemon.mod.common.api.events.pokemon.healing.PokemonHealedEvent healedEvent) {
+                            EliteFourItemLimit.handlePokemonHealed(healedEvent);
+                        }
+                    });
+        } catch (ReflectiveOperationException exception) {
+            CobbleBash.LOGGER.warn("Failed to register Elite Four medicine listener.", exception);
         }
     }
 
@@ -258,6 +277,13 @@ public class GymEventHandler {
         if (cancelBlacklistedGymItem(event.getEntity(), event.getItemStack())) {
             event.setCanceled(true);
             event.setCancellationResult(InteractionResult.FAIL);
+            return;
+        }
+
+        if (event.getEntity() instanceof ServerPlayer player
+                && !EliteFourItemLimit.beginPotentialUse(player, event.getItemStack())) {
+            event.setCanceled(true);
+            event.setCancellationResult(InteractionResult.FAIL);
         }
     }
 
@@ -292,6 +318,7 @@ public class GymEventHandler {
         }
 
         ChampionBeaconAuras.tickPlayer(player);
+        EliteFourItemLimit.tick(player);
 
         if (!isInGymVoid(player)) {
             clearLaunchPadState(player);
@@ -452,6 +479,12 @@ public class GymEventHandler {
             return;
         }
 
+        for (Trainer trainer : battleState.getParticipants1()) {
+            if (trainer instanceof TrainerPlayer trainerPlayer) {
+                EliteFourItemLimit.prepareForBattle(trainerPlayer.getPlayer());
+            }
+        }
+
         for (Trainer trainer : battleState.getParticipants2()) {
             if (!(trainer instanceof TrainerNPC trainerNpc)) {
                 continue;
@@ -530,6 +563,12 @@ public class GymEventHandler {
     }
 
     private static void handleBattleEnded(BattleState battleState) {
+        for (Trainer trainer : battleState.getParticipants1()) {
+            if (trainer instanceof TrainerPlayer trainerPlayer) {
+                EliteFourItemLimit.finishBattle(trainerPlayer.getPlayer());
+            }
+        }
+
         if (battleState.getBattle() != null) {
             NPC_BATTLE_LEVELS.remove(battleState.getBattle().getBattleId());
         }
@@ -948,11 +987,11 @@ public class GymEventHandler {
 
             if (unit == GymTrainerUnit.BOSS) {
                 if (faintedCount >= teamSize - 1) {
-                    return baseLevel + 5;
+                    return Math.min(100, baseLevel + 7);
                 }
 
                 if (faintedCount >= teamSize - 2) {
-                    return baseLevel + 3;
+                    return Math.min(97, baseLevel + 4);
                 }
             }
 

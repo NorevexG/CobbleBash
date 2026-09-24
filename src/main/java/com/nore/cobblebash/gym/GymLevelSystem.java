@@ -1,23 +1,29 @@
 package com.nore.cobblebash.gym;
 
+import com.nore.cobblebash.Config;
+
+import java.util.List;
+
 public class GymLevelSystem {
 
     private static final int TOTAL_GYMS = 18;
-    private static final int MIN_LEVEL = 10;
-    private static final int MAX_LEVEL = 100;
-    private static final int TRAINER_SPACING = 2;
 
     public static int[] getTrainerLevels(int completedGyms) {
         int gymIndex = Math.max(0, Math.min(completedGyms, TOTAL_GYMS - 1));
+        List<? extends Integer> configuredLevels = Config.GYM_BASE_LEVELS.get();
+        List<? extends Integer> levels = configuredLevels.isEmpty()
+                ? Config.DEFAULT_GYM_BASE_LEVELS
+                : configuredLevels;
+        int baseLevel = levels.get(Math.min(gymIndex, levels.size() - 1));
 
-        double step = (double)(MAX_LEVEL - 4 - MIN_LEVEL) / (TOTAL_GYMS - 1);
+        return new int[]{
+                clampLevel(baseLevel + Config.TRAINER_ONE_LEVEL_OFFSET.get()),
+                clampLevel(baseLevel + Config.TRAINER_TWO_LEVEL_OFFSET.get()),
+                clampLevel(baseLevel + Config.GYM_LEADER_LEVEL_OFFSET.get())
+        };
+    }
 
-        int baseLevel = (int)Math.round(MIN_LEVEL + (gymIndex * step));
-
-        int t1 = baseLevel;
-        int t2 = baseLevel + TRAINER_SPACING;
-        int t3 = Math.min(baseLevel + (TRAINER_SPACING * 2), MAX_LEVEL);
-
-        return new int[]{t1, t2, t3};
+    private static int clampLevel(int level) {
+        return Math.max(1, Math.min(100, level));
     }
 }

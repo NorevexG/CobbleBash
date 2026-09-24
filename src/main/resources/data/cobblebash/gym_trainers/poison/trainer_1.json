@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.poison.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.poison.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.poison.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.poison.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Toxic Offense — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Toxic Pressure",
-            "pokemon": [
-                {
-                    "species": "Roserade",
-                    "ability": "Natural Cure",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Sludge Bomb",
-                        "Giga Drain",
-                        "Toxic Spikes",
-                        "Sleep Powder"
-                    ]
-                },
-                {
-                    "species": "Toxicroak",
-                    "ability": "Dry Skin",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Drain Punch",
-                        "Gunk Shot",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Weezing",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Sludge Bomb",
-                        "Will-O-Wisp",
-                        "Pain Split",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Crobat",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Cross Poison",
-                        "U-turn",
-                        "Roost"
-                    ]
-                }
-            ]
+          "species": "Shroodle",
+          "ability": "Prankster",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Acid Spray",
+            "Slash",
+            "Poison Fang",
+            "U-turn"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Bulky Toxic Core",
-            "pokemon": [
-                {
-                    "species": "Amoonguss",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Spore",
-                        "Giga Drain",
-                        "Clear Smog",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Clodsire",
-                    "ability": "Unaware",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Toxic",
-                        "Earthquake",
-                        "Recover",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Weezing",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Sludge Bomb",
-                        "Will-O-Wisp",
-                        "Pain Split",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Drapion",
-                    "ability": "Battle Armor",
-                    "held_item": "None",
-                    "moves": [
-                        "Knock Off",
-                        "Poison Jab",
-                        "Earthquake",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Gastly",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hex",
+            "Acid Spray",
+            "Venoshock",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Salandit",
+          "ability": "Corrosion",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Acid Spray",
+            "Ember",
+            "Poison Fang",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Glimmet",
+          "ability": "Toxic Debris",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Tomb",
+            "Acid Spray",
+            "Venoshock",
+            "Spikes"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Toxic Offense — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Salandit",
+          "ability": "Corrosion",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Acid Spray",
+            "Ember",
+            "Poison Fang",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Glimmet",
+          "ability": "Toxic Debris",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Tomb",
+            "Acid Spray",
+            "Venoshock",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Nidorino",
+          "ability": "Hustle",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Venoshock",
+            "Poison Jab",
+            "Toxic Spikes",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Weepinbell",
+          "ability": "Chlorophyll",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Vine Whip",
+            "Acid Spray",
+            "Venoshock",
+            "Encore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Toxic Offense — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Gloom",
+          "ability": "Chlorophyll",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "species": "Ariados",
+          "ability": "Swarm",
+          "held_item": "Life Orb",
+          "moves": [
+            "Megahorn",
+            "Poison Jab",
+            "Cross Poison",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Roselia",
+          "ability": "Natural Cure",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Haunter",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Sludge Wave",
+            "Toxic Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Toxic Offense — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Roselia",
+          "ability": "Natural Cure",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Haunter",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Sludge Wave",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Ivysaur",
+          "ability": "Overgrow",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "species": "Qwilfish",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Gunk Shot",
+            "Poison Jab",
+            "Flip Turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Toxic Offense — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Drapion",
+          "ability": "Battle Armor",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poison Jab",
+            "Knock Off",
+            "Cross Poison",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Muk",
+          "ability": "Stench",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Gunk Shot",
+            "Poison Jab",
+            "Toxic Spikes",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Revavroom",
+          "ability": "Overcoat",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Gunk Shot",
+            "Poison Jab",
+            "Parting Shot"
+          ]
+        },
+        {
+          "species": "Dragalge",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Sludge Bomb",
+            "Draco Meteor",
+            "Sludge Wave",
+            "Flip Turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Toxic Offense — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Revavroom",
+          "ability": "Overcoat",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Gunk Shot",
+            "Poison Jab",
+            "Parting Shot"
+          ]
+        },
+        {
+          "species": "Dragalge",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Sludge Bomb",
+            "Draco Meteor",
+            "Sludge Wave",
+            "Flip Turn"
+          ]
+        },
+        {
+          "species": "Toxicroak",
+          "ability": "Anticipation",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Gunk Shot",
+            "Close Combat",
+            "Poison Jab",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Victreebel",
+          "ability": "Chlorophyll",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Power Whip",
+            "Poison Jab",
+            "Sludge Bomb",
+            "Encore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Toxic Offense — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Grafaiai",
+          "ability": "Prankster",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Gunk Shot",
+            "Double-Edge",
+            "Poison Jab",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Scolipede",
+          "ability": "Speed Boost",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Megahorn",
+            "Poison Jab",
+            "Cross Poison",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Salazzle",
+          "ability": "Corrosion",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Sludge Bomb",
+            "Flamethrower",
+            "Sludge Wave",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Garbodor",
+          "ability": "Stench",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Gunk Shot",
+            "Cross Poison",
+            "Spikes",
+            "Drain Punch"
+          ]
+        }
+      ]
+    }
+  ]
 }

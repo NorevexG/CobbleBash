@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.rock.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.rock.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.rock.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.rock.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Sandstone Wall — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Sand and Hazards",
-            "pokemon": [
-                {
-                    "species": "Gigalith",
-                    "ability": "Sand Stream",
-                    "held_item": "Smooth Rock",
-                    "moves": [
-                        "Stealth Rock",
-                        "Rock Blast",
-                        "Earthquake",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Golem",
-                    "ability": "Sturdy",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Stone Edge",
-                        "Earthquake",
-                        "Rock Polish",
-                        "Explosion"
-                    ]
-                },
-                {
-                    "species": "Cradily",
-                    "ability": "Storm Drain",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Giga Drain",
-                        "Rock Slide",
-                        "Recover",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Rhyperior",
-                    "ability": "Solid Rock",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Rock Blast",
-                        "Megahorn",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Aerodactyl",
-                    "ability": "Rock Head",
-                    "held_item": "None",
-                    "moves": [
-                        "Stone Edge",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Taunt"
-                    ]
-                }
-            ]
+          "species": "Nacli",
+          "ability": "Sturdy",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Smack Down",
+            "Ancient Power",
+            "Stealth Rock",
+            "Bulldoze"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Offensive Rock Core",
-            "pokemon": [
-                {
-                    "species": "Tyrantrum",
-                    "ability": "Rock Head",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Head Smash",
-                        "Dragon Claw",
-                        "Earthquake",
-                        "Dragon Dance"
-                    ]
-                },
-                {
-                    "species": "Aerodactyl",
-                    "ability": "Rock Head",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Stone Edge",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Omastar",
-                    "ability": "Shell Armor",
-                    "held_item": "White Herb",
-                    "moves": [
-                        "Hydro Pump",
-                        "Ancient Power",
-                        "Ice Beam",
-                        "Shell Smash"
-                    ]
-                },
-                {
-                    "species": "Kabutops",
-                    "ability": "Swift Swim",
-                    "held_item": "None",
-                    "moves": [
-                        "Stone Edge",
-                        "Liquidation",
-                        "Aqua Jet",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Aggron",
-                    "ability": "Rock Head",
-                    "held_item": "None",
-                    "moves": [
-                        "Head Smash",
-                        "Heavy Slam",
-                        "Earthquake",
-                        "Stealth Rock"
-                    ]
-                }
-            ]
+          "species": "Roggenrola",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Smack Down",
+            "Stealth Rock",
+            "Bulldoze"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain and Counterplay",
-            "pokemon": [
-                {
-                    "species": "Cradily",
-                    "ability": "Storm Drain",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Giga Drain",
-                        "Rock Slide",
-                        "Recover",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Rhyperior",
-                    "ability": "Solid Rock",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Earthquake",
-                        "Rock Blast",
-                        "Megahorn",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Gigalith",
-                    "ability": "Sand Stream",
-                    "held_item": "Smooth Rock",
-                    "moves": [
-                        "Stealth Rock",
-                        "Rock Blast",
-                        "Earthquake",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Sudowoodo",
-                    "ability": "Sturdy",
-                    "held_item": "None",
-                    "moves": [
-                        "Stone Edge",
-                        "Wood Hammer",
-                        "Earthquake",
-                        "Sucker Punch"
-                    ]
-                },
-                {
-                    "species": "Armaldo",
-                    "ability": "Battle Armor",
-                    "held_item": "None",
-                    "moves": [
-                        "Stone Edge",
-                        "X-Scissor",
-                        "Rapid Spin",
-                        "Knock Off"
-                    ]
-                }
-            ]
+          "species": "Bonsly",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Tomb",
+            "Smack Down",
+            "Stealth Rock",
+            "Bulldoze"
+          ]
+        },
+        {
+          "species": "Geodude",
+          "ability": "Sturdy",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Rock Tomb",
+            "Mud Shot",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Larvitar",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Rock Tomb",
+            "Mud Shot",
+            "Smack Down",
+            "Stealth Rock"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Sandstone Wall — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Bonsly",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Tomb",
+            "Smack Down",
+            "Stealth Rock",
+            "Bulldoze"
+          ]
+        },
+        {
+          "species": "Geodude",
+          "ability": "Sturdy",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Rock Tomb",
+            "Mud Shot",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Larvitar",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Rock Tomb",
+            "Mud Shot",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Binacle",
+          "ability": "Tough Claws",
+          "held_item": "None",
+          "moves": [
+            "Rock Tomb",
+            "Water Gun",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Dwebble",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bug Bite",
+            "Rock Tomb",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Sandstone Wall — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Dwebble",
+          "ability": "Sturdy",
+          "held_item": "Mental Herb",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aron",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Iron Head",
+            "Rock Slide",
+            "Head Smash",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Rhyhorn",
+          "ability": "Lightning Rod",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Shieldon",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Iron Head",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Lileep",
+          "ability": "Storm Drain",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Meteor Beam",
+            "Energy Ball",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Sandstone Wall — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Rhyhorn",
+          "ability": "Lightning Rod",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Shieldon",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Iron Head",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Lileep",
+          "ability": "Storm Drain",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Meteor Beam",
+            "Energy Ball",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Naclstack",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Omanyte",
+          "ability": "Swift Swim",
+          "held_item": "Leftovers",
+          "moves": [
+            "Meteor Beam",
+            "Hydro Pump",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Sandstone Wall — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Carbink",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Misty Explosion",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Bastiodon",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Iron Head",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Cradily",
+          "ability": "Storm Drain",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Power Whip",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Magcargo",
+          "ability": "Flame Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flamethrower",
+            "Power Gem",
+            "Stone Edge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Corsola",
+          "ability": "Regenerator",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Hydro Pump",
+            "Power Gem",
+            "Meteor Beam",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Sandstone Wall — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Cradily",
+          "ability": "Storm Drain",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Power Whip",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Magcargo",
+          "ability": "Flame Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flamethrower",
+            "Power Gem",
+            "Stone Edge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Corsola",
+          "ability": "Regenerator",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Hydro Pump",
+            "Power Gem",
+            "Meteor Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Sudowoodo",
+          "ability": "Sturdy",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Boldore",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Sandstone Wall — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Graveler",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Earthquake",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Onix",
+          "ability": "Sturdy",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Stone Edge",
+            "Earthquake",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Nosepass",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Amaura",
+          "ability": "Refrigerate",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Meteor Beam",
+            "Ice Beam",
+            "Stone Edge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Lileep",
+          "ability": "Storm Drain",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Meteor Beam",
+            "Energy Ball",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

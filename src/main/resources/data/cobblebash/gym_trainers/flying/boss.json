@@ -1,159 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.flying.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.flying.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.flying.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.flying.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Aerial Dominion — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Flying Leader",
-            "pokemon": [
-                {
-                    "species": "Corviknight",
-                    "ability": "Pressure",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Brave Bird",
-                        "Body Press",
-                        "Roost",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Staraptor",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Double-Edge"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                },
-                {
-                    "species": "Gliscor",
-                    "ability": "Poison Heal",
-                    "held_item": "Toxic Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Roost",
-                        "Toxic",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stealth Rock",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Body Press"
-                    ]
-                }
-            ]
+          "species": "Braviary",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Swift",
+            "Wing Attack",
+            "Aerial Ace",
+            "Protect"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Flying Leader",
-            "pokemon": [
-                {
-                    "species": "Talonflame",
-                    "ability": "Gale Wings",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Brave Bird",
-                        "Flare Blitz",
-                        "Roost",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Hawlucha",
-                    "ability": "Unburden",
-                    "held_item": "None",
-                    "moves": [
-                        "Acrobatics",
-                        "Close Combat",
-                        "Swords Dance",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Noivern",
-                    "ability": "Infiltrator",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Draco Meteor",
-                        "Hurricane",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Aerodactyl",
-                    "ability": "Rock Head",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Stone Edge",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Mold Breaker",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rock Slide",
-                        "Rapid Spin"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                }
-            ]
+          "species": "Gliscor",
+          "ability": "Poison Heal",
+          "held_item": "Toxic Orb",
+          "moves": [
+            "Mud Shot",
+            "Wing Attack",
+            "Aerial Ace",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aerodactyl",
+          "ability": "Rock Head",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Tomb",
+            "Wing Attack",
+            "Aerial Ace",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Yanmega",
+          "ability": "Speed Boost",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bug Bite",
+            "Wing Attack",
+            "Aerial Ace",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Charizard",
+          "ability": "Blaze",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Wing Attack",
+            "Aerial Ace",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Crobat",
+          "ability": "Inner Focus",
+          "held_item": "None",
+          "moves": [
+            "Poison Fang",
+            "Wing Attack",
+            "Aerial Ace",
+            "Toxic"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Aerial Dominion — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Aerodactyl",
+          "ability": "Rock Head",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Dual Wingbeat",
+            "Aerial Ace",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Yanmega",
+          "ability": "Speed Boost",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Air Slash",
+            "Air Cutter",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Charizard",
+          "ability": "Blaze",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Hurricane",
+            "Air Slash",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Crobat",
+          "ability": "Inner Focus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Cross Poison",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Noivern",
+          "ability": "Frisk",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hurricane",
+            "Draco Meteor",
+            "Air Slash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Gyarados",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Waterfall",
+            "Hurricane",
+            "Thunder Wave",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Aerial Dominion — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Dragonite",
+          "ability": "Multiscale",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Aerial Ace",
+            "Hurricane",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Salamence",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Dragon Claw",
+            "Dual Wingbeat",
+            "Aerial Ace",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Togekiss",
+          "ability": "Serene Grace",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dazzling Gleam",
+            "Air Slash",
+            "Air Cutter",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Gyarados",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Waterfall",
+            "Hurricane",
+            "Thunder Wave",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Crobat",
+          "ability": "Inner Focus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Cross Poison",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Noivern",
+          "ability": "Frisk",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hurricane",
+            "Draco Meteor",
+            "Air Slash",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Aerial Dominion — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Gyarados",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Waterfall",
+            "Hurricane",
+            "Thunder Wave",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Crobat",
+          "ability": "Inner Focus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Cross Poison",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Noivern",
+          "ability": "Frisk",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hurricane",
+            "Draco Meteor",
+            "Air Slash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Charizard",
+          "ability": "Blaze",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Hurricane",
+            "Air Slash",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Aerodactyl",
+          "ability": "Rock Head",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Dual Wingbeat",
+            "Aerial Ace",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Yanmega",
+          "ability": "Speed Boost",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Air Slash",
+            "Air Cutter",
+            "Protect"
+          ]
+        }
+      ]
+    }
+  ]
 }

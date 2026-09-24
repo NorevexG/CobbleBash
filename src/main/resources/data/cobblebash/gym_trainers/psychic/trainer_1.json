@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.psychic.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.psychic.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.psychic.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.psychic.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Mind Games — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Screen Pressure",
-            "pokemon": [
-                {
-                    "species": "Alakazam",
-                    "ability": "Magic Guard",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Psychic",
-                        "Shadow Ball",
-                        "Focus Blast",
-                        "Encore"
-                    ]
-                },
-                {
-                    "species": "Espeon",
-                    "ability": "Magic Bounce",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Reflect",
-                        "Light Screen",
-                        "Psychic",
-                        "Morning Sun"
-                    ]
-                },
-                {
-                    "species": "Slowbro",
-                    "ability": "Regenerator",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Psychic",
-                        "Slack Off",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Gallade",
-                    "ability": "Sharpness",
-                    "held_item": "None",
-                    "moves": [
-                        "Psycho Cut",
-                        "Close Combat",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                }
-            ]
+          "species": "Smoochum",
+          "ability": "Oblivious",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Confusion",
+            "Stored Power",
+            "Encore"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Bulky Psychic Core",
-            "pokemon": [
-                {
-                    "species": "Slowking",
-                    "ability": "Regenerator",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Scald",
-                        "Psychic",
-                        "Slack Off",
-                        "Future Sight"
-                    ]
-                },
-                {
-                    "species": "Reuniclus",
-                    "ability": "Magic Guard",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Psychic",
-                        "Focus Blast",
-                        "Recover",
-                        "Calm Mind"
-                    ]
-                },
-                {
-                    "species": "Bronzong",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Stealth Rock",
-                        "Gyro Ball",
-                        "Toxic",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Metagross",
-                    "ability": "Clear Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Meteor Mash",
-                        "Zen Headbutt",
-                        "Earthquake",
-                        "Bullet Punch"
-                    ]
-                }
-            ]
+          "species": "Abra",
+          "ability": "Magic Guard",
+          "held_item": "None",
+          "moves": [
+            "Confusion",
+            "Zen Headbutt",
+            "Encore",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Natu",
+          "ability": "Magic Bounce",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Stored Power",
+            "Aerial Ace",
+            "Zen Headbutt",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Duosion",
+          "ability": "Regenerator",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Confusion",
+            "Psybeam",
+            "Encore",
+            "Rock Tomb"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Mind Games — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Natu",
+          "ability": "Magic Bounce",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Stored Power",
+            "Aerial Ace",
+            "Zen Headbutt",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Duosion",
+          "ability": "Regenerator",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Confusion",
+            "Psybeam",
+            "Encore",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Kadabra",
+          "ability": "Magic Guard",
+          "held_item": "None",
+          "moves": [
+            "Confusion",
+            "Psybeam",
+            "Encore",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Medicham",
+          "ability": "Pure Power",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Low Kick",
+            "Confusion",
+            "Psybeam",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Mind Games — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Chimecho",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "Baton Pass",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Girafarig",
+          "ability": "Sap Sipper",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Psyshock",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Jynx",
+          "ability": "Oblivious",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Ice Beam",
+            "Psychic",
+            "Psyshock",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Lunatone",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Psychic",
+            "Psyshock",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Mind Games — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Jynx",
+          "ability": "Oblivious",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Ice Beam",
+            "Psychic",
+            "Psyshock",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Lunatone",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Psychic",
+            "Psyshock",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Mr. Mime",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Psyshock",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Solrock",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Zen Headbutt",
+            "Psychic",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Mind Games — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Hatterene",
+          "ability": "Magic Bounce",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Psyshock",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Alakazam",
+          "ability": "Magic Guard",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "Encore",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Claydol",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Earthquake",
+            "Zen Headbutt",
+            "Psychic",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Gothitelle",
+          "ability": "Frisk",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "Taunt",
+            "Thunderbolt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Mind Games — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Claydol",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Earthquake",
+            "Zen Headbutt",
+            "Psychic",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Gothitelle",
+          "ability": "Frisk",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "Taunt",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Reuniclus",
+          "ability": "Regenerator",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "Encore",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Sigilyph",
+          "ability": "Magic Guard",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Psychic",
+            "Air Slash",
+            "Psyshock",
+            "Tailwind"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Mind Games — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Malamar",
+          "ability": "Contrary",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Knock Off",
+            "Psychic",
+            "Psyshock",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Espathra",
+          "ability": "Speed Boost",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "U-turn",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Veluza",
+          "ability": "Mold Breaker",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Liquidation",
+            "Psychic Fangs",
+            "Zen Headbutt",
+            "Flip Turn"
+          ]
+        },
+        {
+          "species": "Bruxish",
+          "ability": "Dazzling",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Liquidation",
+            "Psychic Fangs",
+            "Psychic",
+            "Flip Turn"
+          ]
+        }
+      ]
+    }
+  ]
 }

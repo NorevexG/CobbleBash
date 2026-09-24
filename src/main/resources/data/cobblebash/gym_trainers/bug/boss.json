@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.bug.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.bug.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.bug.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.bug.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Swarm Sovereign — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Bug Leader",
-            "pokemon": [
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Bullet Punch",
-                        "Swords Dance",
-                        "U-turn",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Forretress",
-                    "ability": "Sturdy",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Spikes",
-                        "Rapid Spin",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Araquanid",
-                    "ability": "Water Bubble",
-                    "held_item": "None",
-                    "moves": [
-                        "Liquidation",
-                        "Leech Life",
-                        "Mirror Coat",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Drapion",
-                    "ability": "Battle Armor",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Knock Off",
-                        "Poison Jab",
-                        "Earthquake",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Flygon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "U-turn",
-                        "Stone Edge"
-                    ]
-                }
-            ]
+          "species": "Heracross",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Bug Bite",
+            "Low Kick",
+            "Struggle Bug",
+            "Spikes"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Bug Leader",
-            "pokemon": [
-                {
-                    "species": "Galvantula",
-                    "ability": "Compound Eyes",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Sticky Web",
-                        "Thunder",
-                        "Bug Buzz",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Bullet Punch",
-                        "Swords Dance",
-                        "Knock Off",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Heracross",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Megahorn",
-                        "Knock Off",
-                        "Facade"
-                    ]
-                },
-                {
-                    "species": "Golisopod",
-                    "ability": "Emergency Exit",
-                    "held_item": "None",
-                    "moves": [
-                        "First Impression",
-                        "Liquidation",
-                        "Leech Life",
-                        "Aqua Jet"
-                    ]
-                },
-                {
-                    "species": "Flygon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "U-turn",
-                        "Stone Edge"
-                    ]
-                }
-            ]
+          "species": "Kleavor",
+          "ability": "Sheer Force",
+          "held_item": "None",
+          "moves": [
+            "Bug Bite",
+            "Rock Tomb",
+            "Struggle Bug",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Leavanny",
+          "ability": "Overcoat",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Razor Leaf",
+            "Struggle Bug",
+            "Sticky Web"
+          ]
+        },
+        {
+          "species": "Pinsir",
+          "ability": "Moxie",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Bug Bite",
+            "Struggle Bug",
+            "Stealth Rock",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Scizor",
+          "ability": "Technician",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Metal Claw",
+            "Struggle Bug",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Scyther",
+          "ability": "Technician",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Wing Attack",
+            "Struggle Bug",
+            "Protect"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Swarm Sovereign — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Leavanny",
+          "ability": "Overcoat",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Leaf Blade",
+            "Lunge",
+            "Sticky Web"
+          ]
+        },
+        {
+          "species": "Pinsir",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "X-Scissor",
+            "Stealth Rock",
+            "Earthquake",
+            "Swords Dance"
+          ]
+        },
+        {
+          "species": "Scizor",
+          "ability": "Technician",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "X-Scissor",
+            "Iron Head",
+            "Lunge",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Scyther",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Dual Wingbeat",
+            "Lunge",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Shuckle",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Stealth Rock",
+            "Earthquake",
+            "Rock Slide"
+          ]
+        },
+        {
+          "species": "Yanmega",
+          "ability": "Speed Boost",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Air Slash",
+            "Leech Life",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Swarm Sovereign — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Volcarona",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Flamethrower",
+            "Leech Life",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Golisopod",
+          "ability": "Emergency Exit",
+          "held_item": "Leftovers",
+          "moves": [
+            "First Impression",
+            "Liquidation",
+            "X-Scissor",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Centiskorch",
+          "ability": "Flame Body",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "X-Scissor",
+            "Leech Life",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Yanmega",
+          "ability": "Speed Boost",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Air Slash",
+            "Leech Life",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Shuckle",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Stealth Rock",
+            "Earthquake",
+            "Rock Slide"
+          ]
+        },
+        {
+          "species": "Heracross",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Megahorn",
+            "Close Combat",
+            "Lunge",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Swarm Sovereign — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Yanmega",
+          "ability": "Speed Boost",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Air Slash",
+            "Leech Life",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Shuckle",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Stealth Rock",
+            "Earthquake",
+            "Rock Slide"
+          ]
+        },
+        {
+          "species": "Heracross",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Megahorn",
+            "Close Combat",
+            "Lunge",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Kleavor",
+          "ability": "Sheer Force",
+          "held_item": "Leftovers",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Lunge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Leavanny",
+          "ability": "Overcoat",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Leaf Blade",
+            "Lunge",
+            "Sticky Web"
+          ]
+        },
+        {
+          "species": "Pinsir",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "X-Scissor",
+            "Stealth Rock",
+            "Earthquake",
+            "Swords Dance"
+          ]
+        }
+      ]
+    }
+  ]
 }

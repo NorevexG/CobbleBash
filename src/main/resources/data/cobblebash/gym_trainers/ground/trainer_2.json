@@ -1,198 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.ground.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.ground.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.ground.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.ground.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Continental Defense — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Sand Pressure",
-            "pokemon": [
-                {
-                    "species": "Hippowdon",
-                    "ability": "Sand Stream",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Earthquake",
-                        "Slack Off",
-                        "Whirlwind"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Sand Rush",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Swords Dance",
-                        "Rapid Spin"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stone Edge",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Gastrodon",
-                    "ability": "Storm Drain",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Earth Power",
-                        "Recover",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                }
-            ]
+          "species": "Wooper",
+          "ability": "Unaware",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Water Gun",
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Offensive Core",
-            "pokemon": [
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Swords Dance",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Mold Breaker",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rapid Spin",
-                        "Rock Slide"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Landorus",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "U-turn",
-                        "Stone Edge",
-                        "Defog"
-                    ],
-                    "aspects": [
-                        "therian-forme"
-                    ]
-                },
-                {
-                    "species": "Gliscor",
-                    "ability": "Poison Heal",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Roost",
-                        "Toxic",
-                        "Protect"
-                    ]
-                }
-            ]
+          "species": "Swinub",
+          "ability": "Oblivious",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain & Hazard",
-            "pokemon": [
-                {
-                    "species": "Clodsire",
-                    "ability": "Unaware",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Earthquake",
-                        "Toxic",
-                        "Recover",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Gastrodon",
-                    "ability": "Storm Drain",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Scald",
-                        "Earth Power",
-                        "Recover",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Hippowdon",
-                    "ability": "Sand Stream",
-                    "held_item": "Smooth Rock",
-                    "moves": [
-                        "Stealth Rock",
-                        "Earthquake",
-                        "Slack Off",
-                        "Whirlwind"
-                    ]
-                },
-                {
-                    "species": "Gliscor",
-                    "ability": "Poison Heal",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Roost",
-                        "Toxic",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Donphan",
-                    "ability": "Sturdy",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Rapid Spin",
-                        "Ice Shard",
-                        "Knock Off"
-                    ]
-                }
-            ]
+          "species": "Nincada",
+          "ability": "Compound Eyes",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Bug Bite",
+            "Dig",
+            "Mud-Slap",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Barboach",
+          "ability": "Oblivious",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Trapinch",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock",
+            "Rock Tomb"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Continental Defense — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Nincada",
+          "ability": "Compound Eyes",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Bug Bite",
+            "Dig",
+            "Mud-Slap",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Barboach",
+          "ability": "Oblivious",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Trapinch",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Baltoy",
+          "ability": "Levitate",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Bulldoze",
+            "Confusion",
+            "Dig",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Geodude",
+          "ability": "Sturdy",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Rock Tomb",
+            "Mud Shot",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Continental Defense — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Geodude",
+          "ability": "Sturdy",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Stone Edge",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Gible",
+          "ability": "Rough Skin",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Bulldoze",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Larvitar",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Stone Edge",
+            "Earthquake",
+            "Stomping Tantrum",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Sandshrew",
+          "ability": "Sand Veil",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Golett",
+          "ability": "Iron Fist",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Poltergeist",
+            "Stomping Tantrum",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Continental Defense — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Larvitar",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Stone Edge",
+            "Earthquake",
+            "Stomping Tantrum",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Sandshrew",
+          "ability": "Sand Veil",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Golett",
+          "ability": "Iron Fist",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Poltergeist",
+            "Stomping Tantrum",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Numel",
+          "ability": "Oblivious",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flamethrower",
+            "Earth Power",
+            "Scorching Sands",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Silicobra",
+          "ability": "Sand Spit",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Earthquake",
+            "Bulldoze",
+            "Stealth Rock",
+            "Rock Slide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Continental Defense — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Steelix",
+          "ability": "Sheer Force",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Gastrodon",
+          "ability": "Storm Drain",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Earth Power",
+            "Mud Shot",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Stunfisk",
+          "ability": "Static",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Earth Power",
+            "Thunderbolt",
+            "Mud Shot",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Clodsire",
+          "ability": "Unaware",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Gunk Shot",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Quagsire",
+          "ability": "Unaware",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Continental Defense — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Stunfisk",
+          "ability": "Static",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Earth Power",
+            "Thunderbolt",
+            "Mud Shot",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Clodsire",
+          "ability": "Unaware",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Gunk Shot",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Quagsire",
+          "ability": "Unaware",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Marowak",
+          "ability": "Lightning Rod",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Earthquake",
+            "Stomping Tantrum",
+            "Stealth Rock",
+            "Thunder Punch"
+          ]
+        },
+        {
+          "species": "Graveler",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Continental Defense — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Rhyhorn",
+          "ability": "Lightning Rod",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Stone Edge",
+            "High Horsepower",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Toedscool",
+          "ability": "Mycelium Might",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Earth Power",
+            "Leaf Storm",
+            "Mud Shot",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Hippopotas",
+          "ability": "Sand Stream",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Phanpy",
+          "ability": "Sand Veil",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Stealth Rock",
+            "Rock Slide"
+          ]
+        },
+        {
+          "species": "Cubone",
+          "ability": "Lightning Rod",
+          "held_item": "Leftovers",
+          "moves": [
+            "Earthquake",
+            "Stomping Tantrum",
+            "Stealth Rock",
+            "Thunder Punch"
+          ]
+        }
+      ]
+    }
+  ]
 }

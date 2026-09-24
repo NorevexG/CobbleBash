@@ -1,159 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.rock.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.rock.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.rock.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.rock.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Mountain King — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Rock Leader",
-            "pokemon": [
-                {
-                    "species": "Tyranitar",
-                    "ability": "Sand Stream",
-                    "held_item": "Smooth Rock",
-                    "moves": [
-                        "Stone Edge",
-                        "Crunch",
-                        "Earthquake",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Rhyperior",
-                    "ability": "Solid Rock",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Earthquake",
-                        "Rock Blast",
-                        "Megahorn",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Golem",
-                    "ability": "Sturdy",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Stone Edge",
-                        "Earthquake",
-                        "Rock Polish",
-                        "Explosion"
-                    ]
-                },
-                {
-                    "species": "Cradily",
-                    "ability": "Storm Drain",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Giga Drain",
-                        "Rock Slide",
-                        "Recover",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Venusaur",
-                    "ability": "Chlorophyll",
-                    "held_item": "None",
-                    "moves": [
-                        "Giga Drain",
-                        "Sludge Bomb",
-                        "Sleep Powder",
-                        "Earth Power"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "ability": "Stance Change",
-                    "held_item": "None",
-                    "moves": [
-                        "King's Shield",
-                        "Shadow Ball",
-                        "Sacred Sword",
-                        "Shadow Sneak"
-                    ]
-                }
-            ]
+          "species": "Shuckle",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bug Bite",
+            "Rock Tomb",
+            "Smack Down",
+            "Stealth Rock"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Rock Leader",
-            "pokemon": [
-                {
-                    "species": "Aerodactyl",
-                    "ability": "Rock Head",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Stone Edge",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Tyrantrum",
-                    "ability": "Rock Head",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Head Smash",
-                        "Dragon Claw",
-                        "Earthquake",
-                        "Dragon Dance"
-                    ]
-                },
-                {
-                    "species": "Omastar",
-                    "ability": "Shell Armor",
-                    "held_item": "White Herb",
-                    "moves": [
-                        "Hydro Pump",
-                        "Ancient Power",
-                        "Ice Beam",
-                        "Shell Smash"
-                    ]
-                },
-                {
-                    "species": "Kabutops",
-                    "ability": "Swift Swim",
-                    "held_item": "None",
-                    "moves": [
-                        "Stone Edge",
-                        "Liquidation",
-                        "Aqua Jet",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Drapion",
-                    "ability": "Battle Armor",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Knock Off",
-                        "Poison Jab",
-                        "Earthquake",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Overheat",
-                        "Volt Switch",
-                        "Thunderbolt",
-                        "Will-O-Wisp"
-                    ],
-                    "aspects": [
-                        "heat-appliance"
-                    ]
-                }
-            ]
+          "species": "Aerodactyl",
+          "ability": "Rock Head",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Tomb",
+            "Wing Attack",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Gigalith",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Smack Down",
+            "Stealth Rock",
+            "Bulldoze"
+          ]
+        },
+        {
+          "species": "Aurorus",
+          "ability": "Refrigerate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Powder Snow",
+            "Rock Blast",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tyrantrum",
+          "ability": "Strong Jaw",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Breaking Swipe",
+            "Rock Blast",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Glimmora",
+          "ability": "Toxic Debris",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Acid Spray",
+            "Smack Down",
+            "Stealth Rock"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Mountain King — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Gigalith",
+          "ability": "Sturdy",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Aurorus",
+          "ability": "Refrigerate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Meteor Beam",
+            "Ice Beam",
+            "Stone Edge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tyrantrum",
+          "ability": "Strong Jaw",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Stone Edge",
+            "Dragon Claw",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Glimmora",
+          "ability": "Toxic Debris",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Meteor Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Probopass",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Flash Cannon",
+            "Meteor Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aggron",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Mountain King — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Tyranitar",
+          "ability": "Sand Stream",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Knock Off",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Rhyperior",
+          "ability": "Lightning Rod",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aggron",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Glimmora",
+          "ability": "Toxic Debris",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Meteor Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Probopass",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Flash Cannon",
+            "Meteor Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aurorus",
+          "ability": "Refrigerate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Meteor Beam",
+            "Ice Beam",
+            "Stone Edge",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Mountain King — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Glimmora",
+          "ability": "Toxic Debris",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Meteor Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Probopass",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Flash Cannon",
+            "Meteor Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aurorus",
+          "ability": "Refrigerate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Meteor Beam",
+            "Ice Beam",
+            "Stone Edge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tyrantrum",
+          "ability": "Strong Jaw",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Stone Edge",
+            "Dragon Claw",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aerodactyl",
+          "ability": "Rock Head",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Gigalith",
+          "ability": "Sturdy",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.normal.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.normal.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.normal.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.normal.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Endurance and Utility — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Bulky Normal Core",
-            "pokemon": [
-                {
-                    "species": "Snorlax",
-                    "ability": "Thick Fat",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Body Slam",
-                        "Earthquake",
-                        "Curse",
-                        "Rest"
-                    ]
-                },
-                {
-                    "species": "Porygon2",
-                    "ability": "Trace",
-                    "held_item": "Eviolite",
-                    "moves": [
-                        "Tri Attack",
-                        "Ice Beam",
-                        "Recover",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Staraptor",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Double-Edge"
-                    ]
-                },
-                {
-                    "species": "Kangaskhan",
-                    "ability": "Scrappy",
-                    "held_item": "None",
-                    "moves": [
-                        "Fake Out",
-                        "Double-Edge",
-                        "Earthquake",
-                        "Sucker Punch"
-                    ]
-                },
-                {
-                    "species": "Exploud",
-                    "ability": "Scrappy",
-                    "held_item": "None",
-                    "moves": [
-                        "Boomburst",
-                        "Fire Blast",
-                        "Surf",
-                        "Focus Blast"
-                    ]
-                }
-            ]
+          "species": "Azurill",
+          "ability": "Huge Power",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Headbutt",
+            "Draining Kiss",
+            "Facade",
+            "Protect"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Guts and Breakers",
-            "pokemon": [
-                {
-                    "species": "Obstagoon",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Facade",
-                        "Knock Off",
-                        "Close Combat",
-                        "Obstruct"
-                    ]
-                },
-                {
-                    "species": "Ursaring",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Facade",
-                        "Close Combat",
-                        "Crunch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Braviary",
-                    "ability": "Defiant",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Return"
-                    ]
-                },
-                {
-                    "species": "Porygon-Z",
-                    "ability": "Adaptability",
-                    "held_item": "None",
-                    "moves": [
-                        "Tri Attack",
-                        "Thunderbolt",
-                        "Ice Beam",
-                        "Nasty Plot"
-                    ]
-                },
-                {
-                    "species": "Blissey",
-                    "ability": "Natural Cure",
-                    "held_item": "None",
-                    "moves": [
-                        "Seismic Toss",
-                        "Soft-Boiled",
-                        "Toxic",
-                        "Thunder Wave"
-                    ]
-                }
-            ]
+          "species": "Igglybuff",
+          "ability": "Cute Charm",
+          "held_item": "None",
+          "moves": [
+            "Swift",
+            "Disarming Voice",
+            "Headbutt",
+            "Thunder Wave"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain & Control",
-            "pokemon": [
-                {
-                    "species": "Blissey",
-                    "ability": "Natural Cure",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Seismic Toss",
-                        "Soft-Boiled",
-                        "Toxic",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Snorlax",
-                    "ability": "Thick Fat",
-                    "held_item": "Chesto Berry",
-                    "moves": [
-                        "Body Slam",
-                        "Earthquake",
-                        "Curse",
-                        "Rest"
-                    ]
-                },
-                {
-                    "species": "Porygon2",
-                    "ability": "Trace",
-                    "held_item": "Eviolite",
-                    "moves": [
-                        "Tri Attack",
-                        "Ice Beam",
-                        "Recover",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Stoutland",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Return",
-                        "Crunch",
-                        "Play Rough",
-                        "Superpower"
-                    ]
-                },
-                {
-                    "species": "Kangaskhan",
-                    "ability": "Scrappy",
-                    "held_item": "None",
-                    "moves": [
-                        "Fake Out",
-                        "Double-Edge",
-                        "Earthquake",
-                        "Sucker Punch"
-                    ]
-                }
-            ]
+          "species": "Sentret",
+          "ability": "Keen Eye",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Quick Attack",
+            "Swift",
+            "Protect",
+            "Brick Break"
+          ]
+        },
+        {
+          "species": "Happiny",
+          "ability": "Serene Grace",
+          "held_item": "None",
+          "moves": [
+            "Headbutt",
+            "Facade",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Bunnelby",
+          "ability": "Huge Power",
+          "held_item": "None",
+          "moves": [
+            "Quick Attack",
+            "Facade",
+            "Spikes",
+            "Rock Tomb"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Endurance and Utility — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Sentret",
+          "ability": "Keen Eye",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Quick Attack",
+            "Swift",
+            "Protect",
+            "Brick Break"
+          ]
+        },
+        {
+          "species": "Happiny",
+          "ability": "Serene Grace",
+          "held_item": "None",
+          "moves": [
+            "Headbutt",
+            "Facade",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Bunnelby",
+          "ability": "Huge Power",
+          "held_item": "None",
+          "moves": [
+            "Quick Attack",
+            "Facade",
+            "Spikes",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Whismur",
+          "ability": "Soundproof",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Headbutt",
+            "Facade",
+            "Protect",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Zigzagoon",
+          "ability": "Gluttony",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Swift",
+            "Headbutt",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Endurance and Utility — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Lechonk",
+          "ability": "Aroma Veil",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "species": "Patrat",
+          "ability": "Keen Eye",
+          "held_item": "Leftovers",
+          "moves": [
+            "Facade",
+            "Protect",
+            "Crunch",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Smoliv",
+          "ability": "Early Bird",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Facade",
+            "Leech Seed",
+            "Earth Power"
+          ]
+        },
+        {
+          "species": "Hoothoot",
+          "ability": "Tinted Lens",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Hyper Voice",
+            "Hurricane",
+            "Facade",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Spearow",
+          "ability": "Keen Eye",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Facade",
+            "Dual Wingbeat",
+            "Quick Attack",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Endurance and Utility — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Smoliv",
+          "ability": "Early Bird",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Facade",
+            "Leech Seed",
+            "Earth Power"
+          ]
+        },
+        {
+          "species": "Hoothoot",
+          "ability": "Tinted Lens",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Hyper Voice",
+            "Hurricane",
+            "Facade",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Spearow",
+          "ability": "Keen Eye",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Facade",
+            "Dual Wingbeat",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Pidove",
+          "ability": "Big Pecks",
+          "held_item": "Leftovers",
+          "moves": [
+            "Facade",
+            "Dual Wingbeat",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Pikipek",
+          "ability": "Keen Eye",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Boomburst",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Endurance and Utility — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Greedent",
+          "ability": "Cheek Pouch",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Chansey",
+          "ability": "Serene Grace",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hyper Voice",
+            "Double-Edge",
+            "Stealth Rock",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Kecleon",
+          "ability": "Protean",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Body Slam",
+            "Facade",
+            "Stealth Rock",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Wigglytuff",
+          "ability": "Cute Charm",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hyper Voice",
+            "Dazzling Gleam",
+            "Double-Edge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Diggersby",
+          "ability": "Huge Power",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Body Slam",
+            "Earthquake",
+            "Facade",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Endurance and Utility — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Kecleon",
+          "ability": "Protean",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Body Slam",
+            "Facade",
+            "Stealth Rock",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Wigglytuff",
+          "ability": "Cute Charm",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hyper Voice",
+            "Dazzling Gleam",
+            "Double-Edge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Diggersby",
+          "ability": "Huge Power",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Body Slam",
+            "Earthquake",
+            "Facade",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Dunsparce",
+          "ability": "Serene Grace",
+          "held_item": "Leftovers",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Porygon",
+          "ability": "Trace",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Double-Edge",
+            "Facade",
+            "Thunder Wave",
+            "Ice Beam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Endurance and Utility — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Spinda",
+          "ability": "Own Tempo",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Double-Edge",
+            "Body Slam",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Tranquill",
+          "ability": "Big Pecks",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Facade",
+            "Dual Wingbeat",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Dolliv",
+          "ability": "Early Bird",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leaf Storm",
+            "Facade",
+            "Leech Seed",
+            "Earth Power"
+          ]
+        },
+        {
+          "species": "Pidgeotto",
+          "ability": "Keen Eye",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Stufful",
+          "ability": "Fluffy",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Double-Edge",
+            "Brick Break",
+            "Facade",
+            "Protect"
+          ]
+        }
+      ]
+    }
+  ]
 }

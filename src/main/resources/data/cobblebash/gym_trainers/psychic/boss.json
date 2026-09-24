@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.psychic.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.psychic.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.psychic.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.psychic.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Mind Palace — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Psychic Leader",
-            "pokemon": [
-                {
-                    "species": "Metagross",
-                    "ability": "Clear Body",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Meteor Mash",
-                        "Zen Headbutt",
-                        "Earthquake",
-                        "Bullet Punch"
-                    ]
-                },
-                {
-                    "species": "Gardevoir",
-                    "ability": "Trace",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Psychic",
-                        "Moonblast",
-                        "Thunderbolt",
-                        "Mystical Fire"
-                    ]
-                },
-                {
-                    "species": "Reuniclus",
-                    "ability": "Magic Guard",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Psychic",
-                        "Focus Blast",
-                        "Recover",
-                        "Calm Mind"
-                    ]
-                },
-                {
-                    "species": "Slowbro",
-                    "ability": "Regenerator",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Scald",
-                        "Psychic",
-                        "Slack Off",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Tyranitar",
-                    "ability": "Sand Stream",
-                    "held_item": "None",
-                    "moves": [
-                        "Crunch",
-                        "Stone Edge",
-                        "Earthquake",
-                        "Dragon Dance"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "None",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                }
-            ]
+          "species": "Gallade",
+          "ability": "Steadfast",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Confusion",
+            "Low Kick",
+            "Psybeam",
+            "Will-O-Wisp"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Psychic Leader",
-            "pokemon": [
-                {
-                    "species": "Alakazam",
-                    "ability": "Magic Guard",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Psychic",
-                        "Shadow Ball",
-                        "Focus Blast",
-                        "Encore"
-                    ]
-                },
-                {
-                    "species": "Metagross",
-                    "ability": "Clear Body",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Meteor Mash",
-                        "Zen Headbutt",
-                        "Earthquake",
-                        "Bullet Punch"
-                    ]
-                },
-                {
-                    "species": "Gardevoir",
-                    "ability": "Trace",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Psychic",
-                        "Moonblast",
-                        "Thunderbolt",
-                        "Mystical Fire"
-                    ]
-                },
-                {
-                    "species": "Gallade",
-                    "ability": "Sharpness",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Psycho Cut",
-                        "Close Combat",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Mold Breaker",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rock Slide",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Gardevoir",
+          "ability": "Synchronize",
+          "held_item": "None",
+          "moves": [
+            "Confusion",
+            "Disarming Voice",
+            "Psybeam",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Farigiraf",
+          "ability": "Sap Sipper",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Swift",
+            "Confusion",
+            "Psybeam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Mr. Rime",
+          "ability": "Tangled Feet",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Icy Wind",
+            "Confusion",
+            "Psybeam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Starmie",
+          "ability": "Natural Cure",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Water Gun",
+            "Psybeam",
+            "Psychic",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Armarouge",
+          "ability": "Flash Fire",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Psybeam",
+            "Stored Power",
+            "Will-O-Wisp"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Mind Palace — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Farigiraf",
+          "ability": "Sap Sipper",
+          "held_item": "Life Orb",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Mr. Rime",
+          "ability": "Tangled Feet",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Ice Beam",
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Starmie",
+          "ability": "Natural Cure",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Armarouge",
+          "ability": "Flash Fire",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Psyshock",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Espeon",
+          "ability": "Magic Bounce",
+          "held_item": "Leftovers",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Wyrdeer",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Zen Headbutt",
+            "Psychic",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Mind Palace — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Metagross",
+          "ability": "Clear Body",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Zen Headbutt",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Delphox",
+          "ability": "Blaze",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Psyshock",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Exeggutor",
+          "ability": "Chlorophyll",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leaf Storm",
+            "Psychic",
+            "Psyshock",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Armarouge",
+          "ability": "Flash Fire",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Psyshock",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Espeon",
+          "ability": "Magic Bounce",
+          "held_item": "Leftovers",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Wyrdeer",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Zen Headbutt",
+            "Psychic",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Mind Palace — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Armarouge",
+          "ability": "Flash Fire",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Psyshock",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Espeon",
+          "ability": "Magic Bounce",
+          "held_item": "Leftovers",
+          "moves": [
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Wyrdeer",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Double-Edge",
+            "Zen Headbutt",
+            "Psychic",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Farigiraf",
+          "ability": "Sap Sipper",
+          "held_item": "Life Orb",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Mr. Rime",
+          "ability": "Tangled Feet",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Ice Beam",
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Starmie",
+          "ability": "Natural Cure",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Psychic",
+            "Psyshock",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    }
+  ]
 }

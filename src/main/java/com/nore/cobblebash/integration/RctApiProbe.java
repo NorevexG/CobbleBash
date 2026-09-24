@@ -1,5 +1,10 @@
 package com.nore.cobblebash.integration;
 
+import com.cobblemon.mod.common.Cobblemon;
+import com.cobblemon.mod.common.pokemon.Pokemon;
+import com.gitlab.srcmc.rctapi.api.battle.BattleRules;
+import com.nore.cobblebash.Config;
+import com.nore.cobblebash.elitefour.EliteFourItemLimit;
 import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 import com.gitlab.srcmc.rctapi.api.RCTApi;
@@ -9,6 +14,7 @@ import com.gitlab.srcmc.rctapi.api.trainer.TrainerNPC;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.server.level.ServerPlayer;
 
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.regex.Pattern;
 
 public class RctApiProbe {
@@ -82,6 +88,17 @@ public class RctApiProbe {
     }
 
     public static boolean startGymBattle(ServerPlayer player, String gymType, int slotId, String trainerIdPart) {
+        GymBattleFormat format = resolveBattleFormat(player, gymType, trainerIdPart);
+        return startGymBattle(player, gymType, slotId, trainerIdPart, format);
+    }
+
+    public static boolean startGymBattle(
+            ServerPlayer player,
+            String gymType,
+            int slotId,
+            String trainerIdPart,
+            GymBattleFormat format
+    ) {
         var api = RCTApi.getInstance("cobblebash");
 
         if (api == null) {
@@ -106,7 +123,47 @@ public class RctApiProbe {
 
         var trainerPlayer = registry.registerPlayer("cobblebash_player_" + player.getUUID(), player);
 
-        return api.getBattleManager().startSingle(trainerPlayer, trainerNpc);
+        GymBattleFormat resolvedFormat = resolveRandomFormat(player, format);
+        BattleRules battleRules = new BattleRules.Builder()
+                .withMaxItemUses(EliteFourItemLimit.battleAllowance(player))
+                .build();
+        EliteFourItemLimit.prepareForBattle(player);
+        return resolvedFormat == GymBattleFormat.DOUBLES
+                ? api.getBattleManager().startDouble(trainerPlayer, trainerNpc, battleRules)
+                : api.getBattleManager().startSingle(trainerPlayer, trainerNpc, battleRules);
+    }
+
+    public static GymBattleFormat resolveBattleFormat(ServerPlayer player, String gymType, String trainerIdPart) {
+        GymBattleFormat configuredFormat = RctTrainerDataLoader.load(player.server, gymType, trainerIdPart)
+                .map(RctTrainerDataLoader.TrainerData::battleFormat)
+                .orElse(GymBattleFormat.SINGLES);
+        return resolveRandomFormat(player, configuredFormat);
+    }
+
+    private static GymBattleFormat resolveRandomFormat(ServerPlayer player, GymBattleFormat format) {
+        if (format != GymBattleFormat.RANDOM) {
+            return format;
+        }
+
+        if (countUsablePokemon(player) < 2) {
+            return GymBattleFormat.SINGLES;
+        }
+
+        return ThreadLocalRandom.current().nextBoolean()
+                ? GymBattleFormat.SINGLES
+                : GymBattleFormat.DOUBLES;
+    }
+
+    private static int countUsablePokemon(ServerPlayer player) {
+        int usable = 0;
+        var party = Cobblemon.INSTANCE.getStorage().getParty(player);
+        for (int slot = 0; slot < party.size(); slot++) {
+            Pokemon pokemon = party.get(slot);
+            if (pokemon != null && !pokemon.isFainted()) {
+                usable++;
+            }
+        }
+        return usable;
     }
 
     public static void unregisterGymTrainers(String gymType, int slotId) {

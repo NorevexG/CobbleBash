@@ -1,115 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.ice.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.ice.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.ice.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.ice.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Snow Rush — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Hail Pressure",
-            "pokemon": [
-                {
-                    "species": "Ninetales",
-                    "ability": "Snow Warning",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Aurora Veil",
-                        "Freeze-Dry",
-                        "Moonblast",
-                        "Encore"
-                    ],
-                    "aspects": [
-                        "alolan"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Icicle Crash",
-                        "Knock Off",
-                        "Ice Shard",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Froslass",
-                    "ability": "Cursed Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Spikes",
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Taunt"
-                    ]
-                }
-            ]
+          "species": "Smoochum",
+          "ability": "Oblivious",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Confusion",
+            "Icy Wind",
+            "Encore"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Defensive Ice",
-            "pokemon": [
-                {
-                    "species": "Avalugg",
-                    "ability": "Sturdy",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Rapid Spin",
-                        "Recover",
-                        "Avalanche",
-                        "Body Press"
-                    ]
-                },
-                {
-                    "species": "Lapras",
-                    "ability": "Water Absorb",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Freeze-Dry",
-                        "Surf",
-                        "Thunderbolt",
-                        "Ice Shard"
-                    ]
-                },
-                {
-                    "species": "Frosmoth",
-                    "ability": "Ice Scales",
-                    "held_item": "None",
-                    "moves": [
-                        "Quiver Dance",
-                        "Ice Beam",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                },
-                {
-                    "species": "Glaceon",
-                    "ability": "Ice Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Wish",
-                        "Protect"
-                    ]
-                }
-            ]
+          "species": "Sneasel",
+          "ability": "Inner Focus",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bite",
+            "Icy Wind",
+            "Ice Shard",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Piloswine",
+          "ability": "Oblivious",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Mud Shot",
+            "Icy Wind",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Jynx",
+          "ability": "Oblivious",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Confusion",
+            "Icy Wind",
+            "Encore"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Snow Rush — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Piloswine",
+          "ability": "Oblivious",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Mud Shot",
+            "Icy Wind",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Jynx",
+          "ability": "Oblivious",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Confusion",
+            "Icy Wind",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Crabominable",
+          "ability": "Hyper Cutter",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Smash",
+            "Icy Wind",
+            "Avalanche",
+            "Bulk Up"
+          ]
+        },
+        {
+          "species": "Froslass",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Hex",
+            "Icy Wind",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Snow Rush — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Jynx",
+          "ability": "Oblivious",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Ice Beam",
+            "Psychic",
+            "Blizzard",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Crabominable",
+          "ability": "Hyper Cutter",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Close Combat",
+            "Ice Spinner",
+            "Ice Punch",
+            "Bulk Up"
+          ]
+        },
+        {
+          "species": "Froslass",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Icicle Crash",
+            "Poltergeist",
+            "Ice Spinner",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Glalie",
+          "ability": "Inner Focus",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Spikes",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Snow Rush — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Froslass",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Icicle Crash",
+            "Poltergeist",
+            "Ice Spinner",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Glalie",
+          "ability": "Inner Focus",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Spikes",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Arctozolt",
+          "ability": "Static",
+          "held_item": "Life Orb",
+          "moves": [
+            "Wild Charge",
+            "Icicle Crash",
+            "Ice Beam",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Beartic",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Icicle Crash",
+            "Ice Punch",
+            "Encore",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Snow Rush — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Mr. Rime",
+          "ability": "Tangled Feet",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Psychic",
+            "Blizzard",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Cryogonal",
+          "ability": "Levitate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Rapid Spin",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "species": "Avalugg",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Rapid Spin",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Weavile",
+          "ability": "Pressure",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Knock Off",
+            "Icicle Crash",
+            "Ice Spinner",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Snow Rush — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Avalugg",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Rapid Spin",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Weavile",
+          "ability": "Pressure",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Knock Off",
+            "Icicle Crash",
+            "Ice Spinner",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Arctozolt",
+          "ability": "Static",
+          "held_item": "Life Orb",
+          "moves": [
+            "Wild Charge",
+            "Icicle Crash",
+            "Ice Beam",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Beartic",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Icicle Crash",
+            "Ice Punch",
+            "Encore",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Snow Rush — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Beartic",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Icicle Crash",
+            "Ice Punch",
+            "Encore",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Froslass",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Icicle Crash",
+            "Poltergeist",
+            "Ice Spinner",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Glalie",
+          "ability": "Inner Focus",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Spikes",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Crabominable",
+          "ability": "Hyper Cutter",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Close Combat",
+            "Ice Spinner",
+            "Ice Punch",
+            "Bulk Up"
+          ]
+        }
+      ]
+    }
+  ]
 }

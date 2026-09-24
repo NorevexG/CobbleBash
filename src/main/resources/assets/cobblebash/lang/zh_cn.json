@@ -1,6 +1,7 @@
 {
     "cobblebash.dialogue.action.battle":  "对战",
     "cobblebash.dialogue.action.cancel":  "取消",
+    "cobblebash.dialogue.battle_format.doubles_warning":  "这将是一场双打对战。双方可同时派出两只宝可梦！",
     "cobblebash.dialogue.bug.boss.line_1":  "每一道细小的缝隙都会化作虫群。让我看看你能否撑过这一关。",
     "cobblebash.dialogue.bug.boss.name":  "虫群女王",
     "cobblebash.dialogue.bug.trainer_1.line_1":  "欢迎来到虫属性道馆。蛛网已经布下，小心前行。",
@@ -204,5 +205,8 @@
     "message.cobblebash.gym_entered":  "你进入了%s道馆。",
     "message.cobblebash.elite_four_entered":  "你进入了四天王挑战。",
     "message.cobblebash.leave_gym":  "[离开道馆]",
-    "message.cobblebash.leave_gym.hover":  "返回进入道馆前的位置。"
+    "message.cobblebash.leave_gym.hover":  "返回进入道馆前的位置。",
+    "message.cobblebash.trainer_build_range_fallback":  "警告：没有训练家队伍配置适用于等级 %s（可用范围：%s）。将使用等级范围最接近的配置。",
+    "message.cobblebash.trainer_locked":  "无法挑战%1$s。请先击败%2$s。",
+    "message.cobblebash.elite_four_items_used":  "已使用的战斗道具：%s"
 }

@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.poison.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.poison.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.poison.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.poison.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Venom Crown — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Poison Leader",
-            "pokemon": [
-                {
-                    "species": "Toxapex",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Scald",
-                        "Toxic",
-                        "Recover",
-                        "Haze"
-                    ]
-                },
-                {
-                    "species": "Nidoking",
-                    "ability": "Sheer Force",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earth Power",
-                        "Sludge Wave",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                },
-                {
-                    "species": "Crobat",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Cross Poison",
-                        "U-turn",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Roserade",
-                    "ability": "Natural Cure",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Sludge Bomb",
-                        "Giga Drain",
-                        "Toxic Spikes",
-                        "Sleep Powder"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Mold Breaker",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rock Slide",
-                        "Rapid Spin"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                }
-            ]
+          "species": "Gengar",
+          "ability": "Cursed Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hex",
+            "Acid Spray",
+            "Venoshock",
+            "Toxic Spikes"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Poison Leader",
-            "pokemon": [
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Destiny Bond",
-                        "Focus Blast"
-                    ]
-                },
-                {
-                    "species": "Nidoking",
-                    "ability": "Sheer Force",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earth Power",
-                        "Sludge Wave",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                },
-                {
-                    "species": "Toxicroak",
-                    "ability": "Dry Skin",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Drain Punch",
-                        "Gunk Shot",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Crobat",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Cross Poison",
-                        "U-turn",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stone Edge",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "None",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                }
-            ]
+          "species": "Toxtricity",
+          "ability": "Technician",
+          "held_item": "None",
+          "moves": [
+            "Thunder Shock",
+            "Acid Spray",
+            "Venoshock",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Nidoking",
+          "ability": "Sheer Force",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Venoshock",
+            "Mud Shot",
+            "Poison Jab",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Nidoqueen",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Poison Fang",
+            "Mud Shot",
+            "Venoshock",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Overqwil",
+          "ability": "Intimidate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bite",
+            "Acid Spray",
+            "Venoshock",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Sneasler",
+          "ability": "Pressure",
+          "held_item": "None",
+          "moves": [
+            "Low Kick",
+            "Acid Spray",
+            "Venoshock",
+            "Toxic Spikes"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Venom Crown — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Nidoking",
+          "ability": "Sheer Force",
+          "held_item": "Leftovers",
+          "moves": [
+            "Poison Jab",
+            "Earthquake",
+            "Sludge Bomb",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Nidoqueen",
+          "ability": "Sheer Force",
+          "held_item": "Life Orb",
+          "moves": [
+            "Poison Jab",
+            "Earthquake",
+            "Poison Fang",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Overqwil",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Crunch",
+            "Gunk Shot",
+            "Poison Jab",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Sneasler",
+          "ability": "Pressure",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Close Combat",
+            "Gunk Shot",
+            "Poison Jab",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Roserade",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Tentacruel",
+          "ability": "Clear Body",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Sludge Bomb",
+            "Sludge Wave",
+            "Toxic Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Venom Crown — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Crobat",
+          "ability": "Inner Focus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Cross Poison",
+            "Brave Bird",
+            "Poison Fang",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Glimmora",
+          "ability": "Toxic Debris",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Sludge Wave",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Venusaur",
+          "ability": "Overgrow",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Roserade",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Tentacruel",
+          "ability": "Clear Body",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Sludge Bomb",
+            "Sludge Wave",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Overqwil",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Crunch",
+            "Gunk Shot",
+            "Poison Jab",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Venom Crown — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Roserade",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Tentacruel",
+          "ability": "Clear Body",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Sludge Bomb",
+            "Sludge Wave",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Overqwil",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Crunch",
+            "Gunk Shot",
+            "Poison Jab",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Sneasler",
+          "ability": "Pressure",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Close Combat",
+            "Gunk Shot",
+            "Poison Jab",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Nidoking",
+          "ability": "Sheer Force",
+          "held_item": "Leftovers",
+          "moves": [
+            "Poison Jab",
+            "Earthquake",
+            "Sludge Bomb",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Nidoqueen",
+          "ability": "Sheer Force",
+          "held_item": "Life Orb",
+          "moves": [
+            "Poison Jab",
+            "Earthquake",
+            "Poison Fang",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

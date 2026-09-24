@@ -1,198 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.ice.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.ice.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.ice.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.ice.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Frozen Control — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Hail Core",
-            "pokemon": [
-                {
-                    "species": "Ninetales",
-                    "ability": "Snow Warning",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Aurora Veil",
-                        "Freeze-Dry",
-                        "Moonblast",
-                        "Encore"
-                    ],
-                    "aspects": [
-                        "alolan"
-                    ]
-                },
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "None",
-                    "moves": [
-                        "Icicle Crash",
-                        "Knock Off",
-                        "Ice Shard",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Froslass",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Spikes",
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Lapras",
-                    "ability": "Water Absorb",
-                    "held_item": "None",
-                    "moves": [
-                        "Freeze-Dry",
-                        "Surf",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                }
-            ]
+          "species": "Swinub",
+          "ability": "Oblivious",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Mud Shot",
+            "Icy Wind",
+            "Stealth Rock"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Fast Ice Offense",
-            "pokemon": [
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Icicle Crash",
-                        "Knock Off",
-                        "Ice Shard",
-                        "Low Kick"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Glaceon",
-                    "ability": "Ice Body",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Freeze-Dry",
-                        "Wish"
-                    ]
-                },
-                {
-                    "species": "Froslass",
-                    "ability": "Cursed Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Spikes",
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Lapras",
-                    "ability": "Water Absorb",
-                    "held_item": "None",
-                    "moves": [
-                        "Freeze-Dry",
-                        "Surf",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                }
-            ]
+          "species": "Spheal",
+          "ability": "Thick Fat",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Powder Snow",
+            "Water Gun",
+            "Icy Wind",
+            "Protect"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain & Utility",
-            "pokemon": [
-                {
-                    "species": "Avalugg",
-                    "ability": "Sturdy",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Rapid Spin",
-                        "Recover",
-                        "Avalanche",
-                        "Body Press"
-                    ]
-                },
-                {
-                    "species": "Lapras",
-                    "ability": "Water Absorb",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Freeze-Dry",
-                        "Surf",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                },
-                {
-                    "species": "Frosmoth",
-                    "ability": "Ice Scales",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Ice Beam",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                },
-                {
-                    "species": "Glaceon",
-                    "ability": "Ice Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Wish",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                }
-            ]
+          "species": "Snorunt",
+          "ability": "Inner Focus",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Spikes",
+            "Water Pulse"
+          ]
+        },
+        {
+          "species": "Bergmite",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Protect",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Cubchoo",
+          "ability": "Snow Cloak",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Protect",
+            "Aerial Ace"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Frozen Control — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Snorunt",
+          "ability": "Inner Focus",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Spikes",
+            "Water Pulse"
+          ]
+        },
+        {
+          "species": "Bergmite",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Protect",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Cubchoo",
+          "ability": "Snow Cloak",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Protect",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Vanillite",
+          "ability": "Ice Body",
+          "held_item": "None",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Protect",
+            "Water Pulse"
+          ]
+        },
+        {
+          "species": "Delibird",
+          "ability": "Hustle",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Icy Wind",
+            "Aerial Ace",
+            "Ice Shard",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Frozen Control — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Bergmite",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Spinner",
+            "Ice Beam",
+            "Protect",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Cubchoo",
+          "ability": "Snow Cloak",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Punch",
+            "Ice Beam",
+            "Protect",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Vanillite",
+          "ability": "Ice Body",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "species": "Delibird",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Air Slash",
+            "Blizzard",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Cetoddle",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Protect",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Frozen Control — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Vanillite",
+          "ability": "Ice Body",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "species": "Delibird",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Air Slash",
+            "Blizzard",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Cetoddle",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Amaura",
+          "ability": "Refrigerate",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Meteor Beam",
+            "Ice Beam",
+            "Blizzard",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Vanillish",
+          "ability": "Ice Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Flash Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Frozen Control — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Arctovish",
+          "ability": "Water Absorb",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Liquidation",
+            "Icicle Crash",
+            "Ice Beam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Dewgong",
+          "ability": "Thick Fat",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Liquidation",
+            "Ice Spinner",
+            "Triple Axel",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Eiscue",
+          "ability": "Ice Face",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Sealeo",
+          "ability": "Thick Fat",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Beam",
+            "Surf",
+            "Blizzard",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Vanillish",
+          "ability": "Ice Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Flash Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Frozen Control — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Eiscue",
+          "ability": "Ice Face",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Sealeo",
+          "ability": "Thick Fat",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Beam",
+            "Surf",
+            "Blizzard",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Vanillish",
+          "ability": "Ice Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "species": "Amaura",
+          "ability": "Refrigerate",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Meteor Beam",
+            "Ice Beam",
+            "Blizzard",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Cetoddle",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Protect",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Frozen Control — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Cetoddle",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Delibird",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Air Slash",
+            "Blizzard",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Cubchoo",
+          "ability": "Snow Cloak",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Punch",
+            "Ice Beam",
+            "Protect",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Vanillite",
+          "ability": "Ice Body",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "species": "Bergmite",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Spinner",
+            "Ice Beam",
+            "Protect",
+            "Crunch"
+          ]
+        }
+      ]
+    }
+  ]
 }

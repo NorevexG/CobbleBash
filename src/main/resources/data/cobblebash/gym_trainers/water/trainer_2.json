@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.water.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.water.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.water.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.water.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Tidal Control — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Rain Offense",
-            "pokemon": [
-                {
-                    "species": "Pelipper",
-                    "ability": "Drizzle",
-                    "held_item": "Damp Rock",
-                    "moves": [
-                        "Scald",
-                        "Hurricane",
-                        "Roost",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Barraskewda",
-                    "ability": "Swift Swim",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Liquidation",
-                        "Close Combat",
-                        "Psychic Fangs",
-                        "Aqua Jet"
-                    ]
-                },
-                {
-                    "species": "Kingdra",
-                    "ability": "Swift Swim",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Hydro Pump",
-                        "Draco Meteor",
-                        "Ice Beam",
-                        "Surf"
-                    ]
-                },
-                {
-                    "species": "Swampert",
-                    "ability": "Torrent",
-                    "held_item": "None",
-                    "moves": [
-                        "Waterfall",
-                        "Earthquake",
-                        "Ice Punch",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Tentacruel",
-                    "ability": "Liquid Ooze",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Sludge Bomb",
-                        "Rapid Spin",
-                        "Toxic Spikes"
-                    ]
-                }
-            ]
+          "species": "Feebas",
+          "ability": "Adaptability",
+          "held_item": "None",
+          "moves": [
+            "Water Pulse",
+            "Chilling Water",
+            "Protect",
+            "Icy Wind"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Balanced Water Core",
-            "pokemon": [
-                {
-                    "species": "Milotic",
-                    "ability": "Marvel Scale",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Scald",
-                        "Recover",
-                        "Ice Beam",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Azumarill",
-                    "ability": "Huge Power",
-                    "held_item": "Sitrus Berry",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Belly Drum",
-                        "Liquidation"
-                    ]
-                },
-                {
-                    "species": "Gyarados",
-                    "ability": "Intimidate",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Dragon Dance",
-                        "Waterfall",
-                        "Ice Fang",
-                        "Crunch"
-                    ]
-                },
-                {
-                    "species": "Slowbro",
-                    "ability": "Regenerator",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Psychic",
-                        "Slack Off",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Lapras",
-                    "ability": "Water Absorb",
-                    "held_item": "None",
-                    "moves": [
-                        "Freeze-Dry",
-                        "Surf",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                }
-            ]
+          "species": "Magikarp",
+          "ability": "Swift Swim",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Bounce",
+            "Celebrate",
+            "Flail",
+            "Happy Hour"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain & Control",
-            "pokemon": [
-                {
-                    "species": "Toxapex",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Scald",
-                        "Toxic",
-                        "Recover",
-                        "Haze"
-                    ]
-                },
-                {
-                    "species": "Slowbro",
-                    "ability": "Regenerator",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Scald",
-                        "Psychic",
-                        "Slack Off",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Swampert",
-                    "ability": "Torrent",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Waterfall",
-                        "Earthquake",
-                        "Ice Punch",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Tentacruel",
-                    "ability": "Liquid Ooze",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Sludge Bomb",
-                        "Rapid Spin",
-                        "Toxic Spikes"
-                    ]
-                },
-                {
-                    "species": "Gyarados",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dragon Dance",
-                        "Waterfall",
-                        "Ice Fang",
-                        "Crunch"
-                    ]
-                }
-            ]
+          "species": "Wooper",
+          "ability": "Unaware",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Water Gun",
+            "Mud Shot",
+            "Water Pulse",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Lotad",
+          "ability": "Swift Swim",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Razor Leaf",
+            "Water Pulse",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Wimpod",
+          "ability": "Wimp Out",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Struggle Bug",
+            "Aqua Jet",
+            "Waterfall",
+            "Spikes"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Tidal Control — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Wooper",
+          "ability": "Unaware",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Water Gun",
+            "Mud Shot",
+            "Water Pulse",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Lotad",
+          "ability": "Swift Swim",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Razor Leaf",
+            "Water Pulse",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Wimpod",
+          "ability": "Wimp Out",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Struggle Bug",
+            "Aqua Jet",
+            "Waterfall",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Marill",
+          "ability": "Huge Power",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Water Gun",
+            "Disarming Voice",
+            "Water Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Dewpider",
+          "ability": "Water Absorb",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Bug Bite",
+            "Water Pulse",
+            "Sticky Web"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Tidal Control — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Mareanie",
+          "ability": "Regenerator",
+          "held_item": "Leftovers",
+          "moves": [
+            "Gunk Shot",
+            "Liquidation",
+            "Hydro Pump",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Shellder",
+          "ability": "Overcoat",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Waterfall",
+            "Spikes",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Binacle",
+          "ability": "Tough Claws",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Liquidation",
+            "Surf",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Corphish",
+          "ability": "Adaptability",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Liquidation",
+            "Waterfall",
+            "Protect",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Oshawott",
+          "ability": "Torrent",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Protect",
+            "Ice Beam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Tidal Control — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Binacle",
+          "ability": "Tough Claws",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Liquidation",
+            "Surf",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Corphish",
+          "ability": "Adaptability",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Liquidation",
+            "Waterfall",
+            "Protect",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Oshawott",
+          "ability": "Torrent",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Protect",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Mudkip",
+          "ability": "Torrent",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Liquidation",
+            "Waterfall",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "species": "Quaxly",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Aqua Jet",
+            "Protect",
+            "Brave Bird"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Tidal Control — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Dondozo",
+          "ability": "Unaware",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Liquidation",
+            "Waterfall",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Toxapex",
+          "ability": "Regenerator",
+          "held_item": "Leftovers",
+          "moves": [
+            "Gunk Shot",
+            "Liquidation",
+            "Hydro Pump",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Slowbro",
+          "ability": "Regenerator",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Psychic",
+            "Surf",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Slowking",
+          "ability": "Regenerator",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Psychic",
+            "Surf",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Gastrodon",
+          "ability": "Storm Drain",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Earth Power",
+            "Surf",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Tidal Control — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Slowbro",
+          "ability": "Regenerator",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Psychic",
+            "Surf",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Slowking",
+          "ability": "Regenerator",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Psychic",
+            "Surf",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Gastrodon",
+          "ability": "Storm Drain",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Earth Power",
+            "Surf",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Whiscash",
+          "ability": "Oblivious",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Earthquake",
+            "Waterfall",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Araquanid",
+          "ability": "Water Absorb",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Liquidation",
+            "X-Scissor",
+            "Waterfall",
+            "Sticky Web"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Tidal Control — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Prinplup",
+          "ability": "Torrent",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Protect",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Wartortle",
+          "ability": "Torrent",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Protect",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Wailmer",
+          "ability": "Water Veil",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Waterfall",
+            "Hydro Pump",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Kabuto",
+          "ability": "Swift Swim",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Stone Edge",
+            "Liquidation",
+            "Waterfall",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Omanyte",
+          "ability": "Swift Swim",
+          "held_item": "Leftovers",
+          "moves": [
+            "Meteor Beam",
+            "Hydro Pump",
+            "Surf",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

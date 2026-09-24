@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.grass.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.grass.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.grass.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.grass.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Seeds and Recovery — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Hazard Control",
-            "pokemon": [
-                {
-                    "species": "Ferrothorn",
-                    "ability": "Iron Barbs",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Leech Seed",
-                        "Gyro Ball",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Rillaboom",
-                    "ability": "Grassy Surge",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Grassy Glide",
-                        "Wood Hammer",
-                        "U-turn",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Amoonguss",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Spore",
-                        "Giga Drain",
-                        "Clear Smog",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Roserade",
-                    "ability": "Natural Cure",
-                    "held_item": "None",
-                    "moves": [
-                        "Giga Drain",
-                        "Sludge Bomb",
-                        "Toxic Spikes",
-                        "Sleep Powder"
-                    ]
-                },
-                {
-                    "species": "Decidueye",
-                    "ability": "Overgrow",
-                    "held_item": "None",
-                    "moves": [
-                        "Leaf Blade",
-                        "Spirit Shackle",
-                        "Swords Dance",
-                        "Roost"
-                    ]
-                }
-            ]
+          "species": "Sunkern",
+          "ability": "Chlorophyll",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Razor Leaf",
+            "Magical Leaf",
+            "Leech Seed",
+            "Facade"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Fast Pressure",
-            "pokemon": [
-                {
-                    "species": "Rillaboom",
-                    "ability": "Grassy Surge",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Grassy Glide",
-                        "Wood Hammer",
-                        "U-turn",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Meowscarada",
-                    "ability": "Overgrow",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Flower Trick",
-                        "Knock Off",
-                        "U-turn",
-                        "Play Rough"
-                    ]
-                },
-                {
-                    "species": "Breloom",
-                    "ability": "Technician",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Spore",
-                        "Mach Punch",
-                        "Bullet Seed",
-                        "Rock Tomb"
-                    ]
-                },
-                {
-                    "species": "Roserade",
-                    "ability": "Natural Cure",
-                    "held_item": "None",
-                    "moves": [
-                        "Giga Drain",
-                        "Sludge Bomb",
-                        "Sleep Powder",
-                        "Toxic Spikes"
-                    ]
-                },
-                {
-                    "species": "Whimsicott",
-                    "ability": "Prankster",
-                    "held_item": "None",
-                    "moves": [
-                        "Tailwind",
-                        "Encore",
-                        "U-turn",
-                        "Moonblast"
-                    ]
-                }
-            ]
+          "species": "Bounsweet",
+          "ability": "Leaf Guard",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Razor Leaf",
+            "Magical Leaf",
+            "Protect",
+            "Swift"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain & Control",
-            "pokemon": [
-                {
-                    "species": "Tangrowth",
-                    "ability": "Regenerator",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Giga Drain",
-                        "Knock Off",
-                        "Sleep Powder",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Amoonguss",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Spore",
-                        "Giga Drain",
-                        "Clear Smog",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Ferrothorn",
-                    "ability": "Iron Barbs",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Leech Seed",
-                        "Gyro Ball",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Roserade",
-                    "ability": "Natural Cure",
-                    "held_item": "None",
-                    "moves": [
-                        "Giga Drain",
-                        "Sludge Bomb",
-                        "Sleep Powder",
-                        "Toxic Spikes"
-                    ]
-                },
-                {
-                    "species": "Whimsicott",
-                    "ability": "Prankster",
-                    "held_item": "None",
-                    "moves": [
-                        "Leech Seed",
-                        "Encore",
-                        "U-turn",
-                        "Moonblast"
-                    ]
-                }
-            ]
+          "species": "Lotad",
+          "ability": "Swift Swim",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Razor Leaf",
+            "Magical Leaf",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Seedot",
+          "ability": "Chlorophyll",
+          "held_item": "None",
+          "moves": [
+            "Magical Leaf",
+            "Mega Drain",
+            "Leech Seed",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Fomantis",
+          "ability": "Leaf Guard",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Razor Leaf",
+            "Magical Leaf",
+            "Protect",
+            "X-Scissor"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Seeds and Recovery — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Lotad",
+          "ability": "Swift Swim",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Razor Leaf",
+            "Magical Leaf",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Seedot",
+          "ability": "Chlorophyll",
+          "held_item": "None",
+          "moves": [
+            "Magical Leaf",
+            "Mega Drain",
+            "Leech Seed",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Fomantis",
+          "ability": "Leaf Guard",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Razor Leaf",
+            "Magical Leaf",
+            "Protect",
+            "X-Scissor"
+          ]
+        },
+        {
+          "species": "Gossifleur",
+          "ability": "Regenerator",
+          "held_item": "None",
+          "moves": [
+            "Razor Leaf",
+            "Magical Leaf",
+            "Leech Seed",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Hoppip",
+          "ability": "Chlorophyll",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Magical Leaf",
+            "Aerial Ace",
+            "Mega Drain",
+            "Leech Seed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Seeds and Recovery — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Morelull",
+          "ability": "Effect Spore",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Energy Ball",
+            "Moonblast",
+            "Giga Drain",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Paras",
+          "ability": "Effect Spore",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "X-Scissor",
+            "Seed Bomb",
+            "Giga Drain",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Steenee",
+          "ability": "Leaf Guard",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Seed Bomb",
+            "Petal Blizzard",
+            "Protect",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Foongus",
+          "ability": "Regenerator",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Seed Bomb",
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Shroomish",
+          "ability": "Poison Heal",
+          "held_item": "Toxic Orb",
+          "moves": [
+            "Seed Bomb",
+            "Energy Ball",
+            "Toxic",
+            "Drain Punch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Seeds and Recovery — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Steenee",
+          "ability": "Leaf Guard",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Seed Bomb",
+            "Petal Blizzard",
+            "Protect",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Foongus",
+          "ability": "Regenerator",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Seed Bomb",
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Shroomish",
+          "ability": "Poison Heal",
+          "held_item": "Toxic Orb",
+          "moves": [
+            "Seed Bomb",
+            "Energy Ball",
+            "Toxic",
+            "Drain Punch"
+          ]
+        },
+        {
+          "species": "Bellsprout",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Power Whip",
+            "Poison Jab",
+            "Seed Bomb",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Capsakid",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Seed Bomb",
+            "Leaf Storm",
+            "Leech Seed",
+            "Crunch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Seeds and Recovery — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Cradily",
+          "ability": "Storm Drain",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Power Whip",
+            "Seed Bomb",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Ferrothorn",
+          "ability": "Iron Barbs",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Whip",
+            "Iron Head",
+            "Seed Bomb",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Amoonguss",
+          "ability": "Regenerator",
+          "held_item": "Leftovers",
+          "moves": [
+            "Seed Bomb",
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Tropius",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Hurricane",
+            "Energy Ball",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Bayleef",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leaf Storm",
+            "Energy Ball",
+            "Leech Seed",
+            "Giga Drain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Seeds and Recovery — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Amoonguss",
+          "ability": "Regenerator",
+          "held_item": "Leftovers",
+          "moves": [
+            "Seed Bomb",
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Tropius",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Hurricane",
+            "Energy Ball",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Bayleef",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leaf Storm",
+            "Energy Ball",
+            "Leech Seed",
+            "Giga Drain"
+          ]
+        },
+        {
+          "species": "Shiinotic",
+          "ability": "Effect Spore",
+          "held_item": "Leftovers",
+          "moves": [
+            "Energy Ball",
+            "Moonblast",
+            "Giga Drain",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Gloom",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Energy Ball",
+            "Toxic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Seeds and Recovery — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Lombre",
+          "ability": "Swift Swim",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hydro Pump",
+            "Energy Ball",
+            "Giga Drain",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Skiploom",
+          "ability": "Chlorophyll",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Seed Bomb",
+            "Acrobatics",
+            "Leaf Storm",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Cacnea",
+          "ability": "Water Absorb",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Seed Bomb",
+            "Leaf Storm",
+            "Spikes",
+            "Thunder Punch"
+          ]
+        },
+        {
+          "species": "Pumpkaboo",
+          "ability": "Frisk",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Poltergeist",
+            "Seed Bomb",
+            "Energy Ball",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Toedscool",
+          "ability": "Mycelium Might",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Earth Power",
+            "Leaf Storm",
+            "Energy Ball",
+            "Spikes"
+          ]
+        }
+      ]
+    }
+  ]
 }

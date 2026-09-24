@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.regex.Pattern;
 
 public class RctTrainerDataLoader {
@@ -47,6 +48,8 @@ public class RctTrainerDataLoader {
         private List<PokemonData> pokemon;
         private List<BuildData> builds;
         private DialogueData dialogue;
+        private String battle_format;
+        private Boolean shuffle_team;
 
         public TrainerData() {
         }
@@ -80,14 +83,36 @@ public class RctTrainerDataLoader {
             return dialogue == null ? DialogueData.empty() : dialogue;
         }
 
+        public GymBattleFormat battleFormat() {
+            return GymBattleFormat.parse(battle_format);
+        }
+
+        public boolean shuffleTeam() {
+            return shuffle_team == null || shuffle_team;
+        }
+
+        public boolean hasBuildForLevel(int level) {
+            return builds().stream().anyMatch(build -> build.supportsLevel(level));
+        }
+
+        public String buildRanges() {
+            return builds().stream()
+                    .map(build -> build.id() + " [" + build.minLevel() + "-" + build.maxLevel() + "]")
+                    .collect(Collectors.joining(", "));
+        }
+
         private boolean isValid() {
-            return !builds().isEmpty() && builds().stream().allMatch(BuildData::isValid);
+            return GymBattleFormat.isSupported(battle_format)
+                    && !builds().isEmpty()
+                    && builds().stream().allMatch(BuildData::isValid);
         }
     }
 
     public static class BuildData {
         private String id;
         private String name;
+        private Integer min_level;
+        private Integer max_level;
         private List<PokemonData> pokemon;
 
         public BuildData() {
@@ -111,8 +136,37 @@ public class RctTrainerDataLoader {
             return pokemon == null ? List.of() : pokemon;
         }
 
+        public int minLevel() {
+            return min_level == null ? 0 : min_level;
+        }
+
+        public int maxLevel() {
+            return max_level == null ? 100 : max_level;
+        }
+
+        public boolean supportsLevel(int level) {
+            return level >= minLevel() && level <= maxLevel();
+        }
+
+        public int distanceFromLevel(int level) {
+            if (level < minLevel()) {
+                return minLevel() - level;
+            }
+            if (level > maxLevel()) {
+                return level - maxLevel();
+            }
+            return 0;
+        }
+
         private boolean isValid() {
-            return !pokemon().isEmpty() && pokemon().size() <= 6 && pokemon().stream().allMatch(PokemonData::isValid);
+            return minLevel() >= 0
+                    && minLevel() <= 100
+                    && maxLevel() >= 0
+                    && maxLevel() <= 100
+                    && minLevel() <= maxLevel()
+                    && !pokemon().isEmpty()
+                    && pokemon().size() <= 6
+                    && pokemon().stream().allMatch(PokemonData::isValid);
         }
     }
 

@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.flying.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.flying.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.flying.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.flying.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Sky Control — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Hazard and Pivot Control",
-            "pokemon": [
-                {
-                    "species": "Skarmory",
-                    "ability": "Sturdy",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Brave Bird",
-                        "Spikes",
-                        "Roost",
-                        "Whirlwind"
-                    ]
-                },
-                {
-                    "species": "Corviknight",
-                    "ability": "Pressure",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Brave Bird",
-                        "Body Press",
-                        "Roost",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Noivern",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Draco Meteor",
-                        "Hurricane",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Staraptor",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Double-Edge"
-                    ]
-                },
-                {
-                    "species": "Crobat",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Cross Poison",
-                        "U-turn",
-                        "Roost"
-                    ]
-                }
-            ]
+          "species": "Combee",
+          "ability": "Hustle",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Bug Bite",
+            "Bug Buzz",
+            "Struggle Bug",
+            "Sleep Talk"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Sky Offense",
-            "pokemon": [
-                {
-                    "species": "Talonflame",
-                    "ability": "Gale Wings",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Brave Bird",
-                        "Flare Blitz",
-                        "Roost",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Hawlucha",
-                    "ability": "Unburden",
-                    "held_item": "None",
-                    "moves": [
-                        "Acrobatics",
-                        "Close Combat",
-                        "Swords Dance",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Aerodactyl",
-                    "ability": "Rock Head",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Stone Edge",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Staraptor",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Double-Edge"
-                    ]
-                },
-                {
-                    "species": "Noivern",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Draco Meteor",
-                        "Hurricane",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                }
-            ]
+          "species": "Noibat",
+          "ability": "Frisk",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Wing Attack",
+            "Dragon Claw",
+            "Aerial Ace",
+            "Protect"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Status and Sustain",
-            "pokemon": [
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                },
-                {
-                    "species": "Gliscor",
-                    "ability": "Poison Heal",
-                    "held_item": "Toxic Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Roost",
-                        "Toxic",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Crobat",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Cross Poison",
-                        "U-turn",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Corviknight",
-                    "ability": "Pressure",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Body Press",
-                        "Roost",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Skarmory",
-                    "ability": "Sturdy",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Brave Bird",
-                        "Spikes",
-                        "Roost",
-                        "Whirlwind"
-                    ]
-                }
-            ]
+          "species": "Rookidee",
+          "ability": "Keen Eye",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Aerial Ace",
+            "Air Cutter",
+            "Protect",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Starly",
+          "ability": "Keen Eye",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Quick Attack",
+            "Wing Attack",
+            "Aerial Ace",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Zubat",
+          "ability": "Inner Focus",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Poison Fang",
+            "Wing Attack",
+            "Aerial Ace",
+            "Protect"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Sky Control — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Rookidee",
+          "ability": "Keen Eye",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Aerial Ace",
+            "Air Cutter",
+            "Protect",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Starly",
+          "ability": "Keen Eye",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Quick Attack",
+            "Wing Attack",
+            "Aerial Ace",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Zubat",
+          "ability": "Inner Focus",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Poison Fang",
+            "Wing Attack",
+            "Aerial Ace",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Hoppip",
+          "ability": "Chlorophyll",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Magical Leaf",
+            "Aerial Ace",
+            "Acrobatics",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Pidgey",
+          "ability": "Keen Eye",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Quick Attack",
+            "Wing Attack",
+            "Aerial Ace",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Sky Control — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Pidove",
+          "ability": "Big Pecks",
+          "held_item": "Leftovers",
+          "moves": [
+            "Facade",
+            "Dual Wingbeat",
+            "Aerial Ace",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Ledyba",
+          "ability": "Swarm",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Bug Buzz",
+            "Air Slash",
+            "Air Cutter",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Pikipek",
+          "ability": "Keen Eye",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Taillow",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Wingull",
+          "ability": "Keen Eye",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hydro Pump",
+            "Hurricane",
+            "Air Slash",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Sky Control — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Pikipek",
+          "ability": "Keen Eye",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Taillow",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Wingull",
+          "ability": "Keen Eye",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hydro Pump",
+            "Hurricane",
+            "Air Slash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Fletchling",
+          "ability": "Big Pecks",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Double-Edge",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Wattrel",
+          "ability": "Wind Power",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunderbolt",
+            "Hurricane",
+            "Air Slash",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Sky Control — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Altaria",
+          "ability": "Natural Cure",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dragon Claw",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Mantine",
+          "ability": "Water Absorb",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Hurricane",
+            "Air Slash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Vespiquen",
+          "ability": "Pressure",
+          "held_item": "Leftovers",
+          "moves": [
+            "X-Scissor",
+            "Dual Wingbeat",
+            "Acrobatics",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Skarmory",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tropius",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Hurricane",
+            "Air Slash",
+            "Leech Seed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Sky Control — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Vespiquen",
+          "ability": "Pressure",
+          "held_item": "Leftovers",
+          "moves": [
+            "X-Scissor",
+            "Dual Wingbeat",
+            "Acrobatics",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Skarmory",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tropius",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Hurricane",
+            "Air Slash",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Dartrix",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leaf Blade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Togetic",
+          "ability": "Serene Grace",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dazzling Gleam",
+            "Air Cutter",
+            "Dual Wingbeat",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Sky Control — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Corvisquire",
+          "ability": "Keen Eye",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Tranquill",
+          "ability": "Big Pecks",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Facade",
+            "Dual Wingbeat",
+            "Aerial Ace",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Rufflet",
+          "ability": "Sheer Force",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Double-Edge",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Pidgeotto",
+          "ability": "Keen Eye",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Drifloon",
+          "ability": "Aftermath",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Air Cutter",
+            "Acrobatics",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -10,6 +10,7 @@ import com.nore.cobblebash.beacon.ChampionBeaconAuras;
 import com.nore.cobblebash.beacon.ChampionBeaconPower;
 import com.nore.cobblebash.dimension.CobbleBashDimensions;
 import com.nore.cobblebash.elitefour.EliteFourMember;
+import com.nore.cobblebash.elitefour.EliteFourItemLimit;
 import com.nore.cobblebash.gym.GymLevelSystem;
 import com.nore.cobblebash.gym.GymTrainerUnit;
 import com.nore.cobblebash.gym.GymType;
@@ -17,6 +18,8 @@ import com.nore.cobblebash.instance.GymInstance;
 import com.nore.cobblebash.instance.GymInstanceManager;
 import com.nore.cobblebash.instance.GymSlotPosition;
 import com.nore.cobblebash.integration.CobbleDollarsCompat;
+import com.nore.cobblebash.integration.GymBattleFormat;
+import com.nore.cobblebash.integration.RctTrainerDataLoader;
 import com.nore.cobblebash.progress.GymProgressManager;
 import com.nore.cobblebash.progress.GymCacheMigrationData;
 import com.nore.cobblebash.progress.GymRewardData;
@@ -27,6 +30,7 @@ import com.nore.cobblebash.structure.GymPlatformBuilder;
 import com.nore.cobblebash.util.DelayedTaskScheduler;
 import com.nore.cobblebash.structure.EliteFourStructure;
 import com.nore.cobblebash.structure.GymDoorController;
+import com.nore.cobblebash.util.CobbleBashText;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -263,6 +267,7 @@ public class GymCommand {
         player.setGameMode(GameType.ADVENTURE);
 
         sendEntryMessage(player, Component.translatable("message.cobblebash.elite_four_entered"));
+        EliteFourItemLimit.showCounter(player);
         return 1;
     }
 
@@ -689,14 +694,31 @@ public class GymCommand {
     }
 
     private static int startTrainerBattle(CommandSourceStack source, GymType gymType, GymTrainerUnit unit) {
-        return startTrainerBattle(source.getPlayer(), source, gymType.getId(), null, unit);
+        return startTrainerBattle(source.getPlayer(), source, gymType.getId(), null, unit, null);
     }
 
     public static boolean startTrainerBattle(ServerPlayer player, String gymType, int slotId, GymTrainerUnit unit) {
-        return startTrainerBattle(player, null, gymType, slotId, unit) > 0;
+        return startTrainerBattle(player, gymType, slotId, unit, null);
     }
 
-    private static int startTrainerBattle(ServerPlayer player, CommandSourceStack source, String gymType, Integer requiredSlotId, GymTrainerUnit unit) {
+    public static boolean startTrainerBattle(
+            ServerPlayer player,
+            String gymType,
+            int slotId,
+            GymTrainerUnit unit,
+            GymBattleFormat battleFormat
+    ) {
+        return startTrainerBattle(player, null, gymType, slotId, unit, battleFormat) > 0;
+    }
+
+    private static int startTrainerBattle(
+            ServerPlayer player,
+            CommandSourceStack source,
+            String gymType,
+            Integer requiredSlotId,
+            GymTrainerUnit unit,
+            GymBattleFormat battleFormat
+    ) {
         GymInstance instance = GymInstanceManager.getActive(player.getUUID());
 
         if (instance == null) {
@@ -705,7 +727,7 @@ public class GymCommand {
         }
 
         if (EliteFourStructure.GYM_TYPE.equals(instance.getGymType())) {
-            return startEliteFourTrainerBattle(player, source, gymType, requiredSlotId, unit, instance);
+            return startEliteFourTrainerBattle(player, source, gymType, requiredSlotId, unit, instance, battleFormat);
         }
 
         if (!instance.getGymType().equals(gymType)) {
@@ -724,15 +746,17 @@ public class GymCommand {
             String expectedName = expectedUnit == null
                     ? "the previous trainer"
                     : getTrainerDisplayName(player, gymType, expectedUnit);
-            sendFailure(
-                    player,
-                    source,
-                    "Cannot battle " + targetName + ". Beat " + expectedName + " first."
+            Component message = Component.translatable(
+                    "message.cobblebash.trainer_locked",
+                    CobbleBashText.component(targetName),
+                    CobbleBashText.component(expectedName)
             );
+            sendFailure(player, source, message);
             return 0;
         }
 
         int level = instance.getTrainerLevels()[unit.getLevelIndex()];
+        warnAboutTrainerBuildFallback(player, gymType, unit.getTrainerIdPart(), level);
         ServerLevel gymLevel = player.server.getLevel(CobbleBashDimensions.GYM_VOID);
         if (gymLevel == null) {
             sendFailure(player, source, "CobbleBash gym dimension was not found.");
@@ -748,7 +772,16 @@ public class GymCommand {
 
         GymPlatformBuilder.attachTrainerEntity(gymLevel, origin, gymType, instance.getSlotId(), unit.getTrainerIdPart());
 
-        boolean started = RctApiProbe.startGymBattle(player, gymType, instance.getSlotId(), unit.getTrainerIdPart());
+        GymBattleFormat resolvedFormat = battleFormat == null
+                ? RctApiProbe.resolveBattleFormat(player, gymType, unit.getTrainerIdPart())
+                : battleFormat;
+        boolean started = RctApiProbe.startGymBattle(
+                player,
+                gymType,
+                instance.getSlotId(),
+                unit.getTrainerIdPart(),
+                resolvedFormat
+        );
 
         if (!started) {
             sendFailure(player, source, "Failed to start " + gymType + " " + unit.getDisplayName() + " battle.");
@@ -766,11 +799,12 @@ public class GymCommand {
             String gymType,
             Integer requiredSlotId,
             GymTrainerUnit unit,
-            GymInstance instance
+            GymInstance instance,
+            GymBattleFormat battleFormat
     ) {
         EliteFourMember member = EliteFourMember.fromTrainerGymType(gymType);
         if (EliteFourStructure.CHAMPION_TRAINER_GYM_TYPE.equals(gymType)) {
-            return startEliteFourChampionBattle(player, source, requiredSlotId, unit, instance);
+            return startEliteFourChampionBattle(player, source, requiredSlotId, unit, instance, battleFormat);
         }
 
         if (member == null || unit != GymTrainerUnit.BOSS) {
@@ -789,6 +823,7 @@ public class GymCommand {
         }
 
         int level = member == EliteFourMember.FIRE_FAIRY || member == EliteFourMember.WATER_STEEL ? 98 : 95;
+        warnAboutTrainerBuildFallback(player, gymType, unit.getTrainerIdPart(), level);
         ServerLevel gymLevel = player.server.getLevel(CobbleBashDimensions.GYM_VOID);
         if (gymLevel == null) {
             sendFailure(player, source, "CobbleBash gym dimension was not found.");
@@ -804,7 +839,16 @@ public class GymCommand {
 
         GymPlatformBuilder.attachTrainerEntity(gymLevel, origin, gymType, instance.getSlotId(), unit.getTrainerIdPart());
 
-        boolean started = RctApiProbe.startGymBattle(player, gymType, instance.getSlotId(), unit.getTrainerIdPart());
+        GymBattleFormat resolvedFormat = battleFormat == null
+                ? RctApiProbe.resolveBattleFormat(player, gymType, unit.getTrainerIdPart())
+                : battleFormat;
+        boolean started = RctApiProbe.startGymBattle(
+                player,
+                gymType,
+                instance.getSlotId(),
+                unit.getTrainerIdPart(),
+                resolvedFormat
+        );
         if (!started) {
             sendFailure(player, source, "Failed to start " + member.getDisplayName() + " Elite Four battle.");
             return 0;
@@ -819,7 +863,8 @@ public class GymCommand {
             CommandSourceStack source,
             Integer requiredSlotId,
             GymTrainerUnit unit,
-            GymInstance instance
+            GymInstance instance,
+            GymBattleFormat battleFormat
     ) {
         if (unit != GymTrainerUnit.BOSS) {
             sendFailure(player, source, "That trainer is not the Elite Four Champion.");
@@ -836,6 +881,13 @@ public class GymCommand {
             return 0;
         }
 
+        warnAboutTrainerBuildFallback(
+                player,
+                EliteFourStructure.CHAMPION_TRAINER_GYM_TYPE,
+                unit.getTrainerIdPart(),
+                100
+        );
+
         ServerLevel gymLevel = player.server.getLevel(CobbleBashDimensions.GYM_VOID);
         if (gymLevel == null) {
             sendFailure(player, source, "CobbleBash gym dimension was not found.");
@@ -851,7 +903,16 @@ public class GymCommand {
 
         GymPlatformBuilder.attachTrainerEntity(gymLevel, origin, EliteFourStructure.CHAMPION_TRAINER_GYM_TYPE, instance.getSlotId(), unit.getTrainerIdPart());
 
-        boolean started = RctApiProbe.startGymBattle(player, EliteFourStructure.CHAMPION_TRAINER_GYM_TYPE, instance.getSlotId(), unit.getTrainerIdPart());
+        GymBattleFormat resolvedFormat = battleFormat == null
+                ? RctApiProbe.resolveBattleFormat(player, EliteFourStructure.CHAMPION_TRAINER_GYM_TYPE, unit.getTrainerIdPart())
+                : battleFormat;
+        boolean started = RctApiProbe.startGymBattle(
+                player,
+                EliteFourStructure.CHAMPION_TRAINER_GYM_TYPE,
+                instance.getSlotId(),
+                unit.getTrainerIdPart(),
+                resolvedFormat
+        );
         if (!started) {
             sendFailure(player, source, "Failed to start Elite Four Champion battle.");
             return 0;
@@ -859,6 +920,23 @@ public class GymCommand {
 
         sendSuccess(player, source, "Started Elite Four Champion battle.");
         return 1;
+    }
+
+    private static void warnAboutTrainerBuildFallback(
+            ServerPlayer player,
+            String gymType,
+            String trainerIdPart,
+            int level
+    ) {
+        RctTrainerDataLoader.load(player.server, gymType, trainerIdPart).ifPresent(data -> {
+            if (!data.hasBuildForLevel(level)) {
+                player.sendSystemMessage(Component.translatable(
+                        "message.cobblebash.trainer_build_range_fallback",
+                        level,
+                        data.buildRanges()
+                ).withStyle(ChatFormatting.YELLOW));
+            }
+        });
     }
 
     private static int defeatTrainer(CommandSourceStack source, GymType gymType, GymTrainerUnit unit) {
@@ -1253,10 +1331,14 @@ public class GymCommand {
     }
 
     private static void sendFailure(ServerPlayer player, CommandSourceStack source, String message) {
+        sendFailure(player, source, Component.literal(message));
+    }
+
+    private static void sendFailure(ServerPlayer player, CommandSourceStack source, Component message) {
         if (source != null) {
-            source.sendFailure(Component.literal(message));
+            source.sendFailure(message);
         } else {
-            player.sendSystemMessage(Component.literal(message));
+            player.sendSystemMessage(message);
         }
     }
 

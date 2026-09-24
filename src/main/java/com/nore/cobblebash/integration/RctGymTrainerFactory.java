@@ -32,9 +32,23 @@ public class RctGymTrainerFactory {
     public static Optional<TrainerModel> createTrainer(MinecraftServer server, String gymType, String trainerIdPart, int level, String displayNameOverride) {
         return RctTrainerDataLoader.load(server, gymType, trainerIdPart)
                 .map(data -> {
-                    RctTrainerDataLoader.BuildData build = selectBuild(data.builds());
-                    List<RctTrainerDataLoader.PokemonData> shuffledTeam = new ArrayList<>(build.pokemon());
-                    Collections.shuffle(shuffledTeam);
+                    RctTrainerDataLoader.BuildData build = selectBuild(data.builds(), level);
+                    if (!build.supportsLevel(level)) {
+                        LOGGER.warn(
+                                "No CobbleBash trainer build for {} {} covers level {}. Using nearest build '{}' (levels {}-{}). Available ranges: {}",
+                                gymType,
+                                trainerIdPart,
+                                level,
+                                build.id(),
+                                build.minLevel(),
+                                build.maxLevel(),
+                                data.buildRanges()
+                        );
+                    }
+                    List<RctTrainerDataLoader.PokemonData> selectedTeam = new ArrayList<>(build.pokemon());
+                    if (data.shuffleTeam()) {
+                        Collections.shuffle(selectedTeam);
+                    }
                     String displayName = displayNameOverride == null || displayNameOverride.isBlank()
                             ? data.displayName()
                             : displayNameOverride;
@@ -43,7 +57,7 @@ public class RctGymTrainerFactory {
                             CobbleBashText.rctText(displayName),
                             JTO.<BattleAI>of(RCTBattleAI::new),
                             List.of(),
-                            shuffledTeam.stream()
+                            selectedTeam.stream()
                             .map(pokemon -> createPokemon(pokemon, level))
                             .toList()
                     );
@@ -162,7 +176,25 @@ public class RctGymTrainerFactory {
         return String.join(", ", matches);
     }
 
-    private static RctTrainerDataLoader.BuildData selectBuild(List<RctTrainerDataLoader.BuildData> builds) {
+    private static RctTrainerDataLoader.BuildData selectBuild(List<RctTrainerDataLoader.BuildData> builds, int level) {
+        List<RctTrainerDataLoader.BuildData> eligibleBuilds = builds.stream()
+                .filter(build -> build.supportsLevel(level))
+                .toList();
+        if (!eligibleBuilds.isEmpty()) {
+            return selectRandomBuild(eligibleBuilds);
+        }
+
+        int nearestDistance = builds.stream()
+                .mapToInt(build -> build.distanceFromLevel(level))
+                .min()
+                .orElseThrow();
+        List<RctTrainerDataLoader.BuildData> nearestBuilds = builds.stream()
+                .filter(build -> build.distanceFromLevel(level) == nearestDistance)
+                .toList();
+        return selectRandomBuild(nearestBuilds);
+    }
+
+    private static RctTrainerDataLoader.BuildData selectRandomBuild(List<RctTrainerDataLoader.BuildData> builds) {
         return builds.get(ThreadLocalRandom.current().nextInt(builds.size()));
     }
 }

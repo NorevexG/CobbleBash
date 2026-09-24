@@ -1,115 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.fire.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.fire.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.fire.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.fire.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Blazing Momentum — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Sun Setup",
-            "pokemon": [
-                {
-                    "species": "Torkoal",
-                    "ability": "Drought",
-                    "held_item": "Heat Rock",
-                    "moves": [
-                        "Stealth Rock",
-                        "Lava Plume",
-                        "Rapid Spin",
-                        "Yawn"
-                    ]
-                },
-                {
-                    "species": "Arcanine",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Flare Blitz",
-                        "Extreme Speed",
-                        "Morning Sun",
-                        "Wild Charge"
-                    ]
-                },
-                {
-                    "species": "Talonflame",
-                    "ability": "Gale Wings",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Flare Blitz",
-                        "Roost",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Houndoom",
-                    "ability": "Flash Fire",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Nasty Plot",
-                        "Dark Pulse",
-                        "Flamethrower",
-                        "Sludge Bomb"
-                    ]
-                }
-            ]
+          "species": "Magby",
+          "ability": "Flame Body",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Brick Break"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Offensive Core",
-            "pokemon": [
-                {
-                    "species": "Infernape",
-                    "ability": "Blaze",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Flare Blitz",
-                        "U-turn",
-                        "Grass Knot"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Overheat",
-                        "Volt Switch",
-                        "Thunderbolt",
-                        "Will-O-Wisp"
-                    ],
-                    "aspects": [
-                        "heat-appliance"
-                    ]
-                },
-                {
-                    "species": "Arcanine",
-                    "ability": "Intimidate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Flare Blitz",
-                        "Morning Sun",
-                        "Extreme Speed",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Talonflame",
-                    "ability": "Gale Wings",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Roost",
-                        "Swords Dance",
-                        "Flare Blitz"
-                    ]
-                }
-            ]
+          "species": "Lampent",
+          "ability": "Flame Body",
+          "held_item": "None",
+          "moves": [
+            "Hex",
+            "Ember",
+            "Flame Charge",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Fletchinder",
+          "ability": "Flame Body",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Aerial Ace",
+            "Flame Charge",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Charmeleon",
+          "ability": "Blaze",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Rock Tomb"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Blazing Momentum — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Fletchinder",
+          "ability": "Flame Body",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Aerial Ace",
+            "Flame Charge",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Charmeleon",
+          "ability": "Blaze",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Monferno",
+          "ability": "Blaze",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Low Kick",
+            "Flame Charge",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Quilava",
+          "ability": "Flash Fire",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Aerial Ace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Blazing Momentum — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Ponyta",
+          "ability": "Flame Body",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Will-O-Wisp",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Pignite",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Raboot",
+          "ability": "Blaze",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "U-turn",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Torracat",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "U-turn",
+            "Shadow Claw"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Blazing Momentum — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Raboot",
+          "ability": "Blaze",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "U-turn",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Torracat",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "U-turn",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Darmanitan",
+          "ability": "Sheer Force",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flare Blitz",
+            "Fire Punch",
+            "U-turn",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Salazzle",
+          "ability": "Corrosion",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Sludge Bomb",
+            "Flamethrower",
+            "Fire Blast",
+            "Toxic Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Blazing Momentum — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Emboar",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Armarouge",
+          "ability": "Flash Fire",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Fire Blast",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Centiskorch",
+          "ability": "Flame Body",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flare Blitz",
+            "X-Scissor",
+            "Flamethrower",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Ceruledge",
+          "ability": "Flash Fire",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Poltergeist",
+            "Flamethrower",
+            "Taunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Blazing Momentum — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Centiskorch",
+          "ability": "Flame Body",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flare Blitz",
+            "X-Scissor",
+            "Flamethrower",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Ceruledge",
+          "ability": "Flash Fire",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Poltergeist",
+            "Flamethrower",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Flareon",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Baton Pass",
+            "Superpower"
+          ]
+        },
+        {
+          "species": "Chandelure",
+          "ability": "Flame Body",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Flamethrower",
+            "Fire Blast",
+            "Taunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Blazing Momentum — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Houndoom",
+          "ability": "Flash Fire",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dark Pulse",
+            "Flamethrower",
+            "Fire Blast",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Rapidash",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Baton Pass",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Talonflame",
+          "ability": "Flame Body",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Flare Blitz",
+            "Brave Bird",
+            "Flamethrower",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Simisear",
+          "ability": "Blaze",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flare Blitz",
+            "Fire Punch",
+            "Taunt",
+            "Shadow Claw"
+          ]
+        }
+      ]
+    }
+  ]
 }

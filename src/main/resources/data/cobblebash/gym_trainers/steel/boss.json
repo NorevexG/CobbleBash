@@ -1,159 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.steel.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.steel.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.steel.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.steel.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Iron Sovereign — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Steel Leader",
-            "pokemon": [
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Ferrothorn",
-                    "ability": "Iron Barbs",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Leech Seed",
-                        "Gyro Ball",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Metagross",
-                    "ability": "Clear Body",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Meteor Mash",
-                        "Zen Headbutt",
-                        "Earthquake",
-                        "Bullet Punch"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Body Press"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                },
-                {
-                    "species": "Dragonite",
-                    "ability": "Multiscale",
-                    "held_item": "None",
-                    "moves": [
-                        "Dragon Dance",
-                        "Dragon Claw",
-                        "Fire Punch",
-                        "Roost"
-                    ]
-                }
-            ]
+          "species": "Klinklang",
+          "ability": "Plus",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Steel Leader",
-            "pokemon": [
-                {
-                    "species": "Lucario",
-                    "ability": "Inner Focus",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Meteor Mash",
-                        "Extreme Speed",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Bisharp",
-                    "ability": "Defiant",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Iron Head",
-                        "Knock Off",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "ability": "Stance Change",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "King's Shield",
-                        "Shadow Ball",
-                        "Sacred Sword",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Empoleon",
-                    "ability": "Torrent",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Flash Cannon",
-                        "Ice Beam",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stealth Rock",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "None",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                }
-            ]
+          "species": "Lucario",
+          "ability": "Inner Focus",
+          "held_item": "None",
+          "moves": [
+            "Low Kick",
+            "Metal Claw",
+            "Bullet Punch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Probopass",
+          "ability": "Sturdy",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Rock Tomb",
+            "Flash Cannon",
+            "Steel Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aggron",
+          "ability": "Sturdy",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Metal Claw",
+            "Rock Tomb",
+            "Smart Strike",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Empoleon",
+          "ability": "Torrent",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Metal Claw",
+            "Flash Cannon",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Magnezone",
+          "ability": "Sturdy",
+          "held_item": "None",
+          "moves": [
+            "Thunder Shock",
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Iron Sovereign — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Probopass",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Flash Cannon",
+            "Steel Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aggron",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Stone Edge",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Empoleon",
+          "ability": "Torrent",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Flash Cannon",
+            "Steel Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Magnezone",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Gholdengo",
+          "ability": "Good as Gold",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Ball",
+            "Steel Beam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Metagross",
+          "ability": "Clear Body",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Iron Sovereign — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Metagross",
+          "ability": "Clear Body",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Gholdengo",
+          "ability": "Good as Gold",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Ball",
+            "Steel Beam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Magnezone",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Aggron",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Stone Edge",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Empoleon",
+          "ability": "Torrent",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Flash Cannon",
+            "Steel Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Lucario",
+          "ability": "Inner Focus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Aura Sphere",
+            "Flash Cannon",
+            "Steel Beam",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Iron Sovereign — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Aggron",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Stone Edge",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Empoleon",
+          "ability": "Torrent",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Flash Cannon",
+            "Steel Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Lucario",
+          "ability": "Inner Focus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Aura Sphere",
+            "Flash Cannon",
+            "Steel Beam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Probopass",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Flash Cannon",
+            "Steel Beam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Klinklang",
+          "ability": "Plus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Metagross",
+          "ability": "Clear Body",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

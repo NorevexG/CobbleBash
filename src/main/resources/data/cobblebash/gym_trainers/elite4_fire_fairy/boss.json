@@ -1,168 +1,162 @@
 {
-    "display_name": "cobblebash.dialogue.elite4_fire_fairy.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.elite4_fire_fairy.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.elite4_fire_fairy.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.elite4_fire_fairy.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "endgame_a",
+      "name": "Witchfire Masquerade — Endgame A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Sunlit Court",
-            "pokemon": [
-                {
-                    "species": "Torkoal",
-                    "level": 95,
-                    "ability": "Drought",
-                    "held_item": "Heat Rock",
-                    "moves": [
-                        "Lava Plume",
-                        "Stealth Rock",
-                        "Rapid Spin",
-                        "Yawn"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "level": 95,
-                    "ability": "Flame Body",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                },
-                {
-                    "species": "Azumarill",
-                    "level": 95,
-                    "ability": "Huge Power",
-                    "held_item": "Sitrus Berry",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Liquidation",
-                        "Belly Drum"
-                    ]
-                },
-                {
-                    "species": "Hatterene",
-                    "level": 95,
-                    "ability": "Magic Bounce",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Dazzling Gleam",
-                        "Psychic",
-                        "Mystical Fire",
-                        "Calm Mind"
-                    ]
-                },
-                {
-                    "species": "Arcanine",
-                    "level": 96,
-                    "ability": "Intimidate",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Flare Blitz",
-                        "Extreme Speed",
-                        "Close Combat",
-                        "Morning Sun"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "level": 98,
-                    "ability": "Serene Grace",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Air Slash",
-                        "Dazzling Gleam",
-                        "Thunder Wave",
-                        "Roost"
-                    ]
-                }
-            ]
+          "species": "Arcanine",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Will-O-Wisp",
+            "Crunch"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Wildfire Masquerade",
-            "pokemon": [
-                {
-                    "species": "Ninetales",
-                    "level": 95,
-                    "ability": "Drought",
-                    "held_item": "Heat Rock",
-                    "moves": [
-                        "Flamethrower",
-                        "Solar Beam",
-                        "Nasty Plot",
-                        "Will-O-Wisp"
-                    ]
-                },
-                {
-                    "species": "Mimikyu",
-                    "level": 95,
-                    "ability": "Disguise",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Claw",
-                        "Shadow Sneak",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Infernape",
-                    "level": 95,
-                    "ability": "Blaze",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Close Combat",
-                        "Flare Blitz",
-                        "Stealth Rock",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Grimmsnarl",
-                    "level": 95,
-                    "ability": "Prankster",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Spirit Break",
-                        "Reflect",
-                        "Light Screen",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Charizard",
-                    "level": 96,
-                    "ability": "Solar Power",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Fire Blast",
-                        "Air Slash",
-                        "Solar Beam",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Gardevoir",
-                    "level": 98,
-                    "ability": "Trace",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Moonblast",
-                        "Psychic",
-                        "Focus Blast",
-                        "Trick"
-                    ]
-                }
-            ]
+          "species": "Florges",
+          "ability": "Flower Veil",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Moonblast",
+            "Protect",
+            "Psychic",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "species": "Volcarona",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Togekiss",
+          "ability": "Serene Grace",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dazzling Gleam",
+            "Air Slash",
+            "Flamethrower",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Magmortar",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Charizard",
+          "ability": "Blaze",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Hurricane",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "endgame_b",
+      "name": "Witchfire Masquerade — Endgame B",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Delphox",
+          "ability": "Blaze",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Infernape",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Typhlosion",
+          "ability": "Flash Fire",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Blaziken",
+          "ability": "Speed Boost",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Cinderace",
+          "ability": "Blaze",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flare Blitz",
+            "Fire Punch",
+            "Will-O-Wisp",
+            "Iron Head"
+          ]
+        },
+        {
+          "species": "Incineroar",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Knock Off",
+            "Fire Punch",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    }
+  ]
 }

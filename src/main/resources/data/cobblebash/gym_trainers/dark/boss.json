@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.dark.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.dark.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.dark.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.dark.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Midnight Tyrant — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Dark Leader",
-            "pokemon": [
-                {
-                    "species": "Tyranitar",
-                    "ability": "Sand Stream",
-                    "held_item": "Smooth Rock",
-                    "moves": [
-                        "Stone Edge",
-                        "Crunch",
-                        "Stealth Rock",
-                        "Earthquake"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Bisharp",
-                    "ability": "Defiant",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Sucker Punch",
-                        "Iron Head",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Mandibuzz",
-                    "ability": "Overcoat",
-                    "held_item": "None",
-                    "moves": [
-                        "Foul Play",
-                        "Roost",
-                        "Defog",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Toxicroak",
-                    "ability": "Dry Skin",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Drain Punch",
-                        "Gunk Shot",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Sand Rush",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rapid Spin",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Krookodile",
+          "ability": "Intimidate",
+          "held_item": "None",
+          "moves": [
+            "Mud Shot",
+            "Bite",
+            "Snarl",
+            "Stealth Rock"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Dark Leader",
-            "pokemon": [
-                {
-                    "species": "Grimmsnarl",
-                    "ability": "Prankster",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Reflect",
-                        "Light Screen",
-                        "Spirit Break",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Knock Off",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Low Kick"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Bisharp",
-                    "ability": "Defiant",
-                    "held_item": "None",
-                    "moves": [
-                        "Sucker Punch",
-                        "Iron Head",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Focus Blast",
-                        "Destiny Bond"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Mold Breaker",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rapid Spin",
-                        "Rock Slide"
-                    ]
-                }
-            ]
+          "species": "Obstagoon",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Snarl",
+            "Swift",
+            "Thief",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Umbreon",
+          "ability": "Inner Focus",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bite",
+            "Snarl",
+            "Toxic",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Greninja",
+          "ability": "Protean",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Water Gun",
+            "Thief",
+            "Feint Attack",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Incineroar",
+          "ability": "Intimidate",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Bite",
+            "Snarl",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Meowscarada",
+          "ability": "Protean",
+          "held_item": "None",
+          "moves": [
+            "Magical Leaf",
+            "Bite",
+            "Thief",
+            "Spikes"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Midnight Tyrant — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Umbreon",
+          "ability": "Inner Focus",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Sucker Punch",
+            "Crunch",
+            "Toxic",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Greninja",
+          "ability": "Protean",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hydro Pump",
+            "Dark Pulse",
+            "Spikes",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Incineroar",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Knock Off",
+            "Crunch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Meowscarada",
+          "ability": "Protean",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Seed Bomb",
+            "Knock Off",
+            "Sucker Punch",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Hydreigon",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Stealth Rock",
+            "Earth Power"
+          ]
+        },
+        {
+          "species": "Tyranitar",
+          "ability": "Sand Stream",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Knock Off",
+            "Crunch",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Midnight Tyrant — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Hydreigon",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Stealth Rock",
+            "Earth Power"
+          ]
+        },
+        {
+          "species": "Tyranitar",
+          "ability": "Sand Stream",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Knock Off",
+            "Crunch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Greninja",
+          "ability": "Protean",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hydro Pump",
+            "Dark Pulse",
+            "Spikes",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Incineroar",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Knock Off",
+            "Crunch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Meowscarada",
+          "ability": "Protean",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Seed Bomb",
+            "Knock Off",
+            "Sucker Punch",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Umbreon",
+          "ability": "Inner Focus",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Sucker Punch",
+            "Crunch",
+            "Toxic",
+            "Facade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Midnight Tyrant — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Incineroar",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Knock Off",
+            "Crunch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Meowscarada",
+          "ability": "Protean",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Seed Bomb",
+            "Knock Off",
+            "Sucker Punch",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Umbreon",
+          "ability": "Inner Focus",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Sucker Punch",
+            "Crunch",
+            "Toxic",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Obstagoon",
+          "ability": "Guts",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Knock Off",
+            "Double-Edge",
+            "Night Slash",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Krookodile",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Knock Off",
+            "Crunch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Hydreigon",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Stealth Rock",
+            "Earth Power"
+          ]
+        }
+      ]
+    }
+  ]
 }

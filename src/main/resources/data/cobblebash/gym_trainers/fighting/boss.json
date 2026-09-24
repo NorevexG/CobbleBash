@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.fighting.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.fighting.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.fighting.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.fighting.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Master Discipline — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Fighting Leader",
-            "pokemon": [
-                {
-                    "species": "Lucario",
-                    "ability": "Inner Focus",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Extreme Speed",
-                        "Swords Dance",
-                        "Crunch"
-                    ]
-                },
-                {
-                    "species": "Conkeldurr",
-                    "ability": "Guts",
-                    "held_item": "Flame Orb",
-                    "moves": [
-                        "Drain Punch",
-                        "Mach Punch",
-                        "Knock Off",
-                        "Facade"
-                    ]
-                },
-                {
-                    "species": "Mienshao",
-                    "ability": "Regenerator",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Close Combat",
-                        "U-turn",
-                        "Knock Off",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Gallade",
-                    "ability": "Sharpness",
-                    "held_item": "None",
-                    "moves": [
-                        "Sacred Sword",
-                        "Psycho Cut",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "ability": "Stance Change",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "King's Shield",
-                        "Shadow Ball",
-                        "Sacred Sword",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Destiny Bond",
-                        "Focus Blast"
-                    ]
-                }
-            ]
+          "species": "Gallade",
+          "ability": "Steadfast",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Confusion",
+            "Low Kick",
+            "Rock Smash",
+            "Will-O-Wisp"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Fighting Leader",
-            "pokemon": [
-                {
-                    "species": "Infernape",
-                    "ability": "Blaze",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Close Combat",
-                        "Flare Blitz",
-                        "U-turn",
-                        "Grass Knot"
-                    ]
-                },
-                {
-                    "species": "Hawlucha",
-                    "ability": "Unburden",
-                    "held_item": "None",
-                    "moves": [
-                        "Acrobatics",
-                        "Close Combat",
-                        "Swords Dance",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Breloom",
-                    "ability": "Technician",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Spore",
-                        "Mach Punch",
-                        "Bullet Seed",
-                        "Rock Tomb"
-                    ]
-                },
-                {
-                    "species": "Lucario",
-                    "ability": "Inner Focus",
-                    "held_item": "None",
-                    "moves": [
-                        "Close Combat",
-                        "Extreme Speed",
-                        "Swords Dance",
-                        "Crunch"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                },
-                {
-                    "species": "Metagross",
-                    "ability": "Clear Body",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Meteor Mash",
-                        "Zen Headbutt",
-                        "Bullet Punch",
-                        "Earthquake"
-                    ]
-                }
-            ]
+          "species": "Lucario",
+          "ability": "Inner Focus",
+          "held_item": "None",
+          "moves": [
+            "Low Kick",
+            "Metal Claw",
+            "Rock Smash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Emboar",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Ember",
+            "Low Kick",
+            "Arm Thrust",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Blaziken",
+          "ability": "Speed Boost",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Low Kick",
+            "Rock Smash",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Chesnaught",
+          "ability": "Overgrow",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Vine Whip",
+            "Low Kick",
+            "Rock Smash",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Quaquaval",
+          "ability": "Moxie",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Low Kick",
+            "Brick Break",
+            "Protect"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Master Discipline — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Emboar",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Drain Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Blaziken",
+          "ability": "Speed Boost",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "High Jump Kick",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Chesnaught",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Wood Hammer",
+            "Close Combat",
+            "Drain Punch",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Quaquaval",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Close Combat",
+            "Brick Break",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Infernape",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Drain Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Annihilape",
+          "ability": "Inner Focus",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Close Combat",
+            "Shadow Claw",
+            "Drain Punch",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Master Discipline — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Kommo-o",
+          "ability": "Overcoat",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Close Combat",
+            "Drain Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Annihilape",
+          "ability": "Inner Focus",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Close Combat",
+            "Shadow Claw",
+            "Drain Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Infernape",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Drain Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Blaziken",
+          "ability": "Speed Boost",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "High Jump Kick",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Chesnaught",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Wood Hammer",
+            "Close Combat",
+            "Drain Punch",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Quaquaval",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Close Combat",
+            "Brick Break",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Master Discipline — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Blaziken",
+          "ability": "Speed Boost",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "High Jump Kick",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Chesnaught",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Wood Hammer",
+            "Close Combat",
+            "Drain Punch",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Quaquaval",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Close Combat",
+            "Brick Break",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Emboar",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Drain Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Lucario",
+          "ability": "Inner Focus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Aura Sphere",
+            "Flash Cannon",
+            "Vacuum Wave",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Gallade",
+          "ability": "Steadfast",
+          "held_item": "Leftovers",
+          "moves": [
+            "Zen Headbutt",
+            "Close Combat",
+            "Drain Punch",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    }
+  ]
 }

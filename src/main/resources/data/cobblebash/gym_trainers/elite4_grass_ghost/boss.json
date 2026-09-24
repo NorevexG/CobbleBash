@@ -1,168 +1,162 @@
 {
-    "display_name": "cobblebash.dialogue.elite4_grass_ghost.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.elite4_grass_ghost.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.elite4_grass_ghost.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.elite4_grass_ghost.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "endgame_a",
+      "name": "Haunted Garden — Endgame A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Haunted Canopy",
-            "pokemon": [
-                {
-                    "species": "Ferrothorn",
-                    "level": 95,
-                    "ability": "Iron Barbs",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Power Whip",
-                        "Gyro Ball",
-                        "Leech Seed",
-                        "Spikes"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "level": 95,
-                    "ability": "Cursed Body",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Wave",
-                        "Focus Blast",
-                        "Nasty Plot"
-                    ]
-                },
-                {
-                    "species": "Trevenant",
-                    "level": 95,
-                    "ability": "Harvest",
-                    "held_item": "Sitrus Berry",
-                    "moves": [
-                        "Horn Leech",
-                        "Shadow Claw",
-                        "Will-O-Wisp",
-                        "Leech Seed"
-                    ]
-                },
-                {
-                    "species": "Roserade",
-                    "level": 95,
-                    "ability": "Natural Cure",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Giga Drain",
-                        "Sludge Bomb",
-                        "Sleep Powder",
-                        "Spikes"
-                    ]
-                },
-                {
-                    "species": "Decidueye",
-                    "level": 96,
-                    "ability": "Overgrow",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Spirit Shackle",
-                        "Leaf Blade",
-                        "Shadow Sneak",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Dragapult",
-                    "level": 98,
-                    "ability": "Infiltrator",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Shadow Ball",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                }
-            ]
+          "species": "Dragapult",
+          "ability": "Clear Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dragon Claw",
+            "Phantom Force",
+            "Will-O-Wisp",
+            "Facade"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Rotting Grove",
-            "pokemon": [
-                {
-                    "species": "Venusaur",
-                    "level": 95,
-                    "ability": "Chlorophyll",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Giga Drain",
-                        "Sludge Bomb",
-                        "Sleep Powder",
-                        "Growth"
-                    ]
-                },
-                {
-                    "species": "Sableye",
-                    "level": 95,
-                    "ability": "Prankster",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Knock Off",
-                        "Will-O-Wisp",
-                        "Recover",
-                        "Encore"
-                    ]
-                },
-                {
-                    "species": "Chandelure",
-                    "level": 95,
-                    "ability": "Flash Fire",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Shadow Ball",
-                        "Flamethrower",
-                        "Energy Ball",
-                        "Trick"
-                    ]
-                },
-                {
-                    "species": "Tangrowth",
-                    "level": 95,
-                    "ability": "Regenerator",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Giga Drain",
-                        "Knock Off",
-                        "Sleep Powder",
-                        "Earthquake"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "level": 96,
-                    "ability": "Stance Change",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Shadow Ball",
-                        "Flash Cannon",
-                        "Shadow Sneak",
-                        "King's Shield"
-                    ]
-                },
-                {
-                    "species": "Decidueye",
-                    "level": 98,
-                    "ability": "Overgrow",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Spirit Shackle",
-                        "Leaf Blade",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Gholdengo",
+          "ability": "Good as Gold",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Ball",
+            "Thunder Wave",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Annihilape",
+          "ability": "Inner Focus",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Close Combat",
+            "Shadow Claw",
+            "Seed Bomb",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tangrowth",
+          "ability": "Regenerator",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Storm",
+            "Energy Ball",
+            "Leech Seed",
+            "Giga Drain"
+          ]
+        },
+        {
+          "species": "Gogoat",
+          "ability": "Sap Sipper",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Blade",
+            "Seed Bomb",
+            "Leech Seed",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Basculegion",
+          "ability": "Adaptability",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Phantom Force",
+            "Protect",
+            "Crunch"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "endgame_b",
+      "name": "Haunted Garden — Endgame B",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Chesnaught",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Wood Hammer",
+            "Close Combat",
+            "Seed Bomb",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Decidueye",
+          "ability": "Overgrow",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Leaf Blade",
+            "Poltergeist",
+            "Seed Bomb",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Exeggutor",
+          "ability": "Chlorophyll",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leaf Storm",
+            "Psychic",
+            "Energy Ball",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Meowscarada",
+          "ability": "Protean",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Seed Bomb",
+            "Knock Off",
+            "Petal Blizzard",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Rillaboom",
+          "ability": "Overgrow",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wood Hammer",
+            "Seed Bomb",
+            "Leech Seed",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Sceptile",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leaf Storm",
+            "Energy Ball",
+            "Leech Seed",
+            "Giga Drain"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.grass.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.grass.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.grass.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.grass.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Rapid Growth — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Leech & Setup",
-            "pokemon": [
-                {
-                    "species": "Roserade",
-                    "ability": "Natural Cure",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Giga Drain",
-                        "Sludge Bomb",
-                        "Toxic Spikes",
-                        "Sleep Powder"
-                    ]
-                },
-                {
-                    "species": "Whimsicott",
-                    "ability": "Prankster",
-                    "held_item": "None",
-                    "moves": [
-                        "Leech Seed",
-                        "Encore",
-                        "Tailwind",
-                        "Moonblast"
-                    ]
-                },
-                {
-                    "species": "Breloom",
-                    "ability": "Technician",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Spore",
-                        "Mach Punch",
-                        "Bullet Seed",
-                        "Rock Tomb"
-                    ]
-                },
-                {
-                    "species": "Tangrowth",
-                    "ability": "Regenerator",
-                    "held_item": "None",
-                    "moves": [
-                        "Giga Drain",
-                        "Knock Off",
-                        "Sleep Powder",
-                        "Protect"
-                    ]
-                }
-            ]
+          "species": "Grookey",
+          "ability": "Overgrow",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Razor Leaf",
+            "Magical Leaf",
+            "U-turn",
+            "Swift"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Bulky Growth",
-            "pokemon": [
-                {
-                    "species": "Ferrothorn",
-                    "ability": "Iron Barbs",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Leech Seed",
-                        "Gyro Ball",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Amoonguss",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Spore",
-                        "Giga Drain",
-                        "Clear Smog",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Decidueye",
-                    "ability": "Overgrow",
-                    "held_item": "None",
-                    "moves": [
-                        "Leaf Blade",
-                        "Spirit Shackle",
-                        "Swords Dance",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Whimsicott",
-                    "ability": "Prankster",
-                    "held_item": "None",
-                    "moves": [
-                        "Leech Seed",
-                        "Encore",
-                        "U-turn",
-                        "Moonblast"
-                    ]
-                }
-            ]
+          "species": "Sprigatito",
+          "ability": "Protean",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Magical Leaf",
+            "Bullet Seed",
+            "U-turn",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Treecko",
+          "ability": "Overgrow",
+          "held_item": "None",
+          "moves": [
+            "Magical Leaf",
+            "Mega Drain",
+            "Swords Dance",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Deerling",
+          "ability": "Serene Grace",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Headbutt",
+            "Magical Leaf",
+            "Bullet Seed",
+            "Baton Pass"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Rapid Growth — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Treecko",
+          "ability": "Overgrow",
+          "held_item": "None",
+          "moves": [
+            "Magical Leaf",
+            "Mega Drain",
+            "Swords Dance",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Deerling",
+          "ability": "Serene Grace",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Headbutt",
+            "Magical Leaf",
+            "Bullet Seed",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Nuzleaf",
+          "ability": "Chlorophyll",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Razor Leaf",
+            "Snarl",
+            "Magical Leaf",
+            "Defog"
+          ]
+        },
+        {
+          "species": "Weepinbell",
+          "ability": "Chlorophyll",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Vine Whip",
+            "Acid Spray",
+            "Razor Leaf",
+            "Encore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Rapid Growth — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Quilladin",
+          "ability": "Overgrow",
+          "held_item": "Life Orb",
+          "moves": [
+            "Wood Hammer",
+            "Seed Bomb",
+            "Spikes",
+            "Thunder Punch"
+          ]
+        },
+        {
+          "species": "Floragato",
+          "ability": "Protean",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Seed Bomb",
+            "Petal Blizzard",
+            "U-turn",
+            "Thunder Punch"
+          ]
+        },
+        {
+          "species": "Servine",
+          "ability": "Overgrow",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Leaf Blade",
+            "Seed Bomb",
+            "Defog",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Dartrix",
+          "ability": "Overgrow",
+          "held_item": "Life Orb",
+          "moves": [
+            "Leaf Blade",
+            "Brave Bird",
+            "Seed Bomb",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Rapid Growth — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Servine",
+          "ability": "Overgrow",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Leaf Blade",
+            "Seed Bomb",
+            "Defog",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Dartrix",
+          "ability": "Overgrow",
+          "held_item": "Life Orb",
+          "moves": [
+            "Leaf Blade",
+            "Brave Bird",
+            "Seed Bomb",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Thwackey",
+          "ability": "Overgrow",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Wood Hammer",
+            "Seed Bomb",
+            "U-turn",
+            "Drain Punch"
+          ]
+        },
+        {
+          "species": "Sunflora",
+          "ability": "Chlorophyll",
+          "held_item": "Life Orb",
+          "moves": [
+            "Leaf Storm",
+            "Energy Ball",
+            "Encore",
+            "Earth Power"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Rapid Growth — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Meganium",
+          "ability": "Overgrow",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Storm",
+            "Energy Ball",
+            "Encore",
+            "Giga Drain"
+          ]
+        },
+        {
+          "species": "Venusaur",
+          "ability": "Overgrow",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Energy Ball",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "species": "Dhelmise",
+          "ability": "Steelworker",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poltergeist",
+            "Power Whip",
+            "Energy Ball",
+            "Rapid Spin"
+          ]
+        },
+        {
+          "species": "Roserade",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Energy Ball",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Rapid Growth — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Dhelmise",
+          "ability": "Steelworker",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poltergeist",
+            "Power Whip",
+            "Energy Ball",
+            "Rapid Spin"
+          ]
+        },
+        {
+          "species": "Roserade",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Energy Ball",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Toedscruel",
+          "ability": "Mycelium Might",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earth Power",
+            "Leaf Storm",
+            "Energy Ball",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Arboliva",
+          "ability": "Seed Sower",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Leaf Storm",
+            "Hyper Voice",
+            "Energy Ball",
+            "Encore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Rapid Growth — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Bellossom",
+          "ability": "Chlorophyll",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Leaf Storm",
+            "Energy Ball",
+            "Baton Pass",
+            "Giga Drain"
+          ]
+        },
+        {
+          "species": "Victreebel",
+          "ability": "Chlorophyll",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Power Whip",
+            "Poison Jab",
+            "Leaf Blade",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Vileplume",
+          "ability": "Chlorophyll",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Energy Ball",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "species": "Scovillain",
+          "ability": "Chlorophyll",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Seed Bomb",
+            "Flamethrower",
+            "Leaf Storm",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    }
+  ]
 }

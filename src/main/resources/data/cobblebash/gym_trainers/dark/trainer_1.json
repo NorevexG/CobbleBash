@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.dark.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.dark.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.dark.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.dark.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Ambush Crew — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Intimidate and Priority",
-            "pokemon": [
-                {
-                    "species": "Mightyena",
-                    "ability": "Intimidate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Crunch",
-                        "Play Rough",
-                        "Sucker Punch",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Sableye",
-                    "ability": "Prankster",
-                    "held_item": "None",
-                    "moves": [
-                        "Will-O-Wisp",
-                        "Recover",
-                        "Knock Off",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Absol",
-                    "ability": "Super Luck",
-                    "held_item": "Scope Lens",
-                    "moves": [
-                        "Night Slash",
-                        "Play Rough",
-                        "Swords Dance",
-                        "Sucker Punch"
-                    ]
-                },
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "None",
-                    "moves": [
-                        "Knock Off",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Murkrow",
+          "ability": "Prankster",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Snarl",
+            "Wing Attack",
+            "Thief",
+            "U-turn"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Bulky Control",
-            "pokemon": [
-                {
-                    "species": "Umbreon",
-                    "ability": "Synchronize",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Foul Play",
-                        "Wish",
-                        "Protect",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Mandibuzz",
-                    "ability": "Overcoat",
-                    "held_item": "None",
-                    "moves": [
-                        "Foul Play",
-                        "Roost",
-                        "Defog",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Skuntank",
-                    "ability": "Aftermath",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Poison Jab",
-                        "Crunch",
-                        "Taunt",
-                        "Sucker Punch"
-                    ]
-                },
-                {
-                    "species": "Drapion",
-                    "ability": "Battle Armor",
-                    "held_item": "None",
-                    "moves": [
-                        "Knock Off",
-                        "Poison Jab",
-                        "Earthquake",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Sneasel",
+          "ability": "Inner Focus",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bite",
+            "Icy Wind",
+            "Snarl",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Morpeko",
+          "ability": "Hunger Switch",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunder Shock",
+            "Bite",
+            "Snarl",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Liepard",
+          "ability": "Prankster",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Snarl",
+            "Thief",
+            "U-turn",
+            "Aerial Ace"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Ambush Crew — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Morpeko",
+          "ability": "Hunger Switch",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunder Shock",
+            "Bite",
+            "Snarl",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Liepard",
+          "ability": "Prankster",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Snarl",
+            "Thief",
+            "U-turn",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Thievul",
+          "ability": "Unburden",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Snarl",
+            "Thief",
+            "U-turn",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Sharpedo",
+          "ability": "Speed Boost",
+          "held_item": "None",
+          "moves": [
+            "Water Pulse",
+            "Bite",
+            "Snarl",
+            "Flip Turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Ambush Crew — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Thievul",
+          "ability": "Unburden",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Dark Pulse",
+            "U-turn",
+            "Shadow Ball",
+            "Knock Off"
+          ]
+        },
+        {
+          "species": "Sharpedo",
+          "ability": "Speed Boost",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Liquidation",
+            "Crunch",
+            "Night Slash",
+            "Flip Turn"
+          ]
+        },
+        {
+          "species": "Absol",
+          "ability": "Pressure",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Knock Off",
+            "Sucker Punch",
+            "Baton Pass",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Crawdaunt",
+          "ability": "Adaptability",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Liquidation",
+            "Knock Off",
+            "Crunch",
+            "Taunt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Ambush Crew — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Absol",
+          "ability": "Pressure",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Knock Off",
+            "Sucker Punch",
+            "Baton Pass",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Crawdaunt",
+          "ability": "Adaptability",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Liquidation",
+            "Knock Off",
+            "Crunch",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Cacturne",
+          "ability": "Water Absorb",
+          "held_item": "Life Orb",
+          "moves": [
+            "Seed Bomb",
+            "Knock Off",
+            "Sucker Punch",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Shiftry",
+          "ability": "Chlorophyll",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Blade",
+            "Knock Off",
+            "Sucker Punch",
+            "Tailwind"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Ambush Crew — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Grimmsnarl",
+          "ability": "Prankster",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Sucker Punch",
+            "Play Rough",
+            "Crunch",
+            "Parting Shot"
+          ]
+        },
+        {
+          "species": "Overqwil",
+          "ability": "Intimidate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Crunch",
+            "Gunk Shot",
+            "Throat Chop",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Weavile",
+          "ability": "Pressure",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Knock Off",
+            "Icicle Crash",
+            "Night Slash",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Honchkrow",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Sucker Punch",
+            "Brave Bird",
+            "Night Slash",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Ambush Crew — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Weavile",
+          "ability": "Pressure",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Knock Off",
+            "Icicle Crash",
+            "Night Slash",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Honchkrow",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Sucker Punch",
+            "Brave Bird",
+            "Night Slash",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Mabosstiff",
+          "ability": "Intimidate",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Crunch",
+            "Lash Out",
+            "Taunt",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Drapion",
+          "ability": "Battle Armor",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poison Jab",
+            "Knock Off",
+            "Crunch",
+            "Toxic Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Ambush Crew — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Houndoom",
+          "ability": "Flash Fire",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Dark Pulse",
+            "Flamethrower",
+            "Taunt",
+            "Fire Blast"
+          ]
+        },
+        {
+          "species": "Malamar",
+          "ability": "Contrary",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Knock Off",
+            "Psychic",
+            "Night Slash",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Shiftry",
+          "ability": "Chlorophyll",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Blade",
+            "Knock Off",
+            "Sucker Punch",
+            "Tailwind"
+          ]
+        },
+        {
+          "species": "Cacturne",
+          "ability": "Water Absorb",
+          "held_item": "Life Orb",
+          "moves": [
+            "Seed Bomb",
+            "Knock Off",
+            "Sucker Punch",
+            "Spikes"
+          ]
+        }
+      ]
+    }
+  ]
 }

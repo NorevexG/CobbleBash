@@ -1,201 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.fire.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.fire.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.fire.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.fire.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Burning Pressure — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Sun Pressure",
-            "pokemon": [
-                {
-                    "species": "Torkoal",
-                    "ability": "Drought",
-                    "held_item": "Heat Rock",
-                    "moves": [
-                        "Stealth Rock",
-                        "Lava Plume",
-                        "Rapid Spin",
-                        "Yawn"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Charizard",
-                    "ability": "Solar Power",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Fire Blast",
-                        "Solar Beam",
-                        "Air Slash",
-                        "Focus Blast"
-                    ]
-                },
-                {
-                    "species": "Infernape",
-                    "ability": "Blaze",
-                    "held_item": "None",
-                    "moves": [
-                        "Close Combat",
-                        "Flare Blitz",
-                        "U-turn",
-                        "Grass Knot"
-                    ]
-                },
-                {
-                    "species": "Arcanine",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Flare Blitz",
-                        "Extreme Speed",
-                        "Morning Sun",
-                        "Wild Charge"
-                    ]
-                }
-            ]
+          "species": "Slugma",
+          "ability": "Flame Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Stealth Rock",
+            "Rock Tomb"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Fast Offense",
-            "pokemon": [
-                {
-                    "species": "Cinderace",
-                    "ability": "Blaze",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Pyro Ball",
-                        "High Jump Kick",
-                        "U-turn",
-                        "Sucker Punch"
-                    ]
-                },
-                {
-                    "species": "Infernape",
-                    "ability": "Blaze",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Close Combat",
-                        "Flare Blitz",
-                        "U-turn",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Talonflame",
-                    "ability": "Gale Wings",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Flare Blitz",
-                        "Roost",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "aspects": [
-                        "heat-appliance"
-                    ],
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Overheat",
-                        "Volt Switch",
-                        "Thunderbolt",
-                        "Will-O-Wisp"
-                    ]
-                },
-                {
-                    "species": "Houndoom",
-                    "ability": "Flash Fire",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Nasty Plot",
-                        "Dark Pulse",
-                        "Flamethrower",
-                        "Sludge Bomb"
-                    ]
-                }
-            ]
+          "species": "Charcadet",
+          "ability": "Flame Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Facade"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Bulk & Control",
-            "pokemon": [
-                {
-                    "species": "Torkoal",
-                    "ability": "Drought",
-                    "held_item": "Heat Rock",
-                    "moves": [
-                        "Stealth Rock",
-                        "Lava Plume",
-                        "Rapid Spin",
-                        "Yawn"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "aspects": [
-                        "heat-appliance"
-                    ],
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Overheat",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ]
-                },
-                {
-                    "species": "Arcanine",
-                    "ability": "Intimidate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Flare Blitz",
-                        "Morning Sun",
-                        "Toxic",
-                        "Extreme Speed"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Charizard",
-                    "ability": "Blaze",
-                    "held_item": "None",
-                    "moves": [
-                        "Flamethrower",
-                        "Air Slash",
-                        "Roost",
-                        "Dragon Pulse"
-                    ]
-                }
-            ]
+          "species": "Litwick",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hex",
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Vulpix",
+          "ability": "Flash Fire",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Numel",
+          "ability": "Oblivious",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Mud Shot",
+            "Flame Charge",
+            "Stealth Rock"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Burning Pressure — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Litwick",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hex",
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Vulpix",
+          "ability": "Flash Fire",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Numel",
+          "ability": "Oblivious",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Mud Shot",
+            "Flame Charge",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Sizzlipede",
+          "ability": "Flame Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Ember",
+            "Bug Bite",
+            "Fire Spin",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Fennekin",
+          "ability": "Blaze",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Psybeam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Burning Pressure — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Tepig",
+          "ability": "Blaze",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flare Blitz",
+            "Fire Punch",
+            "Will-O-Wisp",
+            "Superpower"
+          ]
+        },
+        {
+          "species": "Charmander",
+          "ability": "Blaze",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Focus Blast"
+          ]
+        },
+        {
+          "species": "Chimchar",
+          "ability": "Blaze",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flare Blitz",
+            "Fire Punch",
+            "Stealth Rock",
+            "Thunder Punch"
+          ]
+        },
+        {
+          "species": "Cyndaquil",
+          "ability": "Flash Fire",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Iron Head"
+          ]
+        },
+        {
+          "species": "Fuecoco",
+          "ability": "Unaware",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Hyper Voice"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Burning Pressure — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Chimchar",
+          "ability": "Blaze",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flare Blitz",
+            "Fire Punch",
+            "Stealth Rock",
+            "Thunder Punch"
+          ]
+        },
+        {
+          "species": "Cyndaquil",
+          "ability": "Flash Fire",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Iron Head"
+          ]
+        },
+        {
+          "species": "Fuecoco",
+          "ability": "Unaware",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "species": "Scorbunny",
+          "ability": "Blaze",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Protect",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Torchic",
+          "ability": "Speed Boost",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Shadow Claw"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Burning Pressure — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Turtonator",
+          "ability": "Shell Armor",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flamethrower",
+            "Draco Meteor",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Torkoal",
+          "ability": "White Smoke",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Camerupt",
+          "ability": "Magma Armor",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flamethrower",
+            "Earth Power",
+            "Fire Blast",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Magcargo",
+          "ability": "Flame Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flamethrower",
+            "Power Gem",
+            "Fire Blast",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Crocalor",
+          "ability": "Unaware",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Hyper Voice"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Burning Pressure — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Camerupt",
+          "ability": "Magma Armor",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flamethrower",
+            "Earth Power",
+            "Fire Blast",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Magcargo",
+          "ability": "Flame Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flamethrower",
+            "Power Gem",
+            "Fire Blast",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Crocalor",
+          "ability": "Unaware",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "species": "Combusken",
+          "ability": "Speed Boost",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Litleo",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Flamethrower",
+            "Hyper Voice",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Burning Pressure — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Growlithe",
+          "ability": "Intimidate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Will-O-Wisp",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Houndour",
+          "ability": "Flash Fire",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dark Pulse",
+            "Flamethrower",
+            "Fire Blast",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Litten",
+          "ability": "Intimidate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Will-O-Wisp",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Salandit",
+          "ability": "Corrosion",
+          "held_item": "Leftovers",
+          "moves": [
+            "Sludge Bomb",
+            "Flamethrower",
+            "Fire Blast",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Pansear",
+          "ability": "Blaze",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Fire Punch",
+            "Will-O-Wisp",
+            "Shadow Claw"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,159 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.fire.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.fire.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.fire.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.fire.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Inferno Crown — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Fire Leader",
-            "pokemon": [
-                {
-                    "species": "Torkoal",
-                    "ability": "Drought",
-                    "held_item": "Heat Rock",
-                    "moves": [
-                        "Stealth Rock",
-                        "Lava Plume",
-                        "Rapid Spin",
-                        "Yawn"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Cinderace",
-                    "ability": "Blaze",
-                    "held_item": "None",
-                    "moves": [
-                        "Pyro Ball",
-                        "High Jump Kick",
-                        "U-turn",
-                        "Sucker Punch"
-                    ]
-                },
-                {
-                    "species": "Infernape",
-                    "ability": "Blaze",
-                    "held_item": "None",
-                    "moves": [
-                        "Close Combat",
-                        "Flare Blitz",
-                        "U-turn",
-                        "Grass Knot"
-                    ]
-                },
-                {
-                    "species": "Gastrodon",
-                    "ability": "Storm Drain",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Scald",
-                        "Earth Power",
-                        "Recover",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Tyranitar",
-                    "ability": "Sand Stream",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Stone Edge",
-                        "Crunch",
-                        "Superpower",
-                        "Earthquake"
-                    ]
-                }
-            ]
+          "species": "Blaziken",
+          "ability": "Speed Boost",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Low Kick",
+            "Flame Charge",
+            "Will-O-Wisp"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Fire Leader",
-            "pokemon": [
-                {
-                    "species": "Cinderace",
-                    "ability": "Blaze",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Pyro Ball",
-                        "High Jump Kick",
-                        "U-turn",
-                        "Sucker Punch"
-                    ]
-                },
-                {
-                    "species": "Infernape",
-                    "ability": "Blaze",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Close Combat",
-                        "Flare Blitz",
-                        "U-turn",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                },
-                {
-                    "species": "Talonflame",
-                    "ability": "Gale Wings",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Flare Blitz",
-                        "Roost",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stealth Rock",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                }
-            ]
+          "species": "Cinderace",
+          "ability": "Blaze",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Ember",
+            "Flame Charge",
+            "Will-O-Wisp",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Incineroar",
+          "ability": "Intimidate",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Bite",
+            "Flame Charge",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Skeledirge",
+          "ability": "Unaware",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Hex",
+            "Flame Charge",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Charizard",
+          "ability": "Blaze",
+          "held_item": "None",
+          "moves": [
+            "Ember",
+            "Wing Attack",
+            "Flame Charge",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Delphox",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Ember",
+            "Psybeam",
+            "Flame Charge",
+            "Will-O-Wisp"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Inferno Crown — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Incineroar",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Knock Off",
+            "Fire Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Skeledirge",
+          "ability": "Unaware",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flamethrower",
+            "Shadow Ball",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Charizard",
+          "ability": "Blaze",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Hurricane",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Delphox",
+          "ability": "Blaze",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Infernape",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Typhlosion",
+          "ability": "Flash Fire",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Shadow Ball"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Inferno Crown — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Arcanine",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flare Blitz",
+            "Flamethrower",
+            "Will-O-Wisp",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Volcarona",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Magmortar",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "species": "Charizard",
+          "ability": "Blaze",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Hurricane",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Delphox",
+          "ability": "Blaze",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Infernape",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Inferno Crown — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Charizard",
+          "ability": "Blaze",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flamethrower",
+            "Hurricane",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Delphox",
+          "ability": "Blaze",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flamethrower",
+            "Psychic",
+            "Fire Blast",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Infernape",
+          "ability": "Blaze",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Typhlosion",
+          "ability": "Flash Fire",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flamethrower",
+            "Fire Blast",
+            "Will-O-Wisp",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Blaziken",
+          "ability": "Speed Boost",
+          "held_item": "Life Orb",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Fire Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Cinderace",
+          "ability": "Blaze",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Flare Blitz",
+            "Fire Punch",
+            "Will-O-Wisp",
+            "Iron Head"
+          ]
+        }
+      ]
+    }
+  ]
 }

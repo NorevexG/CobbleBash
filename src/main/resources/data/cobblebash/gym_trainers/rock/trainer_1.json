@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.rock.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.rock.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.rock.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.rock.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Hazard Crew — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Stone Wall Pressure",
-            "pokemon": [
-                {
-                    "species": "Tyrantrum",
-                    "ability": "Rock Head",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Head Smash",
-                        "Dragon Claw",
-                        "Earthquake",
-                        "Dragon Dance"
-                    ]
-                },
-                {
-                    "species": "Gigalith",
-                    "ability": "Sand Stream",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Rock Blast",
-                        "Earthquake",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Golem",
-                    "ability": "Sturdy",
-                    "held_item": "None",
-                    "moves": [
-                        "Stone Edge",
-                        "Earthquake",
-                        "Rock Polish",
-                        "Explosion"
-                    ]
-                },
-                {
-                    "species": "Cradily",
-                    "ability": "Storm Drain",
-                    "held_item": "None",
-                    "moves": [
-                        "Giga Drain",
-                        "Rock Slide",
-                        "Recover",
-                        "Toxic"
-                    ]
-                }
-            ]
+          "species": "Cranidos",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Tomb",
+            "Smack Down",
+            "Stealth Rock",
+            "Bulldoze"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Fossil Pressure",
-            "pokemon": [
-                {
-                    "species": "Aerodactyl",
-                    "ability": "Rock Head",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Stone Edge",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Kabutops",
-                    "ability": "Swift Swim",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Stone Edge",
-                        "Liquidation",
-                        "Aqua Jet",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Omastar",
-                    "ability": "Shell Armor",
-                    "held_item": "None",
-                    "moves": [
-                        "Hydro Pump",
-                        "Ancient Power",
-                        "Ice Beam",
-                        "Shell Smash"
-                    ]
-                },
-                {
-                    "species": "Sudowoodo",
-                    "ability": "Sturdy",
-                    "held_item": "None",
-                    "moves": [
-                        "Stone Edge",
-                        "Wood Hammer",
-                        "Earthquake",
-                        "Sucker Punch"
-                    ]
-                }
-            ]
+          "species": "Glimmet",
+          "ability": "Toxic Debris",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Rock Tomb",
+            "Acid Spray",
+            "Smack Down",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Anorith",
+          "ability": "Battle Armor",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Bug Bite",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Kabuto",
+          "ability": "Swift Swim",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Water Pulse",
+            "Smack Down",
+            "Stealth Rock"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Hazard Crew — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Anorith",
+          "ability": "Battle Armor",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Bug Bite",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Kabuto",
+          "ability": "Swift Swim",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Water Pulse",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Tyrunt",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Dragon Tail",
+            "Rock Blast",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Pupitar",
+          "ability": "Shed Skin",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Mud Shot",
+            "Smack Down",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Hazard Crew — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Lairon",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Iron Head",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Klawf",
+          "ability": "Regenerator",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Lunatone",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Psychic",
+            "Meteor Beam",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Solrock",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Zen Headbutt",
+            "Rock Slide",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Hazard Crew — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Lunatone",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Power Gem",
+            "Psychic",
+            "Meteor Beam",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Solrock",
+          "ability": "Levitate",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Zen Headbutt",
+            "Rock Slide",
+            "Baton Pass"
+          ]
+        },
+        {
+          "species": "Stonjourner",
+          "ability": "Power Spot",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Crustle",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Rock Slide",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Hazard Crew — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Barbaracle",
+          "ability": "Tough Claws",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Liquidation",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Garganacl",
+          "ability": "Sturdy",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Kleavor",
+          "ability": "Sheer Force",
+          "held_item": "Focus Sash",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Rock Slide",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Armaldo",
+          "ability": "Battle Armor",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "X-Scissor",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Hazard Crew — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Kleavor",
+          "ability": "Sheer Force",
+          "held_item": "Focus Sash",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Rock Slide",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Armaldo",
+          "ability": "Battle Armor",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "X-Scissor",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Carracosta",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Liquidation",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Golem",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Stone Edge",
+            "Earthquake",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Hazard Crew — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Omastar",
+          "ability": "Swift Swim",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Meteor Beam",
+            "Hydro Pump",
+            "Stone Edge",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Rampardos",
+          "ability": "Sheer Force",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Crustle",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Stone Edge",
+            "Rock Slide",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Drednaw",
+          "ability": "Strong Jaw",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Liquidation",
+            "Stone Edge",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

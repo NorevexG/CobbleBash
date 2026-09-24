@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.ghost.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.ghost.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.ghost.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.ghost.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Haunting Tempo — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Disruption Core",
-            "pokemon": [
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Claw",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Destiny Bond",
-                        "Focus Blast"
-                    ]
-                },
-                {
-                    "species": "Dusclops",
-                    "ability": "Pressure",
-                    "held_item": "None",
-                    "moves": [
-                        "Will-O-Wisp",
-                        "Pain Split",
-                        "Night Shade",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Froslass",
-                    "ability": "Cursed Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Spikes",
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Taunt"
-                    ]
-                }
-            ]
+          "species": "Gastly",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hex",
+            "Acid Spray",
+            "Night Shade",
+            "Taunt"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Defensive Haunt",
-            "pokemon": [
-                {
-                    "species": "Spiritomb",
-                    "ability": "Pressure",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Dark Pulse",
-                        "Will-O-Wisp",
-                        "Pain Split",
-                        "Calm Mind"
-                    ]
-                },
-                {
-                    "species": "Dusclops",
-                    "ability": "Pressure",
-                    "held_item": "Eviolite",
-                    "moves": [
-                        "Will-O-Wisp",
-                        "Night Shade",
-                        "Pain Split",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Mismagius",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Shadow Ball",
-                        "Mystical Fire",
-                        "Nasty Plot",
-                        "Thunderbolt"
-                    ]
-                },
-                {
-                    "species": "Froslass",
-                    "ability": "Cursed Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Spikes",
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Taunt"
-                    ]
-                }
-            ]
+          "species": "Lampent",
+          "ability": "Flame Body",
+          "held_item": "None",
+          "moves": [
+            "Hex",
+            "Ember",
+            "Night Shade",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Haunter",
+          "ability": "Levitate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hex",
+            "Acid Spray",
+            "Night Shade",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Drakloak",
+          "ability": "Clear Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Breaking Swipe",
+            "Hex",
+            "Night Shade",
+            "U-turn"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Haunting Tempo — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Haunter",
+          "ability": "Levitate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Hex",
+            "Acid Spray",
+            "Night Shade",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Drakloak",
+          "ability": "Clear Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Breaking Swipe",
+            "Hex",
+            "Night Shade",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Misdreavus",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Shadow Sneak",
+            "Hex",
+            "Taunt",
+            "Psybeam"
+          ]
+        },
+        {
+          "species": "Rotom",
+          "ability": "Levitate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Thunder Shock",
+            "Hex",
+            "Night Shade",
+            "Volt Switch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Haunting Tempo — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Rotom",
+          "ability": "Levitate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Shadow Ball",
+            "Hex",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Doublade",
+          "ability": "No Guard",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Iron Head",
+            "Shadow Claw",
+            "Shadow Sneak",
+            "Swords Dance"
+          ]
+        },
+        {
+          "species": "Banette",
+          "ability": "Insomnia",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Poltergeist",
+            "Shadow Claw",
+            "Encore",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Trevenant",
+          "ability": "Natural Cure",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Poltergeist",
+            "Wood Hammer",
+            "Shadow Claw",
+            "Trick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Haunting Tempo — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Banette",
+          "ability": "Insomnia",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Poltergeist",
+            "Shadow Claw",
+            "Encore",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Trevenant",
+          "ability": "Natural Cure",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Poltergeist",
+            "Wood Hammer",
+            "Shadow Claw",
+            "Trick"
+          ]
+        },
+        {
+          "species": "Mimikyu",
+          "ability": "Disguise",
+          "held_item": "Life Orb",
+          "moves": [
+            "Shadow Claw",
+            "Play Rough",
+            "Phantom Force",
+            "Taunt"
+          ]
+        },
+        {
+          "species": "Brambleghast",
+          "ability": "Wind Rider",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Whip",
+            "Poltergeist",
+            "Phantom Force",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Haunting Tempo — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Dhelmise",
+          "ability": "Steelworker",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poltergeist",
+            "Power Whip",
+            "Shadow Claw",
+            "Rapid Spin"
+          ]
+        },
+        {
+          "species": "Cursola",
+          "ability": "Weak Armor",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Stealth Rock",
+            "Earth Power"
+          ]
+        },
+        {
+          "species": "Polteageist",
+          "ability": "Weak Armor",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Baton Pass",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "species": "Sinistcha",
+          "ability": "Hospitality",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Storm",
+            "Shadow Ball",
+            "Hex",
+            "Nasty Plot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Haunting Tempo — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Polteageist",
+          "ability": "Weak Armor",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Baton Pass",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "species": "Sinistcha",
+          "ability": "Hospitality",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Leaf Storm",
+            "Shadow Ball",
+            "Hex",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "species": "Gengar",
+          "ability": "Cursed Body",
+          "held_item": "Life Orb",
+          "moves": [
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Hex",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Drifblim",
+          "ability": "Aftermath",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Air Slash",
+            "Hex",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Haunting Tempo — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Gourgeist",
+          "ability": "Frisk",
+          "held_item": "Life Orb",
+          "moves": [
+            "Poltergeist",
+            "Power Whip",
+            "Phantom Force",
+            "Trick"
+          ]
+        },
+        {
+          "species": "Golurk",
+          "ability": "Iron Fist",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Poltergeist",
+            "Phantom Force",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Brambleghast",
+          "ability": "Wind Rider",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Whip",
+            "Poltergeist",
+            "Phantom Force",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Froslass",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Icicle Crash",
+            "Poltergeist",
+            "Shadow Ball",
+            "Spikes"
+          ]
+        }
+      ]
+    }
+  ]
 }

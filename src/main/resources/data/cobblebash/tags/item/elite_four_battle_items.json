@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#cobblemon:battle_items",
+    "#cobblemon:potions",
+    "#cobblemon:restores",
+    "#cobblemon:revives",
+    "#cobblemon:remedies",
+    "#cobblemon:ethers",
+    "cobblemon:energy_root",
+    "cobblemon:revival_herb",
+    "cobblemon:moomoo_milk",
+    "cobblemon:berry_juice"
+  ]
+}

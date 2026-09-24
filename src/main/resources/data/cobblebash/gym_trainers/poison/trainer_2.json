@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.poison.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.poison.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.poison.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.poison.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Attrition Lab — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Hazard Pressure",
-            "pokemon": [
-                {
-                    "species": "Roserade",
-                    "ability": "Natural Cure",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Sludge Bomb",
-                        "Giga Drain",
-                        "Toxic Spikes",
-                        "Sleep Powder"
-                    ]
-                },
-                {
-                    "species": "Toxapex",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Scald",
-                        "Toxic",
-                        "Recover",
-                        "Haze"
-                    ]
-                },
-                {
-                    "species": "Nidoking",
-                    "ability": "Sheer Force",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earth Power",
-                        "Sludge Wave",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                },
-                {
-                    "species": "Crobat",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Cross Poison",
-                        "U-turn",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Drapion",
-                    "ability": "Battle Armor",
-                    "held_item": "None",
-                    "moves": [
-                        "Knock Off",
-                        "Poison Jab",
-                        "Earthquake",
-                        "Toxic Spikes"
-                    ]
-                }
-            ]
+          "species": "Weedle",
+          "ability": "Shield Dust",
+          "held_item": "None",
+          "moves": [
+            "Bug Bite",
+            "Electroweb",
+            "Poison Sting",
+            "Skitter Smack"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Fast Offense",
-            "pokemon": [
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Destiny Bond",
-                        "Focus Blast"
-                    ]
-                },
-                {
-                    "species": "Nidoking",
-                    "ability": "Sheer Force",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earth Power",
-                        "Sludge Wave",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                },
-                {
-                    "species": "Crobat",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Cross Poison",
-                        "U-turn",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Toxicroak",
-                    "ability": "Dry Skin",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Drain Punch",
-                        "Gunk Shot",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Roserade",
-                    "ability": "Natural Cure",
-                    "held_item": "None",
-                    "moves": [
-                        "Sludge Bomb",
-                        "Giga Drain",
-                        "Sleep Powder",
-                        "Toxic Spikes"
-                    ]
-                }
-            ]
+          "species": "Kakuna",
+          "ability": "Shed Skin",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bug Bite",
+            "Electroweb",
+            "Harden",
+            "Iron Defense"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain & Control",
-            "pokemon": [
-                {
-                    "species": "Toxapex",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Scald",
-                        "Toxic",
-                        "Recover",
-                        "Haze"
-                    ]
-                },
-                {
-                    "species": "Clodsire",
-                    "ability": "Unaware",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Toxic",
-                        "Earthquake",
-                        "Recover",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Amoonguss",
-                    "ability": "Regenerator",
-                    "held_item": "Black Sludge",
-                    "moves": [
-                        "Spore",
-                        "Giga Drain",
-                        "Clear Smog",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Weezing",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Sludge Bomb",
-                        "Will-O-Wisp",
-                        "Pain Split",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Drapion",
-                    "ability": "Battle Armor",
-                    "held_item": "None",
-                    "moves": [
-                        "Knock Off",
-                        "Poison Jab",
-                        "Earthquake",
-                        "Toxic Spikes"
-                    ]
-                }
-            ]
+          "species": "Toxel",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Protect",
+            "Facade",
+            "Encore",
+            "Substitute"
+          ]
+        },
+        {
+          "species": "Zubat",
+          "ability": "Inner Focus",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Poison Fang",
+            "Wing Attack",
+            "Venoshock",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Spinarak",
+          "ability": "Swarm",
+          "held_item": "None",
+          "moves": [
+            "Bug Bite",
+            "Acid Spray",
+            "Venoshock",
+            "Toxic Spikes"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Attrition Lab — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Toxel",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Protect",
+            "Facade",
+            "Encore",
+            "Substitute"
+          ]
+        },
+        {
+          "species": "Zubat",
+          "ability": "Inner Focus",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Poison Fang",
+            "Wing Attack",
+            "Venoshock",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Spinarak",
+          "ability": "Swarm",
+          "held_item": "None",
+          "moves": [
+            "Bug Bite",
+            "Acid Spray",
+            "Venoshock",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Venipede",
+          "ability": "Speed Boost",
+          "held_item": "None",
+          "moves": [
+            "Bug Bite",
+            "Venoshock",
+            "Poison Jab",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Nidoran-M",
+          "ability": "Hustle",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Venoshock",
+            "Poison Jab",
+            "Toxic Spikes",
+            "Shock Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Attrition Lab — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Nidoran-F",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poison Jab",
+            "Poison Fang",
+            "Toxic Spikes",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Budew",
+          "ability": "Natural Cure",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Ekans",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Gunk Shot",
+            "Poison Jab",
+            "Toxic Spikes",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Foongus",
+          "ability": "Regenerator",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Seed Bomb",
+            "Sludge Bomb",
+            "Venoshock",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Bellsprout",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Power Whip",
+            "Poison Jab",
+            "Sludge Bomb",
+            "Toxic"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Attrition Lab — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Ekans",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Gunk Shot",
+            "Poison Jab",
+            "Toxic Spikes",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Foongus",
+          "ability": "Regenerator",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Seed Bomb",
+            "Sludge Bomb",
+            "Venoshock",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Bellsprout",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Power Whip",
+            "Poison Jab",
+            "Sludge Bomb",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Croagunk",
+          "ability": "Anticipation",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Gunk Shot",
+            "Drain Punch",
+            "Poison Jab",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Varoom",
+          "ability": "Overcoat",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Iron Head",
+            "Gunk Shot",
+            "Poison Jab",
+            "Toxic Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Attrition Lab — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Toxapex",
+          "ability": "Regenerator",
+          "held_item": "Leftovers",
+          "moves": [
+            "Gunk Shot",
+            "Liquidation",
+            "Poison Jab",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Amoonguss",
+          "ability": "Regenerator",
+          "held_item": "Leftovers",
+          "moves": [
+            "Seed Bomb",
+            "Sludge Bomb",
+            "Venoshock",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Clodsire",
+          "ability": "Unaware",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Gunk Shot",
+            "Earthquake",
+            "Poison Jab",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Nidorina",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poison Jab",
+            "Poison Fang",
+            "Toxic Spikes",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Whirlipede",
+          "ability": "Speed Boost",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Pin Missile",
+            "Poison Jab",
+            "Sludge Bomb",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Attrition Lab — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Clodsire",
+          "ability": "Unaware",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Gunk Shot",
+            "Earthquake",
+            "Poison Jab",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Nidorina",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Poison Jab",
+            "Poison Fang",
+            "Toxic Spikes",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Whirlipede",
+          "ability": "Speed Boost",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Pin Missile",
+            "Poison Jab",
+            "Sludge Bomb",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Koffing",
+          "ability": "Levitate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Gunk Shot",
+            "Sludge Bomb",
+            "Toxic Spikes",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Tentacool",
+          "ability": "Clear Body",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Hydro Pump",
+            "Sludge Bomb",
+            "Sludge Wave",
+            "Toxic Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Attrition Lab — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Trubbish",
+          "ability": "Stench",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Gunk Shot",
+            "Sludge Bomb",
+            "Spikes",
+            "Drain Punch"
+          ]
+        },
+        {
+          "species": "Grimer",
+          "ability": "Stench",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Gunk Shot",
+            "Poison Jab",
+            "Toxic",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Oddish",
+          "ability": "Chlorophyll",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Skrelp",
+          "ability": "Adaptability",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Gunk Shot",
+            "Liquidation",
+            "Sludge Bomb",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Bulbasaur",
+          "ability": "Overgrow",
+          "held_item": "Leftovers",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Venoshock",
+            "Toxic"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.ghost.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.ghost.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.ghost.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.ghost.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Curses and Control — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Status Pressure",
-            "pokemon": [
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Focus Blast",
-                        "Destiny Bond"
-                    ]
-                },
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "None",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Sneak",
-                        "Swords Dance",
-                        "Shadow Claw"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "ability": "Stance Change",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "King's Shield",
-                        "Shadow Ball",
-                        "Sacred Sword",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Froslass",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Spikes",
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Chandelure",
-                    "ability": "Flash Fire",
-                    "held_item": "None",
-                    "moves": [
-                        "Shadow Ball",
-                        "Flamethrower",
-                        "Energy Ball",
-                        "Calm Mind"
-                    ]
-                }
-            ]
+          "species": "Dreepy",
+          "ability": "Clear Body",
+          "held_item": "None",
+          "moves": [
+            "Dragon Tail",
+            "Astonish",
+            "Thunder Wave",
+            "Swift"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Offensive Ghosts",
-            "pokemon": [
-                {
-                    "species": "Dragapult",
-                    "ability": "Infiltrator",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Draco Meteor",
-                        "Shadow Ball",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Focus Blast",
-                        "Destiny Bond"
-                    ]
-                },
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "None",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Sneak",
-                        "Swords Dance",
-                        "Shadow Claw"
-                    ]
-                },
-                {
-                    "species": "Chandelure",
-                    "ability": "Flash Fire",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Shadow Ball",
-                        "Flamethrower",
-                        "Energy Ball",
-                        "Trick"
-                    ]
-                },
-                {
-                    "species": "Froslass",
-                    "ability": "Cursed Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Spikes",
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Taunt"
-                    ]
-                }
-            ]
+          "species": "Bramblin",
+          "ability": "Wind Rider",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Mega Drain",
+            "Shadow Sneak",
+            "Hex",
+            "Spikes"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain & Control",
-            "pokemon": [
-                {
-                    "species": "Spiritomb",
-                    "ability": "Pressure",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Dark Pulse",
-                        "Will-O-Wisp",
-                        "Pain Split",
-                        "Calm Mind"
-                    ]
-                },
-                {
-                    "species": "Dusclops",
-                    "ability": "Pressure",
-                    "held_item": "Eviolite",
-                    "moves": [
-                        "Will-O-Wisp",
-                        "Night Shade",
-                        "Pain Split",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "ability": "Stance Change",
-                    "held_item": "None",
-                    "moves": [
-                        "King's Shield",
-                        "Shadow Ball",
-                        "Sacred Sword",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Destiny Bond",
-                        "Focus Blast"
-                    ]
-                },
-                {
-                    "species": "Mismagius",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Shadow Ball",
-                        "Mystical Fire",
-                        "Nasty Plot",
-                        "Thunderbolt"
-                    ]
-                }
-            ]
+          "species": "Litwick",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hex",
+            "Ember",
+            "Night Shade",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Duskull",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Shadow Sneak",
+            "Hex",
+            "Will-O-Wisp",
+            "Icy Wind"
+          ]
+        },
+        {
+          "species": "Shuppet",
+          "ability": "Insomnia",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Shadow Sneak",
+            "Hex",
+            "Will-O-Wisp",
+            "Psybeam"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Curses and Control — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Litwick",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hex",
+            "Ember",
+            "Night Shade",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Duskull",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Shadow Sneak",
+            "Hex",
+            "Will-O-Wisp",
+            "Icy Wind"
+          ]
+        },
+        {
+          "species": "Shuppet",
+          "ability": "Insomnia",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Shadow Sneak",
+            "Hex",
+            "Will-O-Wisp",
+            "Psybeam"
+          ]
+        },
+        {
+          "species": "Gimmighoul",
+          "ability": "Rattled",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Hex",
+            "Night Shade",
+            "Protect",
+            "Thief"
+          ]
+        },
+        {
+          "species": "Golett",
+          "ability": "Iron Fist",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Bulldoze",
+            "Hex",
+            "Night Shade",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Curses and Control — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Gimmighoul",
+          "ability": "Rattled",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Protect",
+            "Power Gem"
+          ]
+        },
+        {
+          "species": "Golett",
+          "ability": "Iron Fist",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Poltergeist",
+            "Phantom Force",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Yamask",
+          "ability": "Mummy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Toxic Spikes",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "species": "Poltchageist",
+          "ability": "Hospitality",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Shadow Ball",
+            "Hex",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sinistea",
+          "ability": "Weak Armor",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Will-O-Wisp",
+            "Dark Pulse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Curses and Control — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Yamask",
+          "ability": "Mummy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Toxic Spikes",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "species": "Poltchageist",
+          "ability": "Hospitality",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Leaf Storm",
+            "Shadow Ball",
+            "Hex",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sinistea",
+          "ability": "Weak Armor",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Will-O-Wisp",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "species": "Phantump",
+          "ability": "Natural Cure",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Poltergeist",
+            "Wood Hammer",
+            "Shadow Claw",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Sandygast",
+          "ability": "Water Compaction",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Earth Power",
+            "Hex",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Curses and Control — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Aegislash",
+          "ability": "Stance Change",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Shadow Claw",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Spiritomb",
+          "ability": "Pressure",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Poltergeist",
+            "Sucker Punch",
+            "Phantom Force",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Cofagrigus",
+          "ability": "Mummy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Toxic Spikes",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "species": "Palossand",
+          "ability": "Water Compaction",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Shadow Ball",
+            "Earth Power",
+            "Hex",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Dusclops",
+          "ability": "Pressure",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Poltergeist",
+            "Phantom Force",
+            "Will-O-Wisp",
+            "Ice Punch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Curses and Control — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Cofagrigus",
+          "ability": "Mummy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Hex",
+            "Toxic Spikes",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "species": "Palossand",
+          "ability": "Water Compaction",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Shadow Ball",
+            "Earth Power",
+            "Hex",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Dusclops",
+          "ability": "Pressure",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Poltergeist",
+            "Phantom Force",
+            "Will-O-Wisp",
+            "Ice Punch"
+          ]
+        },
+        {
+          "species": "Sableye",
+          "ability": "Prankster",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Knock Off",
+            "Poltergeist",
+            "Shadow Claw",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Drifloon",
+          "ability": "Aftermath",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Air Cutter",
+            "Hex",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Curses and Control — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Frillish",
+          "ability": "Water Absorb",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hydro Pump",
+            "Shadow Ball",
+            "Hex",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Pumpkaboo",
+          "ability": "Frisk",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Poltergeist",
+            "Seed Bomb",
+            "Shadow Sneak",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Honedge",
+          "ability": "No Guard",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Iron Head",
+            "Shadow Claw",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sandygast",
+          "ability": "Water Compaction",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Earth Power",
+            "Hex",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Phantump",
+          "ability": "Natural Cure",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Poltergeist",
+            "Wood Hammer",
+            "Shadow Claw",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    }
+  ]
 }

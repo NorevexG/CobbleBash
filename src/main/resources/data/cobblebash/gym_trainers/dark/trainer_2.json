@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.dark.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.dark.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.dark.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.dark.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Dirty Tricks — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Screens and Setup",
-            "pokemon": [
-                {
-                    "species": "Grimmsnarl",
-                    "ability": "Prankster",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Reflect",
-                        "Light Screen",
-                        "Spirit Break",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Bisharp",
-                    "ability": "Defiant",
-                    "held_item": "None",
-                    "moves": [
-                        "Sucker Punch",
-                        "Iron Head",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "U-turn",
-                        "Flamethrower"
-                    ]
-                },
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "None",
-                    "moves": [
-                        "Knock Off",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Low Kick"
-                    ]
-                },
-                {
-                    "species": "Umbreon",
-                    "ability": "Synchronize",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Foul Play",
-                        "Wish",
-                        "Protect",
-                        "Toxic"
-                    ]
-                }
-            ]
+          "species": "Poochyena",
+          "ability": "Quick Feet",
+          "held_item": "Flame Orb",
+          "moves": [
+            "Bite",
+            "Snarl",
+            "Protect",
+            "Thief"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Sand Pressure",
-            "pokemon": [
-                {
-                    "species": "Tyranitar",
-                    "ability": "Sand Stream",
-                    "held_item": "Smooth Rock",
-                    "moves": [
-                        "Stone Edge",
-                        "Crunch",
-                        "Stealth Rock",
-                        "Earthquake"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Sand Rush",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rapid Spin",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Mandibuzz",
-                    "ability": "Overcoat",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Foul Play",
-                        "Roost",
-                        "Defog",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Drapion",
-                    "ability": "Battle Armor",
-                    "held_item": "None",
-                    "moves": [
-                        "Knock Off",
-                        "Poison Jab",
-                        "Earthquake",
-                        "Toxic Spikes"
-                    ]
-                }
-            ]
+          "species": "Nickit",
+          "ability": "Unburden",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Snarl",
+            "Thief",
+            "Protect",
+            "Swift"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Fast Offense",
-            "pokemon": [
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Knock Off",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Low Kick"
-                    ]
-                },
-                {
-                    "species": "Houndoom",
-                    "ability": "Flash Fire",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Nasty Plot",
-                        "Fire Blast",
-                        "Dark Pulse",
-                        "Sludge Bomb"
-                    ]
-                },
-                {
-                    "species": "Bisharp",
-                    "ability": "Defiant",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Sucker Punch",
-                        "Iron Head",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Absol",
-                    "ability": "Super Luck",
-                    "held_item": "None",
-                    "moves": [
-                        "Night Slash",
-                        "Play Rough",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Hydreigon",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Dark Pulse",
-                        "Draco Meteor",
-                        "Flamethrower",
-                        "U-turn"
-                    ]
-                }
-            ]
+          "species": "Impidimp",
+          "ability": "Prankster",
+          "held_item": "None",
+          "moves": [
+            "Bite",
+            "Draining Kiss",
+            "Thief",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Purrloin",
+          "ability": "Prankster",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Snarl",
+            "Thief",
+            "Thunder Wave",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Inkay",
+          "ability": "Contrary",
+          "held_item": "None",
+          "moves": [
+            "Thief",
+            "Psybeam",
+            "Night Slash",
+            "Protect"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Dirty Tricks — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Impidimp",
+          "ability": "Prankster",
+          "held_item": "None",
+          "moves": [
+            "Bite",
+            "Draining Kiss",
+            "Thief",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Purrloin",
+          "ability": "Prankster",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Snarl",
+            "Thief",
+            "Thunder Wave",
+            "Aerial Ace"
+          ]
+        },
+        {
+          "species": "Inkay",
+          "ability": "Contrary",
+          "held_item": "None",
+          "moves": [
+            "Thief",
+            "Psybeam",
+            "Night Slash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sandile",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Mud Shot",
+            "Bite",
+            "Snarl",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Deino",
+          "ability": "Hustle",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bite",
+            "Dragon Breath",
+            "Snarl",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Dirty Tricks — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Inkay",
+          "ability": "Contrary",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Knock Off",
+            "Psychic",
+            "Night Slash",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sandile",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Earthquake",
+            "Crunch",
+            "Lash Out",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Deino",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Dark Pulse",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Carvanha",
+          "ability": "Speed Boost",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Liquidation",
+            "Crunch",
+            "Dark Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Houndour",
+          "ability": "Flash Fire",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dark Pulse",
+            "Flamethrower",
+            "Toxic",
+            "Fire Blast"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Dirty Tricks — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Deino",
+          "ability": "Hustle",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Dark Pulse",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Carvanha",
+          "ability": "Speed Boost",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Liquidation",
+            "Crunch",
+            "Dark Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Houndour",
+          "ability": "Flash Fire",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dark Pulse",
+            "Flamethrower",
+            "Toxic",
+            "Fire Blast"
+          ]
+        },
+        {
+          "species": "Maschiff",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Crunch",
+            "Lash Out",
+            "Protect",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Nuzleaf",
+          "ability": "Chlorophyll",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Leaf Blade",
+            "Knock Off",
+            "Sucker Punch",
+            "Leech Seed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Dirty Tricks — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Scrafty",
+          "ability": "Intimidate",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Knock Off",
+            "Close Combat",
+            "Crunch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Spiritomb",
+          "ability": "Pressure",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Poltergeist",
+            "Sucker Punch",
+            "Lash Out",
+            "Toxic"
+          ]
+        },
+        {
+          "species": "Mightyena",
+          "ability": "Intimidate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Sucker Punch",
+            "Crunch",
+            "Protect",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Zweilous",
+          "ability": "Hustle",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Lash Out",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Sableye",
+          "ability": "Prankster",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Knock Off",
+            "Poltergeist",
+            "Sucker Punch",
+            "Will-O-Wisp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Dirty Tricks — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Mightyena",
+          "ability": "Intimidate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Sucker Punch",
+            "Crunch",
+            "Protect",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Zweilous",
+          "ability": "Hustle",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Crunch",
+            "Outrage",
+            "Lash Out",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Sableye",
+          "ability": "Prankster",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Knock Off",
+            "Poltergeist",
+            "Sucker Punch",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Morgrem",
+          "ability": "Prankster",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Dark Pulse",
+            "Dazzling Gleam",
+            "Thunder Wave",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Krokorok",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Earthquake",
+            "Knock Off",
+            "Crunch",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Dirty Tricks — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Krokorok",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Earthquake",
+            "Knock Off",
+            "Crunch",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Scraggy",
+          "ability": "Intimidate",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Knock Off",
+            "Close Combat",
+            "Crunch",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Maschiff",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Crunch",
+            "Lash Out",
+            "Protect",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Nuzleaf",
+          "ability": "Chlorophyll",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Leaf Blade",
+            "Knock Off",
+            "Sucker Punch",
+            "Leech Seed"
+          ]
+        },
+        {
+          "species": "Houndour",
+          "ability": "Flash Fire",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Dark Pulse",
+            "Flamethrower",
+            "Toxic",
+            "Fire Blast"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,156 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.fairy.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.fairy.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.fairy.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.fairy.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Fae Court — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Fairy Leader",
-            "pokemon": [
-                {
-                    "species": "Hatterene",
-                    "ability": "Magic Bounce",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Psychic",
-                        "Dazzling Gleam",
-                        "Mystical Fire",
-                        "Calm Mind"
-                    ]
-                },
-                {
-                    "species": "Azumarill",
-                    "ability": "Huge Power",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Liquidation",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "None",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                },
-                {
-                    "species": "Clefable",
-                    "ability": "Magic Guard",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Moonblast",
-                        "Soft-Boiled",
-                        "Calm Mind",
-                        "Flamethrower"
-                    ]
-                },
-                {
-                    "species": "Excadrill",
-                    "ability": "Mold Breaker",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Earthquake",
-                        "Iron Head",
-                        "Rock Slide",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "ability": "Cursed Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Bomb",
-                        "Destiny Bond",
-                        "Focus Blast"
-                    ]
-                }
-            ]
+          "species": "Carbink",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Dazzling Gleam",
+            "Misty Explosion",
+            "Stealth Rock"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Fairy Leader",
-            "pokemon": [
-                {
-                    "species": "Mimikyu",
-                    "ability": "Disguise",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Play Rough",
-                        "Shadow Claw",
-                        "Swords Dance",
-                        "Shadow Sneak"
-                    ]
-                },
-                {
-                    "species": "Gardevoir",
-                    "ability": "Trace",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Moonblast",
-                        "Psychic",
-                        "Mystical Fire",
-                        "Thunderbolt"
-                    ]
-                },
-                {
-                    "species": "Grimmsnarl",
-                    "ability": "Prankster",
-                    "held_item": "None",
-                    "moves": [
-                        "Reflect",
-                        "Light Screen",
-                        "Spirit Break",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Azumarill",
-                    "ability": "Huge Power",
-                    "held_item": "Sitrus Berry",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Belly Drum",
-                        "Liquidation"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Superpower",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Nidoking",
-                    "ability": "Sheer Force",
-                    "held_item": "None",
-                    "moves": [
-                        "Earth Power",
-                        "Sludge Wave",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                }
-            ]
+          "species": "Tinkaton",
+          "ability": "Mold Breaker",
+          "held_item": "None",
+          "moves": [
+            "Draining Kiss",
+            "Metal Claw",
+            "Fairy Wind",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Grimmsnarl",
+          "ability": "Prankster",
+          "held_item": "None",
+          "moves": [
+            "Bite",
+            "Draining Kiss",
+            "Dazzling Gleam",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Hatterene",
+          "ability": "Magic Bounce",
+          "held_item": "None",
+          "moves": [
+            "Confusion",
+            "Disarming Voice",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Gardevoir",
+          "ability": "Synchronize",
+          "held_item": "None",
+          "moves": [
+            "Confusion",
+            "Disarming Voice",
+            "Draining Kiss",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Sylveon",
+          "ability": "Cute Charm",
+          "held_item": "None",
+          "moves": [
+            "Disarming Voice",
+            "Draining Kiss",
+            "Protect",
+            "Magical Leaf"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Fae Court — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Grimmsnarl",
+          "ability": "Prankster",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Sucker Punch",
+            "Play Rough",
+            "Spirit Break",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Hatterene",
+          "ability": "Magic Bounce",
+          "held_item": "Leftovers",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Gardevoir",
+          "ability": "Synchronize",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Psychic",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Sylveon",
+          "ability": "Cute Charm",
+          "held_item": "Leftovers",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Primarina",
+          "ability": "Torrent",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hydro Pump",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Togekiss",
+          "ability": "Serene Grace",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dazzling Gleam",
+            "Air Slash",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Fae Court — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Florges",
+          "ability": "Flower Veil",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect",
+            "Psychic"
+          ]
+        },
+        {
+          "species": "Togekiss",
+          "ability": "Serene Grace",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dazzling Gleam",
+            "Air Slash",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Primarina",
+          "ability": "Torrent",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hydro Pump",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Sylveon",
+          "ability": "Cute Charm",
+          "held_item": "Leftovers",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Gardevoir",
+          "ability": "Synchronize",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Psychic",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Grimmsnarl",
+          "ability": "Prankster",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Sucker Punch",
+            "Play Rough",
+            "Spirit Break",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Fae Court — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Sylveon",
+          "ability": "Cute Charm",
+          "held_item": "Leftovers",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Gardevoir",
+          "ability": "Synchronize",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Psychic",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "species": "Grimmsnarl",
+          "ability": "Prankster",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Sucker Punch",
+            "Play Rough",
+            "Spirit Break",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Hatterene",
+          "ability": "Magic Bounce",
+          "held_item": "Leftovers",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Tinkaton",
+          "ability": "Mold Breaker",
+          "held_item": "Leftovers",
+          "moves": [
+            "Play Rough",
+            "Heavy Slam",
+            "Draining Kiss",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Carbink",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Stone Edge",
+            "Misty Explosion",
+            "Moonblast",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,162 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.electric.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.electric.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.electric.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.electric.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Overcharge — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Electric Leader",
-            "pokemon": [
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Tri Attack"
-                    ]
-                },
-                {
-                    "species": "Jolteon",
-                    "ability": "Volt Absorb",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Shadow Ball",
-                        "Volt Switch",
-                        "Calm Mind"
-                    ]
-                },
-                {
-                    "species": "Electivire",
-                    "ability": "Motor Drive",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Thunder Punch",
-                        "Ice Punch",
-                        "Earthquake",
-                        "Cross Chop"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "ability": "Rough Skin",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stealth Rock",
-                        "Fire Fang"
-                    ]
-                },
-                {
-                    "species": "Gliscor",
-                    "ability": "Poison Heal",
-                    "held_item": "None",
-                    "moves": [
-                        "Earthquake",
-                        "Roost",
-                        "Toxic",
-                        "Protect"
-                    ]
-                }
-            ]
+          "species": "Arctozolt",
+          "ability": "Static",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunder Shock",
+            "Powder Snow",
+            "Wild Charge",
+            "Thunder Wave"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Electric Leader",
-            "pokemon": [
-                {
-                    "species": "Jolteon",
-                    "ability": "Volt Absorb",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Thunderbolt",
-                        "Shadow Ball",
-                        "Volt Switch",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Overheat",
-                        "Volt Switch",
-                        "Thunderbolt",
-                        "Will-O-Wisp"
-                    ],
-                    "aspects": [
-                        "heat-appliance"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Body Press"
-                    ]
-                },
-                {
-                    "species": "Electivire",
-                    "ability": "Motor Drive",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Thunder Punch",
-                        "Ice Punch",
-                        "Earthquake",
-                        "Cross Chop"
-                    ]
-                },
-                {
-                    "species": "Flygon",
-                    "ability": "Levitate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "U-turn",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Ferrothorn",
-                    "ability": "Iron Barbs",
-                    "held_item": "None",
-                    "moves": [
-                        "Power Whip",
-                        "Gyro Ball",
-                        "Leech Seed",
-                        "Stealth Rock"
-                    ]
-                }
-            ]
+          "species": "Dracozolt",
+          "ability": "Hustle",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Breaking Swipe",
+            "Wild Charge",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Ampharos",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Shock Wave",
+            "Thunder Wave",
+            "Bulldoze"
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "ability": "Levitate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Spark",
+            "Shock Wave",
+            "Thunder Wave",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Luxray",
+          "ability": "Intimidate",
+          "held_item": "None",
+          "moves": [
+            "Thunder Shock",
+            "Spark",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Jolteon",
+          "ability": "Volt Absorb",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunder Shock",
+            "Shock Wave",
+            "Thunder Wave",
+            "Swift"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Overcharge — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Ampharos",
+          "ability": "Static",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Power Gem"
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Fire Punch"
+          ]
+        },
+        {
+          "species": "Luxray",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Jolteon",
+          "ability": "Volt Absorb",
+          "held_item": "Leftovers",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Magnezone",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Electivire",
+          "ability": "Motor Drive",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Overcharge — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Electivire",
+          "ability": "Motor Drive",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Magnezone",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Jolteon",
+          "ability": "Volt Absorb",
+          "held_item": "Leftovers",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Luxray",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Fire Punch"
+          ]
+        },
+        {
+          "species": "Ampharos",
+          "ability": "Static",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Power Gem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Overcharge — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Luxray",
+          "ability": "Intimidate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Thunder Wave",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Eelektross",
+          "ability": "Levitate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Fire Punch"
+          ]
+        },
+        {
+          "species": "Ampharos",
+          "ability": "Static",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Power Gem"
+          ]
+        },
+        {
+          "species": "Arctozolt",
+          "ability": "Static",
+          "held_item": "Life Orb",
+          "moves": [
+            "Wild Charge",
+            "Icicle Crash",
+            "Thunder Punch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Dracozolt",
+          "ability": "Hustle",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Wild Charge",
+            "Dragon Claw",
+            "Thunder Punch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Electivire",
+          "ability": "Motor Drive",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Thunder Wave",
+            "Earthquake"
+          ]
+        }
+      ]
+    }
+  ]
 }

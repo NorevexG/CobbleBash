@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.flying.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.flying.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.flying.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.flying.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Tailwind Squadron — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Fast Aerial Pressure",
-            "pokemon": [
-                {
-                    "species": "Staraptor",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Scarf",
-                    "moves": [
-                        "Brave Bird",
-                        "Close Combat",
-                        "U-turn",
-                        "Double-Edge"
-                    ]
-                },
-                {
-                    "species": "Talonflame",
-                    "ability": "Gale Wings",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Flare Blitz",
-                        "Roost",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Noivern",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Draco Meteor",
-                        "Hurricane",
-                        "Flamethrower",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Skarmory",
-                    "ability": "Sturdy",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Brave Bird",
-                        "Spikes",
-                        "Roost",
-                        "Whirlwind"
-                    ]
-                }
-            ]
+          "species": "Doduo",
+          "ability": "Early Bird",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Quick Attack",
+            "Wing Attack",
+            "Aerial Ace",
+            "Baton Pass"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Defensive Airspace",
-            "pokemon": [
-                {
-                    "species": "Corviknight",
-                    "ability": "Pressure",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Brave Bird",
-                        "Body Press",
-                        "Roost",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Crobat",
-                    "ability": "Infiltrator",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Cross Poison",
-                        "U-turn",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "ability": "Serene Grace",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Air Slash",
-                        "Thunder Wave",
-                        "Roost",
-                        "Aura Sphere"
-                    ]
-                },
-                {
-                    "species": "Aerodactyl",
-                    "ability": "Rock Head",
-                    "held_item": "None",
-                    "moves": [
-                        "Stone Edge",
-                        "Dual Wingbeat",
-                        "Earthquake",
-                        "Stealth Rock"
-                    ]
-                }
-            ]
+          "species": "Staravia",
+          "ability": "Intimidate",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Quick Attack",
+            "Wing Attack",
+            "Aerial Ace",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Trumbeak",
+          "ability": "Keen Eye",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Swift",
+            "Aerial Ace",
+            "Air Cutter",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Fletchinder",
+          "ability": "Flame Body",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Aerial Ace",
+            "Air Cutter",
+            "U-turn"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Tailwind Squadron — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Trumbeak",
+          "ability": "Keen Eye",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Swift",
+            "Aerial Ace",
+            "Air Cutter",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Fletchinder",
+          "ability": "Flame Body",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Ember",
+            "Aerial Ace",
+            "Air Cutter",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Yanma",
+          "ability": "Speed Boost",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Wing Attack",
+            "Aerial Ace",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Butterfree",
+          "ability": "Compound Eyes",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Bite",
+            "Aerial Ace",
+            "Air Cutter",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Tailwind Squadron — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Squawkabilly",
+          "ability": "Intimidate",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Double-Edge",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Swoobat",
+          "ability": "Unaware",
+          "held_item": "Life Orb",
+          "moves": [
+            "Psychic",
+            "Air Slash",
+            "Air Cutter",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Emolga",
+          "ability": "Static",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Wild Charge",
+            "Dual Wingbeat",
+            "Acrobatics",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Gligar",
+          "ability": "Hyper Cutter",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Earthquake",
+            "Dual Wingbeat",
+            "Acrobatics",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Tailwind Squadron — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Emolga",
+          "ability": "Static",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Wild Charge",
+            "Dual Wingbeat",
+            "Acrobatics",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Gligar",
+          "ability": "Hyper Cutter",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Earthquake",
+            "Dual Wingbeat",
+            "Acrobatics",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Pelipper",
+          "ability": "Keen Eye",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hydro Pump",
+            "Hurricane",
+            "Air Slash",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Fearow",
+          "ability": "Keen Eye",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Tailwind Squadron — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Honchkrow",
+          "ability": "Moxie",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Sucker Punch",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Flamigo",
+          "ability": "Scrappy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Hawlucha",
+          "ability": "Limber",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Scyther",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Dual Wingbeat",
+            "Acrobatics",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Tailwind Squadron — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Hawlucha",
+          "ability": "Limber",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Scyther",
+          "ability": "Technician",
+          "held_item": "Life Orb",
+          "moves": [
+            "X-Scissor",
+            "Dual Wingbeat",
+            "Acrobatics",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Talonflame",
+          "ability": "Flame Body",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Flare Blitz",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Drifblim",
+          "ability": "Aftermath",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Shadow Ball",
+            "Air Slash",
+            "Air Cutter",
+            "Baton Pass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Tailwind Squadron — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Unfezant",
+          "ability": "Big Pecks",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Staraptor",
+          "ability": "Intimidate",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Double-Edge",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Toucannon",
+          "ability": "Sheer Force",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Pidgeot",
+          "ability": "Keen Eye",
+          "held_item": "Life Orb",
+          "moves": [
+            "Facade",
+            "Brave Bird",
+            "Dual Wingbeat",
+            "U-turn"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,162 +1,310 @@
 {
-    "display_name": "cobblebash.dialogue.ice.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.ice.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.ice.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.ice.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early",
+      "name": "Absolute Zero — Early",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Ice Leader",
-            "pokemon": [
-                {
-                    "species": "Ninetales",
-                    "ability": "Snow Warning",
-                    "held_item": "Light Clay",
-                    "moves": [
-                        "Aurora Veil",
-                        "Freeze-Dry",
-                        "Moonblast",
-                        "Encore"
-                    ],
-                    "aspects": [
-                        "alolan"
-                    ]
-                },
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Icicle Crash",
-                        "Knock Off",
-                        "Ice Shard",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Lapras",
-                    "ability": "Water Absorb",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Freeze-Dry",
-                        "Surf",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                },
-                {
-                    "species": "Heatran",
-                    "ability": "Flash Fire",
-                    "held_item": "None",
-                    "moves": [
-                        "Lava Plume",
-                        "Earth Power",
-                        "Toxic",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "None",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                }
-            ]
+          "species": "Aurorus",
+          "ability": "Refrigerate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Rock Tomb",
+            "Powder Snow",
+            "Icy Wind",
+            "Stealth Rock"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Ice Leader",
-            "pokemon": [
-                {
-                    "species": "Weavile",
-                    "ability": "Pressure",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Icicle Crash",
-                        "Knock Off",
-                        "Ice Shard",
-                        "Low Kick"
-                    ]
-                },
-                {
-                    "species": "Mamoswine",
-                    "ability": "Thick Fat",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Icicle Crash",
-                        "Ice Shard",
-                        "Stone Edge"
-                    ]
-                },
-                {
-                    "species": "Froslass",
-                    "ability": "Cursed Body",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Spikes",
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Taunt"
-                    ]
-                },
-                {
-                    "species": "Glaceon",
-                    "ability": "Ice Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Ice Beam",
-                        "Shadow Ball",
-                        "Freeze-Dry",
-                        "Wish"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "ability": "Flame Body",
-                    "held_item": "None",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                }
-            ]
+          "species": "Cetitan",
+          "ability": "Sheer Force",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Protect",
+            "Bulldoze"
+          ]
+        },
+        {
+          "species": "Cloyster",
+          "ability": "Overcoat",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Icy Wind",
+            "Ice Shard",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Glaceon",
+          "ability": "Snow Cloak",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Icy Wind",
+            "Protect",
+            "Water Pulse"
+          ]
+        },
+        {
+          "species": "Mamoswine",
+          "ability": "Oblivious",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Powder Snow",
+            "Mud Shot",
+            "Icy Wind",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Walrein",
+          "ability": "Thick Fat",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Powder Snow",
+            "Water Gun",
+            "Icy Wind",
+            "Protect"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "middle",
+      "name": "Absolute Zero — Middle",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Cloyster",
+          "ability": "Overcoat",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Liquidation",
+            "Icicle Crash",
+            "Ice Spinner",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Glaceon",
+          "ability": "Snow Cloak",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Mamoswine",
+          "ability": "Oblivious",
+          "held_item": "Leftovers",
+          "moves": [
+            "Icicle Crash",
+            "Earthquake",
+            "Ice Shard",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Walrein",
+          "ability": "Thick Fat",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Beam",
+            "Hydro Pump",
+            "Blizzard",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Lapras",
+          "ability": "Water Absorb",
+          "held_item": "Leftovers",
+          "moves": [
+            "Liquidation",
+            "Ice Shard",
+            "Ice Beam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Vanilluxe",
+          "ability": "Ice Body",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Flash Cannon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late",
+      "name": "Absolute Zero — Late",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Lapras",
+          "ability": "Water Absorb",
+          "held_item": "Leftovers",
+          "moves": [
+            "Liquidation",
+            "Ice Shard",
+            "Ice Beam",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Vanilluxe",
+          "ability": "Ice Body",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "species": "Mamoswine",
+          "ability": "Oblivious",
+          "held_item": "Leftovers",
+          "moves": [
+            "Icicle Crash",
+            "Earthquake",
+            "Ice Shard",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Walrein",
+          "ability": "Thick Fat",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Beam",
+            "Hydro Pump",
+            "Blizzard",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Cloyster",
+          "ability": "Overcoat",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Liquidation",
+            "Icicle Crash",
+            "Ice Spinner",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Glaceon",
+          "ability": "Snow Cloak",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Shadow Ball"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Absolute Zero — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Walrein",
+          "ability": "Thick Fat",
+          "held_item": "Leftovers",
+          "moves": [
+            "Ice Beam",
+            "Hydro Pump",
+            "Blizzard",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Cloyster",
+          "ability": "Overcoat",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Liquidation",
+            "Icicle Crash",
+            "Ice Spinner",
+            "Spikes"
+          ]
+        },
+        {
+          "species": "Glaceon",
+          "ability": "Snow Cloak",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Ice Beam",
+            "Blizzard",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Aurorus",
+          "ability": "Refrigerate",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Meteor Beam",
+            "Ice Beam",
+            "Blizzard",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Cetitan",
+          "ability": "Sheer Force",
+          "held_item": "Leftovers",
+          "moves": [
+            "Icicle Crash",
+            "Ice Spinner",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Lapras",
+          "ability": "Water Absorb",
+          "held_item": "Leftovers",
+          "moves": [
+            "Liquidation",
+            "Ice Shard",
+            "Ice Beam",
+            "Protect"
+          ]
+        }
+      ]
+    }
+  ]
 }

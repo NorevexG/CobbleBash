@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.electric.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.electric.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.electric.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.electric.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Volt Relay — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Speed Pressure",
-            "pokemon": [
-                {
-                    "species": "Raichu",
-                    "ability": "Lightning Rod",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Thunderbolt",
-                        "Volt Switch",
-                        "Grass Knot",
-                        "Nasty Plot"
-                    ]
-                },
-                {
-                    "species": "Luxray",
-                    "ability": "Intimidate",
-                    "held_item": "None",
-                    "moves": [
-                        "Wild Charge",
-                        "Crunch",
-                        "Ice Fang",
-                        "Volt Switch"
-                    ]
-                },
-                {
-                    "species": "Electrode",
-                    "ability": "Static",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunder",
-                        "Volt Switch",
-                        "Taunt",
-                        "Explosion"
-                    ]
-                },
-                {
-                    "species": "Jolteon",
-                    "ability": "Volt Absorb",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Thunderbolt",
-                        "Volt Switch",
-                        "Shadow Ball",
-                        "Quick Attack"
-                    ]
-                }
-            ]
+          "species": "Voltorb",
+          "ability": "Static",
+          "held_item": "None",
+          "moves": [
+            "Thunder Shock",
+            "Spark",
+            "Volt Switch",
+            "Shock Wave"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Pivot Control",
-            "pokemon": [
-                {
-                    "species": "Rotom",
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Thunderbolt",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ]
-                },
-                {
-                    "species": "Ampharos",
-                    "ability": "Static",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Dragon Pulse",
-                        "Volt Switch",
-                        "Light Screen"
-                    ]
-                },
-                {
-                    "species": "Luxray",
-                    "ability": "Intimidate",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Wild Charge",
-                        "Crunch",
-                        "Ice Fang",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Raichu",
-                    "ability": "Lightning Rod",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Encore",
-                        "Nasty Plot",
-                        "Volt Switch"
-                    ]
-                }
-            ]
+          "species": "Elekid",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Shock Wave",
+            "Volt Switch",
+            "Brick Break"
+          ]
+        },
+        {
+          "species": "Minun",
+          "ability": "Minus",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Spark",
+            "Shock Wave",
+            "Volt Switch",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Plusle",
+          "ability": "Lightning Rod",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Spark",
+            "Shock Wave",
+            "Volt Switch",
+            "Swift"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Volt Relay — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Minun",
+          "ability": "Minus",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Spark",
+            "Shock Wave",
+            "Volt Switch",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Plusle",
+          "ability": "Lightning Rod",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Spark",
+            "Shock Wave",
+            "Volt Switch",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Emolga",
+          "ability": "Static",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Aerial Ace",
+            "Spark",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Dedenne",
+          "ability": "Cheek Pouch",
+          "held_item": "Oran Berry",
+          "moves": [
+            "Thunder Shock",
+            "Draining Kiss",
+            "Shock Wave",
+            "U-turn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Volt Relay — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Dedenne",
+          "ability": "Cheek Pouch",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Dazzling Gleam",
+            "Volt Switch",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Togedemaru",
+          "ability": "Sturdy",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Wild Charge",
+            "Iron Head",
+            "Thunderbolt",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Morpeko",
+          "ability": "Hunger Switch",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Wild Charge",
+            "Knock Off",
+            "Thunder Punch",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Rotom",
+          "ability": "Levitate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Shadow Ball",
+            "Volt Switch",
+            "Trick"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Volt Relay — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Morpeko",
+          "ability": "Hunger Switch",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Wild Charge",
+            "Knock Off",
+            "Thunder Punch",
+            "Volt Switch"
+          ]
+        },
+        {
+          "species": "Rotom",
+          "ability": "Levitate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Shadow Ball",
+            "Volt Switch",
+            "Trick"
+          ]
+        },
+        {
+          "species": "Magneton",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        },
+        {
+          "species": "Galvantula",
+          "ability": "Compound Eyes",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Thunderbolt",
+            "Volt Switch",
+            "Sticky Web"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Volt Relay — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Toxtricity",
+          "ability": "Technician",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Sludge Bomb",
+            "Volt Switch",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Zebstrika",
+          "ability": "Lightning Rod",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Volt Switch",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Bellibolt",
+          "ability": "Static",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "species": "Boltund",
+          "ability": "Strong Jaw",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Volt Switch",
+            "Crunch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Volt Relay — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Bellibolt",
+          "ability": "Static",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "species": "Boltund",
+          "ability": "Strong Jaw",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Wild Charge",
+            "Thunderbolt",
+            "Volt Switch",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Electabuzz",
+          "ability": "Static",
+          "held_item": "Life Orb",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Taunt",
+            "Psychic"
+          ]
+        },
+        {
+          "species": "Electrode",
+          "ability": "Static",
+          "held_item": "Life Orb",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Taunt",
+            "Facade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Volt Relay — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Raichu",
+          "ability": "Static",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Wild Charge",
+            "Thunder Punch",
+            "Volt Switch",
+            "Play Rough"
+          ]
+        },
+        {
+          "species": "Manectric",
+          "ability": "Static",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Thunder Wave",
+            "Flamethrower"
+          ]
+        },
+        {
+          "species": "Galvantula",
+          "ability": "Compound Eyes",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Thunderbolt",
+            "Volt Switch",
+            "Sticky Web"
+          ]
+        },
+        {
+          "species": "Magneton",
+          "ability": "Sturdy",
+          "held_item": "Life Orb",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Volt Switch",
+            "Thunder Wave"
+          ]
+        }
+      ]
+    }
+  ]
 }

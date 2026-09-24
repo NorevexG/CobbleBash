@@ -1,195 +1,455 @@
 {
-    "display_name": "cobblebash.dialogue.steel.trainer_2.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.steel.trainer_2.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.steel.trainer_2.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.steel.trainer_2.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Fortress Protocol — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Hazard Steel Core",
-            "pokemon": [
-                {
-                    "species": "Ferrothorn",
-                    "ability": "Iron Barbs",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Leech Seed",
-                        "Gyro Ball",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Skarmory",
-                    "ability": "Sturdy",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Brave Bird",
-                        "Spikes",
-                        "Roost",
-                        "Whirlwind"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Body Press"
-                    ]
-                },
-                {
-                    "species": "Lucario",
-                    "ability": "Inner Focus",
-                    "held_item": "None",
-                    "moves": [
-                        "Close Combat",
-                        "Meteor Mash",
-                        "Extreme Speed",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Empoleon",
-                    "ability": "Torrent",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Flash Cannon",
-                        "Ice Beam",
-                        "Roost"
-                    ]
-                }
-            ]
+          "species": "Tinkatink",
+          "ability": "Mold Breaker",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Draining Kiss",
+            "Metal Claw",
+            "Flash Cannon",
+            "Stealth Rock"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Steel",
-            "pokemon": [
-                {
-                    "species": "Scizor",
-                    "ability": "Technician",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Swords Dance",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Bisharp",
-                    "ability": "Defiant",
-                    "held_item": "Focus Sash",
-                    "moves": [
-                        "Iron Head",
-                        "Knock Off",
-                        "Sucker Punch",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Metagross",
-                    "ability": "Clear Body",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Meteor Mash",
-                        "Zen Headbutt",
-                        "Earthquake",
-                        "Bullet Punch"
-                    ]
-                },
-                {
-                    "species": "Lucario",
-                    "ability": "Inner Focus",
-                    "held_item": "None",
-                    "moves": [
-                        "Close Combat",
-                        "Meteor Mash",
-                        "Extreme Speed",
-                        "Crunch"
-                    ]
-                },
-                {
-                    "species": "Magnezone",
-                    "ability": "Magnet Pull",
-                    "held_item": "None",
-                    "moves": [
-                        "Thunderbolt",
-                        "Flash Cannon",
-                        "Volt Switch",
-                        "Body Press"
-                    ]
-                }
-            ]
+          "species": "Beldum",
+          "ability": "Clear Body",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Iron Head",
+            "Zen Headbutt",
+            "Steel Beam",
+            "Headbutt"
+          ]
         },
         {
-            "id": "build_c",
-            "name": "Sustain & Control",
-            "pokemon": [
-                {
-                    "species": "Ferrothorn",
-                    "ability": "Iron Barbs",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Stealth Rock",
-                        "Leech Seed",
-                        "Gyro Ball",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Bronzong",
-                    "ability": "Levitate",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Gyro Ball",
-                        "Stealth Rock",
-                        "Toxic",
-                        "Protect"
-                    ]
-                },
-                {
-                    "species": "Empoleon",
-                    "ability": "Torrent",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Scald",
-                        "Flash Cannon",
-                        "Ice Beam",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Skarmory",
-                    "ability": "Sturdy",
-                    "held_item": "None",
-                    "moves": [
-                        "Brave Bird",
-                        "Spikes",
-                        "Roost",
-                        "Whirlwind"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "ability": "Stance Change",
-                    "held_item": "None",
-                    "moves": [
-                        "King's Shield",
-                        "Shadow Ball",
-                        "Sacred Sword",
-                        "Shadow Sneak"
-                    ]
-                }
-            ]
+          "species": "Bronzor",
+          "ability": "Levitate",
+          "held_item": "None",
+          "moves": [
+            "Flash Cannon",
+            "Confusion",
+            "Iron Head",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Klink",
+          "ability": "Plus",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Varoom",
+          "ability": "Overcoat",
+          "held_item": "None",
+          "moves": [
+            "Flash Cannon",
+            "Acid Spray",
+            "Iron Head",
+            "Toxic Spikes"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Fortress Protocol — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Bronzor",
+          "ability": "Levitate",
+          "held_item": "None",
+          "moves": [
+            "Flash Cannon",
+            "Confusion",
+            "Iron Head",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Klink",
+          "ability": "Plus",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave",
+            "Shock Wave"
+          ]
+        },
+        {
+          "species": "Varoom",
+          "ability": "Overcoat",
+          "held_item": "None",
+          "moves": [
+            "Flash Cannon",
+            "Acid Spray",
+            "Iron Head",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Ferroseed",
+          "ability": "Iron Barbs",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bullet Seed",
+            "Metal Claw",
+            "Flash Cannon",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Honedge",
+          "ability": "No Guard",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Sneak",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Fortress Protocol — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Varoom",
+          "ability": "Overcoat",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Iron Head",
+            "Gunk Shot",
+            "Flash Cannon",
+            "Toxic Spikes"
+          ]
+        },
+        {
+          "species": "Ferroseed",
+          "ability": "Iron Barbs",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Seed Bomb",
+            "Iron Head",
+            "Flash Cannon",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Honedge",
+          "ability": "No Guard",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Iron Head",
+            "Shadow Claw",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Aron",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Iron Head",
+            "Rock Slide",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Cufant",
+          "ability": "Sheer Force",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Fortress Protocol — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Honedge",
+          "ability": "No Guard",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Iron Head",
+            "Shadow Claw",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Aron",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Iron Head",
+            "Rock Slide",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Cufant",
+          "ability": "Sheer Force",
+          "held_item": "Mental Herb",
+          "moves": [
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Shieldon",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Metang",
+          "ability": "Clear Body",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Iron Head",
+            "Zen Headbutt",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Fortress Protocol — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Steelix",
+          "ability": "Sheer Force",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Earthquake",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aegislash",
+          "ability": "Stance Change",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Shadow Claw",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "species": "Bronzong",
+          "ability": "Levitate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Zen Headbutt",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Bastiodon",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Ferrothorn",
+          "ability": "Iron Barbs",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Whip",
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Fortress Protocol — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Bronzong",
+          "ability": "Levitate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Iron Head",
+            "Zen Headbutt",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Bastiodon",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Ferrothorn",
+          "ability": "Iron Barbs",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Power Whip",
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Forretress",
+          "ability": "Sturdy",
+          "held_item": "Leftovers",
+          "moves": [
+            "Lunge",
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Klang",
+          "ability": "Plus",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave",
+            "Facade"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Fortress Protocol — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Klang",
+          "ability": "Plus",
+          "held_item": "Leftovers",
+          "moves": [
+            "Flash Cannon",
+            "Steel Beam",
+            "Thunder Wave",
+            "Facade"
+          ]
+        },
+        {
+          "species": "Lairon",
+          "ability": "Sturdy",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Iron Head",
+            "Stone Edge",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Metang",
+          "ability": "Clear Body",
+          "held_item": "Rocky Helmet",
+          "moves": [
+            "Iron Head",
+            "Zen Headbutt",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Shieldon",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Stone Edge",
+            "Iron Head",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "species": "Aron",
+          "ability": "Sturdy",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Iron Head",
+            "Rock Slide",
+            "Heavy Slam",
+            "Stealth Rock"
+          ]
+        }
+      ]
+    }
+  ]
 }

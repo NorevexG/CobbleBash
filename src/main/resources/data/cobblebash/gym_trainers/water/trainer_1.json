@@ -1,112 +1,378 @@
 {
-    "display_name": "cobblebash.dialogue.water.trainer_1.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.water.trainer_1.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.water.trainer_1.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.water.trainer_1.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "early_a",
+      "name": "Current Riders — Early A",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Rain Pressure",
-            "pokemon": [
-                {
-                    "species": "Pelipper",
-                    "ability": "Drizzle",
-                    "held_item": "Damp Rock",
-                    "moves": [
-                        "Scald",
-                        "Hurricane",
-                        "Roost",
-                        "U-turn"
-                    ]
-                },
-                {
-                    "species": "Barraskewda",
-                    "ability": "Swift Swim",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Liquidation",
-                        "Close Combat",
-                        "Psychic Fangs",
-                        "Aqua Jet"
-                    ]
-                },
-                {
-                    "species": "Swampert",
-                    "ability": "Torrent",
-                    "held_item": "None",
-                    "moves": [
-                        "Waterfall",
-                        "Earthquake",
-                        "Ice Punch",
-                        "Stealth Rock"
-                    ]
-                },
-                {
-                    "species": "Tentacruel",
-                    "ability": "Liquid Ooze",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Sludge Bomb",
-                        "Rapid Spin",
-                        "Toxic Spikes"
-                    ]
-                }
-            ]
+          "species": "Wiglett",
+          "ability": "Gooey",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Water Pulse",
+            "Agility",
+            "Bulldoze"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Bulky Waters",
-            "pokemon": [
-                {
-                    "species": "Milotic",
-                    "ability": "Marvel Scale",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Scald",
-                        "Recover",
-                        "Ice Beam",
-                        "Toxic"
-                    ]
-                },
-                {
-                    "species": "Azumarill",
-                    "ability": "Huge Power",
-                    "held_item": "Sitrus Berry",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Belly Drum",
-                        "Liquidation"
-                    ]
-                },
-                {
-                    "species": "Slowbro",
-                    "ability": "Regenerator",
-                    "held_item": "None",
-                    "moves": [
-                        "Scald",
-                        "Psychic",
-                        "Slack Off",
-                        "Thunder Wave"
-                    ]
-                },
-                {
-                    "species": "Lapras",
-                    "ability": "Water Absorb",
-                    "held_item": "None",
-                    "moves": [
-                        "Freeze-Dry",
-                        "Surf",
-                        "Thunderbolt",
-                        "Ice Beam"
-                    ]
-                }
-            ]
+          "species": "Poliwag",
+          "ability": "Water Absorb",
+          "held_item": "None",
+          "moves": [
+            "Water Gun",
+            "Water Pulse",
+            "Encore",
+            "Bulldoze"
+          ]
+        },
+        {
+          "species": "Carvanha",
+          "ability": "Speed Boost",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Water Pulse",
+            "Bite",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "species": "Sobble",
+          "ability": "Torrent",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Water Gun",
+            "Water Pulse",
+            "U-turn",
+            "Swift"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "early_b",
+      "name": "Current Riders — Early B",
+      "min_level": 1,
+      "max_level": 33,
+      "pokemon": [
+        {
+          "species": "Carvanha",
+          "ability": "Speed Boost",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Water Pulse",
+            "Bite",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "species": "Sobble",
+          "ability": "Torrent",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Water Gun",
+            "Water Pulse",
+            "U-turn",
+            "Swift"
+          ]
+        },
+        {
+          "species": "Krabby",
+          "ability": "Sheer Force",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Water Gun",
+            "Water Pulse",
+            "Swords Dance",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "species": "Buizel",
+          "ability": "Swift Swim",
+          "held_item": "Sitrus Berry",
+          "moves": [
+            "Water Gun",
+            "Water Pulse",
+            "Flip Turn",
+            "Rock Tomb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_a",
+      "name": "Current Riders — Middle A",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Pelipper",
+          "ability": "Keen Eye",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hydro Pump",
+            "Hurricane",
+            "Surf",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Qwilfish",
+          "ability": "Intimidate",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Gunk Shot",
+            "Waterfall",
+            "Flip Turn"
+          ]
+        },
+        {
+          "species": "Seadra",
+          "ability": "Poison Point",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Flip Turn",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Seaking",
+          "ability": "Lightning Rod",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Waterfall",
+            "Hydro Pump",
+            "Flip Turn",
+            "Poison Jab"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_b",
+      "name": "Current Riders — Middle B",
+      "min_level": 34,
+      "max_level": 66,
+      "pokemon": [
+        {
+          "species": "Seadra",
+          "ability": "Poison Point",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Flip Turn",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Seaking",
+          "ability": "Lightning Rod",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Waterfall",
+            "Hydro Pump",
+            "Flip Turn",
+            "Poison Jab"
+          ]
+        },
+        {
+          "species": "Basculin",
+          "ability": "Adaptability",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Liquidation",
+            "Waterfall",
+            "Flip Turn",
+            "Crunch"
+          ]
+        },
+        {
+          "species": "Lanturn",
+          "ability": "Water Absorb",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Surf",
+            "Volt Switch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_a",
+      "name": "Current Riders — Late A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Blastoise",
+          "ability": "Torrent",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Flip Turn",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Feraligatr",
+          "ability": "Sheer Force",
+          "held_item": "Life Orb",
+          "moves": [
+            "Liquidation",
+            "Waterfall",
+            "Flip Turn",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Greninja",
+          "ability": "Protean",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hydro Pump",
+            "Dark Pulse",
+            "Surf",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Walrein",
+          "ability": "Thick Fat",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Ice Beam",
+            "Hydro Pump",
+            "Surf",
+            "Encore"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "late_b",
+      "name": "Current Riders — Late B",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Greninja",
+          "ability": "Protean",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hydro Pump",
+            "Dark Pulse",
+            "Surf",
+            "U-turn"
+          ]
+        },
+        {
+          "species": "Walrein",
+          "ability": "Thick Fat",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Ice Beam",
+            "Hydro Pump",
+            "Surf",
+            "Encore"
+          ]
+        },
+        {
+          "species": "Samurott",
+          "ability": "Torrent",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Flip Turn",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Cloyster",
+          "ability": "Overcoat",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Liquidation",
+            "Icicle Crash",
+            "Waterfall",
+            "Spikes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared",
+      "name": "Current Riders — Shared Advanced",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Clawitzer",
+          "ability": "Mega Launcher",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "U-turn",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Golduck",
+          "ability": "Damp",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Flip Turn",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Politoed",
+          "ability": "Water Absorb",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Hydro Pump",
+            "Surf",
+            "Encore",
+            "Earth Power"
+          ]
+        },
+        {
+          "species": "Wailord",
+          "ability": "Water Veil",
+          "held_item": "Choice Scarf",
+          "moves": [
+            "Liquidation",
+            "Waterfall",
+            "Earthquake",
+            "Hydro Pump"
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -1,171 +1,162 @@
 {
-    "display_name": "cobblebash.dialogue.elite4_champion.boss.name",
-    "dialogue": {
-        "lines": [
-            "cobblebash.dialogue.elite4_champion.boss.line_1"
-        ],
-        "battle_text": "cobblebash.dialogue.action.battle",
-        "cancel_text": "cobblebash.dialogue.action.cancel"
-    },
-    "builds": [
+  "display_name": "cobblebash.dialogue.elite4_champion.boss.name",
+  "dialogue": {
+    "lines": [
+      "cobblebash.dialogue.elite4_champion.boss.line_1"
+    ],
+    "battle_text": "cobblebash.dialogue.action.battle",
+    "cancel_text": "cobblebash.dialogue.action.cancel"
+  },
+  "battle_format": "singles",
+  "shuffle_team": true,
+  "builds": [
+    {
+      "id": "endgame_a",
+      "name": "Complete Coverage — Endgame A",
+      "min_level": 67,
+      "max_level": 100,
+      "pokemon": [
         {
-            "id": "build_a",
-            "name": "Balanced Champion",
-            "pokemon": [
-                {
-                    "species": "Garchomp",
-                    "level": 100,
-                    "ability": "Rough Skin",
-                    "held_item": "Rocky Helmet",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Stone Edge",
-                        "Swords Dance"
-                    ]
-                },
-                {
-                    "species": "Rotom",
-                    "level": 100,
-                    "ability": "Levitate",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Hydro Pump",
-                        "Volt Switch",
-                        "Will-O-Wisp",
-                        "Pain Split"
-                    ],
-                    "aspects": [
-                        "wash-appliance"
-                    ]
-                },
-                {
-                    "species": "Volcarona",
-                    "level": 100,
-                    "ability": "Flame Body",
-                    "held_item": "Heavy-Duty Boots",
-                    "moves": [
-                        "Quiver Dance",
-                        "Fiery Dance",
-                        "Bug Buzz",
-                        "Giga Drain"
-                    ]
-                },
-                {
-                    "species": "Aegislash",
-                    "level": 100,
-                    "ability": "Stance Change",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Shadow Ball",
-                        "Flash Cannon",
-                        "Shadow Sneak",
-                        "King's Shield"
-                    ]
-                },
-                {
-                    "species": "Togekiss",
-                    "level": 100,
-                    "ability": "Serene Grace",
-                    "held_item": "Leftovers",
-                    "moves": [
-                        "Air Slash",
-                        "Dazzling Gleam",
-                        "Thunder Wave",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Metagross",
-                    "level": 100,
-                    "ability": "Clear Body",
-                    "held_item": "Assault Vest",
-                    "moves": [
-                        "Meteor Mash",
-                        "Zen Headbutt",
-                        "Earthquake",
-                        "Bullet Punch"
-                    ]
-                }
-            ]
+          "species": "Dragonite",
+          "ability": "Multiscale",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Aerial Ace",
+            "Thunder Wave",
+            "Earthquake"
+          ]
         },
         {
-            "id": "build_b",
-            "name": "Aggressive Champion",
-            "pokemon": [
-                {
-                    "species": "Dragonite",
-                    "level": 100,
-                    "ability": "Multiscale",
-                    "held_item": "Weakness Policy",
-                    "moves": [
-                        "Dragon Dance",
-                        "Dragon Claw",
-                        "Fire Punch",
-                        "Roost"
-                    ]
-                },
-                {
-                    "species": "Greninja",
-                    "level": 100,
-                    "ability": "Torrent",
-                    "held_item": "Choice Specs",
-                    "moves": [
-                        "Hydro Pump",
-                        "Dark Pulse",
-                        "Ice Beam",
-                        "Spikes"
-                    ]
-                },
-                {
-                    "species": "Scizor",
-                    "level": 100,
-                    "ability": "Technician",
-                    "held_item": "Choice Band",
-                    "moves": [
-                        "Bullet Punch",
-                        "U-turn",
-                        "Superpower",
-                        "Knock Off"
-                    ]
-                },
-                {
-                    "species": "Gengar",
-                    "level": 100,
-                    "ability": "Cursed Body",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Shadow Ball",
-                        "Sludge Wave",
-                        "Focus Blast",
-                        "Nasty Plot"
-                    ]
-                },
-                {
-                    "species": "Azumarill",
-                    "level": 100,
-                    "ability": "Huge Power",
-                    "held_item": "Sitrus Berry",
-                    "moves": [
-                        "Play Rough",
-                        "Aqua Jet",
-                        "Liquidation",
-                        "Belly Drum"
-                    ]
-                },
-                {
-                    "species": "Garchomp",
-                    "level": 100,
-                    "ability": "Rough Skin",
-                    "held_item": "Life Orb",
-                    "moves": [
-                        "Earthquake",
-                        "Dragon Claw",
-                        "Fire Fang",
-                        "Swords Dance"
-                    ]
-                }
-            ]
+          "species": "Garchomp",
+          "ability": "Rough Skin",
+          "held_item": "Heavy-Duty Boots",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Stealth Rock",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "species": "Metagross",
+          "ability": "Clear Body",
+          "held_item": "Life Orb",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Salamence",
+          "ability": "Intimidate",
+          "held_item": "Leftovers",
+          "moves": [
+            "Dragon Claw",
+            "Dual Wingbeat",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Tyranitar",
+          "ability": "Sand Stream",
+          "held_item": "Leftovers",
+          "moves": [
+            "Stone Edge",
+            "Knock Off",
+            "Stealth Rock",
+            "Earthquake"
+          ]
+        },
+        {
+          "species": "Volcarona",
+          "ability": "Flame Body",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Bug Buzz",
+            "Flamethrower",
+            "Will-O-Wisp",
+            "Fire Blast"
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "id": "endgame_b",
+      "name": "Complete Coverage — Endgame B",
+      "min_level": 34,
+      "max_level": 100,
+      "pokemon": [
+        {
+          "species": "Togekiss",
+          "ability": "Serene Grace",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Dazzling Gleam",
+            "Air Slash",
+            "Thunder Wave",
+            "Flamethrower"
+          ]
+        },
+        {
+          "species": "Milotic",
+          "ability": "Marvel Scale",
+          "held_item": "Leftovers",
+          "moves": [
+            "Hydro Pump",
+            "Protect",
+            "Ice Beam",
+            "Surf"
+          ]
+        },
+        {
+          "species": "Magnezone",
+          "ability": "Sturdy",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Thunderbolt",
+            "Flash Cannon",
+            "Thunder Wave",
+            "Iron Head"
+          ]
+        },
+        {
+          "species": "Greninja",
+          "ability": "Protean",
+          "held_item": "Expert Belt",
+          "moves": [
+            "Hydro Pump",
+            "Dark Pulse",
+            "Spikes",
+            "Ice Beam"
+          ]
+        },
+        {
+          "species": "Lucario",
+          "ability": "Inner Focus",
+          "held_item": "Life Orb",
+          "moves": [
+            "Aura Sphere",
+            "Flash Cannon",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "species": "Chandelure",
+          "ability": "Flame Body",
+          "held_item": "Focus Sash",
+          "moves": [
+            "Shadow Ball",
+            "Flamethrower",
+            "Will-O-Wisp",
+            "Fire Blast"
+          ]
+        }
+      ]
+    }
+  ]
 }
